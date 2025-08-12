@@ -6,10 +6,10 @@
 /* Nav */
 .main-nav {
   position: relative;
-  // -webkit-mask-image: linear-gradient(to right, var(--text-color) 90%, transparent 100%);
-  // mask-image: linear-gradient(to right, var(--text-color) 90%, transparent 100%);
-  -webkit-mask-image: none;
-  mask-image: none;
+  -webkit-mask-image: linear-gradient(to right, var(--text-color) 85%, transparent 100%);
+  mask-image: linear-gradient(to right, var(--text-color) 85%, transparent 100%);
+  // -webkit-mask-image: none;
+  // mask-image: none;
   .nav__list {
     display: flex;
     align-items: baseline;

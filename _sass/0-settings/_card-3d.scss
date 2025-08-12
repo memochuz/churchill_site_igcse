@@ -1,0 +1,126 @@
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+// * Start GlassBox Styles
+*/
+.glassBox {
+  &, & * { box-sizing: border-box; transition: 400ms; } // Aplicar box-sizing a si mismo y a sus hijos
+  width: 100%;
+  // height: 400px; // Altura fija de la caja
+  max-width: 300px; // Ancho máximo para el efecto
+  aspect-ratio: 4 / 5;
+  border-radius: 20px;
+   // --- CAMBIOS PARA EL FONDO DE IMAGEN ---
+  // background-image: url('/dannel/images/Productos/Tenis/fondo.png'); /* <--- RUTA DE TU IMAGEN */
+  background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.5));
+  background-size: cover;      /* La imagen cubrirá toda la caja */
+  background-position: center; /* La imagen se centrará */
+  background-repeat: no-repeat;/* La imagen no se repetirá */
+  // background-color: #000;     /* Opcional: Color de respaldo si la imagen no carga, o si quieres un tono base */
+  // --- FIN CAMBIOS PARA EL FONDO DE IMAGEN ---
+  // background: rgba(255, 255, 255, 0.05); <------ comenté esto
+  backdrop-filter: blur(10px); // Efecto de cristal esmerilado
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1); // Sombra exterior
+  padding: 15px;
+  position: relative;
+  @include flex-center; // Centra el contenido (imagen y título)
+  flex-direction: column; // Contenido apilado verticalmente
+  cursor: default;
+
+  &__imgBox {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      cursor: default;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-top: 15px;
+    color: #000; // Color del texto del título
+    // font-family: 'Segoe UI', 'Roboto', 'Calibri', 'Ubuntu', sans-serif;
+    // font-size: 20px;
+    // font-weight: 400;
+    font-family: "Lato", sans-serif; // Añadir un fallback font
+    cursor: default;
+  }
+  &__content { // Contenido que aparece al hover
+    position: absolute;
+    right: 15px; bottom: 15px; left: 15px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    // letter-spacing: .1em;
+    opacity: 0; // Oculto por defecto
+    cursor: default;
+  }
+  // Hover effects
+  &:hover &__imgBox {
+    transform: translateY(-50px); // La caja de la imagen se mueve hacia arriba
+  }
+  &:hover &__imgBox img {
+    // La imagen dentro de la caja se transforma (mueve, rota, escala)
+    transform: translate(-20px, -40px) rotate(-15deg) scale(1.4);
+  }
+  &:hover &__title {
+    // Puedes añadir una transformación para el título si quieres
+    // transform: translateY(-20px);
+    margin-top: 40px; // Puedes descomentar esto si prefieres un cambio de margen
+  }
+  &:hover &__content { // El contenido de texto aparece
+    opacity: 1;
+    transition-delay: 100ms; // Retraso para que aparezca después de la imagen
+  }
+}
+
+
+/* --- Estilos para la sección del catálogo de productos --- */
+// Asegúrate de que .catalogo-productos no se haya definido antes en otro lugar con menor especificidad.
+.catalogo-productos-3d {
+   // Asegúrate de que esta clase está en la <section> que envuelve tu catálogo
+  margin-top: 50px;    // <--- Espacio en la parte superior del catálogo
+  margin-bottom: 50px; // <--- Espacio en la parte inferior del catálogo
+
+  .row { // Selecciona la fila DENTRO de .catalogo-productos
+    row-gap: 40px; /* Ajusta este valor para el espacio deseado entre filas */
+  }
+
+  .cards-container {
+  display: flex; /* Convierte el contenedor en un Flexbox */
+  flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no caben */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Agrega un espacio entre cada tarjeta */
+  margin-top: 2rem; /* Espacio superior para separarlo de otros elementos */
+}
+
+}
+
+/*
+// * Media Query para hacer los GlassBox más pequeños en móviles
+*/
+@media (max-width: 575px) {
+  // Oculta el título de la tarjeta
+  .glassBox__title {
+    display: none;
+  }
+
+  // Oculta el contenido de la tarjeta
+  .glassBox__content {
+    display: none;
+  }
+
+  .glassBox:hover .glassBox__imgBox img {
+    transform: translate(-5px, -5px) rotate(-5deg) scale(1.1);
+  }
+
+}

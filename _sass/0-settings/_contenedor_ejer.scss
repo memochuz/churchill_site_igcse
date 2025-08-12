@@ -1,0 +1,37 @@
+/* Estilos para el contenedor principal */
+.dark-scrollbar-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  height: 70vh; /* Altura responsiva */
+  width: 100%; /* Ancho responsivo */
+  overflow-y: scroll;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Propiedades de scrollbar para Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #333 #000000;
+}
+
+/* Estilos de scrollbar para WebKit (Chrome, Safari, Edge) */
+
+/* El scrollbar completo */
+.dark-scrollbar-container::-webkit-scrollbar {
+  width: 5px; /* Ancho de la barra de desplazamiento vertical */
+  height: 5px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+/* El "thumb" (la parte que arrastras) */
+.dark-scrollbar-container::-webkit-scrollbar-thumb {
+  background-color: #555; /* Color del thumb (barra) */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 2px solid #000000; /* Borde para separarlo del track */
+}
+
+/* El "track" (el fondo de la barra) */
+.dark-scrollbar-container::-webkit-scrollbar-track {
+  background-color: #555; /* Color de fondo del track */
+  border-radius: 5px;
+}

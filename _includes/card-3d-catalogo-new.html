@@ -1,0 +1,31 @@
+<section class="catalogo-productos-3d">
+  <div class="container">
+    {% if include.title %}
+      <h2>{{ include.title }}</h2>
+    {% endif %}
+
+    <div class="catalogo-description">
+      <ul>
+      {% for item in include.coleccion %}
+        <li><strong>{{ item.title }}:</strong> {{ item.phrase }}</li>
+      {% endfor %}
+      </ul>
+    </div>
+
+    <div class="row">
+      {% for item in include.coleccion %}
+        <div class="col col-3 col-t-3 col-m-3">
+          {% include card-3d.html
+            src=item.src
+            alt=item.alt
+            title=item.title
+            content=item.content
+            background=item.background
+            path=item.path
+            target-id=include.target-id
+          %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

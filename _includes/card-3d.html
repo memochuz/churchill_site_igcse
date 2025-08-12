@@ -1,0 +1,9 @@
+<a href="{{ include.path | relative_url }}" class="card-link" data-target="{{ include.target-id }}">
+  <div class="glassBox" style="background-image: url('{{ include.background | relative_url }}');">
+    <div class="glassBox__imgBox">
+      <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" class="no-lightense">
+      <h3 class="glassBox__title">{{ include.title }}</h3>
+    </div>
+    <div class="glassBox__content">{{ include.content }}</div>
+  </div>
+</a>

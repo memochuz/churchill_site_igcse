@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Secuencias</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .question-section {
+            background-color: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #1a237e;
+        }
+        h1 {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+        }
+        h2 {
+            display: flex;
+            align-items: center;
+        }
+        .question-icon {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            color: #ff6f00;
+        }
+        .difficulty {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #43a047;
+        }
+        blockquote {
+            background-color: #f0f4f8;
+            border-left: 4px solid #1a237e;
+            margin: 1rem 0;
+            padding: 1rem 1.5rem;
+            color: #37474f;
+            border-radius: 4px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+    <!-- MathJax scripts para renderizar LaTeX -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <div class="question-section">
+        <h1 class="difficulty">🎯 Easy 🟢</h1>
+        <hr>
+        <h2><span class="question-icon">📌</span> Question: 1</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Consider an arithmetic sequence \(2,6,10,14, \ldots\)
+            <ol>
+                <li>Find the common difference, $d$.</li>
+                <li>Find the 10th term in the sequence.</li>
+                <li>Find the sum of the first 10 terms in the sequence.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 2</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            An arithmetic sequence has $u_{1}=40, u_{2}=32, u_{3}=24$.
+            <ol>
+                <li>Find the common difference, $d$.</li>
+                <li>Find $u_{8}$.</li>
+                <li>Find $S_{8}$.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 3</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Only one of the following four sequences is arithmetic and only one of them is geometric.
+            <p>$$
+            \begin{aligned}
+            a_{n} & =1,5,10,15, \ldots & c_{n} & =1.5,3,4.5,6, \ldots \\
+            b_{n} & =\frac{1}{2}, \frac{2}{3}, \frac{3}{4}, \frac{4}{5}, \ldots & d_{n} & =2,1, \frac{1}{2}, \frac{1}{4}, \ldots
+            \end{aligned}
+            $$</p>
+            <ol>
+                <li>State which sequence is arithmetic and find the common difference of the sequence.</li>
+                <li>State which sequence is geometric and find the common ratio of the sequence.</li>
+                <li>For the geometric sequence find the exact value of the eighth term. Give your answer as a fraction.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 4</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Only one of the following four sequences is arithmetic and only one of them is geometric.
+            <p>$$
+            \begin{array}{ll}
+            a_{n}=\frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \frac{1}{6}, \ldots & c_{n}=3,1, \frac{1}{3}, \frac{1}{9}, \ldots \\
+            b_{n}=2.5,5,7.5,10, \ldots & d_{n}=1,3,6,10, \ldots
+            \end{array}
+            $$</p>
+            <ol>
+                <li>State which sequence is geometric and find the common ratio of the sequence.</li>
+                <li>For the geometric sequence find the exact value of the sixth term. Give your answer as a fraction.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 5</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Consider the infinite geometric sequence $4480,-3360,2520,-1890, \ldots$
+            <ol>
+                <li>Find the common ratio, $r$.</li>
+                <li>Find the 20th term.</li>
+                <li>Find the exact sum of the infinite sequence.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 6</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            The table shows the first four terms of three sequences: $u_{n}, v_{n}$, and $w_{n}$.
+            <p>
+            <table>
+                <thead>
+                    <tr><th></th><th>$n$</th><th></th><th></th><th></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                    <tr><td>$u_{n}$</td><td>12</td><td>24</td><td>48</td><td>72</td></tr>
+                    <tr><td>$v_{n}$</td><td>12</td><td>24</td><td>36</td><td>48</td></tr>
+                    <tr><td>$w_{n}$</td><td>12</td><td>24</td><td>48</td><td>96</td></tr>
+                </tbody>
+            </table>
+            </p>
+            <ol>
+                <li>State which sequence is<ol>
+                    <li>arithmetic;</li>
+                    <li>geometric.</li>
+                </ol></li>
+                <li>Find the sum of the first 50 terms of the arithmetic sequence.</li>
+                <li>Find the exact value of the 13th term of the geometric sequence.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 7</h2>
+        <p><strong>Maximum mark: 7</strong></p>
+        <blockquote>
+            An arithmetic sequence is given by $3,5,7, \ldots$
+            <ol>
+                <li>Write down the value of the common difference, $d$.</li>
+                <li>Find<ol>
+                    <li>$u_{10}$;</li>
+                    <li>$S_{10}$.</li>
+                </ol></li>
+                <li>Given that $u_{n}=253$, find the value of $n$.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 8</h2>
+        <p><strong>Maximum mark: 8</strong></p>
+        <blockquote>
+            Consider the infinite geometric sequence $9000,-7200,5760,-4608, \ldots$
+            <ol>
+                <li>Find the common ratio.</li>
+                <li>Find the 25th term.</li>
+                <li>Find the exact sum of the infinite sequence.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 9</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Jeremy invests $\$ 8000$ into a savings account that pays an annual interest rate of $5.5 \%$, compounded annually.
+            <ol>
+                <li>Write down a formula which calculates that total value of the investment after $n$ years.</li>
+                <li>Calculate the amount of money in the savings account after:
+                    <ol>
+                        <li>1 year;</li>
+                        <li>3 years.</li>
+                    </ol>
+                </li>
+                <li>Jeremy wants to use the money to put down a $\$ 10000$ deposit on an apartment. Determine if Jeremy will be able to do this within a 5 year timeframe.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 10</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Consider the following sequence of figures.
+            <div style="display:flex; justify-content:space-around;">
+                <figure>
+                    <img src="https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-03.jpg?height=215&width=135&top_left_y=2034&top_left_x=115" alt="Figure 1" style="max-width: 100px;">
+                    <figcaption>Figure 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-03.jpg?height=196&width=204&top_left_y=2035&top_left_x=275" alt="Figure 2" style="max-width: 100px;">
+                    <figcaption>Figure 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-03.jpg?height=223&width=312&top_left_y=2030&top_left_x=501" alt="Figure 3" style="max-width: 100px;">
+                    <figcaption>Figure 3</figcaption>
+                </figure>
+            </div>
+            Figure 1 contains 6 line segments.
+            <ol>
+                <li>Given that Figure $n$ contains 101 line segments, show that $n=20$.</li>
+                <li>Find the total number of line segments in the first 20 figures.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 11</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            A 3D printer builds a set of 49 Eiffel Tower Replicas in different sizes. The height of the largest tower in this set is 64 cm . The heights of successive smaller towers are $95 \%$ of the preceding larger tower, as shown in the diagram below.
+            <p>
+                <img src="https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-04.jpg?height=383&width=858&top_left_y=111&top_left_x=108" alt="Eiffel Tower Replicas" style="max-width: 100%;">
+            </p>
+            <ol>
+                <li>Find the height of the smallest tower in this set.</li>
+                <li>Find the total height if all 49 towers were placed one on top another.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 12</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Hannah buys a car for $\$ 24900$. The value of the car depreciates by $16 \%$ each year.
+            <ol>
+                <li>Find the value of the car after 10 years.</li>
+            </ol>
+            Patrick buys a car for $\$ 12000$. The car depreciates by a fixed percentage each year, and after 6 years it is worth $\$ 6200$.
+            <ol>
+                <li>Find the annual rate of depreciation of the car.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 13</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            A tennis ball bounces on the ground $n$ times. The heights of the bounces, $h_{1}, h_{2}, h_{3}, \ldots, h_{n}$, form a geometric sequence. The height that the ball bounces the first time, $h_{1}$, is 80 cm , and the second time, $h_{2}$, is 60 cm .
+            <ol>
+                <li>Find the value of the common ratio for the sequence.</li>
+                <li>Find the height that the ball bounces the tenth time, $h_{10}$.</li>
+                <li>Find the total distance travelled by the ball during the first six bounces (up and down). Give your answer correct to 2 decimal places.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 14</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            The third term, $u_{3}$, of an arithmetic sequence is 7 . The common difference of the sequence, $d_{1}$, is 3 .
+            <ol>
+                <li>Find $u_{1}$, the first term of the sequence.</li>
+                <li>Find $u_{60}$, the 60th term of sequence.</li>
+            </ol>
+            The first and fourth terms of this arithmetic sequence are the first two terms of a geometric sequence.
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 15</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            The fifth term, $u_{5}$, of a geometric sequence is 125 . The sixth term, $u_{6}$, is 156.25 .
+            <ol>
+                <li>Find the common ratio of the sequence.</li>
+                <li>Find $u_{1}$, the first term of the sequence.</li>
+                <li>Calculate the sum of the first 12 terms of the sequence.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 16</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            The fourth term, $u_{4}$, of a geometric sequence is 135 . The fifth term, $u_{5}$, is 81 .
+            <ol>
+                <li>Find the common ratio of the sequence.</li>
+                <li>Find $u_{1}$, the first term of the sequence.</li>
+                <li>Calculate the sum of the first 20 terms of the sequence.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 17</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            The fifth term, $u_{5}$, of an arithmetic sequence is 25 . The eleventh term, $u_{11}$, of the same sequence is 49 .
+            <ol>
+                <li>Find $d$, the common difference of the sequence.</li>
+                <li>Find $u_{1}$, the first term of the sequence.</li>
+                <li>Find $S_{100}$, the sum of the first 100 terms of the sequence.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 18</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            In an arithmetic sequence, $u_{5}=24, u_{13}=80$.
+            <ol>
+                <li>Find the common difference.</li>
+                <li>Find the first term.</li>
+                <li>Find the sum of the first 20 terms in the sequence.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 19</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            The first three terms of a geometric sequence are $u_{1}=32, u_{2}=-16, u_{3}=8$.
+            <ol>
+                <li>Find the value of the common ratio, $r$.</li>
+                <li>Find $u_{6}$.</li>
+                <li>Find $S_{\infty}$.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 20</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            In an arithmetic sequence, $u_{4}=12, u_{11}=-9$.
+            <ol>
+                <li>Find the common difference.</li>
+                <li>Find the first term.</li>
+                <li>Find the sum of the first 11 terms in the sequence.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 21</h2>
+        <p><strong>Maximum mark: 5</strong></p>
+        <blockquote>
+            In an arithmetic sequence, the sum of the 2nd and 6th term is 32 . Given that the sum of the first six terms is 120 , determine the first term and common difference of the sequence.
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 22</h2>
+        <p><strong>Maximum mark: 5</strong></p>
+        <blockquote>
+            An arithmetic sequence has first term 45 and common difference -1.5 .
+            <ol>
+                <li>Given that the $k$th term of the sequence is zero, find the value of $k$.</li>
+            </ol>
+            Let $S_{n}$ denote the sum of the first $n$ terms of the sequence.
+            <ol>
+                <li>Find the maximum value of $S_{n}$.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 23</h2>
+        <p><strong>Maximum mark: 5</strong></p>
+        <blockquote>
+            Maria invests $\$ 25000$ into a savings account that pays a nominal annual interest rate of $4.25 \%$, compounded monthly.
+            <ol>
+                <li>Calculate the amount of money in the savings account after 3 years.</li>
+                <li>Calculate the number of years it takes for the account to reach $\$ 40000$.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 24</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Greg has saved 2000 British pounds (GBP) over the last six months. He decided to deposit his savings in a bank which offers a nominal annual interest rate of $8 \%$, compounded monthly, for two years.
+            <ol>
+                <li>Calculate the total amount of interest Greg would earn over the two years. Give your answer correct to two decimal places.</li>
+            </ol>
+            Greg would earn the same amount of interest, compounded semi-annually, for two years if he deposits his savings in a second bank.
+            <ol>
+                <li>Calculate the nominal annual interest rate the second bank offers.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 25</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Emily deposits 2000 Australian dollars (AUD) into a bank account. The bank pays a nominal annual interest rate of $4 \%$, compounded monthly.
+            <ol>
+                <li>Find the amount of money that Emily will have in her bank account after 5 years. Give your answer correct to two decimal places.</li>
+            </ol>
+            Emily will withdraw the money back from her bank account when the amount reaches 3000 AUD.
+            <ol>
+                <li>Find the time, in months, until Emily withdraws the money from her bank account.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 26</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 27</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Julia wants to buy a house that requires a deposit of 74000 Australian dollars (AUD).
+            Julia is going to invest an amount of AUD in an account that pays a nominal annual interest rate of $5.5 \%$, compounded monthly.
+            <ol>
+                <li>Find the amount of AUD Julia needs to invest to reach 74000 AUD after 8 years. Give your answer correct to the nearest dollar.</li>
+            </ol>
+            Julia's parents offer to add 5000 AUD to her initial investment from part (a), however, only if she invests her money in a more reliable bank that pays a nominal annual interest rate only of $3.5 \%$, compounded quarterly.
+            <ol>
+                <li>Find the number of years it would take Julia to save the 74000 AUD if she accepts her parents money and follows their advice. Give your 3 answer correct to the nearest year.</li>
+            </ol>
+        </blockquote>
+    </div>
+
+    <div class="question-section">
+        <h2><span class="question-icon">📌</span> Question: 28</h2>
+        <p><strong>Maximum mark: 6</strong></p>
+        <blockquote>
+            Ali bought a car for $\$ 18000$. The value of the car depreciates by $10.5 \%$ each year.
+            <ol>
+                <li>Find the value of the car at the end of the first year.</li>
+                <li>Find the value of the car after 4 years.</li>
+                <li>Calculate the number of years it will take for the car to be worth exactly half its original value.</li>
+            </ol>
+        </blockquote>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+.difficulty-container {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.difficulty-button {
+  background: #ffffff; /* Color de fondo base */
+  background: linear-gradient(145deg, #f0f0f0, #e0e0e0); /* Degradado moderno */
+  color: #333;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.difficulty-button:hover {
+  background: linear-gradient(145deg, #e0e0e0, #d0d0d0);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+.difficulty-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100; /* Asegura que esté por encima de otros elementos */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 8px;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.difficulty-dropdown.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+.difficulty-dropdown a {
+  color: #333;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-weight: 500;
+}
+.difficulty-dropdown a:hover {
+  background-color: #f0f0f0;
+  color: #8d61caff !important; /* Un color de acento al pasar el mouse */
+}
+#exercises-content {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #111016;
+  /* === Cambios aquí para el tamaño fijo === */
+  height: 500px; /* Define una altura fija, por ejemplo 500 píxeles */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido es demasiado largo */
+}

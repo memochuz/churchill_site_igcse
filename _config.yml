@@ -1,11 +1,11 @@
 #-------------------------------
 # General Site Settings
-baseurl: "/churchill_site/"  # the subpath of your site, e.g. /blog
+baseurl: "/churchill_site_igcse"  # the subpath of your site, e.g. /blog
 url: "https://memochuz.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 github:
   owner_name: memochuz
-  repository_name: churchill_site
+  repository_name: churchill_site_igcse
 
 
 #-------------------------------

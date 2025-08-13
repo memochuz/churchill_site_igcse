@@ -1,15 +1,14 @@
 # 🎯 Easy 🟢
 
-## 📌 **Question: 1**  
-**Maximum mark per question: 1** 
-> Simplify the following expression, leaving all exponents positive.
->   1. Simplify: $\sqrt{49}$
->   2. Simplify: $\sqrt{81}$
->   3. Simplify: $\sqrt[3]{8}$
->   4. Simplify: $\sqrt[4]{16}$
->   5. Write in fractional exponent form: $\sqrt[5]{x^3}$
->   6. Simplify: $\sqrt{9 \cdot 4}$
->   7. Simplify: $\sqrt{\frac{25}{36}}$
->   8. Simplify: $2\sqrt{25}$
->   9. Simplify: $\sqrt{121}$
->   10. Write as a radical: $x^{\frac{3}{2}}$
+Simplify the following expression, leaving all exponents positive.
+
+>   1. $\sqrt{\frac{x^4y^{-2}}{9x ^{2}}}$  
+>   2. $\sqrt[3]{\frac{x^{-3}y^6}{8x^{-3}y^{3}}}$  
+>   3. $\sqrt{\frac{4x^{-2}y^4}{25{y ^{-6}}}}$  
+>   4. $\sqrt[4]{\frac{81x^8y^{-4}}{16}}$  
+>   5. $\sqrt{x^{-4}y^6}$  
+>   6. $\sqrt[3]{x^{-6}y^9}$  
+>   7. $\sqrt{\frac{49x^{-2}y^8}{36y^{-6}}}$  
+>   8. $\sqrt[3]{\frac{27x^{-3}y^{12}}{64x^{-6}y^{-3}}}$  
+>   9. $\sqrt{\frac{x^{-6}y^2}{100}}$  
+>   10. $\sqrt[4]{\frac{256x^{-4}y^{12}}{81}}$ 

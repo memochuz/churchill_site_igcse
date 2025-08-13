@@ -111,10 +111,20 @@ $$
 $$
 \frac{1}{5^{-4}} = 5^{4} = 625
 $$
+---
+### **h) Extra Rule of Negative Powers**
+$$
+\frac{a^{-n}}{b^{-m}} = \frac{b^m}{a^n}
+$$
+
+**Example**:  
+$$
+\frac{1}{5^{-4}} = 5^{4} = 625
+$$
 
 ---
 
-### **h) Power of a Product**
+### **i) Power of a Product**
 $$
 (a \cdot b)^n = a^n \cdot b^n
 $$
@@ -126,7 +136,7 @@ $$
 
 ---
 
-### **i) Power of a Quotient**
+### **j) Power of a Quotient**
 $$
 \left( \frac{a}{b} \right)^n = \frac{a^n}{b^n}
 $$
@@ -138,7 +148,7 @@ $$
 
 ---
 
-### **j) Combining Laws**
+### **k) Combining Laws**
 $$
 \frac{a^{k} \cdot c^{-n}}{b} = \frac{a^{k}}{b \cdot c^{n}}
 $$

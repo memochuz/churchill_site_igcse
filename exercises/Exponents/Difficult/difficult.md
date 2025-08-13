@@ -1,8 +1,7 @@
 # Difficult 🔴
 
-## 📌 **Question: 1**  
-**Maximum mark: 4** 
-> Simplify the following expression, leaving all exponents positive.
+Simplify the following expression, leaving all exponents positive.
+
 >   1. $(2a^{2}b^{-3})^{-2} \,/\, 4a^{-3}b^{2}=$
 >   1. $\left(\frac{18x^{5}y^{-4}}{6x^{2}y^{-2}}\right)^{-3}=$
 >   1. $\frac{(x^{3}y^{-2}z)^{3}}{x^{4}y^{5}z^{-2}}=$

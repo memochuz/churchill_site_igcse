@@ -1,7 +1,7 @@
 # Impossible ⚫
 
-## 📌 **Question: 1**  
-**Maximum mark: 4** 
+Read and understand the instructions for each exercise before you start.
+
 >   1. $\left( \frac{2x^{2}y^{3}}{z^{4}} \right)^{a} \cdot \left( \frac{4y^{2}z}{x^{3}} \right)^{b} \cdot \left( \frac{8z^{3}x}{y^{4}} \right)^{c}. \quad \text{Simplify if } 2a+3b+4c=0,\ a+b+c=0,\ \text{and } a-b+c=0$
 >   1. $\text{If } x = \left(a^{n}\right)^{\frac{1}{n-1}} \ \text{and} \ y = \left(a^{n+1}\right)^{\frac{1}{n}}, \ \text{find} \ \left( \frac{x}{y} \right)^{n} \ \text{in terms of} \ a$
 >   1. $\text{Simplify the expression: } \left(\frac{x^{k^{2} + 2k}}{x^{2k} \cdot x}\right)^{\frac{1}{k}}$

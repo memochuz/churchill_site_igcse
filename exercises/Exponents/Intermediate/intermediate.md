@@ -1,8 +1,7 @@
 # Medium 🟠
 
-## 📌 **Question: 1**  
-**Maximum mark: 3** 
-> Simplify the following expression, leaving all exponents positive.
+Simplify the following expression, leaving all exponents positive.
+
 >    1. $(4x^{2}y^{3})(2xy^{2})=$
 >    1. $\frac{15a^{5}b^{3}}{5a^{2}b}=$
 >    1. $(3x^{4})^{-2}=$

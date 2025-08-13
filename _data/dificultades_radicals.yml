@@ -1,0 +1,33 @@
+images:
+  - src: "/images/Nivel/easy.png"
+    alt: Dificultad fácil
+    title: "Easy"
+    phrase: "Everyone should be able to do these exercises."
+    background: "/images/Nivel/easy_background.png"
+    path: "/exercises/Radicals/Easy/easy.md"
+    content: "Breeze"
+    target-id: "radicals-content"
+  - src: "/images/Nivel/medium.png"
+    alt: Dificultad intermedia
+    title: "  Medium  "
+    phrase: "Everyone should be able to do it, but it might take some time."
+    background: "/images/Nivel/medium_background.png"
+    path: "/exercises/Radicals/Intermediate/intermediate.md"
+    content: "  Tricky  "
+    target-id: "radicals-content"
+  - src: "/images/Nivel/difficult.png"
+    alt: Dificultad difícil
+    title: "Difficult "
+    phrase: "Only some will be able to do them."
+    background: "/images/Nivel/difficult_background.png"
+    path: "/exercises/Radicals/Difficult/difficult.md"
+    content: "Yikes"
+    target-id: "radicals-content"
+  - src: "/images/Nivel/impossible.png"
+    alt: Dificultad imposible
+    title: "Impossible"
+    phrase: "You'll only be able to do them if you've mastered the topic."
+    background: "/images/Nivel/impossible_background.png"
+    path: "/exercises/Radicals/Impossible/impossible.md"
+    content: "Unfair"
+    target-id: "radicals-content"

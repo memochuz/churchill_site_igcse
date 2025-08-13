@@ -1,8 +1,7 @@
 # 🎯 Easy 🟢
 
-## 📌 **Question: 1**  
-**Maximum mark: 1** 
-> Simplify the following expression, leaving all exponents positive.
+Simplify the following expression, leaving all exponents positive.
+
 >    1. $3^2 \times 3^4 =$
 >    1. $5^7 \div 5^3= $
 >    1. $(2^3)^2=$

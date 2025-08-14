@@ -6,4 +6,3 @@ date: 2025-08-05
 image: '/images/Sequences/lin_seq.png'
 video_embed: https://www.youtube.com/embed/RAjTpz3yQ3Q?si=Xk1jEP3TfTaJbZo-
 ---
-No se 

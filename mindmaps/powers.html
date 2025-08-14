@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Powers","children":[{"content":"Laws of Exponents","children":[{"content":"Product of Powers","children":[{"content":"Rule: a^m * a^n = a^(m+n)","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"Example: 2^3 * 2^4 = 2^(3+4) = 2^7 = 128","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"h3","lines":"11,12"}},{"content":"Quotient of Powers","children":[{"content":"Rule: a^m / a^n = a^(m-n)","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Example: 5^6 / 5^2 = 5^(6-2) = 5^4 = 625","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"h3","lines":"15,16"}},{"content":"Power of a Power","children":[{"content":"Rule: (a<sup>m)</sup>n = a^(m*n)","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"Example: (3<sup>2)</sup>3 = 3^(2*3) = 3^6 = 729","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h3","lines":"19,20"}},{"content":"Power of a Product","children":[{"content":"Rule: (a*b)^n = a^n * b^n","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"Example: (2*3)^2 = 2^2 * 3^2 = 4 * 9 = 36","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"h3","lines":"23,24"}},{"content":"Power of a Quotient","children":[{"content":"Rule: (a/b)^n = a^n / b^n","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"Example: (4/2)^3 = 4^3 / 2^3 = 64 / 8 = 8","children":[],"payload":{"tag":"li","lines":"29,31"}}],"payload":{"tag":"h3","lines":"27,28"}},{"content":"Negative Powers","children":[{"content":"Rule (numerator): a^(-n) = 1 / a^n<br>\nExample: 2^(-3) = 1 / 2^3 = 1/8","children":[],"payload":{"tag":"li","lines":"32,34"}},{"content":"Rule (denominator): 1 / a^(-n) = a^n<br>\nExample: 1 / 2^(-3) = 2^3 = 8","children":[],"payload":{"tag":"li","lines":"34,36"}},{"content":"Rule (numerator &amp; denominator): a^(-m) / b^(-n) = b^n / a^m<br>\nExample: 2^(-2) / 3^(-3) = 3^3 / 2^2 = 27 / 4","children":[],"payload":{"tag":"li","lines":"36,39"}}],"payload":{"tag":"h3","lines":"31,32"}}],"payload":{"tag":"h2","lines":"10,11"}},{"content":"Laws of Radicals","children":[{"content":"Product Rule","children":[{"content":"Rule: &#x221a;a * &#x221a;b = &#x221a;(a*b)","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"Example: &#x221a;2 * &#x221a;8 = &#x221a;16 = 4","children":[],"payload":{"tag":"li","lines":"42,44"}}],"payload":{"tag":"h3","lines":"40,41"}},{"content":"Quotient Rule","children":[{"content":"Rule: &#x221a;(a/b) = &#x221a;a / &#x221a;b","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"Example: &#x221a;(9/4) = &#x221a;9 / &#x221a;4 = 3/2","children":[],"payload":{"tag":"li","lines":"46,48"}}],"payload":{"tag":"h3","lines":"44,45"}},{"content":"Power Rule","children":[{"content":"Rule: &#x221a;(a^n) = a^(n/2)","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"Example: &#x221a;(16^2) = 16^(2/2) = 16^1 = 16","children":[],"payload":{"tag":"li","lines":"50,52"}}],"payload":{"tag":"h3","lines":"48,49"}},{"content":"Simplifying Radicals","children":[{"content":"Example: &#x221a;50 = &#x221a;(25*2) = &#x221a;25 * &#x221a;2 = 5&#x221a;2","children":[],"payload":{"tag":"li","lines":"53,54"}}],"payload":{"tag":"h3","lines":"52,53"}}],"payload":{"tag":"h2","lines":"39,40"}}],"payload":{"tag":"h1","lines":"8,9"}},{"theme":"dark","colorFreezeLevel":3,"maxWidth":350,"initialExpandLevel":1})</script>
+</body>
+</html>

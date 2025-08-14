@@ -73,9 +73,9 @@ testimonials:
 
 testimonial_items:
   - name: "HW1 - Sequences"
-    image: "/images/Sequences/geo_seq_2.png"
-    designation: "IB1 Math SL"
-    content : "Remember, your homework is due this Thursday, August 10th, in class."
+    image: "/images/deadline.png"
+    designation: "IGCSE Math 1A and 1B"
+    content : "Remember, your homework is due this Tuesday, August 19th, in class."
 
   # - name: "Wade Warren"
   #   image: "/images/client-2.jpg"

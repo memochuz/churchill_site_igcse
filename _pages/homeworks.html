@@ -1,0 +1,40 @@
+---
+layout: default
+title: Homeworks
+permalink: /homeworks/
+image: 
+description: In this section, you will find homework assignments for the course. Each task comes with a downloadable PDF containing clear instructions. Complete the exercises on separate sheets (when indicated), show all steps, and keep your work neat and organized to receive full marks.
+page_cover: '/images/banner_7.png'
+---
+
+<!-- begin page -->
+<article class="page container">
+
+  <div class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.description %}
+  <div class="page-description">{{ page.description | markdownify }}</div>
+    <!-- {% elsif site.data.settings.contact.description %}
+    <p class="page-description">{{ site.data.settings.contact.description }}</p> -->
+    {% endif %}
+  </div>
+
+  {% if page.image %}
+  <div class="page-image">
+    <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <section class="tareas">
+    <!-- <h2>📝 Tareas</h2> -->
+    <div class="tareas-grid">
+      <a class="tarea-btn" href="{{ '/tareas/hw_radicals_exponents.pdf' | relative_url }}" target="_blank" rel="noopener">
+        <span class="tarea-icon">📝</span>
+        <span>Exponents and Radicals – Worksheet</span>
+      </a>
+    </div>
+  </section>
+
+
+</article>
+<!-- end page -->

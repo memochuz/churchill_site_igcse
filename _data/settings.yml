@@ -36,6 +36,8 @@ menu_settings:
       url: '/gallery'
     - title: '✍️ Exercises'
       url: '/blog'
+    - title: '📝 Homeworks'
+      url: '/homeworks'      
     # - title: '📔 Elements'
     #   url: '/elements/'
 

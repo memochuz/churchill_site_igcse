@@ -72,8 +72,8 @@ testimonials:
   testimonials_description:
 
 testimonial_items:
-  - name: "HW1 - Sequences"
-    image: "/images/deadline.png"
+  - name: "HW1 - Exponents and Radicals"
+    image: "/images/Nivel/difficult.png"
     designation: "IGCSE Math 1A and 1B"
     content : "Remember, your homework is due this Tuesday, August 19th, in class."
 

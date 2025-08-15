@@ -1,7 +1,7 @@
 ---
 title: "Powers and Exponents"
 markmap:
-  theme: dark
+  theme: default
   colorFreezeLevel: 3
   maxWidth: 350 
   initialExpandLevel: 4

@@ -105,7 +105,7 @@
 **Maximum mark: 6** 
 > Consider the following sequence of figures.
 >
-> <p align="center"><img src="https://memochuz.github.io/churchill_site_igcse/images/Sequences/ejer_10.png" width="400"></p>
+> <p align="center"><img src="https://memochuz.github.io/churchill_site_igcse/images/Sequences/ejer_10-invert.png" width="400"></p>
 >
 > Figure 1 contains 6 line segments.
 > 
@@ -117,11 +117,8 @@
 **Maximum mark: 6** 
 > A 3D printer builds a set of 49 Eiffel Tower Replicas in different sizes. The height of the largest tower in this set is 64 cm . The heights of successive smaller towers are $95 \%$ of the preceding larger tower, as shown in the diagram below.
 >
-
-<p align="center">
-  <img src="churchill_site_igcse/images/Sequences/ejer_11.png" width="400">
-</p>
-
+> <p align="center"><img src="https://memochuz.github.io/churchill_site_igcse/images/Sequences/ejer_11-invert.png" width="400"></p>
+>
 > 1. Find the height of the smallest tower in this set.
 > 2. Find the total height if all 49 towers were placed one on top another.
 

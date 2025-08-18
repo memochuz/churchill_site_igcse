@@ -17,13 +17,15 @@
 ## 📌 **Question: 54**  
 **Maximum mark: 13** 
 > 1. The following diagram shows [PQ], with length 4 cm . The line is divided into an infinite number of line segments. The diagram shows the first four segments.
-> ![](https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-14.jpg?height=73&width=532&top_left_y=1928&top_left_x=177)
-> 
+>
+> <p align="center"><img src="https://memochuz.github.io/churchill_site_igcse/images/Sequences/ejer_54-invert.png" width="400"></p>
+>
 > The length of the line segments are $m$ cm, $m^{2}$ cm, $m^{3}$ cm, $\ldots$, where $0<m<1$.
 > Show that $m=\frac{4}{5}$.
 >
 > 2. The following diagram shows [RS], with length $l$cm, where $l>1$. Squares with side lengths $n$ cm, $n^{2}$ cm, $n^{3}$ cm, $\ldots$, where $0<n<1$, are drawn along [RS]. This process is carried on indefinitely. The diagram shows the first four squares.
-> ![](https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-14.jpg?height=173&width=675&top_left_y=2258&top_left_x=159)
+>
+> <p align="center"><img src="https://memochuz.github.io/churchill_site_igcse/images/Sequences/ejer_54_2-invert.png" width="400"></p>
 > 
 > The total sum of the areas of all the squares is $\frac{25}{11}$. Find the value of $l$.
 
@@ -123,7 +125,8 @@
 ## 📌 **Question: 61**  
 **Maximum mark: 7** 
 > The sides of a square are 8 cm long. A new square is formed by joining the midpoints of the adjacent sides and two of the resulting triangles are shaded as shown. This process is repeated 5 more times to form the right hand diagram below.
-> ![](https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-17.jpg?height=156&width=336&top_left_y=319&top_left_x=114)
+>
+> <p align="center"><img src="https://memochuz.github.io/churchill_site_igcse/images/Sequences/ejer_61-invert.png" width="400"></p>
 > 
 > 1. Find the total area of the shaded region in the right hand diagram above.
 > 2. Find the total area of the shaded region if the process is repeated indefinitely.

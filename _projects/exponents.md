@@ -1,6 +1,19 @@
 ---
 title: Laws of Exponents
-description: The topic of laws of exponents focuses on the rules that govern how to work with powers. Students learn to apply properties such as multiplying and dividing powers with the same base, raising a power to another power, and working with zero and negative exponents. A key skill is simplifying expressions by correctly applying these rules, which makes it easier to handle large or small numbers and algebraic expressions. This knowledge is then used to solve problems, showing an understanding of how exponents behave and how they can be manipulated in different mathematical contexts.
+description: |
+      <p>The topic of laws of exponents focuses on the rules that govern how to work with powers. Students learn to apply properties such as multiplying and dividing powers with the same base, raising a power to another power, and working with zero and negative exponents. A key skill is simplifying expressions by correctly applying these rules, which makes it easier to handle large or small numbers and algebraic expressions. This knowledge is then used to solve problems, showing an understanding of how exponents behave and how they can be manipulated in different mathematical contexts.</p>
+
+      <hr>
+
+      <h1>Class Objectives</h1>
+      <ul>
+        <li><b>Apply</b> the rules for multiplying and dividing powers with the same base.</li>
+        <li><b>Simplify</b> expressions that involve raising a power to another power.</li>
+        <li><b>Work with</b> zero and negative exponents to correctly simplify expressions.</li>
+        <li><b>Combine</b> all the laws of exponents to simplify complex algebraic expressions.</li>
+        <li><b>Solve</b> problems by demonstrating an understanding of how to manipulate exponents in various mathematical contexts.</li>
+      </ul>
+
 date: 2025-08-11
 categories: [Bimester-1, Algebra]
 image: '/images/Exponents/laws_exponents.png'
@@ -168,7 +181,7 @@ $$
 
 ---
 
-📌 **Practice Exercise**:  
+## 📌 **Practice Exercise**:  
 Simplify:
 $$
 \frac{2^{-3} \cdot 4^{2}}{8^{-1}}

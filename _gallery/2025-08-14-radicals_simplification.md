@@ -1,28 +1,14 @@
 ---
-title: "🧠 Sequences"
-date: 2025-08-05
-description: Este es un mapa mental del del tema de secuencias en matemáticas, que incluye ejemplos de sucesiones aritméticas y geométricas, así como una breve introducción a las series.
+title: "🧠 Radicals Simplification"
+date: 2025-08-14
+description: "This mind map shows the steps for simplifying radicals"
 gallery_columns: "1"
 cover: "/images/Mindmaps/fractal_tree.png"
-# caption: "Gallery / <a href='https://unsplash.com/' target='_blank'>Unsplash</a>"
-# images:
-#   - image: "/images/california-1.jpg"
-#     alt: Beach and sunset
-#   - image: "/images/california-2.jpg"
-#     alt: Sunset
-#   - image: "/images/california-3.jpg"
-#     alt: Palm trees
-#   - image: "/images/california-4.jpg"
-#     alt: My car
-#   - image: "/images/california-5.jpg"
-#     alt: Safeguards
-#   - image: "/images/california-6.jpg"
-#     alt: Mountains
 ---
-## Sequences and Series Mind Map
+## Radicals Simplification Mind Map
 
 
-{% include mindmap_viewer.html src="mindmaps/sequences.html" %}
+{% include mindmap_viewer.html src="mindmaps/radicals_simplification.html" %}
 
 
 <!-- <div id="mindmaps">

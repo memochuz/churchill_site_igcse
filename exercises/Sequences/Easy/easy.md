@@ -22,14 +22,11 @@
 ## 📌 **Question: 3**  
 **Maximum mark: 6** 
 > Only one of the following four sequences is arithmetic and only one of them is geometric.
-> 
-> $$
-> \begin{aligned}
-> a_{n} & =1,5,10,15, \ldots & c_{n} & =1.5,3,4.5,6, \ldots \\
-> b_{n} & =\frac{1}{2}, \frac{2}{3}, \frac{3}{4}, \frac{4}{5}, \ldots & d_{n} & =2,1, \frac{1}{2}, \frac{1}{4}, \ldots
-> \end{aligned}
-> $$
-> 
+> $a_{n} =1,5,10,15,\ldots$ 
+> $c_{n} =1.5,3,4.5,6, \ldots $ 
+> $b_{n} =\frac{1}{2}, \frac{2}{3}, \frac{3}{4}, \frac{4}{5},  \ldots$
+> $d_{n}=2,1, \frac{1}{2}, \frac{1}{4}, \ldots$  
+> 1. State which sequence is arithmetic and find the common difference of the sequence.
 > 1. State which sequence is arithmetic and find the common difference of the sequence.
 > 2. State which sequence is geometric and find the common ratio of the sequence.
 > 3. For the geometric sequence find the exact value of the eighth term. Give your answer as a fraction.
@@ -38,16 +35,12 @@
 ## 📌 **Question: 4**  
 **Maximum mark: 6** 
 > Only one of the following four sequences is arithmetic and only one of them is geometric.
-> 
-> $$
-> \begin{array}{ll}
-> a_{n}=\frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \frac{1}{6}, \ldots & c_{n}=3,1, \frac{1}{3}, \frac{1}{9}, \ldots \\
-> b_{n}=2.5,5,7.5,10, \ldots & d_{n}=1,3,6,10, \ldots
-> \end{array}
-> $$
-> 
-> 2. State which sequence is geometric and find the common ratio of the sequence.
-> 3. For the geometric sequence find the exact value of the sixth term. Give your answer as a fraction.
+> $a_{n}=\frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \frac{1}{6}, \ldots$ 
+> $c_{n}=3,1, \frac{1}{3}, \frac{1}{9}, \ldots$ 
+> $b_{n}=2.5,5,7.5,10, \ldots$ 
+> $d_{n}=1,3,6,10, \ldots$ 
+> 1. State which sequence is geometric and find the common ratio of the sequence.
+> 2. For the geometric sequence find the exact value of the sixth term. Give your answer as a fraction.
 
 ---
 ## 📌 **Question: 5**  
@@ -71,10 +64,10 @@
 > | $w_{n}$ | 12 | 24 | 48 | 96 |
 > 
 > 1. State which sequence is
-> 1. arithmetic;
-> 1. geometric.
-> 1. Find the sum of the first 50 terms of the arithmetic sequence.
-> 1. Find the exact value of the 13 th term of the geometric sequence.
+>       * arithmetic;
+>       * geometric.
+> 2. Find the sum of the first 50 terms of the arithmetic sequence.
+> 3. Find the exact value of the 13 th term of the geometric sequence.
 
 ---
 ## 📌 **Question: 7**  
@@ -82,10 +75,10 @@
 > An arithmetic sequence is given by $3,5,7, \ldots$
 > 
 > 1. Write down the value of the common difference, $d$.
-> 1. Find
-> 1. $u_{10}$;
-> 1. $S_{10}$.
-> 1. Given that $u_{n}=253$, find the value of $n$.
+> 2. Find:
+>       * $u_{10}$;
+>       * $S_{10}$.
+> 3. Given that $u_{n}=253$, find the value of $n$.
 
 ---
 ## 📌 **Question: 8**  
@@ -99,26 +92,21 @@
 ---
 ## 📌 **Question: 9**  
 **Maximum mark: 6** 
-> Jeremy invests $\$ 8000$ into a savings account that pays an annual interest rate of $5.5 \%$, compounded annually.
+> Jeremy invests  $8000$ into a savings account that pays an annual interest rate of $5.5$ \%, compounded annually.
 > 
 > 1. Write down a formula which calculates that total value of the investment after $n$ years.
 > 2. Calculate the amount of money in the savings account after:
-> 3. 1 year;
-> 2. 3 years.
-> 4. Jeremy wants to use the money to put down a $\$ 10000$ deposit on an apartment. Determine if Jeremy will be able to do this within a 5 year timeframe.
+>       * 1 year;
+>       * 3 years.
+> 3. Jeremy wants to use the money to put down a $10000$ deposit on an apartment. Determine if Jeremy will be able to do this within a 5 year timeframe.
 
 ---
 ## 📌 **Question: 10**  
 **Maximum mark: 6** 
 > Consider the following sequence of figures.
-> ![](https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-03.jpg?height=215&width=135&top_left_y=2034&top_left_x=115)
-> 
-> Figure 1
-> ![](https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-03.jpg?height=196&width=204&top_left_y=2035&top_left_x=275)
-> 
-> Figure 2
-> ![](https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-03.jpg?height=223&width=312&top_left_y=2030&top_left_x=501)
-> 
+>
+> <p align="center"><img src="https://memochuz.github.io/churchill_site_igcse/images/Sequences/ejer_10.png" width="400"></p>
+>
 > Figure 1 contains 6 line segments.
 > 
 > 1. Given that Figure $n$ contains 101 line segments, show that $n=20$.
@@ -128,19 +116,24 @@
 ## 📌 **Question: 11**  
 **Maximum mark: 6** 
 > A 3D printer builds a set of 49 Eiffel Tower Replicas in different sizes. The height of the largest tower in this set is 64 cm . The heights of successive smaller towers are $95 \%$ of the preceding larger tower, as shown in the diagram below.
-> ![](https://cdn.mathpix.com/cropped/2025_03_19_d4619bdf3a4ca0660ec7g-04.jpg?height=383&width=858&top_left_y=111&top_left_x=108)
-> 
+>
+
+<p align="center">
+  <img src="churchill_site_igcse/images/Sequences/ejer_11.png" width="400">
+</p>
+
 > 1. Find the height of the smallest tower in this set.
 > 2. Find the total height if all 49 towers were placed one on top another.
 
 ---
 ## 📌 **Question: 12**  
 **Maximum mark: 6** 
-> Hannah buys a car for $\$ 24900$. The value of the car depreciates by $16 \%$ each year.
+> Hannah buys a car for $24900$. The value of the car depreciates by $16$ \% each year.
 > 
 > 1. Find the value of the car after 10 years.
 > 
-> Patrick buys a car for $\$ 12000$. The car depreciates by a fixed percentage each year, and after 6 years it is worth $\$ 6200$.
+> Patrick buys a car for $12000$. The car depreciates by a fixed percentage each year, and after 6 years it is worth $6200$.
+>
 > 2. Find the annual rate of depreciation of the car
 
 ---
@@ -231,40 +224,51 @@
 > 1. Given that the $k$ th term of the sequence is zero, find the value of $k$.
 > 
 > Let $S_{n}$ denote the sum of the first $n$ terms of the sequence.
+>
 > 2. Find the maximum value of $S_{n}$.
 
 ---
 ## 📌 **Question: 23**  
 **Maximum mark: 5** 
-> Maria invests $\$ 25000$ into a savings account that pays a nominal annual interest rate of $4.25 \%$, compounded monthly.
+> Maria invests $25000$ into a savings account that pays a nominal annual interest rate of $4.25$  \%, compounded monthly.
 > 
 > 1. Calculate the amount of money in the savings account after 3 years.
-> 2. Calculate the number of years it takes for the account to reach $\$ 40000$.
+> 2. Calculate the number of years it takes for the account to reach $40000$.
 
 ---
 ## 📌 **Question: 24**  
 **Maximum mark: 6** 
-> Greg has saved 2000 British pounds (GBP) over the last six months. He decided to deposit his savings in a bank which offers a nominal annual interest rate of $8 \%$, compounded monthly, for two years.
+> Greg has saved 2000 British pounds (GBP) over the last six months. He decided to deposit his savings in a bank which offers a nominal annual interest rate of $8$ \%, compounded monthly, for two years.
 > 
 > 1. Calculate the total amount of interest Greg would earn over the two years. Give your answer correct to two decimal places.
 > 
 > Greg would earn the same amount of interest, compounded semi-annually, for two years if he deposits his savings in a second bank.
+>
 > 2. Calculate the nominal annual interest rate the second bank offers.
 
 ---
 ## 📌 **Question: 25**  
 **Maximum mark: 6** 
-> Emily deposits 2000 Australian dollars (AUD) into a bank account. The bank pays a nominal annual interest rate of $4 \%$, compounded monthly.
+> Emily deposits 2000 Australian dollars (AUD) into a bank account. The bank pays a nominal annual interest rate of $4$ \%, compounded monthly.
 > 
 > 1. Find the amount of money that Emily will have in her bank account after 5 years. Give your answer correct to two decimal places.
-> 
+>
 > Emily will withdraw the money back from her bank account when the amount reaches 3000 AUD.
+>
 > 2. Find the time, in months, until Emily withdraws the money from her bank account.
 
 ---
 ## 📌 **Question: 26**  
 **Maximum mark: 6** 
-
+>In this question give all answers correct to two decimal places.
+>
+>Mia deposits $4000$ Australian dollars (AUD) into a bank account. The bank pays a nominal annual interest rate of $6\%$, compounded semi-annually.
+>
+> 1. Find the amount of interest that Mia will earn over the next 2.5 years.
+>
+> Ella also deposits AUD into a bank account. Her bank pays a nominal annual interest rate of 4 \%, compounded monthly. In 2.5 years, the total amount in Ella's account will be 4000 AUD.
+>
+> 2. Find the amount that Ella deposits in the bank account.
 ---
 ## 📌 **Question: 27**  
 **Maximum mark: 6** 
@@ -273,13 +277,14 @@
 > 
 > 1. Find the amount of AUD Julia needs to invest to reach 74000 AUD after 8 years. Give your answer correct to the nearest dollar.
 > 
-> Julia's parents offer to add 5000 AUD to her initial investment from part (a), however, only if she invests her money in a more reliable bank that pays a nominal annual interest rate only of $3.5 \%$, compounded quarterly.
+> Julia's parents offer to add 5000 AUD to her initial investment from part (a), however, only if she invests her money in a more reliable bank that pays a nominal annual interest rate only of $3.5$ \%, compounded quarterly.
+>
 > 2. Find the number of years it would take Julia to save the 74000 AUD if she accepts her parents money and follows their advice. Give your 3 answer correct to the nearest year.
 
 ---
 ## 📌 **Question: 28**  
 **Maximum mark: 6** 
-> Ali bought a car for $\$ 18000$. The value of the car depreciates by $10.5 \%$ each year.
+> Ali bought a car for $18000$. The value of the car depreciates by $10.5$\% each year.
 > 
 > 1. Find the value of the car at the end of the first year.
 > 2. Find the value of the car after 4 years.

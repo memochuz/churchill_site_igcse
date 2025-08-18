@@ -1,6 +1,18 @@
 ---
 title: Laws of Radicals
-description: The topic of laws of radicals focuses on the rules that govern how to work with roots. Students learn to apply properties such as multiplying and dividing roots with the same index, raising a root to another power, and working with zero and negative indices. A key skill is simplifying expressions by correctly applying these rules, which makes it easier to handle large or small numbers and algebraic expressions. This knowledge is then used to solve problems, showing an understanding of how radicals behave and how they can be manipulated in different mathematical contexts.
+description: |
+    <p>
+      The topic of laws of radicals focuses on the rules that govern how to work with roots. Students learn to apply properties such as multiplying and dividing roots with the same index, raising a root to another power, and working with zero and negative indices. A key skill is simplifying expressions by correctly applying these rules, which makes it easier to handle large or small numbers and algebraic expressions. This knowledge is then used to solve problems, showing an understanding of how radicals behave and how they can be manipulated in different mathematical contexts.
+    </p>
+    <hr>
+    <h1>Class Objectives</h1>
+    <ul>
+      <li><b>Simplify</b> radical expressions containing variables by dividing the variable's exponent by the radical's index.</li>
+      <li><b>Convert</b> between radical form and fractional exponent form, and use this skill to simplify expressions.</li>
+      <li><b>Simplify nested radicals</b> (a radical within another) by multiplying the indices.</li>
+      <li><b>Apply</b> a combination of these techniques to simplify complex expressions involving variables, fractional exponents, and nested radicals.</li>
+    </ul>
+
 date: 2025-08-13
 categories: [Bimester-1, Algebra]
 image: '/images/Radicals/laws_radicals.png'
@@ -99,9 +111,9 @@ $\sqrt{a + b} \neq \sqrt{a} + \sqrt{b}$ in general.
 
 ---
 
-📌 **Practice Exercise**:  
+## 📌 **Practice Exercise**:  
 Simplify:
 $$
-\frac{\sqrt[3]{54} \cdot \sqrt[3]{16}}{\sqrt[3]{2}}
+\frac{\sqrt[3]{a^{6}} \cdot \sqrt[3]{a^{3}b^{9}}{\sqrt{a^{8}b^{16}}}
 $$
 and express the result in simplest radical form.

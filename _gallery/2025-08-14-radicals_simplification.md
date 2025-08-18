@@ -3,7 +3,7 @@ title: "🧠 Radicals Simplification"
 date: 2025-08-14
 description: "This mind map shows the steps for simplifying radicals"
 gallery_columns: "1"
-cover: "/images/Mindmaps/fractal_tree.png"
+cover: "/images/Mindmaps/cerebro1.png"
 ---
 ## Radicals Simplification Mind Map
 

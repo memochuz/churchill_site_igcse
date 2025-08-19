@@ -98,7 +98,7 @@ The simplified form of $\sqrt[3]{108}$ is $3\sqrt[3]{4}$.
 
 * **Always use prime factorization**: This is the most reliable method. It breaks down the number under the radical into its prime factors, making it easy to identify groups that can be pulled out.
 * **Recognize perfect squares and cubes**: Over time, you'll learn to spot perfect squares (like 4, 9, 16) and cubes (like 8, 27, 64). This can significantly speed up the process.
-* **Incorrectly grouping factors**: Remember to group factors according to the radical's index. For a cube root ($ \sqrt[3]( \ldots ) $), you need groups of three, not two.
+* **Incorrectly grouping factors**: Remember to group factors according to the radical's index. For a cube root ($\sqrt[3]{\ldots}$), you need groups of three, not two.
 
 ---
 

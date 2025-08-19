@@ -108,3 +108,101 @@ $$
 \sqrt[3]{248}
 $$
 and express the result in simplest radical form.
+
+## **4. Adding and Subtracting Radicals**
+
+Once radicals are simplified, they can sometimes be added or subtracted. The key idea is that radicals behave like “like terms” in algebra: you can only combine them if they have the same index (square, cube, etc.) and the same number inside (called the radicand).
+
+### **Step 1: Simplify each radical first**
+
+Always begin by simplifying each radical into its simplest form.
+
+**Example:**
+
+$$
+\sqrt{50} + \sqrt{18}
+$$
+
+Simplify each term:
+
+$$
+\sqrt{50} = 5\sqrt{2}, \quad \sqrt{18} = 3\sqrt{2}
+$$
+
+Now both terms are multiples of $\sqrt{2}$, so:
+
+$$
+5\sqrt{2} + 3\sqrt{2} = 8\sqrt{2}
+$$
+
+### **Step 2: Only combine like radicals**
+
+If the radicals are not the same, they cannot be directly combined.
+
+**Example:**
+
+$$
+\sqrt{27} + \sqrt{20}
+$$
+
+Simplify each term:
+
+$$
+\sqrt{27} = 3\sqrt{3}, \quad \sqrt{20} = 2\sqrt{5}
+$$
+
+Since one term has $\sqrt{3}$ and the other has $\sqrt{5}$, they are not “like terms” and cannot be combined further. The final answer is:
+
+$$
+3\sqrt{3} + 2\sqrt{5}
+$$
+
+### **Step 3: Cube roots and higher roots**
+
+The same rules apply with cube roots, fourth roots, etc. You can only combine them if they have the same index and same radicand.
+
+**Example:**
+
+$$
+\sqrt[3]{16} + \sqrt[3]{54}
+$$
+
+Simplify each term:
+
+$$
+\sqrt[3]{16} = 2\sqrt[3]{2}, \quad \sqrt[3]{54} = 3\sqrt[3]{2}
+$$
+
+Now both terms are multiples of $\sqrt[3]{2}$, so:
+
+$$
+2\sqrt[3]{2} + 3\sqrt[3]{2} = 5\sqrt[3]{2}
+$$
+
+### **Step 4: Mixed indices cannot be combined**
+
+If the radicals have different indices, such as a square root and a cube root, they cannot be added or subtracted.
+
+**Example:**
+
+$$
+\sqrt{5} + \sqrt[3]{5}
+$$
+
+Since one is a square root and the other is a cube root, they stay as they are:
+
+$$
+\sqrt{5} + \sqrt[3]{5}
+$$
+
+---
+
+## 📌 **Practice Exercises**
+
+Simplify and combine if possible:
+
+1. $\sqrt{72} + \sqrt{18}$
+2. $\sqrt[3]{24} + \sqrt[3]{81}$
+3. $\sqrt{50} + \sqrt{32} - 8$
+4. $\sqrt{27} + \sqrt[3]{8}$
+5. $\sqrt[4]{16} + \sqrt[4]{81}$

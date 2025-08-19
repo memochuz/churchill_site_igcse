@@ -3,7 +3,7 @@ layout: video
 title: Simplification of Radicals
 description: These videos provide a clear and practical guide to the simplification of radicals, focusing on square roots and including a variety of worked examples. They demonstrate step-by-step methods to simplify expressions, helping students build confidence and understanding in handling radicals effectively.
 date: 2025-08-05
-image: '/images/Exponents/laws_exponents_video.png'
+image: '/images/Radicals/simp_radicals_banner.png'
 video_embed: https://www.youtube.com/embed/HaoGK8L93Q4?si=XoC6uwsHjdcJXruM
 video_embeds:
     - https://www.youtube.com/embed/BPY7gmT32XE?si=HT0SV4ZX3d7tIb9-

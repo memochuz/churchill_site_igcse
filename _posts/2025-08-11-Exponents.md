@@ -8,7 +8,7 @@ tags: [Homework, Exponents]
 ---
 
 {% include card-3d-catalogo-new.html
-  title="Leyes de Exponentes"
+  title="Laws of Exponents"
   coleccion=site.data.dificultades_exponents.images
   target-id="exponents-content"
 %}

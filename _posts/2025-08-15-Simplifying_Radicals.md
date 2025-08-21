@@ -8,7 +8,7 @@ tags: [Homework, Radicals]
 ---
 
 {% include card-3d-catalogo-new.html
-  title="Leyes de Radicals"
+  title="Simplification of Radicals"
   coleccion=site.data.dificultades_simplifying_radicals.images
   target-id="radicals-content"
 %}

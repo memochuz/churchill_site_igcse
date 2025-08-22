@@ -73,14 +73,14 @@ testimonials:
 
 testimonial_items:
   - name: "HW1 - Exponents and Radicals"
-    image: "/images/Nivel/difficult.png"
+    image: "/images/Nivel/medium.png"
     designation: "IGCSE Math 1A and 1B"
     content : "Remember, your homework is due this Tuesday, August 19th, in class."
 
-  # - name: "Wade Warren"
-  #   image: "/images/client-2.jpg"
-  #   designation: "DevOps Engineer"
-  #   content : "Working with this creative powerhouse was an enlightening experience. Their brilliance in design thinking and creative solutions brought our project to life in ways we hadn't imagined. The team's passion for innovation is truly infectious."
+  - name: "MQ - Radicals and Exponents Quiz"
+    image: "/images/Nivel/impossible.png"
+    designation: "IGCSE Math 1A and 1B"
+    content : "1A August 26th and 1B August 28th"
 
   # - name: "Jenny Wilson"
   #   image: "/images/client-3.jpg"

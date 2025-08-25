@@ -1,6 +1,6 @@
 ---
 layouts: post
-title: "Exponents Exercises"
+title: "✍️ Exponents Exercises"
 # description: "Lighting plays"
 date: 2025-08-11
 image: '/images/Exponents/laws_exponents.png'

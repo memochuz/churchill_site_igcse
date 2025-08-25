@@ -1,5 +1,5 @@
 ---
-title: Laws of Exponents
+title: 📝 Laws of Exponents
 description: |
       <p>The topic of laws of exponents focuses on the rules that govern how to work with powers. Students learn to apply properties such as multiplying and dividing powers with the same base, raising a power to another power, and working with zero and negative exponents. A key skill is simplifying expressions by correctly applying these rules, which makes it easier to handle large or small numbers and algebraic expressions. This knowledge is then used to solve problems, showing an understanding of how exponents behave and how they can be manipulated in different mathematical contexts.</p>
 

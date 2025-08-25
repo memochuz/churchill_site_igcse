@@ -1,5 +1,5 @@
 ---
-title: Laws of Radicals
+title: 📝 Laws of Radicals
 description: |
     <p>
       The topic of laws of radicals focuses on the rules that govern how to work with roots. Students learn to apply properties such as multiplying and dividing roots with the same index, raising a root to another power, and working with zero and negative indices. A key skill is simplifying expressions by correctly applying these rules, which makes it easier to handle large or small numbers and algebraic expressions. This knowledge is then used to solve problems, showing an understanding of how radicals behave and how they can be manipulated in different mathematical contexts.

@@ -1,6 +1,6 @@
 ---
 layouts: post
-title: "Radicals Simplification Exercises"
+title: "✍️ Radicals Simplification Exercises"
 # description: "Lighting plays"
 date: 2025-08-13
 image: '/images/Radicals/simplifying_radicals.png'

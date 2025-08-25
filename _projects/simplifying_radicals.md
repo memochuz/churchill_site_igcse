@@ -1,5 +1,5 @@
 ---
-title: Simplifying Radicals
+title: 📝 Simplifying Radicals
 description: |
     <p>The topic of simplifying radicals focuses on breaking down radical expressions to their most basic form. Students will learn to apply the properties of roots by first understanding the method of prime factorization. A key skill is identifying perfect squares, cubes, and other powers within a number under the radical. By correctly applying this process, complex radical expressions become easier to manage, making it a foundational skill for further algebraic work. This knowledge is then used to solve problems, showing an understanding of how to manipulate radicals in different mathematical contexts.</p>
     <hr>

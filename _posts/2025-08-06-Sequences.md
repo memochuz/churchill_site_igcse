@@ -1,6 +1,6 @@
 ---
 layouts: post
-title: "Sequences Exercises"
+title: "✍️ Sequences Exercises"
 # description: "Lighting plays"
 date: 2025-04-15 15:01:35 +0600
 image: '/images/Sequences/geo_seq_2.png'

@@ -1,6 +1,6 @@
 ---
 layouts: post
-title: "Rationalization Exercises"
+title: "✍️ Rationalization Exercises"
 # description: "Lighting plays"
 date: 2025-08-13
 image: '/images/Rationalization/rationalization.png'

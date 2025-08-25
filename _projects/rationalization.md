@@ -1,5 +1,5 @@
 ---
-title: Rationalization
+title: 📝 Rationalization
 description: |
     <p>The topic of rationalization of fractions focuses on transforming fractions that contain radicals in the denominator into an equivalent form with a rational denominator. Students will learn to apply the process of multiplying by a carefully chosen form of 1, often using the radical itself or its conjugate. A key skill is recognizing which factor will eliminate the radical from the denominator. By applying this method, expressions become easier to interpret and use in subsequent algebraic operations. Rationalization is not only a tool for simplification, but also an important convention in presenting mathematical answers clearly.</p>
     <hr>

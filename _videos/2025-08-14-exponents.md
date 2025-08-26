@@ -3,7 +3,7 @@ layout: video
 title: Laws of Exponents
 description: These videos cover the fundamental laws of exponents, including the product of powers, power of a power, and quotient of powers. They explain how to simplify expressions using these rules and provide examples to illustrate each concept. The videos are designed to help students understand and confidently apply the laws of exponents.
 date: 2025-08-05
-image: '/images/Exponents/laws_exponents_video.png'
+image: '/images/Videos/exponents_videos.png'
 video_embed: https://www.youtube.com/embed/ZLlwb4syPx4?si=RYpjojp-KWYo7m3C
 video_embeds:
     - https://www.youtube.com/embed/tHCM6qNdVSc?si=IUY2mNaQDjPDmpZZ

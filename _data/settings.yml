@@ -72,15 +72,15 @@ testimonials:
   testimonials_description:
 
 testimonial_items:
-  - name: "HW1 - Exponents and Radicals"
+  - name: "HW2 - Rationalization and Algebraic Fractions"
     image: "/images/Nivel/medium.png"
     designation: "IGCSE Math 1A and 1B"
-    content : "Remember, your homework is due this Tuesday, August 19th, in class."
+    content : "Remember, your homework is due this Wednesday, September 10, in class."
 
-  - name: "MQ - Radicals and Exponents Quiz"
+  - name: "MQ2 - Rationalization and Algebraic Fractions"
     image: "/images/Nivel/impossible.png"
     designation: "IGCSE Math 1A and 1B"
-    content : "1A August 26th and 1B August 28th"
+    content : "1A and 1B, September 12"
 
   # - name: "Jenny Wilson"
   #   image: "/images/client-3.jpg"

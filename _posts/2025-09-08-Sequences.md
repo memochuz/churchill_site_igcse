@@ -2,7 +2,7 @@
 layouts: post
 title: "✍️ Sequences Exercises"
 # description: "Lighting plays"
-date: 2025-04-15 15:01:35 +0600
+date: 2025-05-09
 image: '/images/Sequences/geo_seq_2.png'
 tags: [Homework, Sequences, Series]
 ---
@@ -24,10 +24,10 @@ tags: [Homework, Sequences, Series]
 </div> -->
 
 {% include card-3d-catalogo-new.html
-  title="Leyes de Exponentes"
+  title="Sequences"
   coleccion=site.data.dificultades_sequences.images
-  target-id="exponents-content"
+  target-id="sequences-content"
 %}
 
-<div id="exponents-content" class="dark-scrollbar-container">
+<div id="sequences-content" class="dark-scrollbar-container">
   </div>

@@ -10,3 +10,13 @@ video_embeds:
     - https://www.youtube.com/embed/9cKBB9VE6Sg?si=1NnLcFQtdMWEhkOJ
 ---
 
+{% if page.video_embeds %}
+  <div class="post-videos">
+    {% for video in page.video_embeds %}
+    <div class="post-video__wrap" style="margin-bottom: 1.5rem;">
+      <iframe src="{{ video }}" loading="lazy" width="640" height="360" frameborder="0"
+              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}

@@ -1,7 +1,7 @@
 ---
 layout: video
 title: Algebraic Fractions
-description: This video shows some examples of how to add and subtract algebraic fractions using the least common multiple (LCM). In some cases, this approach is the same as the quick method: multiplying the denominators and cross-multiplying.
+description: This video shows some examples of how to add and subtract algebraic fractions using the least common multiple (LCM). In some cases, this approach is the same as the quick method, multiplying the denominators and cross-multiplying.
 date: 2025-09-09
 image: '/images/Videos/radicals_videos.png'
 video_embed: https://www.youtube.com/embed/Jvf_zDyd7KI?si=rlRE9bSzt3aclQ1Q

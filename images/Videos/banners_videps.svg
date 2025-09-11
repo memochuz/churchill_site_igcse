@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:lockguides="true"
-     inkscape:zoom="0.085481465"
-     inkscape:cx="4082.7564"
-     inkscape:cy="2790.0785"
+     inkscape:zoom="0.095487251"
+     inkscape:cx="3848.6813"
+     inkscape:cy="2790.9485"
      inkscape:window-width="1920"
      inkscape:window-height="962"
      inkscape:window-x="0"
@@ -86,6 +86,72 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(522.06422,-8.2183749)">
+    <g
+       id="g46"
+       clip-path="url(#clipPath28)"
+       transform="matrix(2.5035639,0,0,2.5035639,299.81969,789.36439)">
+      <rect
+         style="fill:#800080;fill-opacity:0.988235;stroke:#800080;stroke-width:3.98856"
+         id="rect43"
+         width="245.79819"
+         height="217.44765"
+         x="-17.899094"
+         y="-38.952991" />
+      <path
+         sodipodi:type="star"
+         style="fill:#ff80b2;fill-opacity:0.988235;stroke:#ff80b2;stroke-width:2.69875"
+         id="path44"
+         inkscape:flatsided="true"
+         sodipodi:sides="3"
+         sodipodi:cx="275.63223"
+         sodipodi:cy="59.372993"
+         sodipodi:r1="81.809883"
+         sodipodi:r2="40.904942"
+         sodipodi:arg1="0.82619185"
+         sodipodi:arg2="1.8733894"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="M 331.07324,119.53238 195.81217,77.306618 300.01129,-18.720019 Z"
+         inkscape:transform-center-x="-130.91634"
+         inkscape:transform-center-y="-119.0309"
+         transform="matrix(0.81970028,-1.1158884,0.88923392,1.0286315,-247.20707,311.34722)" />
+      <path
+         sodipodi:type="star"
+         style="fill:#ff0066;fill-opacity:0.988235;stroke:#ff0066;stroke-width:2.69875"
+         id="path45"
+         inkscape:flatsided="true"
+         sodipodi:sides="3"
+         sodipodi:cx="275.63223"
+         sodipodi:cy="59.372993"
+         sodipodi:r1="81.809883"
+         sodipodi:r2="40.904942"
+         sodipodi:arg1="0.82619185"
+         sodipodi:arg2="1.8733894"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="M 331.07324,119.53238 195.81217,77.306618 300.01129,-18.720019 Z"
+         inkscape:transform-center-x="-130.91634"
+         inkscape:transform-center-y="-119.0309"
+         transform="matrix(0.81970028,-1.1158884,0.88923392,1.0286315,-247.20035,298.49317)" />
+      <path
+         sodipodi:type="star"
+         style="fill:#3771c8;fill-opacity:0.988235;stroke:#3771c8;stroke-width:2.69875"
+         id="path46"
+         inkscape:flatsided="true"
+         sodipodi:sides="3"
+         sodipodi:cx="275.63223"
+         sodipodi:cy="59.372993"
+         sodipodi:r1="81.809883"
+         sodipodi:r2="40.904942"
+         sodipodi:arg1="0.82619185"
+         sodipodi:arg2="1.8733894"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="M 331.07324,119.53238 195.81217,77.306618 300.01129,-18.720019 Z"
+         inkscape:transform-center-x="150.4834"
+         inkscape:transform-center-y="109.03094"
+         transform="matrix(-0.94221466,1.022141,-1.022141,-0.94221466,491.42704,-151.4687)" />
+    </g>
     <g
        id="g40"
        clip-path="url(#clipPath28)"
@@ -246,39 +312,43 @@
          style="fill:#ffffff;stroke:#000000;stroke-width:2.69875"
          x="-411.51694"
          y="309.88489">Sequences</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9999px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.69875"
-       x="1121.5569"
-       y="159.22325"
-       id="text30"><tspan
-         sodipodi:role="line"
-         id="tspan30"
-         style="fill:#ffffff;stroke-width:2.69875"
+    <g
+       id="g2"
+       transform="matrix(0.89637477,0,0,0.89637477,134.40051,65.789005)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9999px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.69875"
          x="1121.5569"
-         y="159.22325">The laws</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9999px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.69875"
-       x="1253.964"
-       y="287.15051"
-       id="text31"><tspan
-         sodipodi:role="line"
-         id="tspan31"
-         style="fill:#ffffff;stroke-width:2.69875"
+         y="221.07541"
+         id="text30"><tspan
+           sodipodi:role="line"
+           id="tspan30"
+           style="fill:#ffffff;stroke-width:2.69875"
+           x="1121.5569"
+           y="221.07541">The laws</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9999px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.69875"
          x="1253.964"
-         y="287.15051">Of</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9999px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.69875"
-       x="1104.7039"
-       y="426.23233"
-       id="text32"><tspan
-         sodipodi:role="line"
-         id="tspan32"
-         style="fill:#ffffff;stroke-width:2.69875"
+         y="290.02765"
+         id="text31"><tspan
+           sodipodi:role="line"
+           id="tspan31"
+           style="fill:#ffffff;stroke-width:2.69875"
+           x="1253.964"
+           y="290.02765">Of</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9999px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.69875"
          x="1104.7039"
-         y="426.23233">Exponents</tspan></text>
+         y="350.85001"
+         id="text32"><tspan
+           sodipodi:role="line"
+           id="tspan32"
+           style="fill:#ffffff;stroke-width:2.69875"
+           x="1104.7039"
+           y="350.85001">Exponents</tspan></text>
+    </g>
     <g
        id="g34"
        clip-path="url(#clipPath28)"
@@ -348,39 +418,83 @@
          inkscape:transform-center-y="109.03094"
          transform="matrix(-0.94221466,1.022141,-1.022141,-0.94221466,491.42704,-151.4687)" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9999px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.69875"
-       x="279.20297"
-       y="163.74962"
-       id="text27"><tspan
-         sodipodi:role="line"
-         id="tspan27"
-         style="fill:#ffffff;stroke-width:2.69875"
-         x="279.20297"
-         y="163.74962">Simplification</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9999px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.69875"
-       x="520.19885"
-       y="287.15051"
-       id="text28"><tspan
-         sodipodi:role="line"
-         id="tspan28"
-         style="fill:#ffffff;stroke-width:2.69875"
-         x="520.19885"
-         y="287.15051">of</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9999px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.69875"
-       x="395.96555"
-       y="426.14444"
-       id="text29"><tspan
-         sodipodi:role="line"
-         id="tspan29"
-         style="fill:#ffffff;stroke-width:2.69875"
-         x="395.96555"
-         y="426.14444">Radicals</tspan></text>
+    <g
+       id="g1"
+       transform="translate(22.395763,-7.0478493)">
+      <g
+         id="g9">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:72.4083px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.17125"
+           x="312.21906"
+           y="259.3924"
+           id="text27"><tspan
+             sodipodi:role="line"
+             id="tspan27"
+             style="fill:#ffffff;stroke-width:2.17125"
+             x="312.21906"
+             y="259.3924">Simplification</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:72.4083px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.17125"
+           x="506.10925"
+           y="311.84329"
+           id="text28"><tspan
+             sodipodi:role="line"
+             id="tspan28"
+             style="fill:#ffffff;stroke-width:2.17125"
+             x="506.10925"
+             y="311.84329">of</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:72.4083px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.17125"
+           x="406.15894"
+           y="364.75381"
+           id="text29"><tspan
+             sodipodi:role="line"
+             id="tspan29"
+             style="fill:#ffffff;stroke-width:2.17125"
+             x="406.15894"
+             y="364.75381">Radicals</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:96.258px;line-height:0.9;font-family:'Master Komika Extrude';-inkscape-font-specification:'Master Komika Extrude';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:0.636706"
+         x="529.45959"
+         y="951.85645"
+         id="text5"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';fill:#ffffff;stroke:#000000;stroke-width:0.636706"
+           x="529.45959"
+           y="951.85645"
+           id="tspan7" /></text>
+      <g
+         id="g10"
+         transform="translate(-15.238279,-36.507789)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:72.4083px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.17125"
+           x="406.15894"
+           y="1002.7286"
+           id="text8"><tspan
+             sodipodi:role="line"
+             id="tspan8"
+             style="fill:#ffffff;stroke-width:2.17125"
+             x="406.15894"
+             y="1002.7286">Algebraic</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:72.4083px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.17125"
+           x="406.15894"
+           y="1070.0573"
+           id="text9"><tspan
+             sodipodi:role="line"
+             id="tspan9"
+             style="fill:#ffffff;stroke-width:2.17125"
+             x="406.15894"
+             y="1070.0573">Fractions</tspan></text>
+      </g>
+    </g>
     <g
        id="g43"
        clip-path="url(#clipPath28)"
@@ -452,81 +566,15 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9999px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:2.69875"
-       x="-514.26099"
-       y="999.83356"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65.3823px;font-family:'Master Komika';-inkscape-font-specification:'Master Komika';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.988235;stroke:#000000;stroke-width:1.96056"
+       x="-432.23434"
+       y="990.04303"
        id="text43"><tspan
          sodipodi:role="line"
          id="tspan43"
-         style="stroke-width:2.69875"
-         x="-514.26099"
-         y="999.83356">Rationalization</tspan></text>
-    <g
-       id="g46"
-       clip-path="url(#clipPath28)"
-       transform="matrix(2.5035639,0,0,2.5035639,299.81969,789.36439)">
-      <rect
-         style="fill:#800080;fill-opacity:0.988235;stroke:#800080;stroke-width:3.98856"
-         id="rect43"
-         width="245.79819"
-         height="217.44765"
-         x="-17.899094"
-         y="-38.952991" />
-      <path
-         sodipodi:type="star"
-         style="fill:#ff80b2;fill-opacity:0.988235;stroke:#ff80b2;stroke-width:2.69875"
-         id="path44"
-         inkscape:flatsided="true"
-         sodipodi:sides="3"
-         sodipodi:cx="275.63223"
-         sodipodi:cy="59.372993"
-         sodipodi:r1="81.809883"
-         sodipodi:r2="40.904942"
-         sodipodi:arg1="0.82619185"
-         sodipodi:arg2="1.8733894"
-         inkscape:rounded="0"
-         inkscape:randomized="0"
-         d="M 331.07324,119.53238 195.81217,77.306618 300.01129,-18.720019 Z"
-         inkscape:transform-center-x="-130.91634"
-         inkscape:transform-center-y="-119.0309"
-         transform="matrix(0.81970028,-1.1158884,0.88923392,1.0286315,-247.20707,311.34722)" />
-      <path
-         sodipodi:type="star"
-         style="fill:#ff0066;fill-opacity:0.988235;stroke:#ff0066;stroke-width:2.69875"
-         id="path45"
-         inkscape:flatsided="true"
-         sodipodi:sides="3"
-         sodipodi:cx="275.63223"
-         sodipodi:cy="59.372993"
-         sodipodi:r1="81.809883"
-         sodipodi:r2="40.904942"
-         sodipodi:arg1="0.82619185"
-         sodipodi:arg2="1.8733894"
-         inkscape:rounded="0"
-         inkscape:randomized="0"
-         d="M 331.07324,119.53238 195.81217,77.306618 300.01129,-18.720019 Z"
-         inkscape:transform-center-x="-130.91634"
-         inkscape:transform-center-y="-119.0309"
-         transform="matrix(0.81970028,-1.1158884,0.88923392,1.0286315,-247.20035,298.49317)" />
-      <path
-         sodipodi:type="star"
-         style="fill:#3771c8;fill-opacity:0.988235;stroke:#3771c8;stroke-width:2.69875"
-         id="path46"
-         inkscape:flatsided="true"
-         sodipodi:sides="3"
-         sodipodi:cx="275.63223"
-         sodipodi:cy="59.372993"
-         sodipodi:r1="81.809883"
-         sodipodi:r2="40.904942"
-         sodipodi:arg1="0.82619185"
-         sodipodi:arg2="1.8733894"
-         inkscape:rounded="0"
-         inkscape:randomized="0"
-         d="M 331.07324,119.53238 195.81217,77.306618 300.01129,-18.720019 Z"
-         inkscape:transform-center-x="150.4834"
-         inkscape:transform-center-y="109.03094"
-         transform="matrix(-0.94221466,1.022141,-1.022141,-0.94221466,491.42704,-151.4687)" />
-    </g>
+         style="stroke-width:1.96056"
+         x="-432.23434"
+         y="990.04303">Rationalization</tspan></text>
     <g
        id="g49"
        clip-path="url(#clipPath28)"
@@ -989,5 +1037,27 @@
          inkscape:transform-center-y="109.03094"
          transform="matrix(-0.94221466,1.022141,-1.022141,-0.94221466,491.42704,-151.4687)" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;line-height:0.9;font-family:'Master Komika Extrude';-inkscape-font-specification:'Master Komika Extrude';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#50fa7b;stroke:#50fa7b;stroke-width:0.264583"
+       x="419.24841"
+       y="860.61853"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:0.264583"
+         x="419.24841"
+         y="860.61853" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;line-height:0.9;font-family:'Master Komika Extrude';-inkscape-font-specification:'Master Komika Extrude';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#50fa7b;stroke:#50fa7b;stroke-width:0.264583"
+       x="467.57037"
+       y="628.67285"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="stroke-width:0.264583"
+         x="467.57037"
+         y="628.67285" /></text>
   </g>
 </svg>

@@ -1,5 +1,11 @@
 questions:
-  - question: "¿Cuál es la fórmula del área de un círculo?"
-    solution: "A = πr²"
-  - question: "¿Cuál es la fórmula del perímetro de un cuadrado?"
-    solution: "P = 4a"
+  - question: "¿Which is the formula of the n-th term of an arithmetic series?"
+    solution: '$S_{n} = \frac{n}{2} (U_{1} + U_{n})$ or $S_{n} = \frac{n}{2} (2U_{1} + (n-1)d)$'
+  - question: "Which is the formula of the n-th term of a geometric series?"
+    solution: '$S_{n}=U _{1} \frac{1-r^{n}}{1-r}$'
+  - question: "Which is the n-th term of a quadratic sequence?"
+    solution: '$a_{n} = an^{2} + bn + c$'
+  - question: "Which is the n-th term of a cubic sequence?"
+    solution: '$a_{n} = an^{3} + bn^{2} + cn + d$'
+  - question: "How do we generate a series if a sequence is given to us?"
+    solution: 'To generate a series from a sequence, we sum the terms of the sequence'

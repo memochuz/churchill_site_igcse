@@ -1,0 +1,5 @@
+questions:
+  - question: "¿Cuál es la fórmula del área de un círculo?"
+    solution: "A = πr²"
+  - question: "¿Cuál es la fórmula del perímetro de un cuadrado?"
+    solution: "P = 4a"

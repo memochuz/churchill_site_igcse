@@ -1,0 +1,14 @@
+<section class="catalogo-productos-3d">
+  <div class="container"> 
+    <div class="row"> 
+      {% for item in site.data.starters.questions %}
+      <div class="col col-4 col-t-6 col-m-12">
+        {% include flip_card.html
+            front_text= item.question
+            back_text= item.solution
+        %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

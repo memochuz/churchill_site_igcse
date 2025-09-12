@@ -1,0 +1,45 @@
+---
+layout: default
+title: Starters
+permalink: /starters/
+image: 
+description: Here you’ll find the starters for each class. They go over the main points from our sessions and include things that are good to learn by heart.
+page_cover: '/images/banner_7.png'
+---
+
+<!-- begin page -->
+<article class="page container">
+
+  <div class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.description %}
+  <div class="page-description">{{ page.description | markdownify }}</div>
+    <!-- {% elsif site.data.settings.contact.description %}
+    <p class="page-description">{{ site.data.settings.contact.description }}</p> -->
+    {% endif %}
+  </div>
+
+  {% if page.image %}
+  <div class="page-image">
+    <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+<!-- Aqui empiezan los starters: -->
+     
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <!-- Lado de enfrente -->
+    <div class="flip-card-front">
+      <p>Hola 👋<br>Este es el frente</p>
+    </div>
+
+    <!-- Lado de atrás -->
+    <div class="flip-card-back">
+      <p>Aquí va el reverso con más info ✨</p>
+    </div>
+  </div>
+</div>
+
+
+{% include flip_card_catalogo.html %}

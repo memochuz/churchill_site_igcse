@@ -37,7 +37,9 @@ menu_settings:
     - title: '✍️ Exercises'
       url: '/blog'
     - title: '📝 Homeworks'
-      url: '/homeworks'      
+      url: '/homeworks'     
+    - title: '🔑 Starters'
+      url: '/starters'          
     # - title: '📔 Elements'
     #   url: '/elements/'
 

@@ -1,9 +1,10 @@
-.tareas { margin-top: 2rem; text-align: center; }
+.tareas { margin-top: 2rem; text-align: left; }
 .tareas h2 { color: var(--secondary-color); }
 
 .tareas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  // grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -25,7 +26,8 @@
 
 .tarea-btn:hover {
   transform: translateY(-4px);
-  background: var(--hover-color);
+  // background: var(--hover-color);
+  background: #BD93F9;
   box-shadow: 0 10px 20px rgba(0,0,0,0.45);
 }
 

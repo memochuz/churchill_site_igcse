@@ -1,62 +1,234 @@
-/* Header */
+// /* Header */
+// .header {
+//   padding-top: 32px;
+// }
+
+// /* Nav */
+// /* Hay que cambiar este */
+// .main-nav {
+//   position: relative;
+//   -webkit-mask-image: linear-gradient(to right, var(--text-color) 85%, transparent 100%);
+//   mask-image: linear-gradient(to right, var(--text-color) 85%, transparent 100%);
+//   // -webkit-mask-image: none;
+//   // mask-image: none;
+
+// /* Hay que cambiar este */
+//   .nav__list {
+//     display: flex;
+//     align-items: baseline;
+//     overflow-x: scroll;
+//     -ms-overflow-style: none;
+//     scrollbar-width: none;
+
+//     &::-webkit-scrollbar {
+//       display: none;
+//     }
+
+//     &:active {
+//       cursor: -webkit-grabbing;
+//       cursor: grabbing
+//     }
+
+//  /* Hay que cambiar este */
+//     .nav__item {
+//       margin: 0;
+//       font-size: 16px;
+//       line-height: 1;
+//       font-weight: 500;
+//       white-space: nowrap;
+//     }
+// /* Hay que cambiar este */
+//     .nav__link {
+//       display: block;
+//       padding: 8px;
+//       margin-right: 12px;
+//       border-bottom: 2px solid var(--border-color);
+// /* Hay que cambiar este: Agregar .nav_text*/
+
+//       &:hover {
+//         border-bottom-color: var(--primary-color);
+//       }
+
+//       &.active-link {
+//         font-weight: 600;
+//         border-color: var(--primary-color);
+//       }
+//     }
+//   }
+
+// }
+
+//   /* Media query to apply the mask only on smaller screens */
+// @media (max-width: 575px) { /* Adjust this breakpoint as needed */
+//   .main-nav {
+//     -webkit-mask-image: linear-gradient(to right, var(--text-color) 75%, transparent 100%);
+//     mask-image: linear-gradient(to right, var(--text-color) 75%, transparent 100%);
+//   }
+// }
+
+
+
+// Aquí tienes el código completado y mejorado con comentarios explicativos y como cambié el diseño dek menu de navegación
+
+
+// /* Estilos del encabezado */
+// .header {
+//   padding-top: 32px;
+// }
+
+// /* Estilos de la barra de navegación */
+// .main-nav {
+//   font-family: "Playpen Sans", cursive, sans-serif;
+//   position: relative;
+//   background-color: var(--background-alt-color); /* Fondo alternativo para contraste */
+//   border-radius: 8px; /* Bordes ligeramente redondeados */
+
+//   /* Lista de navegación principal */
+//   .nav__list {
+//     font-family: inherit;
+//     display: flex;
+//     flex-wrap: wrap;        /* Permite que los ítems pasen a otra línea si es necesario */
+//     align-items: center;    /* Centra verticalmente los ítems */
+//     justify-content: center; /* Centra horizontalmente los ítems */
+
+//     /* Oculta scroll horizontal */
+//     overflow-x: visible;
+//     -ms-overflow-style: none;
+//     scrollbar-width: none;
+//     &::-webkit-scrollbar {
+//       display: none;
+//     }
+
+//     &:active {
+//       cursor: -webkit-grabbing;
+//       cursor: grabbing;
+//     }
+
+//     /* Ítems de navegación */
+//     .nav__item {
+//       font-family: inherit;
+//       margin: 0;
+//       font-size: 16px;
+//       font-weight: 500;
+//       white-space: nowrap; /* Evita quiebres de texto */
+//       margin-right: 20px;  /* Espacio horizontal entre ítems */
+//       margin-bottom: 5px;  /* Espacio vertical entre líneas */
+//     }
+
+//     /* Enlaces de navegación */
+//     .nav__link {
+//       font-family: inherit;
+//       display: flex;
+//       width: fit-content; /* Ajusta al contenido */
+//       align-items: center;
+//       justify-content: flex-start; /* Alinea icono y texto dentro del enlace */
+//       gap: 5px;
+//       padding: 8px 0; /* Área clickeable vertical */
+
+//       /* Texto dentro del enlace */
+//       .nav-text {
+//         font-family: inherit;
+//         padding-bottom: 2px;
+//         border-bottom: 2px solid transparent;
+//         transition: border-bottom-color 0.3s ease;
+//       }
+
+//       /* Efecto hover: subrayado con color primario */
+//       &:hover {
+//         .nav-text {
+//           border-bottom-color: var(--primary-color);
+//         }
+//       }
+
+//       /* Enlace activo: color y subrayado permanente */
+//       &.active-link {
+//         font-weight: 600;
+//         color: var(--primary-color);
+//         .nav-text {
+//           border-bottom-color: var(--primary-color);
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+/* ----- Header ----- */
 .header {
-  padding-top: 32px;
+  padding-top: 32px; /* Agrega espacio en la parte superior del header */
 }
 
-/* Nav */
+/* ----- Barra de navegación principal ----- */
 .main-nav {
-  position: relative;
-  -webkit-mask-image: linear-gradient(to right, var(--text-color) 85%, transparent 100%);
-  mask-image: linear-gradient(to right, var(--text-color) 85%, transparent 100%);
-  // -webkit-mask-image: none;
-  // mask-image: none;
-  .nav__list {
-    display: flex;
-    align-items: baseline;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  // font-family: inherit; /* Aplica la nueva fuente a toda la barra de navegación */
+  position: relative; /* Permite posicionar elementos hijos de forma absoluta si es necesario */
+  background-color: var(--background-alt-color); /* Usa un color alternativo de fondo para contraste */
+  border-radius: 8px; /* Bordes redondeados para darle un look más suave */
 
+  /* ----- Lista de navegación ----- */
+  .nav__list {
+    // font-family: inherit; /* Hereda la fuente de .main-nav */
+    display: flex; /* Organiza los ítems en línea usando Flexbox */
+    flex-wrap: wrap; /* Permite que los ítems bajen de línea si no caben en el ancho */
+    align-items: center; /* Centra los ítems verticalmente */
+    justify-content: center; /* Centra los ítems horizontalmente */
+
+    overflow-x: visible; /* Evita recorte horizontal si hay overflow */
+    -ms-overflow-style: none; /* Oculta scrollbar en IE/Edge antiguos */
+    scrollbar-width: none; /* Oculta scrollbar en Firefox */
     &::-webkit-scrollbar {
-      display: none;
+      display: none; /* Oculta scrollbar en navegadores WebKit */
     }
 
     &:active {
-      cursor: -webkit-grabbing;
-      cursor: grabbing
+      cursor: -webkit-grabbing; /* Muestra cursor de arrastre en Safari/Chrome */
+      cursor: grabbing; /* Muestra cursor de arrastre en navegadores modernos */
     }
 
+    /* ----- Ítems de navegación individuales ----- */
     .nav__item {
-      margin: 0;
-      font-size: 16px;
-      line-height: 1;
-      font-weight: 500;
-      white-space: nowrap;
+      // font-family: inherit; /* Hereda la fuente */
+      margin: 0; /* Elimina márgenes por defecto */
+      font-size: 16px; /* Tamaño de letra de cada ítem */
+      font-weight: 500; /* Peso medio de la tipografía */
+      white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+      margin-right: 20px; /* Espacio horizontal entre ítems */
+      margin-bottom: 5px; /* Espacio vertical cuando los ítems se envuelven a otra línea */
     }
 
+    /* ----- Enlaces de navegación ----- */
     .nav__link {
-      display: block;
-      padding: 8px;
-      margin-right: 12px;
-      border-bottom: 2px solid var(--border-color);
+      // font-family: inherit; /* Hereda la fuente */
+      display: flex; /* Coloca ícono y texto en línea */
+      width: fit-content; /* Ajusta el ancho al contenido */
+      align-items: center; /* Centra verticalmente ícono y texto */
+      justify-content: flex-start; /* Alinea contenido a la izquierda */
+      gap: 5px; /* Espacio entre ícono y texto */
+      padding: 8px 0; /* Aumenta área clickeable en vertical */
 
-      &:hover {
-        border-bottom-color: var(--primary-color);
+      /* ----- Texto dentro del enlace ----- */
+      .nav-text {
+        // font-family: inherit; /* Hereda la fuente */
+        padding-bottom: 2px; /* Espacio inferior para el subrayado */
+        border-bottom: 2px solid transparent; /* Prepara un subrayado invisible por defecto */
+        transition: border-bottom-color 0.3s ease; /* Transición suave al cambiar de color */
       }
 
+      /* ----- Efecto hover ----- */
+      &:hover {
+        .nav-text {
+          border-bottom-color: #BD93F9; /* Activa el subrayado con el color primario al pasar el mouse */
+        }
+      }
+
+      /* ----- Enlace activo (página actual) ----- */
       &.active-link {
-        font-weight: 600;
-        border-color: var(--primary-color);
+        font-weight: 600; /* Hace el texto más grueso para destacar */
+        color: #50FA7B; /* Cambia el color del enlace activo */
+        .nav-text {
+          border-bottom-color: #BD93F9; /* Mantiene el subrayado visible en el enlace activo */
+        }
       }
     }
-  }
-
-}
-
-  /* Media query to apply the mask only on smaller screens */
-@media (max-width: 575px) { /* Adjust this breakpoint as needed */
-  .main-nav {
-    -webkit-mask-image: linear-gradient(to right, var(--text-color) 75%, transparent 100%);
-    mask-image: linear-gradient(to right, var(--text-color) 75%, transparent 100%);
   }
 }

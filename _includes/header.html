@@ -1,4 +1,35 @@
 <!-- begin header -->
+<!-- <header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <nav class="main-nav">
+          <ul class="nav__list list-reset dragscroll">
+            {% for item in site.data.settings.menu_settings.menu_items %}
+            <li class="nav__item"> -->
+
+
+
+
+              <!-- <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">{{ item.title }}</a> -->
+
+
+
+              <!-- <a href="{% if item.url contains 'http' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">
+                {{ item.title }}
+              </a>
+
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header> -->
+<!-- end header -->
+
+<!-- begin header -->
 <header class="header">
   <div class="container">
     <div class="row">
@@ -7,10 +38,23 @@
           <ul class="nav__list list-reset dragscroll">
             {% for item in site.data.settings.menu_settings.menu_items %}
             <li class="nav__item">
-              <!-- <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">{{ item.title }}</a> -->
-              <a href="{% if item.url contains 'http' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">
-                {{ item.title }}
+              <!-- <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">{% if item.icon %}<img src="{{ item.icon | relative_url }}" alt="{{ item.title }}" class="menu-icon">{% endif %} {{ item.title }}</a> -->
+
+              <!-- <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">  
+                {% if item.icon %}
+                  <img src="{{ item.icon | relative_url }}" alt="{{ item.title }}" class="menu-icon">
+                {% endif %}
+                <span class="nav-text">{{ item.title }}</span>
+              </a> -->
+
+              <a href="{{ item.url | relative_url }}" class="nav__link{% if item.url == '/' and page.url == '/' or page.url == '/index.html' %} active-link{% elsif item.url != '/' and page.url contains item.url %} active-link{% endif %}">
+
+                {% if item.icon %}
+                   <img src="{{ item.icon | relative_url }}" alt="{{ item.title }}" class="menu-icon">
+                {% endif %}
+                 <span class="nav-text">{{ item.title }}</span>
               </a>
+
 
             </li>
             {% endfor %}

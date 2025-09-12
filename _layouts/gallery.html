@@ -20,11 +20,11 @@ layout: default
   <div class="page__content">
     {% if page.images or page.cover %}
     <div class="page__gallery__wrapper">
-      {% if page.cover %}
+      <!-- {% if page.cover %}
       <div class="page__gallery__cover">
         <img src="{{ page.cover | relative_url }}" alt="{{ page.title }}" loading="lazy">
       </div>
-      {% endif %}
+      {% endif %} -->
       <div class="page__gallery__images" {% if page.gallery_columns %}style="grid-template-columns: repeat({{ page.gallery_columns }}, auto);"{% endif %}>
         {% for image in page.images %}
         <img src="{{ image.image | relative_url }}" alt="{{ image.alt }}" loading="lazy">

@@ -1,7 +1,30 @@
 questions:
-  - question: 'If we have a strict inequality, the induced line will be: a dotted line or a solid line?'
+  - question: 'For the strict inequality $y > 3x - 4$, is the corresponding line represented as a solid line or a dotted line?'
     solution: 'Dotted line'
-  - question: 'The line $y=4$, is it horizontal or vertical?'
+
+  - question: 'Given the line $y = 3x - 4$, what is the slope? Is the line increasing or decreasing?'
+    solution: 'Increasing'
+
+  - question: 'Which half-plane does the inequality $y > 3x - 4$ represent: above the line or below the line?'
+    solution: 'Above the line'
+
+  - question: 'The equation $y = 6$ represents a line. Is it horizontal or vertical?'
     solution: 'Horizontal'
-  - question: 'The line $x=2$, is it horizontal or vertical?'
+
+  - question: 'The equation $x = 4$ represents a line. Is it horizontal or vertical?'
     solution: 'Vertical'
+
+  - question: 'What is the derivative of $f(x) = x^2$ in Leibniz notation?'
+    solution: r'$\frac{df}{dx} = 2x$'
+
+  - question: 'If $\frac{df}{dx} > 0$, is the function increasing or decreasing?'
+    solution: 'Increasing'
+
+  - question: 'If $\frac{df}{dx} < 0$, is the function increasing or decreasing?'
+    solution: 'Decreasing'
+
+  - question: 'For $f(x) = 3x^2$, what is the slope of the tangent line at $x = 2$ in Leibniz notation?'
+    solution: r'$\frac{df}{dx} = 6x = 12$'
+
+  - question: 'The function $f(x) = x^3$ has a critical point at which $x$ value?'
+    solution: 'x = 0'

@@ -28,3 +28,18 @@ questions:
 
   - question: 'The function $f(x) = x^3$ has a critical point at which $x$ value?'
     solution: 'x = 0'
+
+  - question: '¿Cuál es la fórmula para calcular la suma de los ángulos interiores de un polígono cualquiera con $n$ lados?'
+    solution: '$(n-2)(180)$'
+
+  - question: '¿Cuál es la fórmula para calcular el ángulo interior de un polígono regular?'
+    solution: '$\frac{(n-2)(180)}{n}$'
+
+  - question: '¿Cuál es la fórmula para calcular el ángulo exterior de un polígono regular?'
+    solution: '$180-\frac{(n-2)(180)}{n}$'
+
+  - question: |
+          Calculate the value of angle $x$ in the following regular polygon:
+
+          <img src="/images/Starters/pentagono2.png" width="150">
+    solution: '$54^{\circ}$'

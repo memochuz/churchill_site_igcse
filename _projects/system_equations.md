@@ -41,6 +41,8 @@ a_2x + b_2y = c_2
 \end{cases}
 $$
 
+---
+
 ##  Determinants Method (Cramer’s Rule)
 
 The **determinants method**, also known as **Cramer’s Rule**, is an algebraic way to solve **systems of linear equations** when:
@@ -60,50 +62,47 @@ $$
 $$
 
 ### Steps
+
 1. **Find the main determinant $\Delta$:**
 
-$$
-\Delta =det 
-\begin{pmatrix}
-\textcolor{#FF5555}{a_1} & \textcolor{#50FA7B}{b_1} \\
-\textcolor{#FF5555}{a_2} & \textcolor{#50FA7B}{b_2}
-\end{pmatrix}
-= \textcolor{#FF5555}{a_1}\textcolor{#50FA7B}{b_2} - \textcolor{#FF5555}{a_2}\textcolor{#50FA7B}{b_1}
-$$
+   $$
+   \Delta =det 
+   \begin{pmatrix}
+   \textcolor{#FF5555}{a_1} & \textcolor{#50FA7B}{b_1} \\
+   \textcolor{#FF5555}{a_2} & \textcolor{#50FA7B}{b_2}
+   \end{pmatrix}
+   = \textcolor{#FF5555}{a_1}\textcolor{#50FA7B}{b_2} - \textcolor{#FF5555}{a_2}\textcolor{#50FA7B}{b_1}
+   $$
+2. **Determinant for $x$:**
 
-2. **Determinant for \(x\):**
+   $$
+   \Delta_x = det
+   \begin{pmatrix}
+   \textcolor{#8BE9FD}{c_1} & \textcolor{#50FA7B}{b_1} \\
+   \textcolor{#8BE9FD}{c_2} & \textcolor{#50FA7B}{b_2}
+   \end{pmatrix}
+   = \textcolor{#8BE9FD}{c_1}\textcolor{#50FA7B}{b_2} - \textcolor{#8BE9FD}{c_2}\textcolor{#50FA7B}{b_1}
+   $$
+3. **Determinant for $y$:**
 
-$$
-\Delta_x = det
-\begin{pmatrix}
-\textcolor{#8BE9FD}{c_1} & \textcolor{#50FA7B}{b_1} \\
-\textcolor{#8BE9FD}{c_2} & \textcolor{#50FA7B}{b_2}
-\end{pmatrix}
-= \textcolor{#8BE9FD}{c_1}\textcolor{#50FA7B}{b_2} - \textcolor{#8BE9FD}{c_2}\textcolor{#50FA7B}{b_1}
-$$
-
-3. **Determinant for \(y\):**
-
-$$
-\Delta_y = det
-\begin{pmatrix}
-\textcolor{#FF5555}{a_1} & \textcolor{#8BE9FD}{c_1} \\
-\textcolor{#FF5555}{a_2} & \textcolor{#8BE9FD}{c_2}
-\end{pmatrix}
-= \textcolor{#FF5555}{a_1}\textcolor{#8BE9FD}{c_2} - \textcolor{#FF5555}{a_2}\textcolor{#8BE9FD}{c_1}
-$$
-
+   $$
+   \Delta_y = det
+   \begin{pmatrix}
+   \textcolor{#FF5555}{a_1} & \textcolor{#8BE9FD}{c_1} \\
+   \textcolor{#FF5555}{a_2} & \textcolor{#8BE9FD}{c_2}
+   \end{pmatrix}
+   = \textcolor{#FF5555}{a_1}\textcolor{#8BE9FD}{c_2} - \textcolor{#FF5555}{a_2}\textcolor{#8BE9FD}{c_1}
+   $$
 4. **Solution of the System**:
 
-$$
-x = \frac{\Delta_x}{\Delta}, \quad y = \frac{\Delta_y}{\Delta}
-$$
-
+   $$
+   x = \frac{\Delta_x}{\Delta}, \quad y = \frac{\Delta_y}{\Delta}
+   $$
 5. **Write the solution** as an ordered pair:
 
-$$
-(x, y) = \left(\frac{\Delta_x}{\Delta}, \frac{\Delta_y}{\Delta}\right)
-$$
+   $$
+   (x, y) = \left(\frac{\Delta_x}{\Delta}, \frac{\Delta_y}{\Delta}\right)
+   $$
 
 ### Example
 
@@ -116,45 +115,34 @@ $$
 
 **Determinants:**
 
-$
-\Delta = det
-\begin{pmatrix}
-2 & 3 \\
-1 & -1
-\end{pmatrix}
-= (2)(-1) - (1)(3) = -5
-$
-
-$
-\Delta_x = det
-\begin{pmatrix}
-8 & 3 \\
-1 & -1
-\end{pmatrix}
-= (8)(-1) - (1)(3) = -11
-$
-
-$
-\Delta_y = det
-\begin{pmatrix}
-2 & 8 \\
-1 & 1
-\end{pmatrix}
-= (2)(1) - (1)(8) = -6
-$
+$$
+\begin{align}
+\Delta   &= \det\begin{pmatrix} 2 & 3 \\ 1 & -1 \end{pmatrix}
+          = (2)(-1) - (1)(3)
+          = -5, \\
+\Delta_x &= \det\begin{pmatrix} 8 & 3 \\ 1 & -1 \end{pmatrix}
+          = (8)(-1) - (1)(3)
+          = -11, \\
+\Delta_y &= \det\begin{pmatrix} 2 & 8 \\ 1 & 1 \end{pmatrix}
+          = (2)(1) - (1)(8)
+          = -6.
+\end{align}
+$$
 
 **Solution:**
 
 $$
-x = \frac{\Delta_x}{\Delta} = \frac{-11}{-5} = 2.2, \quad
-y = \frac{\Delta_y}{\Delta} = \frac{-6}{-5} = 1.2
+\textcolor{#FFB86C}{x} = \frac{\Delta_x}{\Delta} = \frac{-11}{-5} = \textcolor{#FFB86C}{2.2}, \quad
+\textcolor{#FF79C6}{y} = \frac{\Delta_y}{\Delta} = \frac{-6}{-5} = \textcolor{#FF79C6}{1.2}
 $$
 
 Therefore, the solution is:
 
 $$
-(x, y) = \left(2.2, 1.2\right)
+(\textcolor{#FFB86C}{x}, \textcolor{#FF79C6}{y}) = \left(\textcolor{#FFB86C}{2.2}, \textcolor{#FF79C6}{1.2}\right)
 $$
+
+---
 
 ## Sustitution Method
 
@@ -175,7 +163,7 @@ $$
     From the second equation:
 
     $$
-    \textcolor{#FFB86C}{x} - y = 1 \implies \textcolor{#FFB86C}{x} = \textcolor{#FF5555}{y + 1}
+    \textcolor{#FFB86C}{x} - y = 1 \implies \underbrace{\textcolor{#FFB86C}{x} = \textcolor{#FF5555}{y + 1}}_{*}
     $$
 
 2. **Substitute** this expression into the first equation:
@@ -184,18 +172,19 @@ $$
 2(\textcolor{#FF5555}{y + 1}) + 3y = 8
 $$
 
-3. **Simplify** and solve for \(y\):
+3. **Simplify** and solve for $y$:
 
 $$
 \begin{aligned}
+2(\textcolor{#FF5555}{y + 1}) + 3y &= 8 \\
 2y + 2 + 3y &= 8 \\
 5y + 2 &= 8 \\
 5y &= 6 \\
-y &= \frac{6}{5}
+\textcolor{#8BE9FD}{y} &= \textcolor{#8BE9FD}{\frac{6}{5}}
 \end{aligned}
 $$
 
-4. **Substitute** the value of \(y\) back into the first equation \(x = y + 1\):
+4. **Substitute** the value of $y$ back into the first equation (*) to find $x$:
 
 $$
 x = \frac{6}{5} + 1 = \frac{6}{5} + \frac{5}{5} = \frac{11}{5}
@@ -205,9 +194,10 @@ $$
 5. **Write the solution** as an ordered pair:
 
 $$
-(x, y) = \left(\frac{11}{5}, \frac{6}{5}\right) = \left(2.2, 1.2\right)
+(x, y) = \left(\frac{11}{5}, \frac{6}{5}\right) = \left(\textcolor{#FFB86C}{2.2}, \textcolor{#FF79C6}{1.2}\right)
 $$
 
+---
 
 ## Elimination Method
 
@@ -224,7 +214,7 @@ $$
 
 1. **Multiply one or both equations** (if necessary) so that the coefficients of one variable are the same (or opposites).
 
-   Multiply the second equation by **2** to match the coefficient of \(x\):
+   Multiply the second equation by **2** to match the coefficient of $x$::
 
    $$
    \begin{cases}
@@ -233,13 +223,13 @@ $$
    \end{cases}
    $$
 
-2. **Subtract** one equation from the other to eliminate \(x\):
+2. **Subtract** one equation from the other to eliminate $x$:
 
    $$
    (2x + 3y) - (2x - 2y) = 8 - 2
    $$
 
-3. **Simplify** and solve for \(y\):
+3. **Simplify** and solve for $y$:
 
    $$
    \begin{aligned}
@@ -249,9 +239,9 @@ $$
    \end{aligned}
    $$
 
-4. **Substitute** the value of \(y\) into one of the original equations to find \(x\):
+4. **Substitute** the value of $y$ into one of the original equations to find $x$:
 
-   From \(x - \textcolor{#FFB86C}{y} = 1\):
+   From $x - \textcolor{#FFB86C}{y} = 1$:
 
    $$
    x - \textcolor{#FFB86C}{\frac{6}{5}} = 1 \implies x = 1 + \frac{6}{5} = \frac{11}{5}
@@ -260,8 +250,10 @@ $$
 5. **Write the solution** as an ordered pair:
 
    $$
-   (x, y) = \left(\frac{11}{5}, \frac{6}{5}\right) = (2.2, 1.2)
+   (x, y) = \left(\frac{11}{5}, \frac{6}{5}\right) = \left(\textcolor{#FFB86C}{2.2}, \textcolor{#FF79C6}{1.2}\right)
    $$
+
+--- 
 
 ## Graphical Method
 
@@ -277,7 +269,7 @@ x - y = 1
 \end{cases}
 $$
 
-1. **Isolate \(y\)** in both equations to express them in **slope-intercept form** (\(y = mx + b\)).
+1. **Isolate $y$** in both equations to express them in **slope-intercept form** $y = mx + b$.
 
    From the first equation:
 
@@ -291,18 +283,18 @@ $$
    x - y = 1 \implies -y = -x + 1 \implies \textcolor{#FF5555}{y = x - 1}
    $$
 
-2. **Identify the slope** $(m)$ and the **y-intercept** $(b)$ of each line:
+2. **Identify the slope** $m$ and the **y-intercept** $b$ of each line:
 
    - For $y = -\frac{2}{3}x + \frac{8}{3}$:  
      - Slope $m_1 = -\frac{2}{3}$  
-     - Y-intercept $b_1 = \frac{8}{3}$
+     - y-intercept $b_1 = \frac{8}{3}$
 
    - For $y = x - 1$:  
      - Slope $m_2 = 1$  
-     - Y-intercept $b_2 = -1$
+     - y-intercept $b_2 = -1$
 
 3. **Graph both lines** on the coordinate plane:  
-   - Start at the y-intercept $(b)$ for each line.  
+   - Start at the y-intercept $b$ for each line.  
    - Use the slope $m = \frac{\text{rise}}{\text{run}}$ to plot a second point on each line.  
    - Draw both lines extending in both directions.
 
@@ -311,7 +303,7 @@ $$
    By observation or algebraic verification, the lines intersect at:
 
    $$
-   (x, y) = \left(\frac{11}{5}, \frac{6}{5}\right) = (2.2, 1.2)
+   (x, y) = \left(\frac{11}{5}, \frac{6}{5}\right) = \left(\textcolor{#FFB86C}{2.2}, \textcolor{#FF79C6}{1.2}\right)
    $$
 
 <p align="center">

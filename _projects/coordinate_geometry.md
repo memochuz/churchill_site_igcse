@@ -25,7 +25,6 @@ Just as numbers can be represented in different forms but still represent the sa
 
 Below are the most common forms of linear equations:
 
----
 
 ### 1. **Standard Form**
 
@@ -35,7 +34,6 @@ $$ax + by = c$$
 
 This is known as the **standard form** of a line. Observe that both variables are on one side of the equation and the constant term is on the other.
 
----
 
 ### 2. **Gradient-Intercept Form**
 
@@ -48,7 +46,7 @@ Where:
 * $m$ is the **gradient (slope)**,
 * $d$ is the **y-intercept**, the point where the line crosses the y-axis.
 
----
+
 
 ### 3. **Gradient-Point Form**
 
@@ -58,7 +56,7 @@ $$y - y_0 = m(x - x_0)$$
 
 This is useful when we have the slope and one point on the line.
 
----
+
 
 ### 4. **Two-Point Form**
 
@@ -74,6 +72,7 @@ $$m = \frac{y_{2}-y_{1}}{x_{2}-x_{1}}$$
 
 Each of these forms represents the same geometric object: **a straight line**, but each form is useful in different situations **depending on the information we are given.**
 
+---
 
 ## Formula of the gradient
 
@@ -108,6 +107,88 @@ This gives us the standard formula for finding the gradient when two points on a
    <img src="{{ site.baseurl }}/images/Coordinate_Geometry/two_point.png" alt="Two-Point Form" width="700">
 </p>
 
+---
+
+##  Choosing the Right Equation of a Line
+
+Depending on the information provided by the problem, we choose the equation form that is most appropriate.
+
+
+#### **y-intercept form (slope-intercept form)**  
+Form:  
+
+$$
+y = mx + b
+$$
+
+##### **1. Problem**  
+A line has slope $m = 3$ and y-intercept $b = -2$.  
+Find the equation of the line.
+
+##### **Solution**  
+We substitute into the formula:
+
+$$
+y = 3x - 2
+$$
+
+
+#### **Using point-slope form**  
+Form:  
+
+$$
+y - y_1 = m(x - x_1)
+$$
+
+##### **2. Problem**  
+A line passes through the point $(4, 5)$ with slope $m = -\tfrac{1}{2}$.  
+Find the equation of the line.
+
+##### **Solution**  
+$$
+y - 5 = -\tfrac{1}{2}(x - 4)
+$$
+
+We may rearrange:
+
+$$
+y = -\tfrac{1}{2}x + 7
+$$
+
+
+#### **3. Using two-point form**  
+Form:  
+
+$$
+y-y_{1} = \frac{y_2 - y_1}{x_2 - x_1}(x-x_{1})
+$$
+
+##### **3. Problem**  
+A line passes through the points $(1, 3)$ and $(5, 11)$.  
+Find the equation of the line.
+
+##### **Solution**
+
+Compute the slope:
+
+$$
+m = \frac{11 - 3}{5 - 1} = \frac{8}{4} = 2
+$$
+
+Use point-slope form with $(1, 3)$:
+
+$$
+y - 3 = 2(x - 1)
+$$
+
+Simplify:
+
+$$
+y = 2x + 1
+$$
+
+---
+
 ## Midpoint
 
 Since we are working with two points, we can also ask how to calculate the midpoint between them. If we connect both points, we form a line segment, and we may want to find the point that lies exactly in the middle of that segment.
@@ -126,6 +207,8 @@ $$(\frac{x_{1}+x_{2}}{2}, \frac{y_{1}+y_{2}}{2})$$
 
 This formula gives the coordinates of the point that lies halfway between the two original points on the segment.
 
+---
+
 ## Distance
 
 When connecting the two points and visualizing the right triangle formed, we notice that the distance between the points is simply the length of the hypotenuse. Therefore, using Pythagoras’ Theorem:
@@ -140,6 +223,8 @@ $$\text{distance} =\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
    <img src="{{ site.baseurl }}/images/Coordinate_Geometry/distance.png" alt="Distance" width="700">
 </p>
 
+---
+
 ## Does a Point Belong to a Line?
 
 Finally, if we have a point in the coordinate plane and the equation of a line, how can we check whether the point lies on that line?
@@ -149,7 +234,7 @@ The process is simple:
 * If the resulting equality is true, then the point belongs to the line.
 * If the equality is false, then the point is not on the line.
 
-### 1. Example
+##### 1. Example
 
 Line equation:
 
@@ -169,7 +254,7 @@ $$5 = 5,$$
 
 we can conclude the point $P$ lies on the line.
 
-### 2. Example
+##### 2. Example
 
 Line equation:
 

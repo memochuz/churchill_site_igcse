@@ -1,6 +1,6 @@
 ---
 title: 📝 Similarity
-date: 2025-11-18
+date: 2025-09-28
 description: |
     <p>The topic of similarity introduces students to proportional reasoning within geometric figures, focusing on how shapes can maintain the same form while varying in size. When two shapes are similar, their corresponding angles are equal and their corresponding sides are in the same ratio. Understanding similarity helps students recognize scale factors, compare geometric figures, and solve problems involving enlargement, reduction, and indirect measurement. Through similarity, learners connect geometric properties with practical applications such as maps, models, architectural drawings, and real-life scaling situations.</p>
     <hr>

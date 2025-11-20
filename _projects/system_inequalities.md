@@ -11,7 +11,7 @@ description: |
       <li><b>Apply</b> systems of inequalities to model real-world situations involving restrictions or feasible sets.</li>
     </ul>
 
-date: 2025-11-18
+date: 2025-09-25
 categories: [Bimester-2, Algebra, Geometry]
 image: '/images/System_Inequalities/system.png'
 page_cover:

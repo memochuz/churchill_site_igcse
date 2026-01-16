@@ -56,6 +56,10 @@ This means:
 
 If a single input produces two different outputs, the relation is **not a function**.
 
+<p align="center">
+   <img src="{{ site.baseurl }}/images/Functions/notunction.png" alt="Not a function" width="700">
+</p>
+
 ---
 
 ## Input, Output, and Rule of Correspondence

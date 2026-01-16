@@ -131,6 +131,11 @@ For example:
 
 > **Range = all values that can be output by the function.**
 
+
+<p align="center">
+   <img src="{{ site.baseurl }}/images/Functions/elements.png" alt="Function machine" width="400">
+</p>
+
 ---
 
 ## Summary

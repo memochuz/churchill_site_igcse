@@ -57,7 +57,7 @@ This means:
 If a single input produces two different outputs, the relation is **not a function**.
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Functions/notunction.png" alt="Not a function" width="700">
+   <img src="{{ site.baseurl }}/images/Functions/notfunction.png" alt="Not a function" width="700">
 </p>
 
 ---
@@ -137,7 +137,7 @@ For example:
 
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Functions/elements.png" alt="Function machine" width="400">
+   <img src="{{ site.baseurl }}/images/Functions/elements.png" alt="Function machine" width="700">
 </p>
 
 ---

@@ -5,7 +5,7 @@ markmap:
   initialExpandLevel: 2
 ---
 
-# 📐 Fórmulas IGCSE Math Extended (Fuentes)
+# 📐 IGCSE Contenido Mocks
 
 ## 🔢 Álgebra y Exponentes
 - **Leyes de Exponentes**

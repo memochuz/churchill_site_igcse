@@ -2,7 +2,7 @@
 markmap:
   theme: default
   colorFreezeLevel: 2
-  initialExpandLevel: 6
+  initialExpandLevel: 2
 ---
 
 # 📐 Fórmulas IGCSE Math Extended (Fuentes)
@@ -50,9 +50,9 @@ markmap:
         - **Paso 3**: Por cada grupo completo, extraer multiplicando un factor fuera del radical
         - **Paso 4**: Los factores que no formaron un grupo completo permanecen multiplicándose dentro de la raíz
 - **Despejes**
-    - 1. **Identificar**: Ver qué operaciones afectan a la variable más inmediatamente.
-    - 2. **Deshacer**: Aplicar la operación inversa en **orden opuesto**.
-    - 3. **Simplificar**: Reducir la expresión final.
+    - **Paso 1**: **Identificar**: Ver qué operaciones afectan a la variable más inmediatamente.
+    - **Paso 2**: **Deshacer**: Aplicar la operación inversa en **orden opuesto**.
+    - **Paso 3**: **Simplificar**: Reducir la expresión final.
 
 ## 📈 Geometría de Coordenadas y Gráficas
 
@@ -113,7 +113,7 @@ markmap:
   $U_n = an^3 + bn^2 + cn + d$ 
     - Se necesita tabla para encontrar el $n$-ésimo termino
 
-## 🤝 Sistemas de Ecuaciones
+## 📈  Sistemas de Ecuaciones
 - $\begin{cases} a_{1}x + b_{1}y = c_{1} \\ a_{2}x + b_{2}y = c_{2}\end{cases}$
     - **Sustitución**
         - Despejar una variable y sustituirla en la otra ecuación
@@ -128,6 +128,26 @@ markmap:
       $x = \frac{\Delta_x}{\Delta}, \quad y = \frac{\Delta_y}{\Delta}$ 
     - **Método Gráfico**
         - Dibujamos ambas rectas y vemos las coordenadas de donde se intersectan.
+
+## 📈  Sistemas de Inecuaciones Lineales
+  - $\begin{cases} a_{1}x + b_{1}y < c_{1} \\ a_{2}x + b_{2}y \geq c_{2} \\ a_{3}x + b_{3}y \leq c_{3}\end{cases}$
+    - **Conceptos Fundamentales**
+      - Representación: Cada inecuación representa un **semiplano** en el plano cartesiano, no solo una línea
+      - Objetivo: Encontrar todos los puntos que satisfacen cada inecuación al mismo tiempo,
+       encontrar la región común de los semiplanos
+
+    - **Línea de Frontera**
+      -  Se obtiene al reemplazar temporalmente el símbolo de inecuación por un signo de igual (=), y se dibuja la recta
+      - Tipos de línea:
+        - **Sólida (≤, ≥)**: La frontera está incluida en la solución 
+        - **Punteada (<, >)**: La frontera **no** es parte de la solución
+    - **Solución del Sistema**
+      - Región de Solución: Es la **intersección** o área sombreada común donde se solapan todos los semiplanos
+    - **Pasos para Graficar**
+      - **Paso 1**: **Aislar la variable $y$** en cada inecuación para facilitar el graficado
+      - **Paso 2**: **Dibujar la línea de frontera** para cada una (revisando si es sólida o discontinua)
+      - **Paso 3**: **Sombrear el semiplano** correspondiente según el símbolo de la inecuación
+      - **Paso 4**: **Identificar la región compartida** que cumple con todas las restricciones del sistema 
 
 ## 📈 Funciones
 - **Conceptos básicos**
@@ -162,10 +182,10 @@ markmap:
     - Ejemplo: Si $f(x)=2-x$ y $g(x)=x^{2}+x^{3}$
         - $(f\circ g)(x) = f(g(x))= \overbrace{2-(\underbrace{x^{2}+x^{3}}_{g(x)})}^{f(x)}$
 - **Función inversa**
-    - Cambiar $x$ por $y$
-    - Despejar $y$
-    - Cambiar $y$ por $f^{-1}(x)$
-    - Verificar: $f(f^{-1}(x))=x$
+    - **Paso 1**: Cambiar $x$ por $y$
+    - **Paso 2**: Despejar $y$
+    - **Paso 3**: Cambiar $y$ por $f^{-1}(x)$
+    - **Paso 4**: Verificar: $f(f^{-1}(x))=x$
     - Ejemplo: $y=f(x)=2x^{2}-1$
         - Paso 1: $x=2y^{2}-1$
         - Paso 2: $\sqrt{\frac{x+1}{2}}=y$
@@ -173,9 +193,9 @@ markmap:
         - Paso 4: 
         $f(f^{-1}(x))= 2\left(\underbrace{\sqrt{\frac{x+1}{2}}}_{f^{-1}(x)}\right)^{2}-1 = 2\left( \dfrac{x+1}{2}\right)-1 = (x+1)-1=x$
 - **Dibujar función inversa**
-    - Graficar función original
-    - Dibujar la recta $y=x$
-    - Reflejar la gráfica
+    - **Paso 1**: Graficar función original
+    - **Paso 2**: Dibujar la recta $y=x$
+    - **Paso 3**: Reflejar la gráfica
     - Puntos intercambian coordenadas: $(x,y) \longrightarrow (y,x)$
 - **Parábolas**
     - Forma general: $y=ax^2+bx+c$
@@ -285,6 +305,32 @@ markmap:
     - $0<k<1$: la figura se achica
     - $k<0$: reflexión respecto al centro
   - Todas las longitudes cambian en la misma proporción
+
+## ⚖️ Proporción Directa e Inversa (Material Externo)
+  - ⬆️ **Proporción Directa**: 
+       $y$ es directamente proporcional a $x$
+    - Concepto: Cuando una variable aumenta, la otra también aumenta en la misma razón.
+    - Notación: $y \propto x$
+    - Ecuación: $y = kx$
+  - ⬇️ **Proporción Inversa**:
+      $y$ es inversamente proporcional a $x$
+    - Concepto: Cuando una variable aumenta, la otra disminuye.
+    - Notación: $y \propto \frac{1}{x}$
+    - Ecuación: $y = k \left(\dfrac{1}{x}\right)$
+  - 📝 **Pasos para resolver**
+    - **Paso 1**: **Escribir la ecuación** con $k$ según el enunciado.
+    - **Paso 2**: **Sustituir los valores** conocidos para hallar el valor de $k$.
+    - **Paso 3**: **Reescribir la ecuación** con el valor de $k$ hallado.
+    - **Paso 4**: **Calcular** el valor solicitado usando la nueva ecuación.
+  - ✍️ **Ejemplo**
+    - $y$ es inversamente proporcional al cuadrado de $x$. 
+    Cuando $x = 3$ tenemos que $y = 2$. Halla $y$ cuando $x = 6$.
+      - **Paso 1:** Ecuación: $y = k \left(\dfrac{1}{x²}\right) =\dfrac{k}{x^2}$
+      - **Paso 2:** Hallar $k$ sustituyendo:
+       $2 = \dfrac{k}{3^2} \implies 2 = \dfrac{k}{9} \implies k = 18$
+      - **Paso 3:** Nueva ecuación: $y = \dfrac{18}{x^2}$
+      - **Paso 4:** Calcular $y$ cuando $x=6$:
+       $y = \dfrac{18}{6^2} = \dfrac{18}{36} = 0.5$
 
 ## 🔺 Volúmenes y áreas
 - **Fórmulas**

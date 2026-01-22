@@ -306,7 +306,7 @@ markmap:
     - $k<0$: reflexión respecto al centro
   - Todas las longitudes cambian en la misma proporción
 
-## ⚖️ Proporción Directa e Inversa (Material Externo)
+## ⚖️ Proporción Directa e Inversa
   - ⬆️ **Proporción Directa**: 
        $y$ es directamente proporcional a $x$
     - Concepto: Cuando una variable aumenta, la otra también aumenta en la misma razón.

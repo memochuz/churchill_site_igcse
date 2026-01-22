@@ -6,7 +6,6 @@ markmap:
 ---
 
 # 📐 IGCSE Contenido Mocks
-
 ## 🔢 Álgebra y Exponentes
 - **Leyes de Exponentes**
   - $a^0 = 1$ (si $a \neq 0$) 
@@ -53,9 +52,7 @@ markmap:
     - **Paso 1**: **Identificar**: Ver qué operaciones afectan a la variable más inmediatamente.
     - **Paso 2**: **Deshacer**: Aplicar la operación inversa en **orden opuesto**.
     - **Paso 3**: **Simplificar**: Reducir la expresión final.
-
 ## 📈 Geometría de Coordenadas y Gráficas
-
 - **Línea Recta (Oblicuas)**
   - Pendiente (Gradient): $m = \dfrac{y_2 - y_1}{x_2 - x_1}$ 
   - Punto-Pendiente: $y - y_0 = m(x - x_0)$ 
@@ -70,13 +67,11 @@ markmap:
   - Perpendiculares: $m_1 = -\frac{1}{m_2}$ 
   - Verticales: $x = k$ (sin pendiente) 
   - Horizontales: $y = k$ (pendiente $0$)
-
 ## 📐 Semejanza
 - **Semejanza**
   - Factor de Escala: $k = \dfrac{\text{lado mayor}}{\text{lado menor}}$ 
   - Relación de Áreas: $k^2=\dfrac{\text{Área Mayor}}{\text{Área Menor}}$ 
   - Relación de Volúmenes: $k^3 = \dfrac{\text{Volumen Mayor}}{\text{Volumen Menor}}$
-
 ## 📐 Ángulos y Geometría
 - **Propiedades Fundamentales**
   - Opuestos por el vértice: Son iguales 
@@ -92,7 +87,6 @@ markmap:
   - Suma Ángulos Internos: $(n - 2) \times 180^\circ$ 
   - Ángulo Interno (Regular): $\dfrac{(n - 2) \times 180^\circ}{n}$ 
   - Suma Ángulos Exteriores: Siempre suman $360^\circ$ 
-
 ## 🔢 Sucesiones y Series
 - **Aritméticas**
   - Término $n$-ésimo: 
@@ -112,7 +106,6 @@ markmap:
   - Cúbica: 
   $U_n = an^3 + bn^2 + cn + d$ 
     - Se necesita tabla para encontrar el $n$-ésimo termino
-
 ## 📈  Sistemas de Ecuaciones
 - $\begin{cases} a_{1}x + b_{1}y = c_{1} \\ a_{2}x + b_{2}y = c_{2}\end{cases}$
     - **Sustitución**
@@ -128,14 +121,12 @@ markmap:
       $x = \frac{\Delta_x}{\Delta}, \quad y = \frac{\Delta_y}{\Delta}$ 
     - **Método Gráfico**
         - Dibujamos ambas rectas y vemos las coordenadas de donde se intersectan.
-
 ## 📈  Sistemas de Inecuaciones Lineales
   - $\begin{cases} a_{1}x + b_{1}y < c_{1} \\ a_{2}x + b_{2}y \geq c_{2} \\ a_{3}x + b_{3}y \leq c_{3}\end{cases}$
     - **Conceptos Fundamentales**
       - Representación: Cada inecuación representa un **semiplano** en el plano cartesiano, no solo una línea
       - Objetivo: Encontrar todos los puntos que satisfacen cada inecuación al mismo tiempo,
        encontrar la región común de los semiplanos
-
     - **Línea de Frontera**
       -  Se obtiene al reemplazar temporalmente el símbolo de inecuación por un signo de igual (=), y se dibuja la recta
       - Tipos de línea:
@@ -148,7 +139,6 @@ markmap:
       - **Paso 2**: **Dibujar la línea de frontera** para cada una (revisando si es sólida o discontinua)
       - **Paso 3**: **Sombrear el semiplano** correspondiente según el símbolo de la inecuación
       - **Paso 4**: **Identificar la región compartida** que cumple con todas las restricciones del sistema 
-
 ## 📈 Funciones
 - **Conceptos básicos**
     - Una función asigna **un solo valor de $y$** a cada $x$
@@ -244,7 +234,6 @@ markmap:
     - Reflexiones
       - Reflexión respecto al eje $x$: $\quad -f(x)$
       - Reflexión respecto al eje $y$: $\quad f(-x)$
-
 ## ➡️ Vectores
 - **Conceptos básicos**
   - Representación:
@@ -274,8 +263,6 @@ markmap:
   - Geométricamente:
     - Dependiendo del factor de homotecia (enlargement) se expande, 
       contrae o refleja desde el centro de homotecia (enlargement)
-
-
 ## 🔺 Transformaciones de figuras
 - **Traslaciones**
   - Mover la figura sin cambiar forma ni tamaño
@@ -305,7 +292,6 @@ markmap:
     - $0<k<1$: la figura se achica
     - $k<0$: reflexión respecto al centro
   - Todas las longitudes cambian en la misma proporción
-
 ## ⚖️ Proporción Directa e Inversa
   - ⬆️ **Proporción Directa**: 
        $y$ es directamente proporcional a $x$
@@ -331,7 +317,6 @@ markmap:
       - **Paso 3:** Nueva ecuación: $y = \dfrac{18}{x^2}$
       - **Paso 4:** Calcular $y$ cuando $x=6$:
        $y = \dfrac{18}{6^2} = \dfrac{18}{36} = 0.5$
-
 ## 🔺 Volúmenes y áreas
 - **Fórmulas**
   - En classroom subí un pdf con todas las fórmulas y figuras para que sea más secillo

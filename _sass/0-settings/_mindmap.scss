@@ -9,25 +9,52 @@
 // }
 
 
-// Arreglo para IPAD y TODO
+// Arreglo para IPAD y TODO Sigue sin funcionar
+// .mindmap-container {
+//   position: relative;
+//   width: 100%;
+//   height: 80vh;        /* base */
+//   min-height: 80svh;  /* iOS Safari fix */
+//   border: 1px solid #ccc;
+//   padding: 10px;
+//   border-radius: 8px;
+//   box-sizing: border-box;
+// }
+
+// .mindmap-container iframe {
+//   position: absolute;
+//   inset: 10px;
+//   width: calc(100% - 20px);
+//   height: calc(100% - 20px);
+//   border: none;
+// }
+
+
 .mindmap-container {
-  position: relative;
   width: 100%;
-  height: 80vh;        /* base */
-  min-height: 80svh;  /* iOS Safari fix */
-  border: 1px solid #ccc;
+  height: 80dvh;
   padding: 10px;
   border-radius: 8px;
-  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .mindmap-container iframe {
-  position: absolute;
-  inset: 10px;
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
+  width: 100%;
+  height: 100%;
   border: none;
 }
 
+.mindmap-link {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background: #282a36;
+  color: #f8f8f2;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-
+.mindmap-link:hover {
+  background: #44475a;
+}

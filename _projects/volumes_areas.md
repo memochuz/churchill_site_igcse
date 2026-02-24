@@ -17,7 +17,7 @@ description: |
     </ul>
 
 categories: [IGCSE, Geometry]
-image: '/images/Geometry/volumes_areas_front.png'
+image: '/images/Volumes_Areas/volumes_areas_front.png'
 ---
 
 ## Area 
@@ -127,7 +127,7 @@ SA = \underbrace{\pi \times d \times h}_{\text{curved cylinder face}} + \underbr
 $$
 
 Hence,
-
+git
 $$
 Area = \pi \times 5 \times 10 + \pi \times (2.5)^{2}+ \frac{4\pi \times (2.5)^{2}}{2}
 $$

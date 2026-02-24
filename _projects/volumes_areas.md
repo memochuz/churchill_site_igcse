@@ -78,7 +78,13 @@ Step 1: Area of rectangle
 Step 2: Area of semicircle  
 
 $$
-Area = \underbrace{\frac{\pi \times r^{2}}{2}}_{\text{semicircle}} + \underbrace{b \times h}_{\text{rectangle}} = \frac{\pi \times (2.5)^{2}}{2} + 5 \times 10
+Area = \underbrace{\frac{\pi \times r^{2}}{2}}_{\text{semicircle}} + \underbrace{b \times h}_{\text{rectangle}} 
+$$
+
+Therefore,
+
+$$
+Area = \frac{\pi \times (2.5)^{2}}{2} + 5 \times 10
 $$
 
 ---
@@ -103,7 +109,13 @@ $$
 Volume:
 
 $$
-Volume = \underbrace{\pi r^2 h} _{\text{cylinder}}+ \underbrace{\frac{\frac{4}\pi \times  r^3}{3}}{2}}_{\text{semihesphere}} = \pi\times (2.5)^2 \times 10 + \frac{\frac{4}{3}\pi \times r^{3}}{2}
+Volume = \underbrace{\pi r^2 h} _{\text{cylinder}}+ \underbrace{\frac{\frac{4}\pi \times  r^3}{3}}{2}}_{\text{semihesphere}} 
+$$
+
+Therefore,
+
+$$
+= \pi\times (2.5)^2 \times 10 + \frac{\frac{4}{3}\pi \times r^{3}}{2}
 $$
 
 Surface Area:
@@ -111,9 +123,14 @@ Surface Area:
 Do NOT include the circular face where they join.
 
 $$
-SA = \underbrace{\pi \times d \times h}_{\text{curved cylinder face}} + \underbrace{\pi \times r^2}_{\text{base}} + \underbrace{\frac{4\pi \times r^2}{2}}_{\text{half semihesphere}} = \pi \times 5 \times 10 + \pi \times (2.5)^{2}+ \frac{4\pi \times (2.5)^{2}}{2}
+SA = \underbrace{\pi \times d \times h}_{\text{curved cylinder face}} + \underbrace{\pi \times r^2}_{\text{base}} + \underbrace{\frac{4\pi \times r^2}{2}}_{\text{half semihesphere}}
 $$
 
+Hence,
+
+$$
+Area = \pi \times 5 \times 10 + \pi \times (2.5)^{2}+ \frac{4\pi \times (2.5)^{2}}{2}
+$$
 (One base + curved cylinder + curved hemisphere)
 
 ---

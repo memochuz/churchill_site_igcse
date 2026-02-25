@@ -84,7 +84,7 @@ $$
 Therefore,
 
 $$
-Area = \frac{\pi \times (2.5)^{2}}{2} + 5 \times 10
+Area = \left(\frac{\pi \times (2.5)^{2}}{2}\right) + \left(5 \times 10 \right)
 $$
 
 ---
@@ -109,13 +109,13 @@ $$
 Volume:
 
 $$
-Volume = \underbrace{\pi r^2 h} _{\text{cylinder}}+ \underbrace{\frac{\frac{4}\pi \times  r^3}{3}}{2}}_{\text{semihesphere}} 
+Volume = \underbrace{\pi \times r^2  \times h} _{\text{cylinder}}+ \underbrace{\frac{\frac{4 \pi \times r ^{3}}{3}}{2}}_{\text{semi-sphere}} 
 $$
 
 Therefore,
 
 $$
-= \pi\times (2.5)^2 \times 10 + \frac{\frac{4}{3}\pi \times r^{3}}{2}
+= \left(\pi\times (2.5)^2 \times 10\right) +  \left(\frac{\frac{4}{3}\pi \times (2.5)^{3}}{2}\right)
 $$
 
 Surface Area:
@@ -123,15 +123,15 @@ Surface Area:
 Do NOT include the circular face where they join.
 
 $$
-SA = \underbrace{\pi \times d \times h}_{\text{curved cylinder face}} + \underbrace{\pi \times r^2}_{\text{base}} + \underbrace{\frac{4\pi \times r^2}{2}}_{\text{half semihesphere}}
+SA = \underbrace{\pi \times d \times h}_{\text{curved cylinder face}} + \underbrace{\pi \times r^2}_{\text{base}} + \underbrace{\frac{4\pi \times r^2}{2}}_{\text{half semi-sphere}}
 $$
 
 Hence,
-git
+
 $$
-Area = \pi \times 5 \times 10 + \pi \times (2.5)^{2}+ \frac{4\pi \times (2.5)^{2}}{2}
+Area = \left(\pi \times 5 \times 10\right) + \left(\pi \times (2.5)^{2}\right)+ \left(\frac{4\pi \times (2.5)^{2}}{2}\right)
 $$
-(One base + curved cylinder + curved hemisphere)
+
 
 ---
 

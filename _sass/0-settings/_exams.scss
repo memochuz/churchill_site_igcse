@@ -101,7 +101,7 @@
     transform: translateY(-4px); // El salto que te gusta
     background: #BD93F9; // Morado (Dracula)
     color: #ffffff !important;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.45);
+    box-shadow: 0 0 15px rgba(189, 147, 249, 0.5);
   }
 }
 
@@ -149,5 +149,7 @@
   &:hover:not(.ms) {
     background: #FFB86C !important;
     color: #282A36 !important;
+    /* Agregamos el brillo naranja coincidente */
+    box-shadow: 0 0 12px rgba(255, 184, 108, 0.4);
   }
 }

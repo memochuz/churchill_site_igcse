@@ -1,0 +1,153 @@
+/* ==========================================================================
+   SECCIÓN DE TAREAS Y RECURSOS (examS)
+   Unifica estilos visuales de _tareas y estructura de _tareasnew
+   ========================================================================== */
+
+/* 1. CONTENEDORES PRINCIPALES 
+   -------------------------------------------------------------------------- */
+.exams-section { 
+  margin-top: 2rem; 
+  text-align: left; 
+}
+
+/* El nuevo contenedor con el padding de seguridad que pediste */
+.exam-papers-container {
+  width: 100%;
+  padding: 0 5px; 
+  box-sizing: border-box;
+}
+
+// .exams-section h2 { 
+//   color: var(--secondary-color); 
+// }
+
+/* Reset de caja para que rellenos y bordes no rompan el tamaño del grid */
+.exam-year-btn, .exam-block, .exam-main-btn, 
+.exam-download-links, .exam-btn-mini, .exam-acciones-inline {
+  box-sizing: border-box;
+}
+
+/* 2. GRID Y ESTRUCTURA
+   -------------------------------------------------------------------------- */
+
+.exams-grid {
+  display: grid;
+  /* Mantiene 3 columnas en desktop y baja a 1 en móvil automáticamente */
+  /* minmax(200px) asegura que los botones no se vean diminutos */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Bloque que agrupa el botón principal y sus enlaces de descarga */
+.exam-block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. BOTONES PRINCIPALES
+   -------------------------------------------------------------------------- */
+
+/* Botón de Año (Acordeón)  ES IGUAL*/
+.exam-year-btn {
+  width: 100%; 
+  padding: 1.2rem 1.5rem;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: filter 0.2s;
+
+  &:hover { filter: brightness(1.1); }
+}
+
+/* Botón de Paper/Tarea (El botón grande azul) */
+.exam-main-btn {
+  width: 100%;
+  background: #6272A4; // Azul suave (Dracula)
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.8rem 0.5rem;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  /* Centrado de dos líneas (Título y Subtítulo) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.3;
+  font-weight: 600;
+  /* Efectos visuales rescatados de _tareas.scss */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+  transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease;
+
+  small {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+  &:hover {
+    transform: translateY(-4px); // El salto que te gusta
+    background: #BD93F9; // Morado (Dracula)
+    color: #ffffff !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.45);
+  }
+}
+
+/* 4. ENLACES DE DESCARGA Y VARIANTES (MINI BOTONES)
+   -------------------------------------------------------------------------- */
+
+/* Panel que se despliega bajo el botón principal */
+.exam-download-links {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+  margin-top: -5px; // Para que se una visualmente al botón de arriba
+}
+
+.exam-acciones-inline {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Botones pequeños para PDF y Markscheme */
+.exam-btn-mini {
+  flex: 1;
+  padding: 0.6rem 0.3rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-color);
+  transition: all 0.2s ease;
+  
+  /* Hover para Markscheme (Verde) */
+  &.ms:hover {
+    background: #50FA7B !important;
+    color: #282A36 !important;
+    box-shadow: 0 0 12px rgba(80, 250, 123, 0.3);
+  }
+
+  /* Hover para Paper (Naranja) */
+  &:hover:not(.ms) {
+    background: #FFB86C !important;
+    color: #282A36 !important;
+  }
+}

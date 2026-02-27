@@ -1,0 +1,74 @@
+---
+layout: default
+title: Prueba
+permalink: /prueba/
+description: En esta sección encontrarás una colección de exámenes para practicar y prepararte.
+page_cover: '/images/banner_7.png'
+---
+
+<article class="page container">
+
+  <div class="page-head">
+    <h1 class="page-title">📚 {{ page.title }}</h1>
+    {% if page.description %}
+    <div class="page-description">{{ page.description | markdownify }}</div>
+    {% endif %}
+  </div>
+
+  {% if page.image %}
+  <div class="page-image">
+    <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <!-- EMPIEZAN LOS BOTÓNES -->
+  <section class="exams-section">
+    {% for entry in site.data.exams %}
+    <!-- QUITO <div class="year-group"></div> -->
+    <div>
+      <button class="year-btn" onclick="toggleAccordion('year-{{ entry.year }}')">
+        <span>🗓️ Year {{ entry.year }}</span>
+        <span class="arrow">▼</span>
+      </button>
+
+      <div id="year-{{ entry.year }}" class="exam-papers-container" style="display: none;">
+        <div class="exams-grid">
+          
+          {% for paper in entry.papers %}
+          <div class="exam-block">
+            <button class="exam-main-btn" onclick="toggleAccordion('{{ paper.id }}')">
+              {{ paper.title }} <br> <small>{{ paper.subtitle }}</small>
+            </button>
+            
+            <div id="{{ paper.id }}" class="exam-download-links" style="display: none;">
+              {% for variant in paper.variants %}
+              <div class="exam-acciones-inline">
+                <a href="{{ '/pastpapers/' | append: entry.year | append: '/Papers/' | append: variant.file | relative_url }}" class="exam-btn-mini" target="_blank">
+                  ✏️ {{ variant.name }}
+                </a>
+                <a href="{{ '/pastpapers/' | append: entry.year | append: '/Markschemes/' | append: variant.ms | relative_url }}" class="exam-btn-mini ms" target="_blank">
+                  ✅ MS
+                </a>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+</article>
+
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>

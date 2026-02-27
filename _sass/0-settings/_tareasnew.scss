@@ -1,4 +1,4 @@
-/* Reset de caja para control total del ancho */
+/* Reset de caja para evitar desbordamientos */
 .year-group, .year-btn, .paper-block, .paper-main-btn, .download-links, .tarea-btn.mini, .acciones-inline {
   box-sizing: border-box;
 }
@@ -18,73 +18,86 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: filter 0.2s;
+
+  &:hover { filter: brightness(1.1); }
 }
 
 .tareas-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Fuerza 3 columnas exactas, antes:   repeat(auto-fit, minmax(250px, 1fr));*/
-  gap: 1.5rem;
+  /* Mantiene 3 columnas pero baja a 1 en móviles automáticamente */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
 .paper-main-btn {
-  @extend .tarea-btn;
+  @extend .tarea-btn; // Asegúrate de que .tarea-btn exista en tu otro archivo
   width: 100%;
   background: #6272A4;
   cursor: pointer;
   border: none;
+  margin: 0;
+  
+  /* Centrado de dos líneas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 1); /* Texto un poco opaco cambiar 1 por 0.7 */
-  transition: color 0.3s ease, background 0.3s ease;
+  text-align: center;
+  padding: 0.8rem 0.5rem;
+  line-height: 1.3;
+
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+
+  small {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.8;
+  }
 
   &:hover {
-    color: #ffffff !important; /* Letra blanca pura al hacer hover */
-    background: #BD93F9; /* Un tono un poco más claro para notar el clic */
+    color: #ffffff !important;
+    background: #BD93F9;
   }
 }
 
-/* CONTENEDOR LADO A LADO */
 .acciones-inline {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   width: 100%;
   margin-top: 5px;
 }
 
 .tarea-btn.mini {
   flex: 1;
-  padding: 0.7rem 0.5rem;
-  font-size: 0.8rem;
+  padding: 0.6rem 0.3rem;
+  font-size: 0.75rem;
   justify-content: center;
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 5px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1); /* Fondo neutro inicial */
+  gap: 4px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text-color);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   
-  /* Ajuste para el botón de Markscheme (MS) */
-  &.ms {
-    background: rgba(255, 255, 255, 0.1); /* Igual que el paper normal al inicio */
-    color: var(--text-color);
-
-    &:hover {
-      background: #50FA7B !important; /* Se ilumina en verde */
-      color: #282A36 !important;      /* Texto oscuro para contraste */
-      box-shadow: 0 0 15px rgba(80, 250, 123, 0.4); /* Efecto de brillo */
-    }
+  &.ms:hover {
+    background: #50FA7B !important;
+    color: #282A36 !important;
+    box-shadow: 0 0 12px rgba(80, 250, 123, 0.3);
   }
 
-  &:hover {
-    background: #FFB86C !important; /* Se ilumina en verde */
-    color: #282A36 !important;      /* Texto oscuro para contraste */
+  &:hover:not(.ms) {
+    background: #FFB86C !important; // Naranja Dracula
+    color: #282A36 !important;
   }
 }
 
 .download-links {
   padding: 10px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 0 0 10px 10px;
 }

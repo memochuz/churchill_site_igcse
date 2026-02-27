@@ -34,15 +34,18 @@ menu_settings:
     #   url: '/videos/'
     - title: '📷 Mind maps'
       url: '/gallery/'
+    - title: '✏️ Exams'
+      url: '/exams/'
     # - title: '✍️ Exercises'
     #   url: '/blog/'
-    - title: '📚 Homeworks'
-      url: '/homeworks/'
+    # - title: '📚 Homeworks'
+    #   url: '/homeworks/'
     # - title: '🔑 Starters'
     #   url: '/starters/'
     # - title: '📔 Elements'
     #   url: '/elements/'
-
+    # - title: 'Prueba'
+      # url: '/prueba/'
 
 #-------------------------------
 # Author Settings

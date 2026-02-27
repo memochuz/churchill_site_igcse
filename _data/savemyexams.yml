@@ -1,0 +1,495 @@
+- topic: Algebra & Sequences
+  id: algebra-sequences
+  tasks:
+  - id: algebra-sequences-algebraic-fractions
+    title: Algebraic Fractions
+    variants:
+    - name: Calculator
+      file: algebraic-fractions-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: algebraic-fractions.pdf
+      type: standard
+  - id: algebra-sequences-algebraic-roots-and-indices
+    title: Algebraic Roots And Indices
+    variants:
+    - name: Calculator
+      file: algebraic-roots-and-indices-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: algebraic-roots-and-indices.pdf
+      type: standard
+  - id: algebra-sequences-expanding-and-factorising-brackets
+    title: Expanding And Factorising Brackets
+    variants:
+    - name: Calculator
+      file: expanding-and-factorising-brackets-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: expanding-and-factorising-brackets.pdf
+      type: standard
+  - id: algebra-sequences-exponentials-and-logarithms
+    title: Exponentials And Logarithms
+    variants:
+    - name: Calculator
+      file: exponentials-and-logarithms-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: exponentials-and-logarithms.pdf
+      type: standard
+  - id: algebra-sequences-forming-and-solving-equations
+    title: Forming And Solving Equations
+    variants:
+    - name: Calculator
+      file: forming-and-solving-equations-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: forming-and-solving-equations.pdf
+      type: standard
+  - id: algebra-sequences-functions
+    title: Functions
+    variants:
+    - name: Calculator
+      file: functions-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: functions.pdf
+      type: standard
+  - id: algebra-sequences-introduction-to-algebra
+    title: Introduction To Algebra
+    variants:
+    - name: Calculator
+      file: introduction-to-algebra-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: introduction-to-algebra.pdf
+      type: standard
+  - id: algebra-sequences-linear-equations-and-inequalities
+    title: Linear Equations And Inequalities
+    variants:
+    - name: Calculator
+      file: linear-equations-and-inequalities-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: linear-equations-and-inequalities.pdf
+      type: standard
+  - id: algebra-sequences-proportion
+    title: Proportion
+    variants:
+    - name: Calculator
+      file: proportion-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: proportion.pdf
+      type: standard
+  - id: algebra-sequences-quadratic-equations
+    title: Quadratic Equations
+    variants:
+    - name: Calculator
+      file: quadratic-equations-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: quadratic-equations.pdf
+      type: standard
+  - id: algebra-sequences-rearranging-formulas
+    title: Rearranging Formulas
+    variants:
+    - name: Calculator
+      file: rearranging-formulas-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: rearranging-formulas.pdf
+      type: standard
+  - id: algebra-sequences-sequences
+    title: Sequences
+    variants:
+    - name: Calculator
+      file: sequences-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: sequences.pdf
+      type: standard
+  - id: algebra-sequences-simultaneous-equations
+    title: Simultaneous Equations
+    variants:
+    - name: Calculator
+      file: simultaneous-equations-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: simultaneous-equations.pdf
+      type: standard
+- topic: Coordinate Geometry & Graphs
+  id: coordinate-geometry-graphs
+  tasks:
+  - id: coordinate-geometry-graphs-coordinate-geometry
+    title: Coordinate Geometry
+    variants:
+    - name: Calculator
+      file: coordinate-geometry-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: coordinate-geometry.pdf
+      type: standard
+  - id: coordinate-geometry-graphs-sketching-2d-inequalities
+    title: Sketching 2D Inequalities
+    variants:
+    - name: Non-Calculator
+      file: sketching-2d-inequalities.pdf
+      type: standard
+  - id: coordinate-geometry-graphs-straight-line-graphs
+    title: Straight Line Graphs
+    variants:
+    - name: Calculator
+      file: straight-line-graphs-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: straight-line-graphs.pdf
+      type: standard
+  - id: coordinate-geometry-graphs-transformations-of-graphs
+    title: Transformations Of Graphs
+    variants:
+    - name: Non-Calculator
+      file: transformations-of-graphs.pdf
+      type: standard
+  - id: coordinate-geometry-graphs-types-of-graphs
+    title: Types Of Graphs
+    variants:
+    - name: Non-Calculator
+      file: types-of-graphs.pdf
+      type: standard
+  - id: coordinate-geometry-graphs-usings-for-graphs-equations-and-inequalities
+    title: Usings For Graphs Equations And Inequalities
+    variants:
+    - name: Calculator
+      file: using-calculators-for-graphs-equations-and-inequalities.pdf
+      type: calc
+- topic: Geometry
+  id: geometry
+  tasks:
+  - id: geometry-angles-in-polygons-and-parallel-lines
+    title: Angles In Polygons And Parallel Lines
+    variants:
+    - name: Calculator
+      file: angles-in-polygons-and-parallel-lines-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: angles-in-polygons-and-parallel-lines.pdf
+      type: standard
+  - id: geometry-bearings
+    title: Bearings
+    variants:
+    - name: Non-Calculator
+      file: bearings.pdf
+      type: standard
+  - id: geometry-circle-theorems
+    title: Circle Theorems
+    variants:
+    - name: Calculator
+      file: circle-theorems-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: circle-theorems.pdf
+      type: standard
+  - id: geometry-symmetry-and-shapes
+    title: Symmetry And Shapes
+    variants:
+    - name: Non-Calculator
+      file: symmetry-and-shapes.pdf
+      type: standard
+- topic: Investigations & Modelling
+  id: investigations-modelling
+  tasks:
+  - id: investigations-modelling-investigations-1
+    title: Investigations 1
+    variants:
+    - name: Non-Calculator
+      file: investigations-1.pdf
+      type: standard
+  - id: investigations-modelling-investigations-2
+    title: Investigations 2
+    variants:
+    - name: Non-Calculator
+      file: investigations-2.pdf
+      type: standard
+  - id: investigations-modelling-investigations-3
+    title: Investigations 3
+    variants:
+    - name: Non-Calculator
+      file: investigations-3.pdf
+      type: standard
+  - id: investigations-modelling-modelling-1
+    title: Modelling 1
+    variants:
+    - name: Non-Calculator
+      file: modelling-1.pdf
+      type: standard
+  - id: investigations-modelling-modelling-2
+    title: Modelling 2
+    variants:
+    - name: Non-Calculator
+      file: modelling-2.pdf
+      type: standard
+  - id: investigations-modelling-modelling-3
+    title: Modelling 3
+    variants:
+    - name: Non-Calculator
+      file: modelling-3.pdf
+      type: standard
+- topic: Lengths, Areas & Volumes
+  id: lengths-areas-volumes
+  tasks:
+  - id: lengths-areas-volumes-area-and-perimeter
+    title: Area And Perimeter
+    variants:
+    - name: Calculator
+      file: area-and-perimeter-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: area-and-perimeter.pdf
+      type: standard
+  - id: lengths-areas-volumes-circles-arcs-and-sectors
+    title: Circles Arcs And Sectors
+    variants:
+    - name: Calculator
+      file: circles-arcs-and-sectors-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: circles-arcs-and-sectors.pdf
+      type: standard
+  - id: lengths-areas-volumes-congruence-and-similarity
+    title: Congruence And Similarity
+    variants:
+    - name: Calculator
+      file: congruence-and-similarity-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: congruence-and-similarity.pdf
+      type: standard
+  - id: lengths-areas-volumes-volume-and-surface-area
+    title: Volume And Surface Area
+    variants:
+    - name: Calculator
+      file: volume-and-surface-area-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: volume-and-surface-area.pdf
+      type: standard
+- topic: Number
+  id: number
+  tasks:
+  - id: number-compound-measure-and-speed
+    title: Compound Measure And Speed
+    variants:
+    - name: Calculator
+      file: compound-measure-and-speed-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: compound-measure-and-speed.pdf
+      type: standard
+  - id: number-converting-fractions-decimals-and-percentages
+    title: Converting Fractions Decimals And Percentages
+    variants:
+    - name: Calculator
+      file: converting-fractions-decimals-and-percentages-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: converting-fractions-decimals-and-percentages.pdf
+      type: standard
+  - id: number-fractions
+    title: Fractions
+    variants:
+    - name: Non-Calculator
+      file: fractions.pdf
+      type: standard
+  - id: number-number-operations
+    title: Number Operations
+    variants:
+    - name: Calculator
+      file: number-operations-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: number-operations.pdf
+      type: standard
+  - id: number-percentages
+    title: Percentages
+    variants:
+    - name: Calculator
+      file: percentages-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: percentages.pdf
+      type: standard
+  - id: number-power-roots-and-standard-form
+    title: Power Roots And Standard Form
+    variants:
+    - name: Calculator
+      file: power-roots-and-standard-form-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: power-roots-and-standard-form.pdf
+      type: standard
+  - id: number-prime-factors-hcf-and-lcm
+    title: Prime Factors Hcf And Lcm
+    variants:
+    - name: Calculator
+      file: prime-factors-hcf-and-lcm-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: prime-factors-hcf-and-lcm.pdf
+      type: standard
+  - id: number-ratios
+    title: Ratios
+    variants:
+    - name: Non-Calculator
+      file: ratios.pdf
+      type: standard
+  - id: number-ratios_calculator
+    title: Ratios_Calculator
+    variants:
+    - name: Non-Calculator
+      file: ratios_calculator.pdf
+      type: standard
+  - id: number-rounding-and-estimation
+    title: Rounding And Estimation
+    variants:
+    - name: Non-Calculator
+      file: rounding-and-estimation.pdf
+      type: standard
+  - id: number-sets
+    title: Sets
+    variants:
+    - name: Calculator
+      file: sets-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: sets.pdf
+      type: standard
+  - id: number-simple-and-compound-interest
+    title: Simple And Compound Interest
+    variants:
+    - name: Non-Calculator
+      file: simple-and-compound-interest.pdf
+      type: standard
+  - id: number-surds
+    title: Surds
+    variants:
+    - name: Non-Calculator
+      file: surds.pdf
+      type: standard
+  - id: number-time-currency-and-units
+    title: Time Currency And Units
+    variants:
+    - name: Calculator
+      file: time-currency-and-units-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: time-currency-and-units.pdf
+      type: standard
+- topic: Probability
+  id: probability
+  tasks:
+  - id: probability-introduction-to-probability
+    title: Introduction To Probability
+    variants:
+    - name: Calculator
+      file: introduction-to-probability-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: introduction-to-probability.pdf
+      type: standard
+  - id: probability-probabilities-from-tables-and-charts
+    title: Probabilities From Tables And Charts
+    variants:
+    - name: Non-Calculator
+      file: probabilities-from-tables-and-charts.pdf
+      type: standard
+  - id: probability-tree-diagrams-and-multiple-events
+    title: Tree Diagrams And Multiple Events
+    variants:
+    - name: Calculator
+      file: tree-diagrams-and-multiple-events-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: tree-diagrams-and-multiple-events.pdf
+      type: standard
+- topic: Pythagoras & Trigonometry
+  id: pythagoras-trigonometry
+  tasks:
+  - id: pythagoras-trigonometry-3d-pythagoras-and-trigonometry
+    title: 3D Pythagoras And Trigonometry
+    variants:
+    - name: Non-Calculator
+      file: 3d-pythagoras-and-trigonometry.pdf
+      type: standard
+  - id: pythagoras-trigonometry-right-angled-triangles
+    title: Right Angled Triangles
+    variants:
+    - name: Calculator
+      file: right-angled-triangles-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: right-angled-triangles.pdf
+      type: standard
+  - id: pythagoras-trigonometry-sine-cosine-rule-and-area-of-triangles
+    title: Sine Cosine Rule And Area Of Triangles
+    variants:
+    - name: Non-Calculator
+      file: sine-cosine-rule-and-area-of-triangles.pdf
+      type: standard
+  - id: pythagoras-trigonometry-trigonometric-graphs-and-equations
+    title: Trigonometric Graphs And Equations
+    variants:
+    - name: Non-Calculator
+      file: trigonometric-graphs-and-equations.pdf
+      type: standard
+- topic: Statistics
+  id: statistics
+  tasks:
+  - id: statistics-averages-ranges-and-comparing-data
+    title: Averages Ranges And Comparing Data
+    variants:
+    - name: Calculator
+      file: averages-ranges-and-comparing-data-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: averages-ranges-and-comparing-data.pdf
+      type: standard
+  - id: statistics-cumulative-frequency
+    title: Cumulative Frequency
+    variants:
+    - name: Calculator
+      file: cumulative-frequency-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: cumulative-frequency.pdf
+      type: standard
+  - id: statistics-scatter-graphs-and-correlation
+    title: Scatter Graphs And Correlation
+    variants:
+    - name: Non-Calculator
+      file: scatter-graphs-and-correlation.pdf
+      type: standard
+  - id: statistics-statistical-diagrams
+    title: Statistical Diagrams
+    variants:
+    - name: Non-Calculator
+      file: statistical-diagrams.pdf
+      type: standard
+- topic: Vectors & Transformations
+  id: vectors-transformations
+  tasks:
+  - id: vectors-transformations-transformations-of-shapes
+    title: Transformations Of Shapes
+    variants:
+    - name: Calculator
+      file: transformations-of-shapes-calculator.pdf
+      type: calc
+    - name: Non-Calculator
+      file: transformations-of-shapes.pdf
+      type: standard
+  - id: vectors-transformations-vectors
+    title: Vectors
+    variants:
+    - name: Non-Calculator
+      file: vectors.pdf
+      type: standard

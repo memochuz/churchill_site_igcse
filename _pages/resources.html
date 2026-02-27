@@ -1,0 +1,64 @@
+---
+layout: default
+title: Extras
+permalink: /resources/
+description: In this section, you will find extra exercises organized by topic.
+page_cover: '/images/banner_7.png'
+---
+
+<article class="page container">
+  <div class="page-head">
+    <h1 class="page-title">📚 {{ page.title }}</h1>
+    {% if page.description %}
+    <div class="page-description">{{ page.description | markdownify }}</div>
+    {% endif %}
+  </div>
+
+  <section class="homeworks-section">
+    {% for entry in site.data.savemyexams %}
+    <div class="year-group">
+      <button class="homework-year-btn" onclick="toggleAccordion('topic-{{ entry.id }}')">
+        <span>📂 {{ entry.topic }}</span>
+        <span class="arrow">▼</span>
+      </button>
+
+      <div id="topic-{{ entry.id }}" class="homework-papers-container" style="display: none;">
+        <div class="homeworks-grid">
+          
+          {% for task in entry.tasks %}
+          <div class="homework-block">
+            <button class="homework-main-btn" onclick="toggleAccordion('{{ task.id }}')">
+              {{ task.title }}
+            </button>
+            
+            <div id="{{ task.id }}" class="homework-download-links" style="display: none;">
+              <div class="homework-acciones-inline">
+                {% for variant in task.variants %}
+                <a href="{{ '/tareas/savemyexams/' | append: entry.id | replace: '-', '_' | append: '/' | append: variant.file | relative_url }}" 
+                   class="homework-btn-mini {% if variant.type == 'calc' %}ms{% endif %}" 
+                   target="_blank">
+                  {% if variant.type == 'calc' %}🔢{% else %}✍️{% endif %} {{ variant.name }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+</article>
+
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>

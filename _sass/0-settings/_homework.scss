@@ -38,12 +38,16 @@
   gap: 1rem;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
+  /* El uso de align-items: stretch asegura que todos los bloques 
+     de una fila tengan la misma altura máxima */
+  //align-items: stretch; //nuevo
 }
 
 /* Bloque que agrupa el botón principal y sus enlaces de descarga */
 .homework-block {
   display: flex;
   flex-direction: column;
+  //height: 100%; /* nuevo Ocupa todo el espacio vertical del grid */
 }
 
 /* 3. BOTONES PRINCIPALES
@@ -51,6 +55,10 @@
 
 /* Botón de Año (Acordeón)  ES IGUAL*/
 .homework-year-btn {
+  /* Al usar flex-grow: 1, el botón se estira para llenar el bloque 
+     si el texto es corto, igualando a los botones con texto largo */
+  //flex-grow: 1; //nuevo
+  //min-height: 70px; /* nuevo, Define una altura mínima cómoda para dos renglones */
   width: 100%; 
   padding: 1.2rem 1.5rem;
   background: var(--secondary-color);
@@ -65,6 +73,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  //line-height: 1.2; /* nuevo, Ajustado para que el texto no se vea muy separado */
   transition: filter 0.2s;
 
   &:hover { filter: brightness(1.1); }
@@ -101,7 +110,7 @@
     transform: translateY(-4px); // El salto que te gusta
     background: #BD93F9; // Morado (Dracula)
     color: #ffffff !important;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.45);
+    box-shadow: 0 0 15px rgba(189, 147, 249, 0.5);
   }
 }
 
@@ -149,5 +158,7 @@
   &:hover:not(.ms) {
     background: #FFB86C !important;
     color: #282A36 !important;
+    /* Agregamos el brillo naranja coincidente */
+    box-shadow: 0 0 12px rgba(255, 184, 108, 0.4);
   }
 }

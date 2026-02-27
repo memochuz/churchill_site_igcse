@@ -1,0 +1,109 @@
+.
+├── Algebra_Sequences
+│   ├── algebraic-fractions-calculator.pdf
+│   ├── algebraic-fractions.pdf
+│   ├── algebraic-roots-and-indices-calculator.pdf
+│   ├── algebraic-roots-and-indices.pdf
+│   ├── expanding-and-factorising-brackets-calculator.pdf
+│   ├── expanding-and-factorising-brackets.pdf
+│   ├── exponentials-and-logarithms-calculator.pdf
+│   ├── exponentials-and-logarithms.pdf
+│   ├── forming-and-solving-equations-4nSf665cnvbj5jPC.pdf
+│   ├── forming-and-solving-equations-calculator.pdf
+│   ├── functions-calculator.pdf
+│   ├── functions.pdf
+│   ├── introduction-to-algebra-calculator.pdf
+│   ├── introduction-to-algebra.pdf
+│   ├── linear-equations-and-inequalities-calculator.pdf
+│   ├── linear-equations-and-inequalities-CrqWRxgKQb6ShwdW.pdf
+│   ├── proportion-calculator.pdf
+│   ├── proportion.pdf
+│   ├── quadratic-equations-calculator.pdf
+│   ├── quadratic-equations.pdf
+│   ├── rearranging-formulas-calculator.pdf
+│   ├── rearranging-formulas.pdf
+│   ├── sequences-calculator.pdf
+│   ├── sequences.pdf
+│   ├── simultaneous-equations-calculator.pdf
+│   └── simultaneous-equations.pdf
+├── Coordinate_Geometry_Graphs
+│   ├── coordinate-geometry-calculator.pdf
+│   ├── coordinate-geometry.pdf
+│   ├── sketching-2d-inequalities.pdf
+│   ├── straight-line-graphs-calculator.pdf
+│   ├── straight-line-graphs.pdf
+│   ├── transformations-of-graphs.pdf
+│   ├── types-of-graphs.pdf
+│   └── using-calculators-for-graphs-equations-and-inequalities.pdf
+├── Geometry
+│   ├── angles-in-polygons-and-parallel-lines-calculator.pdf
+│   ├── angles-in-polygons-and-parallel-lines.pdf
+│   ├── bearings.pdf
+│   ├── circle-theorems-calculator.pdf
+│   ├── circle-theorems.pdf
+│   └── symmetry-and-shapes.pdf
+├── Investigations_Modelling
+│   ├── investigations-1.pdf
+│   ├── investigations-2.pdf
+│   ├── investigations-3.pdf
+│   ├── modelling-1.pdf
+│   ├── modelling-2.pdf
+│   └── modelling-3.pdf
+├── Lengths_Areas_Volumes
+│   ├── area-and-perimeter-calculator.pdf
+│   ├── area-and-perimeter.pdf
+│   ├── circles-arcs-and-sectors-calculator.pdf
+│   ├── circles-arcs-and-sectors.pdf
+│   ├── congruence-and-similarity-calculator.pdf
+│   ├── congruence-and-similarity.pdf
+│   ├── volume-and-surface-area-calculator.pdf
+│   └── volume-and-surface-area.pdf
+├── lista_para_gemini_savemyexams_yml.txt
+├── Number
+│   ├── compound-measure-and-speed-calculator.pdf
+│   ├── compound-measure-and-speed.pdf
+│   ├── converting-fractions-decimals-and-percentages-calculator.pdf
+│   ├── converting_fractions_decimals_percentages_non_calculator.pdf
+│   ├── fractions.pdf
+│   ├── number-operations-calculator.pdf
+│   ├── number-operations.pdf
+│   ├── percentages-calculator.pdf
+│   ├── percentages.pdf
+│   ├── power-roots-and-standard-form-calculator.pdf
+│   ├── power-roots-and-standard-form.pdf
+│   ├── prime-factors-hcf-and-lcm-calculator.pdf
+│   ├── prime-factors-hcf-and-lcm.pdf
+│   ├── ratios_calculator.pdf
+│   ├── ratios.pdf
+│   ├── rounding-and-estimation.pdf
+│   ├── sets-calculator.pdf
+│   ├── sets.pdf
+│   ├── simple-and-compound-interest.pdf
+│   ├── surds.pdf
+│   ├── time-currency-and-units-calculator.pdf
+│   └── time-currency-and-units.pdf
+├── Probability
+│   ├── introduction-to-probability-calculator.pdf
+│   ├── introduction-to-probability.pdf
+│   ├── probabilities-from-tables-and-charts.pdf
+│   ├── tree-diagrams-and-multiple-events-calculator.pdf
+│   └── tree-diagrams-and-multiple-events.pdf
+├── Pythagoras_Trigonometry
+│   ├── 3d-pythagoras-and-trigonometry.pdf
+│   ├── right-angled-triangles-calculator.pdf
+│   ├── right-angled-triangles.pdf
+│   ├── sine-cosine-rule-and-area-of-triangles.pdf
+│   └── trigonometric-graphs-and-equations.pdf
+├── Statistics
+│   ├── averages-ranges-and-comparing-data-calculator.pdf
+│   ├── averages-ranges-and-comparing-data.pdf
+│   ├── cumulative-frequency-calculator.pdf
+│   ├── cumulative-frequency.pdf
+│   ├── scatter-graphs-and-correlation.pdf
+│   └── statistical-diagrams.pdf
+└── Vectors_Transformations
+    ├── transformations-of-shapes-calculator.pdf
+    ├── transformations-of-shapes.pdf
+    └── vectors.pdf
+
+11 directories, 96 files

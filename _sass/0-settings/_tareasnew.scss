@@ -1,0 +1,90 @@
+/* Reset de caja para control total del ancho */
+.year-group, .year-btn, .paper-block, .paper-main-btn, .download-links, .tarea-btn.mini, .acciones-inline {
+  box-sizing: border-box;
+}
+
+.year-btn {
+  width: 100%; 
+  padding: 1.2rem 1.5rem;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tareas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Fuerza 3 columnas exactas, antes:   repeat(auto-fit, minmax(250px, 1fr));*/
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.paper-main-btn {
+  @extend .tarea-btn;
+  width: 100%;
+  background: #6272A4;
+  cursor: pointer;
+  border: none;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1); /* Texto un poco opaco cambiar 1 por 0.7 */
+  transition: color 0.3s ease, background 0.3s ease;
+
+  &:hover {
+    color: #ffffff !important; /* Letra blanca pura al hacer hover */
+    background: #BD93F9; /* Un tono un poco más claro para notar el clic */
+  }
+}
+
+/* CONTENEDOR LADO A LADO */
+.acciones-inline {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.tarea-btn.mini {
+  flex: 1;
+  padding: 0.7rem 0.5rem;
+  font-size: 0.8rem;
+  justify-content: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1); /* Fondo neutro inicial */
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  
+  /* Ajuste para el botón de Markscheme (MS) */
+  &.ms {
+    background: rgba(255, 255, 255, 0.1); /* Igual que el paper normal al inicio */
+    color: var(--text-color);
+
+    &:hover {
+      background: #50FA7B !important; /* Se ilumina en verde */
+      color: #282A36 !important;      /* Texto oscuro para contraste */
+      box-shadow: 0 0 15px rgba(80, 250, 123, 0.4); /* Efecto de brillo */
+    }
+  }
+
+  &:hover {
+    background: #FFB86C !important; /* Se ilumina en verde */
+    color: #282A36 !important;      /* Texto oscuro para contraste */
+  }
+}
+
+.download-links {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 10px 10px;
+}

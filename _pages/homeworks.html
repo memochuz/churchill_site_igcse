@@ -8,14 +8,14 @@ page_cover: '/images/banner_7.png'
 ---
 
 <!-- begin page -->
-<article class="page container">
+
+<!-- <article class="page container">
 
   <div class="page-head">
-    <h1 class="page-title">{{ page.title }}</h1>
+    <h1 class="page-title">📚 {{ page.title }}</h1>
+    
     {% if page.description %}
-  <div class="page-description">{{ page.description | markdownify }}</div>
-    <!-- {% elsif site.data.settings.contact.description %}
-    <p class="page-description">{{ site.data.settings.contact.description }}</p> -->
+    <div class="page-description">{{ page.description | markdownify }}</div>
     {% endif %}
   </div>
 
@@ -23,12 +23,11 @@ page_cover: '/images/banner_7.png'
   <div class="page-image">
     <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
   </div>
-  {% endif %}
+  {% endif %} -->
 
   <!-- Aqui empiezan las tareas: -->
    
-  <section class="tareas">
-    <!-- <h2>📝 Tareas</h2> -->
+  <!-- <section class="tareas">
     <div class="tareas-grid">
 
       <a class="tarea-btn" href="{{ '/tareas/hw_radicals_exponents.pdf' | relative_url }}" target="_blank" rel="noopener">
@@ -50,5 +49,105 @@ page_cover: '/images/banner_7.png'
   </section>
 
 
-</article>
+</article> -->
+
 <!-- end page -->
+
+<article class="page container">
+  <section class="tareas">
+    <div class="year-group">
+      <button class="year-btn" onclick="toggleAccordion('year-2025')">
+        <span>🗓️ Año 2024</span>
+        <span class="arrow">▼</span>
+      </button>
+
+      <div id="year-2025" class="papers-container" style="display: none;">
+
+        <div class="tareas-grid">
+
+          <div class="paper-block">
+            <button class="paper-main-btn" onclick="toggleAccordion('p1-2025')">Paper 1 (Core)</button>
+            <div id="p1-2025" class="download-links" style="display: none;">
+              <div class="acciones-inline">
+                <a href="{{ '/pastpapers/2024/Papers/569856-june-2024-question-paper-11.pdf' | relative_url }}" class="tarea-btn mini" target="_blank">✏️ June TZ1</a>
+                <a href="{{ '/pastpapers/2024/Markscheme/569850-june-2024-mark-scheme-paper-11.pdf' | relative_url }}" class="tarea-btn mini ms" target="_blank">✅ June TZ1</a>
+              </div>
+              <!-- otra linea -->
+               <div class="acciones-inline">
+                <a href="{{ '/pastpapers/2024/569858-june-2024-question-paper-31.pdf' | relative_url }}" class="tarea-btn mini" target="_blank">👁️ June Paper 3</a>
+                <a href="{{ '/pastpapers/2024/569852-june-2024-mark-scheme-paper-31.pdf' | relative_url }}" class="tarea-btn mini ms" target="_blank">✅ MS June Paper 3</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="paper-block">
+            <button class="paper-main-btn" onclick="toggleAccordion('p2-2025')">Paper 3</button>
+            <div id="p2-2025" class="download-links" style="display: none;">
+              <div class="acciones-inline">
+                <a href="{{ '/tareas/2025/p2.pdf' | relative_url }}" class="tarea-btn mini" target="_blank">👁️ Paper</a>
+                <a href="{{ '/tareas/2025/p2_ms.pdf' | relative_url }}" class="tarea-btn mini ms" target="_blank">✅ MS</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="paper-block">
+            <button class="paper-main-btn" onclick="toggleAccordion('p2-2025')">Paper 2</button>
+            <div id="p2-2025" class="download-links" style="display: none;">
+              <div class="acciones-inline">
+                <a href="{{ '/tareas/2025/p2.pdf' | relative_url }}" class="tarea-btn mini" target="_blank">👁️ Paper</a>
+                <a href="{{ '/tareas/2025/p2_ms.pdf' | relative_url }}" class="tarea-btn mini ms" target="_blank">✅ MS</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="tareas-grid">
+
+          <div class="paper-block">
+            <button class="paper-main-btn" onclick="toggleAccordion('p1-2025')">Paper 4</button>
+            <div id="p1-2025" class="download-links" style="display: none;">
+              <div class="acciones-inline">
+                <a href="{{ '/tareas/2025/p1.pdf' | relative_url }}" class="tarea-btn mini" target="_blank">👁️ Paper</a>
+                <a href="{{ '/tareas/2025/p1_ms.pdf' | relative_url }}" class="tarea-btn mini ms" target="_blank">✅ MS</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="paper-block">
+            <button class="paper-main-btn" onclick="toggleAccordion('p2-2025')">Paper 6</button>
+            <div id="p2-2025" class="download-links" style="display: none;">
+              <div class="acciones-inline">
+                <a href="{{ '/tareas/2025/p2.pdf' | relative_url }}" class="tarea-btn mini" target="_blank">👁️ Paper</a>
+                <a href="{{ '/tareas/2025/p2_ms.pdf' | relative_url }}" class="tarea-btn mini ms" target="_blank">✅ MS</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="paper-block">
+            <button class="paper-main-btn" onclick="toggleAccordion('p2-2025')">Paper 5</button>
+            <div id="p2-2025" class="download-links" style="display: none;">
+              <div class="acciones-inline">
+                <a href="{{ '/tareas/2025/p2.pdf' | relative_url }}" class="tarea-btn mini" target="_blank">👁️ Paper</a>
+                <a href="{{ '/tareas/2025/p2_ms.pdf' | relative_url }}" class="tarea-btn mini ms" target="_blank">✅ MS</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      <!-- Terminamos el year button -->
+      </div>
+    </div>
+  </section>
+</article>
+
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>

@@ -34,7 +34,7 @@ page_cover: '/images/banner_7.png'
             <div id="{{ task.id }}" class="homework-download-links" style="display: none;">
               <div class="homework-acciones-inline">
                 {% for variant in task.variants %}
-                <a href="{{ '/tareas/savemyexams/' | append: entry.id | replace: '-', '_' | append: '/' | append: variant.file | relative_url }}" 
+                <a href="{{ variant.path | relative_url }}" 
                    class="homework-btn-mini {% if variant.type == 'calc' %}ms{% endif %}" 
                    target="_blank">
                   {% if variant.type == 'calc' %}🔢{% else %}✍️{% endif %} {{ variant.name }}

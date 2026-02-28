@@ -77,10 +77,12 @@ try:
                     
                     # Definir etiqueta según el nombre del archivo
                     v_name = "Calculator" if is_calculator else "Non-Calculator"
-                    
+                    v_path = f"/tareas/savemyexams/{topic_folder}/{filename}"
+
                     temp_tasks[base_name]["variants"].append({
                         "name": v_name,
                         "file": filename,
+                        "path": v_path,
                         "type": "calc" if is_calculator else "standard" # Etiqueta para CSS
                     })
 

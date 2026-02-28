@@ -8,14 +8,14 @@
 │   ├── expanding-and-factorising-brackets.pdf
 │   ├── exponentials-and-logarithms-calculator.pdf
 │   ├── exponentials-and-logarithms.pdf
-│   ├── forming-and-solving-equations-4nSf665cnvbj5jPC.pdf
 │   ├── forming-and-solving-equations-calculator.pdf
+│   ├── forming-and-solving-equations.pdf
 │   ├── functions-calculator.pdf
 │   ├── functions.pdf
 │   ├── introduction-to-algebra-calculator.pdf
 │   ├── introduction-to-algebra.pdf
 │   ├── linear-equations-and-inequalities-calculator.pdf
-│   ├── linear-equations-and-inequalities-CrqWRxgKQb6ShwdW.pdf
+│   ├── linear-equations-and-inequalities.pdf
 │   ├── proportion-calculator.pdf
 │   ├── proportion.pdf
 │   ├── quadratic-equations-calculator.pdf
@@ -63,7 +63,7 @@
 │   ├── compound-measure-and-speed-calculator.pdf
 │   ├── compound-measure-and-speed.pdf
 │   ├── converting-fractions-decimals-and-percentages-calculator.pdf
-│   ├── converting_fractions_decimals_percentages_non_calculator.pdf
+│   ├── converting-fractions-decimals-and-percentages.pdf
 │   ├── fractions.pdf
 │   ├── number-operations-calculator.pdf
 │   ├── number-operations.pdf

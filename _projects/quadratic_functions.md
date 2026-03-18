@@ -38,7 +38,7 @@ This is called the **standard form** (also called **general form**).
 - $a, b, c$ are constants  
 - $a \neq 0$ (otherwise it would not be quadratic)
 
-### Main (Leading) Coefficient
+#### Main (Leading) Coefficient
 
 The **main coefficient** (m.c.) or **leading coefficient** is the number multiplying $x^2$.
 

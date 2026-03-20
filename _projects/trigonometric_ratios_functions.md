@@ -163,7 +163,7 @@ These are the key angles you must memorize:
 |--------|------------|------------|------------|
 | $\sin$ | $\frac{1}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ |
 | $\cos$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ |
-| $\tan$ | $\frac{1}{\sqrt{3}}$ | $1$ | $\sqrt{3}$ |
+| $\tan$ | $\frac{\sqrt{3}}{3}$ | $1$ | $\sqrt{3}$ |
 
 ---
 

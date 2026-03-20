@@ -343,3 +343,7 @@ $$f(x)=(x-2)^2 -1=(x^{2}-4x+4)-1= \textcolor{#FFB86C}{x^{2}-4x+3}$$
   - axis → $x=-\frac{b}{2a}$
 - Vertex form: $a(x-h)^2+k$
 - We can convert between forms by finding the vertex or expanding
+
+---
+
+## Parabalo q pasa por 3 puntos

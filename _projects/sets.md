@@ -16,7 +16,7 @@ description: |
     </ul>
 
 categories: [IGCSE, Algebra]
-image: '/images/Algebra/sets.png'
+image: '/images/Numbers/sets_portada.png'
 ---
 
 ## What is a Set?
@@ -24,6 +24,7 @@ image: '/images/Algebra/sets.png'
 A **set** is a collection of **distinct objects**, called elements.
 
 **Example:**
+
 $$
 A = \{1, 2, 3, 4\}
 $$
@@ -49,7 +50,7 @@ We use symbols to show if an element belongs to a set:
 
 **Examples:**
 
-If $A= \{1, 2, 3, 4 \}$ and $B= \{a, e, i, o, u\}$, then
+If $A= \\{1, 2, 3, 4 \\}$ and $B= \\{a, e, i, o, u \\}$, then
 
 $$
 3 \in A \quad \text{and} \quad  5 \notin A
@@ -68,6 +69,7 @@ $$
 
 #### Infinite Set
 A set that goes on forever:
+
 $$
 \mathbb{N}=\{1,2,3,4,\dots\}
 $$
@@ -81,20 +83,26 @@ $$
 
 ---
 
-## Universal Set
+## Universal Set and Venn Diagrams
 
-The **universal set** contains all possible elements within a given context. For example, if we are working **only** with the first $10$ natural numbers, then our universal set is:
+* The **universal set** contains all possible elements within a given context. For example, if we are working **only** with the first $10$ natural numbers, then our universal set is:
 
-$$
-U = \{1,2,3,4,5,6,7,8,9,10\}
-$$
+   $$
+   U = \{1,2,3,4,5,6,7,8,9,10\}
+   $$
 
-In this case, we are going to think that, besides these ten numbers, there is nothing else. That’s why it is called the universal set.
+   In this case, we are going to think that, besides these ten numbers, there is nothing else. That’s why it is called the universal set.
 
+* A **Venn diagram** is a visual representation of sets using circles, where each circle represents a set and overlapping regions show the relationships between sets, such as common elements. 
+
+   In a Venn diagram, the universal set is always represented by the rectangle that contains all the circles. It is usually denoted by the letters $U$, $\Omega$ or $\xi$
+
+**Example:** Consider the universal set $\xi = \\{1,2,3,4,5,6,7,8,9,10\\}$
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Numbers/universal_set.png" width="600">
+   <img src="{{ site.baseurl }}/images/Numbers/venn_diagram.png" width="600">
 </p>
+
 
 ---
 
@@ -103,13 +111,13 @@ In this case, we are going to think that, besides these ten numbers, there is no
 A set $A$ is a subset of $B$ if all elements of $A$ are in $B$. It is denoted by:
 
 $$
-A \subset B
+A \subseteq B
 $$
 
 You can think of a subset as a smaller bag made up of elements from a larger bag. In a Venn diagram, subsets appear as one set inside another. For example:
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Geometry/subset.png" width="600">
+   <img src="{{ site.baseurl }}/images/Numbers/subset.png" width="600">
 </p>
 
 ---
@@ -130,16 +138,6 @@ $$
 
 ---
 
-## Venn Diagrams
-
-A Venn diagram is a visual representation of sets using circles, where each circle represents a set and overlapping regions show the relationships between sets, such as common elements. In a Venn diagram, the universal set is always represented by the rectangle that contains all the circles. It is usually denoted by the letters $U$, $\Omega$ or $\xi$
-
-<p align="center">
-   <img src="{{ site.baseurl }}/images/Geometry/union.png" width="600">
-</p>
-
-
----
 
 ## Operations with Sets
 
@@ -147,13 +145,20 @@ Just as we have operations when working with numbers, we can also define operati
 
 #### Union
 
-The union operation combines two sets to form a new set that contains all elements from both, without repeating any.
+The union operation combines two sets to form a new set that contains all elements from both, without repeating any. If $A$ and $B$ are two sets, then their union is denoted by $A \cup B$.
 
-$$
-A \cup B
-$$
+<p align="center">
+   <img src="{{ site.baseurl }}/images/Numbers/union.png" width="600">
+</p>
 
-For example, if $A=\{1,2,3,4,5\}$ and $B=\{3,4,5,6,7\}$
+In a Venn diagram, the union is represented as follows:
+
+<p align="center">
+   <img src="{{ site.baseurl }}/images/Numbers/example_union.png" width="600">
+</p>
+
+
+For example, if $A=\\{1,2,3,4,5\\}$ and $B=\\{3,4,5,6,7\\}$
 
 then 
 
@@ -161,25 +166,24 @@ $$
 A\cup B = \{1,2,3,4,5,6,7\}
 $$
 
+<p align="center">
+   <img src="{{ site.baseurl }}/images/Numbers/example_union.png" width="600">
+</p>
+
 Imagine that instead of numbers, we are working with teams of people. Even if the members are listed in a different order, it is still the same team. Also, a person can belong to two different teams, but if we combine both teams into one larger team, that person is only counted once, not twice.
 
-In a Venn diagram, the union is represented as follows:
-
-<p align="center">
-   <img src="{{ site.baseurl }}/images/Geometry/union.png" width="600">
-</p>
 
 ---
 
 #### Intersection
 
-The intersection operation creates a new set using the elements that both sets have in common.
+The intersection operation creates a new set using the elements that both sets have in common. The intersection of two sets $A$ and $B$ is denoted by $A \cap B$.
 
-$$
-A \cap B
-$$
+<p align="center">
+   <img src="{{ site.baseurl }}/images/Numbers/intersection.png" width="600">
+</p>
 
-For example, if $A=\{1,2,3,4,5\}$ and $B=\{3,4,5,6,7\}$
+For example, if $A=\\{1,2,3,4,5\\}$ and $B=\\{3,4,5,6,7\\}$
 
 then 
 
@@ -188,7 +192,7 @@ A \cap B = \{3,4,5\}
 $$
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Geometry/intersection.png" width="600">
+   <img src="{{ site.baseurl }}/images/Numbers/example_intersection.png" width="600">
 </p>
 
 
@@ -197,13 +201,14 @@ $$
 
 #### Complement
 
-The complement is an operation involving a single set. It consists of all elements in the universal set that are not in that set.
+The complement is an operation involving a single set. It consists of all elements in the universal set that are not in that set. If $A$ is a set, then its complement is denoted by $A'$.
 
-$$
-A'
-$$
+<p align="center">
+   <img src="{{ site.baseurl }}/images/Numbers/complement.png" width="600">
+</p>
 
-For example, if $U = \{1,2,3,4,5,6,7,8,9,10 \}$ and $A = \{1,2,3,4,5\}$
+
+For example, if $U = \\{1,2,3,4,5,6,7,8,9,10 \\}$ and $A = \\{1,2,3,4,5\\}$
 
 then 
 
@@ -212,7 +217,7 @@ A' = \{6,7,8,9,10 \}
 $$
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Geometry/complement.png" width="600">
+   <img src="{{ site.baseurl }}/images/Numbers/example_complement.png" width="600">
 </p>
 
 ---
@@ -221,15 +226,15 @@ $$
 
 Let:
 $$
-A = \{1,2,3,4\}, \quad B = \{3,4,5,6\}, \quad U = \{ 1,2,3,4,5,6,7,8,9,10\}
+A = \\{1,2,3,4\\}, \quad B = \\{3,4,5,6\\}, \quad U = \\{ 1,2,3,4,5,6,7,8,9,10\\}
 $$
 
 Find $A\cup B$, $A\cap B$, $A'$ and  $A' \cap B'$
 
-* $A \cup B = \{1,2,3,4,5,6\}$
-* $A \cap B = \{3,4\}$
-* $A' = \{5,6,7,8,9,10 \}$
-* $A'\cap B' = \{ 5,6,7,8,9,10 \} \cap \{ 1,2,7,8,9,10\} = \{ 7, 8, 9, 10 \}$
+* $A \cup B = \\{1,2,3,4,5,6\\}$
+* $A \cap B = \\{3,4\\}$
+* $A' = \\{5,6,7,8,9,10 \\}$
+* $A'\cap B' = \\{ 5,6,7,8,9,10 \\} \cap \\{ 1,2,7,8,9,10\\} = \\{ 7, 8, 9, 10 \\}$
  
 
 
@@ -244,11 +249,15 @@ $$
 n(A \cup B) = n(A) + n(B) - n(A \cap B)
 $$
 
+
+
+To understand this formula, think about areas instead of the number of elements. If we consider a Venn diagram, we can find the area of the union by adding the area of $A$ and the area of $B$. However, if we do this, we end up counting the intersection twice. 
+
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Geometry/formula_sets.png" width="600">
+   <img src="{{ site.baseurl }}/images/Numbers/formula.png" width="600">
 </p>
 
-To understand this formula, think about areas instead of the number of elements. If we consider a Venn diagram, we can find the area of the union by adding the area of $A$ and the area of $B$. However, if we do this, we end up counting the intersection twice. That is why we must subtract it once. Now replace the word area with number of elements, and this is exactly how the formula works.
+That is why we must subtract it once. Now replace the word area with number of elements, and this is exactly how the formula works.
 
 
 ---

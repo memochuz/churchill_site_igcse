@@ -254,7 +254,7 @@ $$
 To understand this formula, think about areas instead of the number of elements. If we consider a Venn diagram, we can find the area of the union by adding the area of $A$ and the area of $B$. However, if we do this, we end up counting the intersection twice. 
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Numbers/formula.png" width="600">
+   <img src="{{ site.baseurl }}/images/Numbers/formula.png" width="800">
 </p>
 
 That is why we must subtract it once. Now replace the word area with number of elements, and this is exactly how the formula works.

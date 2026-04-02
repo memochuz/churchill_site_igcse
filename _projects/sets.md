@@ -151,12 +151,6 @@ The union operation combines two sets to form a new set that contains all elemen
    <img src="{{ site.baseurl }}/images/Numbers/union.png" width="600">
 </p>
 
-In a Venn diagram, the union is represented as follows:
-
-<p align="center">
-   <img src="{{ site.baseurl }}/images/Numbers/example_union.png" width="600">
-</p>
-
 
 For example, if $A=\\{1,2,3,4,5\\}$ and $B=\\{3,4,5,6,7\\}$
 
@@ -204,7 +198,7 @@ $$
 The complement is an operation involving a single set. It consists of all elements in the universal set that are not in that set. If $A$ is a set, then its complement is denoted by $A'$.
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Numbers/complement.png" width="600">
+   <img src="{{ site.baseurl }}/images/Numbers/complemento.png" width="600">
 </p>
 
 
@@ -251,13 +245,13 @@ $$
 
 
 
-To understand this formula, think about areas instead of the number of elements. If we consider a Venn diagram, we can find the area of the union by adding the area of $A$ and the area of $B$. However, if we do this, we end up counting the intersection twice. 
+To understand this formula, think about areas instead of the number of elements. If we consider a Venn diagram, we can find the area of the union by adding the area of $A$ and the area of $B$. However, if we do this, we end up counting the intersection twice. That is why we must subtract it once. Now replace the word area with number of elements, and this is exactly how the formula works.
 
 <p align="center">
    <img src="{{ site.baseurl }}/images/Numbers/formula.png" width="800">
 </p>
 
-That is why we must subtract it once. Now replace the word area with number of elements, and this is exactly how the formula works.
+
 
 
 ---

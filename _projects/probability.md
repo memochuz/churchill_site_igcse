@@ -266,6 +266,64 @@ $$
 
 ---
 
+## Complement of an Event
+
+The **complement** of an event $A$, denoted by $A'$, is the event that **A does not occur**.
+
+In other words, it contains all outcomes in the sample space that are **not in \(A\)**.
+
+
+#### Formula
+
+$$
+P(A') = 1 - P(A)
+$$
+
+
+
+#### Intuition
+
+Since the total probability of all possible outcomes is:
+
+$$
+P(S) = 1
+$$
+
+If event $A$ happens with probability $P(A)$, then the probability that it **does not happen** is everything else in the sample space, which is:
+
+$$
+1 - P(A)
+$$
+
+
+
+#### Example
+
+Rolling a die:
+
+* $A$ = getting an even number or 1 → $\{1,2,4,6\}$
+
+$$
+P(A) = \frac{4}{6} = \frac{2}{3}
+$$
+
+Complement:
+
+* $A'$ = not getting an even number → $\{1,3,5\}$
+
+$$
+P(A') = 1 - \frac{2}{3} = \frac{1}{3}
+$$
+
+
+
+#### Key Idea
+
+> The complement represents everything that is **not in the event**.
+
+
+---
+
 ## Examples
 
 **Example 1:**

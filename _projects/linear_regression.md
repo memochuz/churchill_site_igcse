@@ -138,7 +138,9 @@ We can use the equation to estimate values.
 
 **Example:**
 
-Using the equation $y = 0.6x + 2.2$, we can predict $y$ for a given $x$. When $x = 6$:
+Using the equation $y = 0.6x + 2.2$, we can predict $y$ for a given $x$. 
+
+When $x = 6$:
 
 $$
 y = 0.6(6) + 2.2 = 5.8
@@ -159,6 +161,28 @@ The closer the points are to the line:
 
 * **Correlation does not imply causation**
     Correlation means that two variables are related or follow a pattern (for example, as one increases, the other also increases). However, **causation** means that one variable directly causes a change in the other. Just because two variables are correlated does not mean that one causes the other.
+
+    **Example: Correlation vs Causation**
+
+        During summer, we observe that:
+
+        * Ice cream sales increase
+        * The number of people swimming also increases
+
+        These two variables are correlated (they increase at the same time).
+
+        However:
+
+        * Eating ice cream does not cause people to go swimming
+        * Swimming does not cause people to eat ice cream
+
+        What is actually happening?
+
+        There is a third variable: Hot weather
+
+        * Hot weather → more people buy ice cream
+        * Hot weather → more people go swimming
+
 * **Predictions are estimates, not exact values**
     The line of best fit gives an approximation, so predicted values may not be perfectly accurate.
 * **Extrapolation can be unreliable**

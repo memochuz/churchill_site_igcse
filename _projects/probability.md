@@ -119,21 +119,27 @@ $$
 
 1. Probability is always between 0 and 1:
 
-$$
-0 \leq P(A) \leq 1
-$$
+   $$
+   0 \leq P(A) \leq 1
+   $$
 
 2. The probability of the sample space is 1:
 
-$$
-P(S) = 1
-$$
+   $$
+   P(S) = 1
+   $$
 
 3. The probability of the empty set is 0:
 
-$$
-P(\varnothing) = 0
-$$
+   $$
+   P(\varnothing) = 0
+   $$
+
+4. For any event $A$, the probability of its complement is:
+
+   $$
+   P(A') = 1 - P(A)
+   $$
 
 ---
 

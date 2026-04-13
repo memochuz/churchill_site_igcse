@@ -309,7 +309,7 @@ $$
 
 Complement:
 
-* $A'$ = not getting an even number → $\{1,3,5\}$
+* $A'$ = not getting an even number and 1 → $\{3,5\}$
 
 $$
 P(A') = 1 - \frac{2}{3} = \frac{1}{3}

@@ -12,7 +12,7 @@ description: |
     </ul>
 
 date: 2025-09-24
-categories: [Bimester-1, Algebra, Geometry]
+categories: [Bimester-1, Coordinate-Geometry, Algebra]
 image: '/images/Systems_Equations/graphs.png'
 page_cover:
 ---

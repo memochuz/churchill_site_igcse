@@ -16,7 +16,7 @@ description: |
       <li><b>Solve</b> multi-step problems involving real-life contexts.</li>
     </ul>
 
-categories: [IGCSE, Geometry]
+categories: [IGCSE, Mensuration]
 image: '/images/Volumes_Areas/volumes_areas_front.png'
 ---
 

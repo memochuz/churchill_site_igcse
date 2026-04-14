@@ -1,6 +1,6 @@
 ---
 title: Percentages (Rule of Three)
-date: 2026-04-13
+date: 2026-04-14
 description: |
     <p>
     In this lesson, students learn how to work with percentages and proportions. 

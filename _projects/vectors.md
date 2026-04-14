@@ -1,6 +1,6 @@
 ---
 title: Vectors
-date: 2026-04-13
+date: 2026-04-14
 description: |
     <p>
     In this lesson, students learn the fundamental concepts of vectors. 

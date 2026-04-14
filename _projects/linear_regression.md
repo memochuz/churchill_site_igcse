@@ -83,7 +83,7 @@ A **line of best fit** is a straight line that best represents the trend of the 
 * It should have roughly the same number of points above and below the line
 
 
-To obtain an accurate equation and graph of the line of best fit, we need a calculator
+> To obtain an accurate equation and graph of the line of best fit, we need a calculator
 
 
 <p align="center">

@@ -88,7 +88,6 @@ The rule of three is a helpful method for solving proportional problems. However
 
 There are two common cases: the unknown value can appear either in the numerator or in the denominator.
 
-If:
 
 $$
 \frac{a}{b} = \frac{c}{x} \quad \text{or} \quad \frac{a}{b} = \frac{x}{d}
@@ -124,24 +123,6 @@ After a $20\%$ increase, the price is $120$. Find the original.
 
     $$
     \text{x} = \frac{120 \times 1}{1.20} = 100
-    $$
-
-
-
-#### Example 
-
-If 3 books cost $12$ dollars, how much do 5 books cost?
-
-1. We can set up a proportion:
-
-    $$
-    \frac{3}{12} = \frac{5}{x}
-    $$
-
-2. Then, we solve for $x$:
-
-    $$
-    x = \frac{12 \times 5}{3} = 20
     $$
 
 ---

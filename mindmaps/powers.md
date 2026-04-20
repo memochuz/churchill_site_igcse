@@ -2,9 +2,9 @@
 title: "Powers and Exponents"
 markmap:
   theme: default
-  colorFreezeLevel: 3
+  colorFreezeLevel: 2
   maxWidth: 350 
-  initialExpandLevel: 4
+  initialExpandLevel: 2
 ---
 # Powers
 

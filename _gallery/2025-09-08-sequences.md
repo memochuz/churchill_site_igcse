@@ -22,6 +22,10 @@ cover: "/images/Mindmaps/cerebro3.png"
 ## Sequences and Series Mind Map
 
 
+<a class="mindmap-link" href="{{ site.baseurl }}/mindmaps/sequences.html" target="_blank">
+🔎 Abrir mindmap en pantalla completa
+</a>
+
 {% include mindmap_viewer.html src="mindmaps/sequences.html" %}
 
 

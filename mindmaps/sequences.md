@@ -1,99 +1,107 @@
 ---
-title: Sequences and Series Mind Map - IB Mathematics AA SL
+title: "Powers and Exponents"
 markmap:
-  colorFreezeLevel: 2
-  maxWidth: 350
   theme: default
-  initialExpandLevel: 4
+  colorFreezeLevel: 2
+  maxWidth: 350 
+  initialExpandLevel: 2
+
 ---
 
-<!-- # Sequences and Series
+# Sequences
 
-$$ S_n = \frac{n}{2} (2a + (n-1)d) $$
+## Arithmetic Sequences
 
-```mermaid
-mindmap
-  root((Sequences and Series))
-    Sequences
-      Arithmetic Sequence
-        ["an = a1 + (n-1)d"]
-        ["Each term increases by a constant difference d"]
-      Geometric Sequence
-        ["an = a1 * r^(n-1)"]
-        ["Each term is multiplied by a common ratio r"]
-``` -->
+### 🔷 General Formula
 
+- $a_n = a_1 + (n - 1)d$
+  $ a_1 $: first term  
+  $ d $: common difference  
 
-# **Sequences and Series</br>IB Mathematics AA SL**
+### 🔸 When to use
 
-## **Arithmetic Sequence**
-- **n-th Term Formula**: 
-  $a_n = a_1 + (n-1)d$
-  - **Explanation**: 
-    Each term increases by a constant difference $d$.
-  - **Example**: 
-    Find the $n$-term:
-    $2, 4, 6, 8, 10, ...$ 
-    Given that $a _{1}=2$ and $d = 2$, 
-    we have: $a_{n}=2+(n-1)2$
-    $\Rightarrow \boxed{a_{n}=2n}$
-      
+- When each term increases or decreases by the same value.
 
-## **Geometric Sequence**
-- **n-th Term Formula**:
-   $a_{n} = a_{1} \cdot r^{n-1}$
-  - **Explanation**: 
-    Each term is multiplied by a common 
-    ratio $r$.
-  - **Example**: 
-    Find the $n$-term:
-    $3, 6, 12, 24, ...$
-    Given that $r=2$ and $a_{1}=3$,
-    we have: $a_{n}=3(2^{n-1})$
-    $\Rightarrow \boxed{a_{n}=3(2^{n-1})}$
+### 🟢 Example
+- First term $= 3$, common difference $= 5$  
+  Find 4th term:
+  $ a_4 = 3 + (4 - 1)\cdot 5 = 18 $
 
-## **Arithmetic Series**
-- **Sum Formula**: 
-  $S_{n} = \frac{n}{2} (2a_{1} + (n-1)d)$
-  - **Explanation**: 
-    Sum of the first $n$ terms of an arithmetic sequence. This formula is useful when we know the first term and the common difference.
-  - **Example**: 
-    Find $S_{10}$:
-    $2, 4, 6, 8, 10, ...$ 
-    Given that $a_{1}=2$, $d=2$ and $n=10$,
-    we have: $S_{10}= \frac{10}{2}(2(2)+(10-1)2)$
-    $\Rightarrow \boxed{S_{10}=110}$
-- **Sum Formula**: 
-  $S_{n} = \frac{n}{2} (a_{1} + a_{n})$
-  - **Explanation**: 
-    Sum of the first $n$ terms of an arithmetic sequence. This formula is useful when we know the first and last terms.
-  - **Example**: 
-    Find $S_{10}$:
-    $2,4, ...,20$ where $20=a_{10}$,
-    Given that $a_{1}=2$, $a_{10}=20$ and $n=10$,
-    we have: $S_{10}= \frac{10}{2}(2+20)$
-    $\Rightarrow \boxed{S_{10}=110}$
-## **Geometric Series**
-- **Finite Sum**: 
-$S_n = \frac{a_{1} (1 - r^{n})}{1 - r}, \quad r \neq 1$
-  - **Explanation**:
-    Sum of the first $n$ terms of a geometric sequence. This formula is useful when we know the first term and the common ratio. The common ratio must be different from 1, otherwise, we would be dividing by 0.
-  - **Example**:
-    Find $S_{8}$:  
-    $3, 6, 12...$ 
-    Given that $a_{1} = 3$ and $r = 2$,
-    we have: $S_{8} = \frac{3(1-2^{8})}{1-2}$
-    $\Rightarrow \boxed{S_{8}=765}$
+---
 
-- **Infinite Sum**: 
-  $S_{\infty} = \frac{a_{1}}{1 - r}, \quad |r| < 1$
-  - **Explanation**: 
-    The sum of an infinite geometric series only make sense if:  $-1<r< 1$. Once again, we need to know the first term and the common ratio.
-  - **Example**:
-    Find $S_{\infty}$:  
-    $\frac{1}{2}, \frac{1}{4}, \frac{1}{8}...$ 
-    then $a_{1} = \frac{1}{2}$ and $r = \frac{1}{2}$,
-    therefore $S_{\infty} = \frac{\frac{1}{2}}{1-\frac{1}{2}}$
-    $\Rightarrow \boxed{S_{\infty}=1}$
+## Sum of Arithmetic Sequence
+
+### 🔷 Formula
+- We have two formulas for the sum of the first $ n $ terms of an arithmetic sequence:
+ $ S_n = \frac{n}{2}(2a + (n - 1)d) $
+ $ S_n = \frac{n}{2}(a_1 + a_n) $
+
+### 🔸 When to use
+- To find the sum of the first $ n $ terms.
+
+### 🟢 Example
+- Find the sum of the first 5 terms of the arithmetic sequence where $ a_1 = 2 $ and $ d = 3 $.
+
+  $ S_5 = \frac{5}{2}(2\cdot2 + 4\cdot3) = 40 $
+
+---
+
+## Geometric Sequences
+
+### 🔷 General Formula
+- $ a_n = a_1 \cdot r^{n - 1} $
+   $ r $: common ratio  
+   $ a_1 $: first term  
+
+### 🔸 When to use
+- When each term is multiplied by the same value.
+
+### 🟢 Example
+- Find the 4th term of a geometric sequence where 
+$ a_1 = 2, \ r = 3 $
+ Then: $ a_4 = 2 \cdot 3^3 = 54 $
 
 
+---
+
+## Sum of Geometric Sequence
+
+### 🔷 Formula
+- $ S_n = a_1 \cdot \frac{1 - r^n}{1 - r}, \quad r \ne 1 $
+  $a_1$: first term
+  $r$: common ratio
+### 🔸 When to use
+- To sum the first $ n $ terms.
+
+### 🟢 Example
+- Find the sum of the first 4 terms of a geometric sequence where $ a_1 = 2, \ r = 2, \ n = 4 $
+$ S_4 = 2 \cdot \frac{1 - 2^4}{1 - 2} = 30 $
+
+---
+
+## Quadratic Sequences
+
+### 🔷 General Formula
+- $ a_n = an^2 + bn + c $
+
+### 🔸 When to use
+- When the second difference is constant.
+
+### 🛠️ How to find
+- Use 3 terms to form equations and solve for $ a, b, c $, check your class notes.
+
+
+---
+
+## Cubic Sequences
+
+### 🔷 General Formula
+- $ a_n = an^3 + bn^2 + cn + d $
+
+### 🔸 When to use
+- When the third difference is constant.
+
+### 🛠️ How to find
+- Use 4 terms to form  equations and solve for $ a, b, c , d$, check your class notes.
+
+---

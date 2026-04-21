@@ -1,5 +1,5 @@
 ---
-title: Significant Figures 
+title: 📝 Significant Figures 
 date: 2026-03-26
 description: |
     <p>

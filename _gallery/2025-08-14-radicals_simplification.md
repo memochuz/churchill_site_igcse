@@ -3,7 +3,7 @@ title: "🧠 Radicals Simplification"
 date: 2025-08-14
 description: 
 gallery_columns: "1"
-cover: "/images/Mindmaps/cerebro1.png"
+cover: "/images/Radicals/laws_radicals.png"
 ---
 ## Radicals Simplification Mind Map
 

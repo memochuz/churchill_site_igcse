@@ -1,5 +1,5 @@
 ---
-title: 📝 Sequences Notes
+title: 📝 Sequences
 description: The topic of sequences focuses on the study of numerical patterns and the rules that define them. Students learn to identify and work with arithmetic sequences, geometric sequence and also quadratic sequences. A core skill is finding the n-th term rule, which allows them to calculate any term in the sequence directly. This knowledge is then applied to solve problems, demonstrating an understanding of how to analyze and predict patterns in number series.
 date: 2025-09-05
 label: Bimester-1

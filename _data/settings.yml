@@ -32,7 +32,7 @@ menu_settings:
       url: '/projects/'
     # - title: '🎬 Resources'
     #   url: '/videos/'
-    - title: '📷 Mind maps'
+    - title: '🧠 Mind maps'
       url: '/gallery/'
     - title: '✏️ Exams'
       url: '/exams/'

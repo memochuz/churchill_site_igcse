@@ -3,7 +3,7 @@ title: "🧠 Rationalization"
 date: 2025-08-14
 description: 
 gallery_columns: "1"
-cover: "/images/Mindmaps/cerebro4.png"
+cover: "/images/Rationalization/rationalization.png"
 ---
 ## Rationalization Mind Map
 

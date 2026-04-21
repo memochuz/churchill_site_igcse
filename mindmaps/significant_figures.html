@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>((getMarkmap) => {
+          window.WebFontConfig = {
+            custom: {
+              families: [
+                "KaTeX_AMS",
+                "KaTeX_Caligraphic:n4,n7",
+                "KaTeX_Fraktur:n4,n7",
+                "KaTeX_Main:n4,n7,i4,i7",
+                "KaTeX_Math:i4,i7",
+                "KaTeX_Script",
+                "KaTeX_SansSerif:n4,n7,i4",
+                "KaTeX_Size1",
+                "KaTeX_Size2",
+                "KaTeX_Size3",
+                "KaTeX_Size4",
+                "KaTeX_Typewriter"
+              ]
+            },
+            active: () => {
+              getMarkmap().refreshHook.call();
+            }
+          };
+        })(() => window.markmap)</script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" defer></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Significant Figures","children":[{"content":"Definition &amp; Importance","children":[{"content":"<strong>Concept</strong>: Represent the <strong>precision</strong> and reliability of a measurement.","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"<strong>Function</strong>: Indicate how carefully a value was measured.","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"<strong>Comparison</strong>: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3.2</mn></mrow><annotation encoding=\"application/x-tex\">3.2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">3.2</span></span></span></span> (2 sig figs) is less precise than <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3.200</mn></mrow><annotation encoding=\"application/x-tex\">3.200</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">3.200</span></span></span></span> (4 sig figs).","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"h2","lines":"11,12"}},{"content":"Counting Rules","children":[{"content":"The Sandwich Rule","children":[{"content":"Zeros between the first and last non-zero digits <strong>always count</strong>.","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"<strong>Examples</strong>: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1002</mn></mrow><annotation encoding=\"application/x-tex\">1002</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1002</span></span></span></span> (4 sig figs), <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10.03</mn></mrow><annotation encoding=\"application/x-tex\">10.03</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">10.03</span></span></span></span> (4 sig figs).","children":[],"payload":{"tag":"li","lines":"19,20"}}],"payload":{"tag":"h3","lines":"17,18"}},{"content":"Leading Zeros","children":[{"content":"Zeros at the beginning <strong>NEVER count</strong>, they are just placeholders.","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"<strong>Examples</strong>: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0.00908</mn></mrow><annotation encoding=\"application/x-tex\">0.00908</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0.00908</span></span></span></span> (3 sig figs), <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0.0045</mn></mrow><annotation encoding=\"application/x-tex\">0.0045</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0.0045</span></span></span></span> (2 sig figs).","children":[],"payload":{"tag":"li","lines":"22,23"}}],"payload":{"tag":"h3","lines":"20,21"}},{"content":"Trailing Zeros","children":[{"content":"<strong>In Decimals</strong>: Zeros at the end <strong>ARE significant</strong> (they show measured precision).","children":[{"content":"<strong>Examples</strong>: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4.20</mn></mrow><annotation encoding=\"application/x-tex\">4.20</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">4.20</span></span></span></span> (3 sig figs), <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12.00</mn></mrow><annotation encoding=\"application/x-tex\">12.00</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">12.00</span></span></span></span> (4 sig figs).","children":[],"payload":{"tag":"li","lines":"25,26"}}],"payload":{"tag":"li","lines":"24,26"}},{"content":"<strong>In Integers</strong>: <strong>Ambiguous case</strong>.","children":[{"content":"Usually assume only non-zero digits count unless context or scientific notation is provided.","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"Example: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2300</mn></mrow><annotation encoding=\"application/x-tex\">2300</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">2300</span></span></span></span> (usually 2 sig figs).","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"li","lines":"26,30"}}],"payload":{"tag":"h3","lines":"23,24"}}],"payload":{"tag":"h2","lines":"16,17"}},{"content":"Scientific Notation","children":[{"content":"<strong>Purpose</strong>: Best practice to avoid ambiguity with trailing zeros in integers.","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"<strong>Logic</strong>: The number of digits in the coefficient represents the number of sig figs.","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"<strong>Example</strong>: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2.30</mn><mo>&#xd7;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">2.30 \\times 10^{3}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">2.30</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">&#xd7;</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\">1</span><span class=\"mord\"><span class=\"mord\">0</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span></span> (3 sig figs).","children":[],"payload":{"tag":"li","lines":"33,35"}}],"payload":{"tag":"h2","lines":"30,31"}},{"content":"Rules in Calculations","children":[{"content":"Addition &amp; Subtraction","children":[{"content":"Round the result to the <strong>least number of decimal places</strong>.","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"<strong>Example</strong>: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2.34</mn><mo>+</mo><mn>1.2</mn><mo>=</mo><mn>3.5</mn></mrow><annotation encoding=\"application/x-tex\">2.34 + 1.2 = 3.5</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">2.34</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1.2</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">3.5</span></span></span></span>.","children":[],"payload":{"tag":"li","lines":"38,39"}}],"payload":{"tag":"h3","lines":"36,37"}},{"content":"Multiplication &amp; Division","children":[{"content":"Round the result to the <strong>least number of significant figures</strong>.","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"<strong>Example</strong>: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2.3</mn><mo>&#xd7;</mo><mn>4.56</mn><mo>=</mo><mn>10</mn></mrow><annotation encoding=\"application/x-tex\">2.3 \\times 4.56 = 10</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">2.3</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">&#xd7;</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">4.56</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">10</span></span></span></span> (2 sig figs).","children":[],"payload":{"tag":"li","lines":"41,42"}}],"payload":{"tag":"h3","lines":"39,40"}}],"payload":{"tag":"h2","lines":"35,36"}}],"payload":{"tag":"h1","lines":"9,10"}},{"theme":"default","colorFreezeLevel":2,"maxWidth":350,"initialExpandLevel":2})</script>
+</body>
+</html>

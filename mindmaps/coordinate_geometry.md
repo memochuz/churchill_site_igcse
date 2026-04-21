@@ -1,5 +1,5 @@
 ---
-title: "Powers and Exponents"
+title: "Coordinate Geometry"
 markmap:
   theme: default
   colorFreezeLevel: 2

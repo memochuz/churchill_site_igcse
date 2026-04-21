@@ -1,5 +1,5 @@
 ---
-title: "Powers and Exponents"
+title: "Rationalization"
 markmap:
   theme: default
   colorFreezeLevel: 2

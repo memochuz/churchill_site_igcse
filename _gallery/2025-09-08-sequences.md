@@ -3,7 +3,7 @@ title: "🧠 Sequences"
 date: 2025-09-08
 description: 
 gallery_columns: "1"
-cover: "/images/Mindmaps/cerebro3.png"
+cover: "/images/Sequences/geo_seq_2.png"
 # caption: "Gallery / <a href='https://unsplash.com/' target='_blank'>Unsplash</a>"
 # images:
 #   - image: "/images/california-1.jpg"

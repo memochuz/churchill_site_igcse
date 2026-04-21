@@ -1,7 +1,7 @@
 ---
 title: "🧠 Sequences"
 date: 2025-09-08
-description: Este es un mapa mental del del tema de secuencias en matemáticas, que incluye ejemplos de sucesiones aritméticas y geométricas, así como una breve introducción a las series.
+description: 
 gallery_columns: "1"
 cover: "/images/Mindmaps/cerebro3.png"
 # caption: "Gallery / <a href='https://unsplash.com/' target='_blank'>Unsplash</a>"

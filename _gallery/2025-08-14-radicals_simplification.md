@@ -1,14 +1,18 @@
 ---
 title: "🧠 Radicals Simplification"
 date: 2025-08-14
-description: "This mind map shows the steps for simplifying radicals"
+description: 
 gallery_columns: "1"
 cover: "/images/Mindmaps/cerebro1.png"
 ---
 ## Radicals Simplification Mind Map
 
 
-{% include mindmap_viewer.html src="mindmaps/radicals_simplification.html" %}
+<a class="mindmap-link" href="{{ site.baseurl }}/mindmaps/radical_simplification.html" target="_blank">
+🔎 Abrir mindmap en pantalla completa
+</a>
+
+{% include mindmap_viewer.html src="mindmaps/radical_simplification.html" %}
 
 
 <!-- <div id="mindmaps">

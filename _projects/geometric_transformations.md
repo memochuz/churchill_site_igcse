@@ -87,7 +87,7 @@ A'(5,1), \quad B'(6,1), \quad C'(6,3)
 $$
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Functions/translations_1.png" width="700">
+   <img src="{{ site.baseurl }}/images/Geometry/translations_1.png" width="700">
 </p>
 
 
@@ -101,7 +101,7 @@ $$
 
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Functions/translations_2.png" width="700">
+   <img src="{{ site.baseurl }}/images/Geometry/translations_2.png" width="700">
 </p>
 
 
@@ -152,7 +152,7 @@ A'(5,1), \quad B'(6,1), \quad C'(6,3)
 $$
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Functions/rotation_1.png" width="700">
+   <img src="{{ site.baseurl }}/images/Geometry/rotation_1.png" width="700">
 </p>
 
 
@@ -165,7 +165,7 @@ $$
 
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Functions/rotation_2.png" width="700">
+   <img src="{{ site.baseurl }}/images/Geometry/rotation_2.png" width="700">
 </p>
 
 
@@ -206,7 +206,7 @@ across the line $y = x$.
 
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Functions/reflection_1.png" width="700">
+   <img src="{{ site.baseurl }}/images/Geometry/reflection_1.png" width="700">
 </p>
 
 
@@ -215,7 +215,7 @@ across the line $y = x$.
 The line is the **perpendicular bisector** of corresponding points.
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Functions/reflection_2.png" width="700">
+   <img src="{{ site.baseurl }}/images/Geometry/reflection_2.png" width="700">
 </p>
 
 ---
@@ -256,7 +256,7 @@ with center $(2,3)$ and scale factor $-2$:
 3. The negative scale factor means the image will be on the opposite side of the center compared to the original points. 
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Functions/enlargement_1.png" width="700">
+   <img src="{{ site.baseurl }}/images/Geometry/enlargement_1.png" width="700">
 </p>
 
 ---
@@ -267,7 +267,7 @@ with center $(2,3)$ and scale factor $-2$:
 1. The lines intersect at the **center**
 
 <p align="center">
-   <img src="{{ site.baseurl }}/images/Functions/enlargement_2.png" width="700">
+   <img src="{{ site.baseurl }}/images/Geometry/enlargement_2.png" width="700">
 </p>
 
 ---

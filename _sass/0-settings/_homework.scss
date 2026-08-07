@@ -40,14 +40,14 @@
   margin-top: 1rem;
   /* El uso de align-items: stretch asegura que todos los bloques 
      de una fila tengan la misma altura máxima */
-  //align-items: stretch; //nuevo
+  align-items: stretch; //nuevo
 }
 
 /* Bloque que agrupa el botón principal y sus enlaces de descarga */
 .homework-block {
   display: flex;
   flex-direction: column;
-  //height: 100%; /* nuevo Ocupa todo el espacio vertical del grid */
+  height: 100%; /* nuevo Ocupa todo el espacio vertical del grid */
 }
 
 /* 3. BOTONES PRINCIPALES
@@ -82,6 +82,8 @@
 /* Botón de Paper/Tarea (El botón grande azul) */
 .homework-main-btn {
   width: 100%;
+  /* Agrega flex-grow para que el botón absorba todo el espacio vertical sobrante */
+  flex-grow: 1;
   background: #6272A4; // Azul suave (Dracula)
   color: rgba(255, 255, 255, 0.9);
   padding: 0.8rem 0.5rem;

@@ -137,12 +137,16 @@
 /* Botones pequeños para PDF y Markscheme */
 .homework-btn-mini {
   flex: 1;
-  padding: 0.6rem 0.3rem;
+  /* Define una altura fija idéntica para todos los mini botones */
+  height: 48px;
+  padding: 0.4rem 0.3rem;
   font-size: 0.75rem;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center; /* Centra el texto de dos líneas */
+  line-height: 1.1;   /* Reduce el espacio entre líneas si el texto da un salto */
   gap: 4px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.05);

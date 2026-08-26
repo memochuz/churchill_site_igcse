@@ -1,6 +1,7 @@
+<!-- Carga el SDK de Firebase desde CDN de forma modular -->
 <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
-  import { getAuth } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getAuth } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
   const firebaseConfig = {
     apiKey: "{{ site.firebase.api_key }}",
@@ -10,6 +11,10 @@
     appId: "{{ site.firebase.app_id }}"
   };
 
+  // Inicializar Firebase
   const app = initializeApp(firebaseConfig);
+  
+  // Asignar al objeto global window para que otros scripts lo consuman
   window.auth = getAuth(app);
+  window.firebaseApp = app;
 </script>

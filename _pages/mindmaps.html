@@ -1,0 +1,73 @@
+---
+layout: default
+title: 🧠 Mind Maps
+permalink: /mindmaps/
+description: This section features mind maps that condense each topic into a visual overview. They're a perfect tool for quickly organizing your ideas and reviewing key concepts.
+page_cover: '/images/banner_5.png'
+---
+
+<article class="page container">
+  <div class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <div class="page-description">{{ page.description | markdownify }}</div>
+    {% endif %}
+  </div>
+
+{% if page.image %}
+  <div class="page-image">
+    <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <!-- SECCIÓN DE PRESENTACIONES -->
+  <section class="exams-section">
+    {% for entry in site.data.mindmaps %}
+    <div>
+      <!-- Botón Acordeón del Tema -->
+      <button class="exam-year-btn" onclick="toggleAccordion('{{ entry.id }}')">
+        <span>📖 {{ entry.topic }}</span>
+        <span class="arrow">▼</span>
+      </button>
+
+      <div id="{{ entry.id }}" class="exam-papers-container" style="display: none;">
+        <div class="exams-grid">
+          
+          {% for mindmap in entry.mindmaps %}
+          <div class="exam-block">
+            <!-- Botón desplegable de la lección/diapositiva -->
+            <button class="exam-main-btn" onclick="toggleAccordion('{{ mindmap.id }}')">
+              {{ mindmap.title }} <br> <small>{{ mindmap.subtitle }}</small>
+            </button>
+            
+            <div id="{{ mindmap.id }}" class="exam-download-links" style="display: none;">
+              <div class="exam-acciones-inline">
+                <!-- Botón único para ver el PDF online sin descargar -->
+                <a href="{{ '/mindmaps/' | append: mindmap.file | relative_url }}" 
+                   class="exam-btn-mini view-mindmap" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                  👁️ View Mind Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+</article>
+
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>

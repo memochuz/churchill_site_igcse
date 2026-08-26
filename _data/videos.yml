@@ -1,0 +1,48 @@
+- slug: "sequences"
+  title: "Sequences"
+  description: "These videos explore the concept of sequences, including arithmetic, geometric and quadratic sequences. They provide clear explanations and worked examples to help students understand how to identify, analyze, and work with different types of sequences. The videos aim to build confidence in recognizing patterns and applying formulas related to sequences."
+  date: 2025-08-05
+  image: "images/Videos/sequences.png"
+  video_embeds:
+    - "https://www.youtube.com/embed/T1ZBizIL5Lw?si=XYARTaw6_cwE1SSR"
+    - "https://www.youtube.com/embed/JeUSzYwS76M?si=sCJjrduzUFXLjuzL"
+    - "https://www.youtube.com/embed/9cKBB9VE6Sg?si=1NnLcFQtdMWEhkOJ"
+
+- slug: "pascals"
+  title: "Binomial Expansion"
+  description: "A concise and focused walkthrough explaining how to construct rows of Pascal's Triangle and apply them directly to expand algebraic brackets step-by-step without tedious manual multiplication."
+  date: 2025-08-05
+  image: "images/Videos/algebraic-expansion.png"
+  video_embeds:
+    - "https://www.youtube.com/embed/cBK4imK7wKM?si=hjl342rLlDdHoUX_"
+
+- slug: "lcm_gcf"
+  title: "LCM and GCF"
+  description: "This tutorial demonstrates how to break down integers into their prime factor trees to systematically calculate the Greatest Common Factor (GCF) and Least Common Multiple (LCM). It clearly shows how to group shared prime factors for the intersection and combine all factor sets for the union."
+  date: 2025-08-10
+  image: "images/Videos/lcm_gcf.png"
+  video_embeds:
+    - "https://www.youtube.com/embed/Veo6jftWyNw?si=j1T9GnGG3euW3Q2E"
+- slug: "exponents"
+  title: "Laws of Exponents"
+  description: "An engaging overview of fundamental index laws, including product, quotient, power of a power, zero exponent, and negative exponent rules. It emphasizes standard strategies for simplifying algebraic expressions with single and multiple variables."
+  date: 2020-11-23
+  image: "images/Videos/exponents.png"
+  video_embeds:
+    - "https://www.youtube.com/embed/LkhPRz7Hocg"
+
+- slug: "radicals"
+  title: "Laws of Radicals"
+  description: "A comprehensive lesson explaining how radical expressions relate to fractional exponents. It covers core radical properties including product, quotient, and nested root rules, showing step-by-step derivations directly from exponent laws."
+  date: 2023-03-12
+  image: "images/Videos/radicals.png"
+  video_embeds:
+    - "https://www.youtube.com/embed/7yFtwvxmz9w"
+
+- slug: "foil_method"
+  title: "FOIL Method"
+  description: "A practical guide on expanding binomial products using the FOIL method (First, Outer, Inner, Last). It demonstrates how to distribute terms step-by-step and combine like terms to simplify quadratic binomial expansions."
+  date: 2023-01-22
+  image: "images/Videos/foil_method.png"
+  video_embeds:
+    - "https://www.youtube.com/embed/C7HxmkmFzSo"

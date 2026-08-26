@@ -153,3 +153,28 @@
     box-shadow: 0 0 12px rgba(255, 184, 108, 0.4);
   }
 }
+/* Hover específico para abrir/visualizar Slides (Verde/Cian Dracula) */
+.exam-btn-mini.view-slide {
+  width: 100%; // Ocupa todo el ancho al ser un único botón
+  text-align: center;
+  font-weight: 600;
+
+  &:hover {
+    background: #8BE9FD !important; // Cian Dracula
+    color: #282A36 !important;
+    box-shadow: 0 0 12px rgba(139, 233, 253, 0.4);
+  }
+}
+
+/* Hover específico para abrir/visualizar Mind Maps (Pink Dracula) */
+.exam-btn-mini.view-mindmap {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+
+  &:hover {
+    background: #FF79C6 !important; // Pink Dracula
+    color: #282A36 !important;
+    box-shadow: 0 0 12px rgba(255, 121, 198, 0.4);
+  }
+}

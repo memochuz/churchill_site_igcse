@@ -39,8 +39,8 @@ permalink: /login/
 
 {% include firebase-init.html %}
 
-<script type="module">
-  import { signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js";
+<!-- <script type="module">
+  import { signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
   const form = document.getElementById('login-form');
   const errorMessage = document.getElementById('error-message');
@@ -65,6 +65,35 @@ permalink: /login/
       await signInWithEmailAndPassword(window.auth, email, password);
       const redirectTo = sessionStorage.getItem('redirect_after_login') || "{{ '/' | relative_url }}";
       sessionStorage.removeItem('redirect_after_login');
+      window.location.href = redirectTo;
+    } catch (error) {
+      errorMessage.textContent = 'Credenciales inválidas o error de conexión.';
+      console.error(error);
+    }
+  });
+</script> -->
+
+<script type="module">
+  import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+
+  const form = document.getElementById('login-form');
+  const errorMessage = document.getElementById('error-message');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errorMessage.textContent = '';
+    
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    try {
+      await signInWithEmailAndPassword(window.auth, email, password);
+      
+      // Obtener la ruta que guardó protected.html antes de borrarla
+      const redirectTo = sessionStorage.getItem('redirect_after_login') || "{{ '/' | relative_url }}";
+      sessionStorage.removeItem('redirect_after_login');
+      
+      // Redirigir al destino (ej: /starters/)
       window.location.href = redirectTo;
     } catch (error) {
       errorMessage.textContent = 'Credenciales inválidas o error de conexión.';

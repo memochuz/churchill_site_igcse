@@ -4,6 +4,7 @@ layout: default
 
 {% include firebase-init.html %}
 
+
 <!-- El contenido se mantiene oculto hasta verificar que existe sesión en Firebase -->
 <div id="auth-protected-content" style="display: none;">
   {{ content }}
@@ -15,7 +16,7 @@ layout: default
 </div>
 
 <script type="module">
-  import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js";
+  import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
   const protectedContent = document.getElementById('auth-protected-content');
   const loadingElement = document.getElementById('auth-loading');

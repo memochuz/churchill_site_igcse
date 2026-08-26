@@ -78,7 +78,7 @@ sass:
 #-------------------------------
 # firebase
 firebase:
-  api_key: "AIzaSyBBIOpWujx-_zNfGRtTYZr196RkB_PIQYw"
+  api_key: "AIzaSyBBIOpWUjx-_zNfGRtTYZr196RkB_PIQYw"
   auth_domain: "igcse-site.firebaseapp.com"
   project_id: "igcse-site"
   messaging_sender_id: "449005094015"

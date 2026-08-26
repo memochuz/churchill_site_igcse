@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% include firebase-init.html %}
+
+<!-- El contenido se mantiene oculto hasta verificar que existe sesión en Firebase -->
+<div id="auth-protected-content" style="display: none;">
+  {{ content }}
+</div>
+
+<!-- Pantalla/Indicador de carga opcional mientras verifica Firebase -->
+<div id="auth-loading" class="page container" style="text-align: center; padding: 4rem 0;">
+  <p>Verificando sesión...</p>
+</div>
+
+<script type="module">
+  import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js";
+
+  const protectedContent = document.getElementById('auth-protected-content');
+  const loadingElement = document.getElementById('auth-loading');
+
+  onAuthStateChanged(window.auth, (user) => {
+    if (user) {
+      // Usuario autenticado: ocultar loader y mostrar contenido de la página
+      if (loadingElement) loadingElement.style.display = 'none';
+      protectedContent.style.display = 'block';
+    } else {
+      // Si no hay sesión, guardar la URL actual para redirigir tras loguearse
+      sessionStorage.setItem('redirect_after_login', window.location.pathname);
+      window.location.href = "{{ '/login/' | relative_url }}";
+    }
+  });
+</script>

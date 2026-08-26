@@ -74,3 +74,12 @@ defaults:
 sass:
   sass_dir: _sass
   style: compressed
+
+#-------------------------------
+# firebase
+firebase:
+  api_key: "AIzaSyBBIOpWujx-_zNfGRtTYZr196RkB_PIQYw"
+  auth_domain: "igcse-site.firebaseapp.com"
+  project_id: "igcse-site"
+  messaging_sender_id: "449005094015"
+  app_id: "1:449005094015:web:27fca45ae270721004ab4a"

@@ -14,13 +14,13 @@ page_cover: '/images/banner_5.png'
     {% endif %}
   </div>
 
-{% if page.image %}
+  {% if page.image %}
   <div class="page-image">
     <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
   </div>
   {% endif %}
 
-  <!-- SECCIÓN DE PRESENTACIONES -->
+  <!-- SECCIÓN DE MIND MAPS -->
   <section class="exams-section">
     {% for entry in site.data.mindmaps %}
     <div>
@@ -35,22 +35,13 @@ page_cover: '/images/banner_5.png'
           
           {% for mindmap in entry.mindmaps %}
           <div class="exam-block">
-            <!-- Botón desplegable de la lección/diapositiva -->
-            <button class="exam-main-btn" onclick="toggleAccordion('{{ mindmap.id }}')">
-              {{ mindmap.title }} <br> <small>{{ mindmap.subtitle }}</small>
-            </button>
-            
-            <div id="{{ mindmap.id }}" class="exam-download-links" style="display: none;">
-              <div class="exam-acciones-inline">
-                <!-- Botón único para ver el PDF online sin descargar -->
-                <a href="{{ '/mindmaps/' | append: mindmap.file | relative_url }}" 
-                   class="exam-btn-mini view-mindmap" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                  👁️ View Mind Maps
-                </a>
-              </div>
-            </div>
+            <!-- Enlace directo al PDF sin acordeón ni botón secundario -->
+            <a href="{{ '/mindmaps/' | append: mindmap.file | relative_url }}" 
+               class="exam-main-btn" 
+               target="_blank" 
+               rel="noopener noreferrer">
+               {{ mindmap.title }} <br> <small>{{ mindmap.subtitle }}</small>
+            </a>
           </div>
           {% endfor %}
 

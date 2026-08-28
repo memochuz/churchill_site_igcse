@@ -14,41 +14,53 @@ page_cover: '/images/banner_2.png'
     {% endif %}
   </div>
 
-{% if page.image %}
+  {% if page.image %}
   <div class="page-image">
     <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
   </div>
   {% endif %}
 
   <!-- SECCIÓN DE PRESENTACIONES -->
-  <section class="exams-section">
+  <section class="homeworks-section">
     {% for entry in site.data.slides %}
-    <div>
+    <div class="year-group">
       <!-- Botón Acordeón del Tema -->
-      <button class="exam-year-btn" onclick="toggleAccordion('{{ entry.id }}')">
+      <button class="homework-year-btn" onclick="toggleAccordion('{{ entry.id }}')">
         <span>📖 {{ entry.topic }}</span>
         <span class="arrow">▼</span>
       </button>
 
-      <div id="{{ entry.id }}" class="exam-papers-container" style="display: none;">
-        <div class="exams-grid">
+      <div id="{{ entry.id }}" class="homework-papers-container" style="display: none;">
+        <div class="homeworks-grid">
           
           {% for slide in entry.slides %}
-          <div class="exam-block">
+          <div class="homework-block">
             <!-- Botón desplegable de la lección/diapositiva -->
-            <button class="exam-main-btn" onclick="toggleAccordion('{{ slide.id }}')">
+            <button class="homework-main-btn" onclick="toggleAccordion('{{ slide.id }}')">
               {{ slide.title }} <br> <small>{{ slide.subtitle }}</small>
             </button>
             
-            <div id="{{ slide.id }}" class="exam-download-links" style="display: none;">
-              <div class="exam-acciones-inline">
-                <!-- Botón único para ver el PDF online sin descargar -->
+            <div id="{{ slide.id }}" class="homework-download-links" style="display: none;">
+              <div class="homework-acciones-inline">
+                <!-- Botón Slides (Cyan) -->
+                {% if slide.file and slide.file != "" %}
                 <a href="{{ '/slides_files/' | append: slide.file | relative_url }}" 
-                   class="exam-btn-mini view-slide" 
+                   class="homework-btn-mini slide-btn" 
                    target="_blank" 
                    rel="noopener noreferrer">
-                  👁️ View Slides
+                  👁️ Slides
                 </a>
+                {% endif %}
+
+                <!-- Botón Ejercicios (Yellow) -->
+                {% if slide.exercises and slide.exercises != "" %}
+                <a href="{{ '/slides_files/' | append: slide.exercises | relative_url }}" 
+                   class="homework-btn-mini exercise-btn" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                  📝 Exercises
+                </a>
+                {% endif %}
               </div>
             </div>
           </div>

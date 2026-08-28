@@ -15,7 +15,7 @@
       title: "Algebraic Expansion"
       subtitle: "Binomial Expansion & FOIL Method"
       file: "multiplication.pdf"  
-      exercises: ""
+      exercises: "class-exercise-binomial-foil-method.pdf"
     - id: "t1-exponents"
       title: "Laws of Exponents"
       subtitle: "Powers"
@@ -30,7 +30,7 @@
       title: "Simplification of Radicals"
       subtitle: "Algebraic Manipulations"
       file: "simplification-radicals.pdf"
-      exercises: ""
+      exercises: "class-exercise-simplification-radicals.pdf"
 # - topic: "Topic 2: Geometry & Trigonometry"
 #   id: "topic-2"
 #   slides:

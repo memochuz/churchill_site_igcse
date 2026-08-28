@@ -168,3 +168,25 @@
     box-shadow: 0 0 12px rgba(255, 184, 108, 0.4);
   }
 }
+
+/* ==========================================================================
+   VARIANTES ESPECÍFICAS PARA PRESENTATIONS / SLIDES
+   ========================================================================== */
+
+/* Hover para Slides (Azul Cyan Dracula) */
+.homework-btn-mini.slide-btn {
+  &:hover {
+    background: #8BE9FD !important; // Cyan Dracula
+    color: #282A36 !important;
+    box-shadow: 0 0 12px rgba(139, 233, 253, 0.4);
+  }
+}
+
+/* Hover para Ejercicios (Amarillo Yellow Dracula) */
+.homework-btn-mini.exercise-btn {
+  &:hover {
+    background: #F1FA8C !important; // Yellow Dracula
+    color: #282A36 !important;
+    box-shadow: 0 0 12px rgba(241, 250, 140, 0.4);
+  }
+}

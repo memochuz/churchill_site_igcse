@@ -30,6 +30,8 @@
   image: "images/Videos/exponents.png"
   video_embeds:
     - "https://www.youtube.com/embed/LkhPRz7Hocg"
+    - "https://www.youtube.com/embed/Zt2fdy3zrZU?si=nUUg47SF0dL39nCk"
+    - "https://www.youtube.com/embed/5L0UthJ06bc?si=Wxp5LS5U-ncpDGVw"
 
 - slug: "radicals"
   title: "Laws of Radicals"
@@ -38,6 +40,7 @@
   image: "images/Videos/radicals.png"
   video_embeds:
     - "https://www.youtube.com/embed/7yFtwvxmz9w"
+    - "https://www.youtube.com/embed/Llrngdh3Rrg?si=R4ihxisGA162DxkW"
 
 - slug: "foil_method"
   title: "FOIL Method"
@@ -46,3 +49,11 @@
   image: "images/Videos/foil_method.png"
   video_embeds:
     - "https://www.youtube.com/embed/C7HxmkmFzSo"
+- slug: "simplifying_radicals"
+  title: "Simplifying Radicals Easy Method"
+  description: "An easy step-by-step guide to simplifying radicals using prime factorization trees. Learn how to group prime factors for square roots, cube roots, and higher-order radicals to simplify expressions effortlessly."
+  date: 2016-06-14
+  image: "images/Videos/simplifying_radicals.png"
+  video_embeds:
+    - "https://www.youtube.com/embed/u2Z1hoXSrXk"
+    - "https://www.youtube.com/embed/33-tD2Y8BaU?si=swzDIv1AGBMdDMeH"

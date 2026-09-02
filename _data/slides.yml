@@ -31,6 +31,11 @@
       subtitle: "Algebraic Manipulations"
       file: "simplification-radicals.pdf"
       exercises: "class-exercise-simplification-radicals.pdf"
+    - id: "t1-rationalization"
+      title: "Rationalization"
+      subtitle: "Getting rid of surds"
+      file: "rationalization.pdf"
+      exercises: ""
 # - topic: "Topic 2: Geometry & Trigonometry"
 #   id: "topic-2"
 #   slides:

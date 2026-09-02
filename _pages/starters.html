@@ -13,9 +13,7 @@ page_cover: '/images/banner_7.png'
   <div class="page-head">
     <h1 class="page-title">{{ page.title }}</h1>
     {% if page.description %}
-  <div class="page-description">{{ page.description | markdownify }}</div>
-    <!-- {% elsif site.data.settings.contact.description %}
-    <p class="page-description">{{ site.data.settings.contact.description }}</p> -->
+    <div class="page-description">{{ page.description | markdownify }}</div>
     {% endif %}
   </div>
 
@@ -25,8 +23,18 @@ page_cover: '/images/banner_7.png'
   </div>
   {% endif %}
 
-<!-- Aqui empiezan los starters: -->
-     
+  <!-- Catálogo desplegable por tema -->
+  {% include flip_card_catalogo.html %}
 
+</article>
 
-{% include flip_card_catalogo.html %}
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>

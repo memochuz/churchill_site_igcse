@@ -96,6 +96,7 @@
   border-radius: 1rem;
 }
 
+// MUY PASTEL NO SE VE BIEN EL BLANCO DEL TEXTO
 .flip-card-front {
   background: linear-gradient(
                   120deg, 
@@ -103,7 +104,9 @@
                   #9B6EF2 88%, 
                   #A67FFB 40%,
                   #FFB86C 48%);
-  color: #F8F8F2;
+  // color: #F8F8F2;
+  color: #342436;
+  font-weight: 600;
 }
 
 .flip-card-back {
@@ -113,6 +116,54 @@
                   #FFAC5A 88%, 
                   #ef9b48 40%,
                   #BD93F9 48%);
-  color: #F8F8F2;
+  // color: #F8F8F2;
+  color: #342436;
+  font-weight: 600;
   transform: rotateY(180deg);
 }
+
+
+// MUY OBSCURO
+// .flip-card-front {
+//   background: linear-gradient(
+//                   120deg, 
+//                   #624498 60%, 
+//                   #472880 88%, 
+//                   #543292 40%,
+//                   #A36622 48%);
+//   color: #F8F8F2;
+// }
+
+// .flip-card-back {
+//   background: linear-gradient(
+//                   120deg, 
+//                   #B86E18 60%, 
+//                   #A05910 88%, 
+//                   #8A4808 40%,
+//                   #624498 48%);
+//   color: #F8F8F2;
+//   transform: rotateY(180deg);
+// }
+
+
+// MEDIO
+// .flip-card-front {
+//   background: linear-gradient(
+//                   120deg, 
+//                   #8A5CC8 60%, 
+//                   #6C3BB5 88%, 
+//                   #7944C3 40%,
+//                   #D47C1B 48%);
+//   color: #F8F8F2;
+// }
+
+// .flip-card-back {
+//   background: linear-gradient(
+//                   120deg, 
+//                   #D47C1B 60%, 
+//                   #BD660A 88%, 
+//                   #A35200 40%,
+//                   #8A5CC8 48%);
+//   color: #F8F8F2;
+//   transform: rotateY(180deg);
+// }

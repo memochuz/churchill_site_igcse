@@ -1,4 +1,4 @@
-<section class="catalogo-productos-3d">
+<!-- <section class="catalogo-productos-3d">
   <div class="container"> 
     <div class="row"> 
       {% for item in site.data.starters.questions %}
@@ -11,4 +11,31 @@
       {% endfor %}
     </div>
   </div>
+</section> -->
+<section class="homeworks-section">
+  {% for entry in site.data.starters %}
+  <div class="year-group">
+    <!-- Botón Acordeón del Tema -->
+    <button class="homework-year-btn" onclick="toggleAccordion('{{ entry.id }}')">
+      <span>📖 {{ entry.topic }}</span>
+      <span class="arrow">▼</span>
+    </button>
+
+    <!-- Contenido desplegable con el grid de Flip Cards -->
+    <div id="{{ entry.id }}" class="homework-papers-container" style="display: none; padding-top: 20px;">
+      <div class="container">
+        <div class="row">
+          {% for item in entry.questions %}
+          <div class="col col-4 col-t-6 col-m-12" style="margin-bottom: 20px;">
+            {% include flip_card.html
+                front_text= item.question
+                back_text= item.solution
+            %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 </section>

@@ -4,8 +4,8 @@
     - question: 'What is the value of $a^0$ for any non-zero real number $a$?'
       solution: '${\Large 1}$'
 
-    - question: 'True or False: $(a + b)^2 = a^2 + b^2$.'
-      solution: 'False. The middle term $2ab$ is missing: ${\Large (a+b)^2 = a^2 + 2ab + b^2}$.'
+    - question: 'True or False: $(a + b)^2 = a^2 + b^2$'
+      solution: 'False. The middle term $2ab$ is missing: ${\large (a+b)^2 = a^2 + 2ab + b^2}$.'
 
     - question: 'How do you rewrite $a^{-n}$ using a positive exponent?'
       solution: '${\Large \frac{1}{a^n}}$'
@@ -61,14 +61,14 @@
 - topic: "Rationalizing Denominators"
   id: "topic-rationalization"
   questions:
-    - question: 'What is the conjugate of the binomial expression $\sqrt{b} - \sqrt{c}$?'
+    - question: 'What is the conjugate of  $\sqrt{b} - \sqrt{c}$?'
       solution: '${\Large \sqrt{b} + \sqrt{c}}$'
 
     - question: 'By what "form of 1" do you multiply $\frac{a}{c\sqrt{b}}$ to rationalize the denominator?'
       solution: '${\Large \frac{\sqrt{b}}{\sqrt{b}}}$'
 
     - question: 'Which algebraic identity makes binomial rationalization work?'
-      solution: 'Difference of squares: ${\Large (u-v)(u+v) = u^2 - v^2}$'
+      solution: 'Difference of squares: ${\large (u-v)(u+v) = u^2 - v^2}$'
 
     - question: 'What factor do you use to rationalize a higher-order root denominator $\frac{a}{\sqrt[n]{b}}$?'
       solution: 'Multiply by ${\Large \frac{\sqrt[n]{b^{n-1}}}{\sqrt[n]{b^{n-1}}}}$'
@@ -83,7 +83,7 @@
       solution: 'To eliminate all radicals (surds) from the denominator.'
 
     - question: 'Simplify the denominator product: $(\sqrt{7} - \sqrt{2})(\sqrt{7} + \sqrt{2})$.'
-      solution: '${\Large (\sqrt{7})^2 - (\sqrt{2})^2 = 7 - 2 = 5}$'
+      solution: '${\large (\sqrt{7})^2 - (\sqrt{2})^2 = 5}$'
 
     - question: 'True or False: $\frac{1}{\sqrt{a} + \sqrt{b}} = \frac{1}{\sqrt{a}} + \frac{1}{\sqrt{b}}$.'
       solution: 'False. You cannot split a denominator over addition.'
@@ -198,6 +198,6 @@
 
     - question: |
         Calculate the value of angle $x$ in the following regular polygon:
-
-        <img src="/churchill_site_igcse/images/Starters/pentagono2.png" width="150">
+        <br> <br>
+        <img src="/churchill_site_igcse/images/Starters/pentagono2.png" width="100">
       solution: '${\Large 54^{\circ}}$'

@@ -94,6 +94,43 @@
   backface-visibility: hidden;
   border: 1px solid black;
   border-radius: 1rem;
+
+// /* Capa oscura que cubre toda la cara de la tarjeta */
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 1rem;
+//     background-color: rgba(0, 0, 0, 0.55);
+//     z-index: 1;
+
+//     /* Mascara lineal vertical aplicada a toda la tarjeta */
+//     -webkit-mask-image: linear-gradient(
+//       to bottom, 
+//       rgba(0, 0, 0, 0) 0%, 
+//       rgba(0, 0, 0, 1) 25%, 
+//       rgba(0, 0, 0, 1) 75%, 
+//       rgba(0, 0, 0, 0) 100%
+//     );
+//     mask-image: linear-gradient(
+//       to bottom, 
+//       rgba(0, 0, 0, 0) 0%, 
+//       rgba(0, 0, 0, 1) 25%, 
+//       rgba(0, 0, 0, 1) 75%, 
+//       rgba(0, 0, 0, 0) 100%
+//     );
+//   }
+
+//   /* Asegura que el texto quede por encima de la capa de sombra */
+//   p {
+//     position: relative;
+//     z-index: 2;
+//     margin: 0;
+//     width: 100%;
+//   }
 }
 
 // MUY PASTEL NO SE VE BIEN EL BLANCO DEL TEXTO
@@ -105,8 +142,12 @@
                   #A67FFB 40%,
                   #FFB86C 48%);
   // color: #F8F8F2;
-  color: #342436;
+  color: #ffffff;
   font-weight: 600;
+
+/* Sombra sutil que rescata el texto sobre el amarillo pastel sin verse tosca */
+  text-shadow: 0 1px 3px rgba(24, 24, 37, 0.8), 
+               0 0 8px rgba(24, 24, 37, 0.4);
 }
 
 .flip-card-back {
@@ -117,9 +158,12 @@
                   #ef9b48 40%,
                   #BD93F9 48%);
   // color: #F8F8F2;
-  color: #342436;
+  color: #ffffff;
   font-weight: 600;
   transform: rotateY(180deg);
+/* Sombra sutil que rescata el texto sobre el amarillo pastel sin verse tosca */
+  text-shadow: 0 1px 3px rgba(24, 24, 37, 0.8), 
+               0 0 8px rgba(24, 24, 37, 0.4);
 }
 
 

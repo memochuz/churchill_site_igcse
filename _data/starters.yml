@@ -1,135 +1,89 @@
-# questions:
-#   - question: 'For the strict inequality $y > 3x - 4$, is the corresponding line represented as a solid line or a dotted line?'
-#     solution: 'Dotted line'
-
-#   - question: 'Given the line $y = 3x - 4$, what is the slope? Is the line increasing or decreasing?'
-#     solution: 'Increasing'
-
-#   - question: 'Which half-plane does the inequality $y > 3x - 4$ represent: above the line or below the line?'
-#     solution: 'Above the line'
-
-#   - question: 'The equation $y = 6$ represents a line. Is it horizontal or vertical?'
-#     solution: 'Horizontal'
-
-#   - question: 'The equation $x = 4$ represents a line. Is it horizontal or vertical?'
-#     solution: 'Vertical'
-
-#   - question: 'What is the derivative of $f(x) = x^2$ in Leibniz notation?'
-#     solution: r'$\frac{df}{dx} = 2x$'
-
-#   - question: 'If $\frac{df}{dx} > 0$, is the function increasing or decreasing?'
-#     solution: 'Increasing'
-
-#   - question: 'If $\frac{df}{dx} < 0$, is the function increasing or decreasing?'
-#     solution: 'Decreasing'
-
-#   - question: 'For $f(x) = 3x^2$, what is the slope of the tangent line at $x = 2$ in Leibniz notation?'
-#     solution: r'$\frac{df}{dx} = 6x = 12$'
-
-#   - question: 'The function $f(x) = x^3$ has a critical point at which $x$ value?'
-#     solution: 'x = 0'
-
-#   - question: 'What is the formula to calculate the sum of the interior angles of any polygon with $n$ sides?'
-#     solution: '$(n-2)(180)$'
-
-#   - question: 'What is the formula to calculate the interior angle of a regular polygon?'
-#     solution: '$\frac{(n-2)(180)}{n}$'
-  
-#   - question: 'What is the formula to calculate the exterior angle of a regular polygon?'
-#     solution: '$180-\frac{(n-2)(180)}{n}$'
-
-
-#   - question: |
-#           Calculate the value of angle $x$ in the following regular polygon:
-
-#           <img src="/churchill_site_igcse/images/Starters/pentagono2.png" width="150">
-#     solution: '$54^{\circ}$'
 - topic: "Exponents & Radicals"
   id: "topic-exponents-radicals"
   questions:
     - question: 'What is the value of $a^0$ for any non-zero real number $a$?'
-      solution: '$1$'
+      solution: '${\Large 1}$'
 
     - question: 'True or False: $(a + b)^2 = a^2 + b^2$.'
-      solution: 'False. The middle term $2ab$ is missing: $(a+b)^2 = a^2 + 2ab + b^2$.'
+      solution: 'False. The middle term $2ab$ is missing: ${\Large (a+b)^2 = a^2 + 2ab + b^2}$.'
 
     - question: 'How do you rewrite $a^{-n}$ using a positive exponent?'
-      solution: '$\frac{1}{a^n}$'
+      solution: '${\Large \frac{1}{a^n}}$'
 
     - question: 'Express $\sqrt[n]{a^m}$ in rational exponent form.'
-      solution: '$a^{\frac{m}{n}}$'
+      solution: '${\Large a^{\frac{m}{n}}}$'
 
     - question: 'Simplify the expression $(a^k)^n$.'
-      solution: '$a^{k \cdot n}$'
+      solution: '${\Large a^{k \cdot n}}$'
 
     - question: 'Simplify the expression $a^n \cdot a^k$.'
-      solution: '$a^{n+k}$'
+      solution: '${\Large a^{n+k}}$'
 
     - question: 'Simplify the expression $\frac{a^k}{a^m}$.'
-      solution: '$a^{k-m}$'
+      solution: '${\Large a^{k-m}}$'
 
     - question: 'True or False: $(ab)^n = a^n b^n$.'
       solution: 'True. Exponent distributes over multiplication.'
 
     - question: 'What is the simplified form of $\sqrt[m]{\sqrt[n]{a}}$?'
-      solution: '$\sqrt[mn]{a}$'
+      solution: '${\Large \sqrt[mn]{a}}$'
 
 - topic: "Fractions & Operations"
   id: "topic-fractions"
   questions:
     - question: 'What is the step-by-step rule for dividing fractions: $\frac{a}{b} \div \frac{c}{d}$?'
-      solution: 'Keep-Switch-Flip: $\frac{a}{b} \cdot \frac{d}{c}$'
+      solution: 'Keep-Switch-Flip: ${\Large \frac{a}{b} \cdot \frac{d}{c}}$'
 
     - question: 'True or False: $\frac{a}{c} + \frac{b}{c} = \frac{a+b}{2c}$.'
-      solution: 'False. Combine numerators over the common denominator: $\frac{a+b}{c}$.'
+      solution: 'False. Combine numerators over the common denominator: ${\Large \frac{a+b}{c}}$.'
 
     - question: 'How do you calculate $a \cdot \frac{b}{c}$ where $a$ is an integer?'
-      solution: 'Treat $a$ as $\frac{a}{1}$, yielding $\frac{a \cdot b}{c}$.'
+      solution: 'Treat $a$ as $\frac{a}{1}$, yielding ${\Large \frac{a \cdot b}{c}}$.'
 
     - question: 'Simplify the compound fraction $\frac{\frac{a}{b}}{\frac{c}{d}}$ using the Sandwich Rule.'
-      solution: '$\frac{a \cdot d}{b \cdot c}$'
+      solution: '${\Large \frac{a \cdot d}{b \cdot c}}$'
 
     - question: 'What is the first step required when adding or subtracting fractions with different denominators?'
       solution: 'Find the Least Common Multiple ($\text{LCM}$) of the denominators.'
 
     - question: 'How do you multiply two fractions: $\frac{a}{b} \cdot \frac{c}{d}$?'
-      solution: 'Multiply across: $\frac{a \cdot c}{b \cdot d}$.'
+      solution: 'Multiply across: ${\Large \frac{a \cdot c}{b \cdot d}}$.'
 
     - question: 'How do you rewrite an integer $a$ as a fraction to perform fraction operations?'
-      solution: 'Rewrite it as $\frac{a}{1}$.'
+      solution: 'Rewrite it as ${\Large \frac{a}{1}}$.'
 
     - question: 'True or False: $\frac{a}{b} + \frac{c}{d} = \frac{a+c}{b+d}$.'
       solution: 'False. You must find a common denominator first.'
 
     - question: 'What is the value of $\frac{a}{1}$ and $\frac{a}{a}$ (where $a \neq 0$)?'
-      solution: '$\frac{a}{1} = a$ and $\frac{a}{a} = 1$'
+      solution: '${\Large \frac{a}{1} = a}$ and ${\Large \frac{a}{a} = 1}$'
 
 - topic: "Rationalizing Denominators"
   id: "topic-rationalization"
   questions:
     - question: 'What is the conjugate of the binomial expression $\sqrt{b} - \sqrt{c}$?'
-      solution: '$\sqrt{b} + \sqrt{c}$'
+      solution: '${\Large \sqrt{b} + \sqrt{c}}$'
 
     - question: 'By what "form of 1" do you multiply $\frac{a}{c\sqrt{b}}$ to rationalize the denominator?'
-      solution: '$\frac{\sqrt{b}}{\sqrt{b}}$'
+      solution: '${\Large \frac{\sqrt{b}}{\sqrt{b}}}$'
 
     - question: 'Which algebraic identity makes binomial rationalization work?'
-      solution: 'Difference of squares: $(u-v)(u+v) = u^2 - v^2$'
+      solution: 'Difference of squares: ${\Large (u-v)(u+v) = u^2 - v^2}$'
 
     - question: 'What factor do you use to rationalize a higher-order root denominator $\frac{a}{\sqrt[n]{b}}$?'
-      solution: 'Multiply by $\frac{\sqrt[n]{b^{n-1}}}{\sqrt[n]{b^{n-1}}}$'
+      solution: 'Multiply by ${\Large \frac{\sqrt[n]{b^{n-1}}}{\sqrt[n]{b^{n-1}}}}$'
 
     - question: 'What is the result of $(\sqrt{b})^2$ for any non-negative real number $b$?'
-      solution: '$b$'
+      solution: '${\Large b}$'
 
     - question: 'What is the conjugate of $a + \sqrt{b}$?'
-      solution: '$a - \sqrt{b}$'
+      solution: '${\Large a - \sqrt{b}}$'
 
     - question: 'What is the main goal when rationalizing a denominator?'
       solution: 'To eliminate all radicals (surds) from the denominator.'
 
     - question: 'Simplify the denominator product: $(\sqrt{7} - \sqrt{2})(\sqrt{7} + \sqrt{2})$.'
-      solution: ' $(\sqrt{7})^2 - (\sqrt{2})^2 = 7 - 2 = 5$'
+      solution: '${\Large (\sqrt{7})^2 - (\sqrt{2})^2 = 7 - 2 = 5}$'
 
     - question: 'True or False: $\frac{1}{\sqrt{a} + \sqrt{b}} = \frac{1}{\sqrt{a}} + \frac{1}{\sqrt{b}}$.'
       solution: 'False. You cannot split a denominator over addition.'
@@ -138,7 +92,7 @@
   id: "topic-algebraic-expansion"
   questions:
     - question: 'What are the expansion coefficients for $(a+b)^3$ from Pascal Triangle?'
-      solution: '$1, 3, 3, 1$'
+      solution: '${\Large 1, 3, 3, 1}$'
 
     - question: 'What does each letter in the FOIL method stand for?'
       solution: 'First, Outer, Inner, Last'
@@ -147,22 +101,22 @@
       solution: 'Powers of $a$ drop $n \to 0$, while powers of $b$ rise $0 \to n$.'
 
     - question: 'How can you expand a trinomial square $(a+b+c)^2$ using a grouping trick?'
-      solution: 'Group as $([a+b]+c)^2$ and set $u = a+b$ to expand $u^2 + 2uc + c^2$.'
+      solution: 'Group as $([a+b]+c)^2$ and set $u = a+b$ to expand ${\Large u^2 + 2uc + c^2}$.'
 
     - question: 'What are the coefficients for Row 4 of Pascal’s Triangle?'
-      solution: '$1, 4, 6, 4, 1$'
+      solution: '${\Large 1, 4, 6, 4, 1}$'
 
     - question: 'What is the expanded form of the difference of squares: $(a - b)(a + b)$?'
-      solution: '$a^2 - b^2$'
+      solution: '${\Large a^2 - b^2}$'
 
     - question: 'How is each entry in Pascal’s Triangle calculated from the row above?'
       solution: 'Each number is the sum of the two numbers directly above it.'
 
     - question: 'What is the middle term in the expansion of $(a - b)^2$?'
-      solution: '$-2ab$'
+      solution: '${\Large -2ab}$'
 
     - question: 'What is Row 0 and Row 1 in Pascal’s Triangle?'
-      solution: 'Row 0: $1$; Row 1: $1, 1$'
+      solution: 'Row 0: ${\Large 1}$; Row 1: ${\Large 1, 1}$'
 
 - topic: "LCM & GCF"
   id: "topic-lcm-gcf"
@@ -174,37 +128,41 @@
       solution: 'Multiply all factors in the union ($\cup$).'
 
     - question: 'What is the $\text{GCF}$ of 12 and 18?'
-      solution: '$6$'
+      solution: '${\Large 6}$'
 
     - question: 'What is the $\text{LCM}$ of 12 and 18?'
-      solution: '$36$'
+      solution: '${\Large 36}$'
 
     - question: 'What is a prime number?'
       solution: 'An integer greater than 1 divisible only by 1 and itself.'
 
     - question: 'What are the prime factors of $12$?'
-      solution: '$2 \cdot 2 \cdot 3$ (or $2^2 \cdot 3$)'
+      solution: '${\Large 2 \cdot 2 \cdot 3}$ (or ${\Large 2^2 \cdot 3}$)'
 
     - question: 'What are the prime factors of $18$?'
-      solution: '$2 \cdot 3 \cdot 3$ (or $2 \cdot 3^2$)'
+      solution: '${\Large 2 \cdot 3 \cdot 3}$ (or ${\Large 2 \cdot 3^2}$)'
 
     - question: 'If two numbers $a$ and $b$ share no prime factors, what is their $\text{GCF}$?'
-      solution: '$1$'
+      solution: '${\Large 1}$'
 
     - question: 'If two numbers $a$ and $b$ share no prime factors, what is their $\text{LCM}$?'
-      solution: '$a \cdot b$'
+      solution: '${\Large a \cdot b}$'
 
 - topic: "Inequalities & Lines"
   id: "topic-inequalities"
   questions:
     - question: 'For the strict inequality $y > 3x - 4$, is the corresponding line represented as a solid line or a dotted line?'
       solution: 'Dotted line'
+
     - question: 'Given the line $y = 3x - 4$, what is the slope? Is the line increasing or decreasing?'
       solution: 'Increasing'
+
     - question: 'Which half-plane does the inequality $y > 3x - 4$ represent: above the line or below the line?'
       solution: 'Above the line'
+
     - question: 'The equation $y = 6$ represents a line. Is it horizontal or vertical?'
       solution: 'Horizontal'
+
     - question: 'The equation $x = 4$ represents a line. Is it horizontal or vertical?'
       solution: 'Vertical'
 
@@ -212,27 +170,34 @@
   id: "topic-calculus"
   questions:
     - question: 'What is the derivative of $f(x) = x^2$ in Leibniz notation?'
-      solution: r'$\frac{df}{dx} = 2x$'
+      solution: r'${\Large \frac{df}{dx} = 2x}$'
+
     - question: 'If $\frac{df}{dx} > 0$, is the function increasing or decreasing?'
       solution: 'Increasing'
+
     - question: 'If $\frac{df}{dx} < 0$, is the function increasing or decreasing?'
       solution: 'Decreasing'
+
     - question: 'For $f(x) = 3x^2$, what is the slope of the tangent line at $x = 2$ in Leibniz notation?'
-      solution: r'$\frac{df}{dx} = 6x = 12$'
+      solution: r'${\Large \frac{df}{dx} = 6x = 12}$'
+
     - question: 'The function $f(x) = x^3$ has a critical point at which $x$ value?'
-      solution: 'x = 0'
+      solution: '${\Large x = 0}$'
 
 - topic: "Geometry & Polygons"
   id: "topic-geometry"
   questions:
     - question: 'What is the formula to calculate the sum of the interior angles of any polygon with $n$ sides?'
-      solution: '$(n-2)(180)$'
+      solution: '${\Large (n-2)(180)}$'
+
     - question: 'What is the formula to calculate the interior angle of a regular polygon?'
-      solution: '$\frac{(n-2)(180)}{n}$'
+      solution: '${\Large \frac{(n-2)(180)}{n}}$'
+
     - question: 'What is the formula to calculate the exterior angle of a regular polygon?'
-      solution: '$180-\frac{(n-2)(180)}{n}$'
+      solution: '${\Large 180-\frac{(n-2)(180)}{n}}$'
+
     - question: |
         Calculate the value of angle $x$ in the following regular polygon:
 
         <img src="/churchill_site_igcse/images/Starters/pentagono2.png" width="150">
-      solution: '$54^{\circ}$'
+      solution: '${\Large 54^{\circ}}$'

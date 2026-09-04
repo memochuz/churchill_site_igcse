@@ -2,7 +2,7 @@
   title: "Sequences"
   description: "These videos explore the concept of sequences, including arithmetic, geometric and quadratic sequences. They provide clear explanations and worked examples to help students understand how to identify, analyze, and work with different types of sequences. The videos aim to build confidence in recognizing patterns and applying formulas related to sequences."
   date: 2025-08-05
-  image: "images/Videos/sequences.png"
+  image: "images/Videos/sequences.webp"
   video_embeds:
     - "https://www.youtube.com/embed/T1ZBizIL5Lw?si=XYARTaw6_cwE1SSR"
     - "https://www.youtube.com/embed/JeUSzYwS76M?si=sCJjrduzUFXLjuzL"
@@ -12,7 +12,7 @@
   title: "Binomial Expansion"
   description: "A concise and focused walkthrough explaining how to construct rows of Pascal's Triangle and apply them directly to expand algebraic brackets step-by-step without tedious manual multiplication."
   date: 2025-08-05
-  image: "images/Videos/algebraic-expansion.png"
+  image: "images/Videos/algebraic-expansion.webp"
   video_embeds:
     - "https://www.youtube.com/embed/cBK4imK7wKM?si=hjl342rLlDdHoUX_"
 
@@ -20,14 +20,14 @@
   title: "LCM and GCF"
   description: "This tutorial demonstrates how to break down integers into their prime factor trees to systematically calculate the Greatest Common Factor (GCF) and Least Common Multiple (LCM). It clearly shows how to group shared prime factors for the intersection and combine all factor sets for the union."
   date: 2025-08-10
-  image: "images/Videos/lcm_gcf.png"
+  image: "images/Videos/lcm_gcf.webp"
   video_embeds:
     - "https://www.youtube.com/embed/Veo6jftWyNw?si=j1T9GnGG3euW3Q2E"
 - slug: "exponents"
   title: "Laws of Exponents"
   description: "An engaging overview of fundamental index laws, including product, quotient, power of a power, zero exponent, and negative exponent rules. It emphasizes standard strategies for simplifying algebraic expressions with single and multiple variables."
   date: 2020-11-23
-  image: "images/Videos/exponents.png"
+  image: "images/Videos/exponents.webp"
   video_embeds:
     - "https://www.youtube.com/embed/LkhPRz7Hocg"
     - "https://www.youtube.com/embed/Zt2fdy3zrZU?si=nUUg47SF0dL39nCk"
@@ -37,7 +37,7 @@
   title: "Laws of Radicals"
   description: "A comprehensive lesson explaining how radical expressions relate to fractional exponents. It covers core radical properties including product, quotient, and nested root rules, showing step-by-step derivations directly from exponent laws."
   date: 2023-03-12
-  image: "images/Videos/radicals.png"
+  image: "images/Videos/radicals.webp"
   video_embeds:
     - "https://www.youtube.com/embed/7yFtwvxmz9w"
     - "https://www.youtube.com/embed/Llrngdh3Rrg?si=R4ihxisGA162DxkW"
@@ -46,22 +46,22 @@
   title: "FOIL Method"
   description: "A practical guide on expanding binomial products using the FOIL method (First, Outer, Inner, Last). It demonstrates how to distribute terms step-by-step and combine like terms to simplify quadratic binomial expansions."
   date: 2023-01-22
-  image: "images/Videos/foil_method.png"
+  image: "images/Videos/foil_method.webp"
   video_embeds:
     - "https://www.youtube.com/embed/C7HxmkmFzSo"
 - slug: "simplifying_radicals"
-  title: "Simplifying Radicals Easy Method"
+  title: "Simplifying Radicals"
   description: "An easy step-by-step guide to simplifying radicals using prime factorization trees. Learn how to group prime factors for square roots, cube roots, and higher-order radicals to simplify expressions effortlessly."
   date: 2016-06-14
-  image: "images/Videos/simplifying_radicals.png"
+  image: "images/Videos/simplifying_radicals.webp"
   video_embeds:
     - "https://www.youtube.com/embed/u2Z1hoXSrXk"
     - "https://www.youtube.com/embed/33-tD2Y8BaU?si=swzDIv1AGBMdDMeH"
 - slug: "rationalization"
-  title: "Rationalizing Radicals Made Easy"
+  title: "Rationalizing Radicals"
   description: "Learn step-by-step how to rationalize denominators with radicals. Master simplifying expressions with monomial and binomial radical denominators quickly and easily."
   date: 2026-09-03
-  image: "images/Videos/rationalization_videos.png"
+  image: "images/Videos/rationalization_videos.webp"
   video_embeds:
     - "https://www.youtube.com/embed/t1Pg0Ar52-k"
 

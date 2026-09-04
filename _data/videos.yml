@@ -57,3 +57,11 @@
   video_embeds:
     - "https://www.youtube.com/embed/u2Z1hoXSrXk"
     - "https://www.youtube.com/embed/33-tD2Y8BaU?si=swzDIv1AGBMdDMeH"
+- slug: "rationalization"
+  title: "Rationalizing Radicals Made Easy"
+  description: "Learn step-by-step how to rationalize denominators with radicals. Master simplifying expressions with monomial and binomial radical denominators quickly and easily."
+  date: 2026-09-03
+  image: "images/Videos/rationalization_videos.png"
+  video_embeds:
+    - "https://www.youtube.com/embed/t1Pg0Ar52-k"
+

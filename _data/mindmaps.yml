@@ -25,3 +25,8 @@
       title: "Rationalization"
       subtitle: "Rationalizing Denominators"
       file: "rationalization_without_toolbar.html"
+    - id: "t1-simplification-surds"
+      title: "Simplification of Surds"
+      subtitle: "Addition and Subtraction"
+      file: "simplification-surds_without_toolbar.html"
+      

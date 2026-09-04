@@ -5,7 +5,7 @@
       solution: '${\Large 1}$'
 
     - question: 'True or False: $(a + b)^2 = a^2 + b^2$'
-      solution: 'False. The middle term $2ab$ is missing: ${\large (a+b)^2 = a^2 + 2ab + b^2}$.'
+      solution: 'False. The middle term $2ab$ is missing: ${(a+b)^2 = a^2 + 2ab + b^2}$.'
 
     - question: 'How do you rewrite $a^{-n}$ using a positive exponent?'
       solution: '${\Large \frac{1}{a^n}}$'
@@ -68,7 +68,7 @@
       solution: '${\Large \frac{\sqrt{b}}{\sqrt{b}}}$'
 
     - question: 'Which algebraic identity makes binomial rationalization work?'
-      solution: 'Difference of squares: ${\large (u-v)(u+v) = u^2 - v^2}$'
+      solution: 'Difference of squares: ${(u-v)(u+v) = u^2 - v^2}$'
 
     - question: 'What factor do you use to rationalize a higher-order root denominator $\frac{a}{\sqrt[n]{b}}$?'
       solution: 'Multiply by ${\Large \frac{\sqrt[n]{b^{n-1}}}{\sqrt[n]{b^{n-1}}}}$'
@@ -148,6 +148,36 @@
     - question: 'If two numbers $a$ and $b$ share no prime factors, what is their $\text{LCM}$?'
       solution: '${\Large a \cdot b}$'
 
+- topic: "Simplifying Surds"
+  id: "topic-simplifying-surds"
+  questions:
+    - question: 'What is a surd?'
+      solution: 'An irrational root that cannot be expressed as a exact fraction $\frac{p}{q}$, such as $\sqrt{2}$ or $\sqrt[3]{5}$.'
+
+    - question: 'True or False: $\sqrt[n]{a} + \sqrt[n]{b} = \sqrt[n]{a+b}$'
+      solution: 'False. Radicals cannot be added directly under a single square root; terms must be simplified and matched first.'
+
+    - question: 'How do you extract a prime factor from inside a radical $\sqrt[n]{a}$?'
+      solution: 'Factorize the radicand into prime factors and extract one factor for every complete group of $n$ identical primes.'
+
+    - question: 'Simplify the expression $\sqrt{54}$.'
+      solution: '${\Large 3\sqrt{6}}$'
+
+    - question: 'Simplify the radical expression $\sqrt[3]{54}$.'
+      solution: '${\Large 3\sqrt[3]{2}}$'
+
+    - question: 'Simplify the expression $3\sqrt[3]{2} + 5\sqrt[3]{2}$.'
+      solution: '${\Large 8\sqrt[3]{2}}$'
+
+    - question: 'How do you rewrite a coefficient back inside a radical $a\sqrt[n]{b}$?'
+      solution: '${\Large \sqrt[n]{a^n \cdot b}}$'
+
+    - question: 'True or False: You can add surds together only if they have both the same index $n$ and the same radicand.'
+      solution: 'True. Surds must be like terms (matching index and radicand) to be combined.'
+
+    - question: 'What is the simplified form of $\sqrt[3]{32x^7}$?'
+      solution: '${\Large 2x^2\sqrt[3]{4x}}$'
+      
 - topic: "Inequalities & Lines"
   id: "topic-inequalities"
   questions:

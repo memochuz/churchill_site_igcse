@@ -1,23 +1,22 @@
 ---
-layout: default
-title: "Rationalizing Denominators - Challenges"
+layout: null
 permalink: /challenges/rationalization.html
 ---
-
-
-{% assign topic_data = site.data.challenges | where: "id", "rationalization" | first %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.data.preguntas.configuracion.titulo_evaluacion }}</title>
 
-  <!-- Carga el título directo desde el elemento filtrado del YAML -->
-  <title>{{ topic_data.titulo_evaluacion }}</title>
+<!-- 🔴 CAMBIO: variable site.data.challenges-->
+{% assign topic_data = site.data.challenges | where: "id", "rationalization" | first %}
 
-  <!-- Ruta correcta del CSS con Liquid -->
-  <link rel="stylesheet" href="{{ '/assets/css/challenges.css' | relative_url }}">
+<!-- 🔴 CAMBIO: cargar challenges.css -->
+<link rel="stylesheet" href="{{ '/assets/css/challenges.css' | relative_url }}">
 
+
+<!-- 🔴 CAMBIO: cargar MathJax -->
   <!-- Renderizado de LaTeX mediante MathJax -->
   <script>
     MathJax = {
@@ -27,43 +26,63 @@ permalink: /challenges/rationalization.html
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-<body>
 
- <div class="presentation-wrapper">
+<!-- 🔴 CAMBIO: <body> -->
+<body>
+<div class="presentation-wrapper">
 
   {% include challenges-header.html %}
 
   <div class="slide-container">
-    
+
     <!-- Slide 1: Portada -->
     <div class="slide active">
       <div class="slide-header-pattern"></div>
+
       <div class="slide-content content-center">
-        <h1 class="main-title">{{ topic_data.titulo_evaluacion }}</h1>
-        <p class="main-subtitle">{{ topic_data.description }}</p>
-        <div class="footer-text">Identify what you know and what you don't</div>
+        <h1 class="main-title">
+          {{ topic_data.titulo_evaluacion }}
+        </h1>
+
+        <p class="main-subtitle">
+          {{ topic_data.description }}
+        </p>
+
+        <div class="footer-text">
+          Identify what you know and what you don't
+        </div>
       </div>
     </div>
 
-    <!-- Generación Dinámica de Preguntas y Soluciones desde YAML -->
+ <!-- Generación Dinámica de Preguntas y Soluciones desde YAML -->
     {% for item in topic_data.preguntas %}
+
       {% include challenges-question-card.html item=item %}
+
       {% if item.solucion %}
         {% include challenges-solution-card.html item=item %}
       {% endif %}
+
     {% endfor %}
 
-    <!-- Slide Final: Cierre y Envío de Correo -->
+    <!-- Slide Final -->
     <div class="slide">
       <div class="slide-header-pattern"></div>
+
       <div class="slide-content content-center">
-        <h1 class="main-title">¡End of The Challenge!</h1>
-        <p class="main-subtitle">"What is not practiced is forgotten."</p>
+        <h1 class="main-title">
+          ¡End of The Challenge!
+        </h1>
+
+        <p class="main-subtitle">
+          "What is not practiced is forgotten."
+        </p>
       </div>
     </div>
 
   </div>
 </div>
+
 
 <script>
   // Control de Navegación de Diapositivas
@@ -75,19 +94,13 @@ permalink: /challenges/rationalization.html
     slides.forEach((slide, index) => {
       slide.classList.toggle('active', index === currentSlide);
     });
-    if (slideIndicator) {
-      slideIndicator.textContent = `Slide ${currentSlide + 1} / ${slides.length}`;
-    }
-    if (document.getElementById('prevBtn')) {
-      document.getElementById('prevBtn').disabled = currentSlide === 0;
-    }
-    if (document.getElementById('nextBtn')) {
-      document.getElementById('nextBtn').disabled = currentSlide === slides.length - 1;
-    }
+    slideIndicator.textContent = `Slide ${currentSlide + 1} / ${slides.length}`;
+    document.getElementById('prevBtn').disabled = currentSlide === 0;
+    document.getElementById('nextBtn').disabled = currentSlide === slides.length - 1;
 
     // Reprocesar LaTeX con MathJax en la diapositiva activa
     if (window.MathJax && window.MathJax.typesetPromise) {
-      window.MathJax.typesetPromise();
+    window.MathJax.typesetPromise();
     }
   }
 
@@ -113,25 +126,28 @@ permalink: /challenges/rationalization.html
     if (!audioCtx) {
       audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     }
+    // Si el contexto estaba suspendido por el navegador, reanudarlo tras el clic
     if (audioCtx.state === 'suspended') {
       audioCtx.resume();
     }
   }
 
+// Función para reproducir la alarma durante 5 segundos seguidos (programación nativa de audio)
   function playAlarmSound() {
     initAudioContext();
     if (!audioCtx) return;
 
     const now = audioCtx.currentTime;
     const durationInSeconds = 5;
-    const beepInterval = 0.3;
+    const beepInterval = 0.3; // Un beep cada 300 ms
 
+    // Programar la secuencia continua de beeps durante 5 segundos
     for (let timeOffset = 0; timeOffset < durationInSeconds; timeOffset += beepInterval) {
       const oscillator = audioCtx.createOscillator();
       const gainNode = audioCtx.createGain();
 
       oscillator.type = 'sine';
-      oscillator.frequency.value = 880;
+      oscillator.frequency.value = 880; // Nota La (A5)
 
       const startTime = now + timeOffset;
       gainNode.gain.setValueAtTime(0.3, startTime);
@@ -149,12 +165,12 @@ permalink: /challenges/rationalization.html
   const timers = {};
 
   function startTimer(timerId) {
+    // Activar audio inmediatamente en el clic del usuario
     initAudioContext();
 
     if (timers[timerId] && timers[timerId].interval) return;
     
     const elem = document.getElementById(timerId);
-    if (!elem) return;
     const initialMinutes = parseInt(elem.getAttribute('data-minutes')) || 20;
 
     if (!timers[timerId]) {
@@ -166,6 +182,8 @@ permalink: /challenges/rationalization.html
         clearInterval(timers[timerId].interval);
         timers[timerId].interval = null;
         elem.textContent = "00:00 - ¡TIEMPO!";
+        
+        // Sonar alarma al agotar el tiempo
         playAlarmSound();
         return;
       }
@@ -184,7 +202,6 @@ permalink: /challenges/rationalization.html
   function resetTimer(timerId) {
     pauseTimer(timerId);
     const elem = document.getElementById(timerId);
-    if (!elem) return;
     const initialMinutes = parseInt(elem.getAttribute('data-minutes')) || 20;
     timers[timerId] = { timeLeft: initialMinutes * 60, interval: null, initialMinutes: initialMinutes };
     renderTimer(timerId);
@@ -194,12 +211,28 @@ permalink: /challenges/rationalization.html
     const minutes = Math.floor(timers[timerId].timeLeft / 60);
     const seconds = timers[timerId].timeLeft % 60;
     const formatted = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-    const elem = document.getElementById(timerId);
-    if (elem) elem.textContent = formatted;
+    document.getElementById(timerId).textContent = formatted;
+  }
+
+  // Envío por Correo Mailto
+  function sendResults() {
+    const name = document.getElementById('studentName').value.trim();
+    const score = document.getElementById('studentScore').value.trim();
+    const teacherEmail = "{{ site.data.preguntas.configuracion.email_profesor }}";
+    
+    if (!name || !score) {
+      alert("Por favor completa tu nombre y la calificación.");
+      return;
+    }
+
+    const subject = encodeURIComponent(`Calificación Actividad - ${name}`);
+    const body = encodeURIComponent(`Reporte de Evaluación:\n\nAlumno: ${name}\nCalificación: ${score}/100`);
+    window.location.href = `mailto:${teacherEmail}?subject=${subject}&body=${body}`;
   }
 
   updateSlideDisplay();
 </script>
 
+<!-- FIN -->
 </body>
 </html>

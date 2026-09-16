@@ -17,16 +17,14 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  align-items: flex-start; /* Permite que el contenido crezca verticalmente */
+  align-items: center;
   min-height: 100vh;
 }
 
 /* Envoltorio principal */
 .presentation-wrapper {
-width: 92%;
+  width: 100%;
   max-width: 960px;
-  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -75,26 +73,20 @@ width: 92%;
 .slide-container {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  min-width: 0;
+  min-height: 540px;  /*Nuevo*/
+  /* aspect-ratio: 16 / 9; */
 }
 
 .slide {
   display: none;
-  /* position: absolute; */
-  position: relative; /* Muestra el slide en el flujo normal para crecer si la respuesta es larga */
-  /* inset: 0; */
-
+  position: relative; /*absolute*/
   width: 100%;
-  max-width: 100%;
-  min-width: 0;
-
-
-  min-height: 480px; /* Mantiene una altura estética mínima tipo diapositiva */
+  /* min-height: 100%; */
+  min-height: 540px; /* Asegura la altura mínima directamente en el slide */
+  /* inset: 0; */
   background-color: #1a2130;
   border-radius: 12px;
   /* overflow: hidden; */
-  overflow: visible;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
@@ -138,17 +130,12 @@ width: 92%;
   position: relative;
   z-index: 2;
   /* height: 100%; */
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  height: auto;
-  min-height: 100%;
+  /* min-height: 100%;  */
+  /* Cambiado de height: 100% */
+  min-height: 540px; /* Misma altura mínima */
   padding: 32px 40px;
   display: flex;
   flex-direction: column;
-  /* width: 100%;
-  max-width: 100%;
-  min-width: 0; */
 }
 
 .content-center {
@@ -312,7 +299,6 @@ width: 92%;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  overflow: visible; /* <--- AGREGADO */
 }
 
 .solution-pill {
@@ -404,4 +390,49 @@ width: 92%;
 
 .submit-btn:hover {
   background-color: #059669;
+}
+
+/* --- Ajuste Responsivo Horizontal para Celulares y Tablets --- */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  .presentation-wrapper {
+    max-width: 100%;
+  }
+
+  .slide-content {
+    padding: 20px 16px;
+  }
+
+  .nav-bar {
+    padding: 10px 12px;
+  }
+
+  .timer-card {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  /* Previene que textos largos o cajas de código generen scroll horizontal */
+  .content-box, 
+  .solution-container, 
+  .solution-code-box {
+    word-break: break-word;
+    max-width: 100%;
+  }
+
+  .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.2;
+      min-height: 28px;    /* Asegura una altura mínima consistente */
+      padding: 6px 12px;   /* Ajusta el espacio interno para multilínea */
+      box-sizing: border-box;
+    }
 }

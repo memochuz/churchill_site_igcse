@@ -46,6 +46,8 @@ menu_settings:
     #   url: '/homeworks/'
     - title: '🖥️ Lecture Slides'
       url: '/slides/'
+    - title: '🔥 Challenges'
+      url: '/challenges/'
     # - title: '🔑 Starters'
     #   url: '/starters/'
     # - title: '📔 Elements'

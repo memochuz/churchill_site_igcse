@@ -1,6 +1,6 @@
 - topic: "Topic 1: Algebra & Numbers"
   id: "topic-1"
-  mindmaps:
+  challenges:
     - id: "t1-lcm-gcf"
       title: "LCM and GCF"
       subtitle: "Prime Factorization"
@@ -20,8 +20,12 @@
     - id: "t1-simplification-radicals"
       title: "Simplification of Radicals"
       subtitle: "Addition and Subtraction"
-      file: "simplification-surds_without_toolbar.html"
+      file: "simplification-radicals_without_toolbar.html"
     - id: "t1-rationalization"
       title: "Rationalization"
       subtitle: "Rationalizing Denominators"
-      file: "rationalization_without_toolbar.html"
+      file: "rationalization.html"
+    - id: "t1-simplification-surds"
+      title: "Simplification of Surds"
+      subtitle: "Addition and Subtraction"
+      file: "simplification-surds_without_toolbar.html"

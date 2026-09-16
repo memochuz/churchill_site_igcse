@@ -1,0 +1,30 @@
+<div class="slide">
+  <div class="slide-header-pattern"></div>
+  <div class="slide-content">
+    <div class="top-row">
+      <h2 class="section-title">Problem {{ include.item.id }}: {{ include.item.titulo }}</h2>
+      <div class="badges-container">
+        <span class="badge badge-medium">Difficulty: {{ include.item.dificultad }}</span>
+        <span class="badge badge-purple">{{ include.item.tema }}</span>
+      </div>
+    </div>
+
+    <!-- Temporizador movido a la parte superior -->
+    <div class="timer-card" style="margin-top: 0; margin-bottom: 16px;">
+      <div class="timer-display" id="timer{{ include.item.id }}" data-minutes="{{ include.item.tiempo_minutos | default: 3 }}">
+        {{ include.item.tiempo_minutos | default: 20 }}:00
+      </div>
+      <div class="timer-controls">
+        <button onclick="startTimer('timer{{ include.item.id }}')">▶ Iniciar</button>
+        <button onclick="pauseTimer('timer{{ include.item.id }}')">⏸ Pausar</button>
+        <button onclick="resetTimer('timer{{ include.item.id }}')">🔄 Reiniciar</button>
+      </div>
+    </div>
+    
+    <!-- Enunciado del problema -->
+    <div class="content-box">
+      {{ include.item.enunciado | markdownify }}
+    </div>
+
+  </div>
+</div>

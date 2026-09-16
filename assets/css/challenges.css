@@ -1,0 +1,401 @@
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Reset global */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #0d1117;
+  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Envoltorio principal */
+.presentation-wrapper {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Barra de navegación superior */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a2130;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #283245;
+}
+
+.nav-btn {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.nav-btn:disabled {
+  background-color: #334155;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.slide-indicator {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+/* Diapositivas */
+.slide-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background-color: #1a2130;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.slide.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Línea multicolor superior en degradado */
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 33%, #ec4899 66%, #ef4444 100%);
+  z-index: 10;
+}
+
+/* Encabezado con patrón de retícula SVG + Degradado */
+.slide-header-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  pointer-events: none;
+  z-index: 1;
+  background-image: 
+    linear-gradient(to bottom, rgba(26, 33, 48, 0.1) 0%, #1a2130 100%),
+    url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='1.2' fill='rgba(255,255,255,0.18)'/%3E%3C/svg%3E"),
+    linear-gradient(135deg, #3b82f6 0%, #8b5cf6 40%, #ec4899 80%, #ef4444 100%);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, 16px 16px, cover;
+}
+
+/* Contenido interno */
+.slide-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Tipografía de Portada */
+.main-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.02em;
+}
+
+.main-subtitle {
+  color: #94a3b8;
+  font-size: 1.15rem;
+  margin: 0 0 36px 0;
+  font-weight: 400;
+}
+
+.footer-text {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+}
+
+/* Badges */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.badges-container {
+  display: flex;
+  gap: 10px;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* .badge-medium {
+  background-color: #582a18;
+  color: #fde68a;
+} */
+
+/* .badge-dark {
+  background-color: #27303f;
+  color: #d1d5db;
+} */
+
+/* .badge-blue { 
+  background-color: #0f296a; 
+  color: #bae6fd;            
+} */
+
+.badge-medium {
+  background-color: #451a03; 
+  color: #fde68a;            
+  border: 1px solid #78350f; 
+}
+
+.badge-dark {
+  background-color: #1e293b; 
+  color: #cbd5e1;            
+  border: 1px solid #334155; 
+}
+
+.badge-blue {
+  background-color: #1e3a8a; /* Azul noche profundo */
+  color: #93c5fd;            /* Azul pastel brillante */
+  border: 1px solid #2563eb; /* Borde sutil para resaltar */
+}
+
+.badge-green {
+  background-color: #064e3b; /* Verde bosque muy oscuro */
+  color: #6ee7b7;            /* Menta/Esmeralda brillante */
+  border: 1px solid #059669; /* Borde sutil esmeralda */
+}
+
+/* Opción alternativa: Badge Violeta / Púrpura */
+.badge-purple {
+  background-color: #4c1d95; /* Violeta noche profundo */
+  color: #ddd6fe;            /* Lavanda brillante */
+  border: 1px solid #7c3aed; /* Borde sutil violeta */
+}
+
+
+/* Cajas de Problemas */
+.content-box {
+  background-color: #111827;
+  border-radius: 10px;
+  padding: 20px 24px;
+  border: 1px solid #283245;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.content-box p {
+  margin: 0 0 8px 0;
+}
+
+.content-box p:last-child {
+  margin-bottom: 0;
+}
+
+.highlight-text {
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-top: 10px !important;
+}
+
+/* Temporizadores */
+.timer-card {
+  margin-top: auto;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer-display {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 2px;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.timer-controls button {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.timer-controls button:hover {
+  background-color: #334155;
+}
+
+/* Soluciones con degradado y caja esmeralda */
+.solution-container {
+  background-color: #111827;
+  border-radius: 10px;
+  padding: 20px 24px;
+  border: 1px solid #283245;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.solution-pill {
+  align-self: flex-start;
+  background-color: #059669;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
+}
+
+.solution-code-box {
+  background-color: #064e3b;
+  border: 1px solid #10b981;
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+.solution-code-box code {
+  color: #6ee7b7;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.explanation-box {
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.explanation-box h4 {
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+}
+
+.explanation-box ul, .explanation-box ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.explanation-box li {
+  margin-bottom: 6px;
+}
+
+.conclusion {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #a7f3d0;
+}
+
+/* Sección de envío por correo en slide final */
+.email-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  width: 100%;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-field {
+  background-color: #0d1117;
+  border: 1px solid #283245;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  width: 100%;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #3b82f6;
+}
+
+.submit-btn {
+  background-color: #10b981;
+  width: 100%;
+  padding: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #059669;
+}

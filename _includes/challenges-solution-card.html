@@ -1,0 +1,26 @@
+<div class="slide">
+  <div class="slide-header-pattern"></div>
+  <div class="slide-content">
+    <h2 class="section-title">Problem {{ include.item.id }}: Step by Step Solution</h2>
+    <div class="solution-container">
+      <div class="solution-pill">RIGHT ANSWER</div>
+      <div class="solution-code-box">
+        <span class="math-content">{{ include.item.solucion.titulo_respuesta }}</span>
+      </div>
+      <div class="explanation-box">
+        {% if include.item.solucion.explicacion %}
+          <p>{{ include.item.solucion.explicacion | markdownify }}</p>
+        {% endif %}
+        <h4>💡 Explanation:</h4>
+        <ul>
+          {% for paso in include.item.solucion.pasos %}
+            <li>{{ paso | markdownify }}</li>
+          {% endfor %}
+        </ul>
+        {% if include.item.solucion.conclusion %}
+          <p class="conclusion">{{ include.item.solucion.conclusion | markdownify }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

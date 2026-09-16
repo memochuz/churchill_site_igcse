@@ -1,14 +1,14 @@
 ---
 layout: default
-title: 🧠 Mind Maps
-permalink: /mindmaps/
-description: This section features mind maps that condense each topic into a visual overview. They're a perfect tool for quickly organizing your ideas and reviewing key concepts.
-page_cover: '/images/banner_5.webp'
+title: Challenges
+permalink: /challenges/
+description: In this section, you will find extra challenges organized by topic.
+page_cover: '/images/banner_3.webp'
 ---
 
 <article class="page container">
   <div class="page-head">
-    <h1 class="page-title">{{ page.title }}</h1>
+    <h1 class="page-title">🔥 {{ page.title }}</h1>
     {% if page.description %}
     <div class="page-description">{{ page.description | markdownify }}</div>
     {% endif %}
@@ -20,27 +20,27 @@ page_cover: '/images/banner_5.webp'
   </div>
   {% endif %}
 
-  <!-- SECCIÓN DE MIND MAPS -->
+<!-- SECCIÓN DE CHALLENGES AGRUPADOS POR TEMA -->
   <section class="homeworks-section">
-    {% for entry in site.data.mindmaps %}
-    <div>
+    {% for entry in site.data.challenges_menu %}
+    <div  class="year-group">
       <!-- Botón Acordeón del Tema -->
       <button class="homework-year-btn" onclick="toggleAccordion('{{ entry.id }}')">
-        <span>🧠 {{ entry.topic }}</span>
+        <span>🔥 {{ entry.topic }}</span>
         <span class="arrow">▼</span>
       </button>
 
       <div id="{{ entry.id }}" class="homework-papers-container" style="display: none;">
         <div class="homeworks-grid">
           
-          {% for mindmap in entry.mindmaps %}
+          {% for challenge in entry.challenges %}
           <div class="homework-block">
             <!-- Enlace directo al PDF sin acordeón ni botón secundario -->
-            <a href="{{ '/mindmaps/' | append: mindmap.file | relative_url }}" 
+            <a href="{{ '/challenges/' | append: challenge.file | relative_url }}" 
                class="homework-main-btn" 
                target="_blank" 
                rel="noopener noreferrer">
-               {{ mindmap.title }} <br> <small>{{ mindmap.subtitle }}</small>
+               {{ challenge.title }} <br> <small>{{ challenge.subtitle }}</small>
             </a>
           </div>
           {% endfor %}

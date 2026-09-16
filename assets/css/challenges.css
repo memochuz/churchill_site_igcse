@@ -392,6 +392,16 @@ body {
   background-color: #059669;
 }
 
+/* Estilo base para el botón de enlace con emoji */
+.flame-btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1; /* Evita que el emoji añada altura tipográfica extra */
+  box-sizing: border-box;
+}
+
 /* --- Ajuste Responsivo Horizontal para Celulares y Tablets --- */
 @media (max-width: 768px) {
   body {

@@ -1,5 +1,7 @@
 # _data/challenges.yml
-
+# ======================================================================
+# LAWS OF RATIONALIZATION ASSESSMENT
+# ======================================================================
 - id: "rationalization"
   titulo_evaluacion: "Rationalizing Denominators Challenges"
   topic: "Rationalizing Denominators"
@@ -330,8 +332,761 @@
   
             $$\frac{8 + 4\sqrt{3}}{4} = \frac{8}{4} + \frac{4\sqrt{3}}{4} = 2 + \sqrt{3}$$
             
-- id: "exponents"
+# ======================================================================
+# LAWS OF EXPONENTS ASSESSMENT
+# ======================================================================
+- id: "laws_of_exponents"
+  titulo_evaluacion: "Laws of Exponents Challenges"
   topic: "Laws of Exponents"
-  description: "Practice problems involving negative indices, power rules, and radicals."
+  description: "Comprehensive problem set on exponent properties, negative power rules, quotient rules, and power-of-a-power simplifications."
   preguntas:
-    # Aquí puedes agregar las preguntas relativas a Exponentes...
+    # EASY (1-4)
+    - id: 1
+      titulo: "Power of a Power & Quotient Rule"
+      dificultad: "Low"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the algebraic expression completely. Write your final answer using positive exponents only:
+
+        $$\frac{(a^{-3}b^2)^{-2}}{(a^2b^{-4})^3}$$
+
+        <p class="highlight-text">Express the answer in simplest form with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$b^8$$
+        pasos:
+          - |
+            **Apply power of a power rule $(x^m)^n = x^{m \cdot n}$:** Distribute the outer exponent to each factor in the numerator and denominator:
+
+            $$\frac{a^{(-3)(-2)}b^{(2)(-2)}}{a^{(2)(3)}b^{(-4)(3)}} = \frac{a^6 b^{-4}}{a^6 b^{-12}}$$
+          - |
+            **Apply quotient rule $\frac{x^m}{x^n} = x^{m-n}$:** Group base $a$ and base $b$ powers together:
+
+            $$a^{6-6} \cdot b^{-4 - (-12)} = a^0 \cdot b^{-4 + 12}$$
+          - |
+            **Simplify:** Since $a^0 = 1$:
+
+            $$1 \cdot b^8 = b^8$$
+
+    - id: 2
+      titulo: "Product of Negative Powers"
+      dificultad: "Low"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the following product of exponential terms. Ensure all exponents in the final answer are positive:
+
+        $$(x^{-3}y^4)^{-2} \cdot (x^2y^{-5})^{-3}$$
+
+        <p class="highlight-text">Express the final result with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$y^7$$
+        pasos:
+          - |
+            **Apply power of a product rule:** Distribute outer exponents across terms:
+
+            $$(x^{6}y^{-8}) \cdot (x^{-6}y^{15})$$
+          - |
+            **Apply product rule $x^m \cdot x^n = x^{m+n}$:** Combine powers of identical bases:
+
+            $$x^{6 + (-6)} \cdot y^{-8 + 15} = x^0 y^7$$
+          - |
+            **Simplify:** Since $x^0 = 1$:
+
+            $$y^7$$
+
+    - id: 3
+      titulo: "Simplifying Nested Monomial Fractions"
+      dificultad: "Low"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the expression and express the final answer using positive exponents only:
+
+        $$\frac{(m^3n^{-2})^{-3}}{(m^{-4}n^3)^{-2}}$$
+
+        <p class="highlight-text">Write the result as a fraction with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{n^{12}}{m^{17}}$$
+        pasos:
+          - |
+            **Apply power of a power rule:** Multiply inside exponents by outer exponents:
+
+            $$\frac{m^{-9}n^6}{m^8n^{-6}}$$
+          - |
+            **Apply quotient rule:** Subtract bottom exponents from top exponents for each base:
+
+            $$m^{-9 - 8} \cdot n^{6 - (-6)} = m^{-17}n^{12}$$
+          - |
+            **Convert negative exponents:** Use $x^{-n} = \frac{1}{x^n}$:
+
+            $$\frac{n^{12}}{m^{17}}$$
+
+    - id: 4
+      titulo: "Quotient with Negative Power Distribution"
+      dificultad: "Low"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the algebraic fraction completely:
+
+        $$\frac{(p^{-2}q^3)^3}{(p^4q^{-1})^{-2}}$$
+
+        <p class="highlight-text">Express the final answer in its simplest form with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$p^2 q^7$$
+        pasos:
+          - |
+            **Expand powers in numerator and denominator:** Multiply inner exponents by outer powers:
+
+            $$\frac{p^{-6}q^9}{p^{-8}q^2}$$
+          - |
+            **Apply quotient rule:** Combine exponents for each variable base:
+
+            $$p^{-6 - (-8)} \cdot q^{9 - 2} = p^{-6 + 8} \cdot q^7$$
+          - |
+            **Simplify:**
+
+            $$p^2 q^7$$
+
+    # MEDIUM (5-8)
+    - id: 5
+      titulo: "Combining Power and Quotient Rules"
+      dificultad: "Medium"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify the following algebraic expression completely:
+
+        $$\frac{(x^{-3}y^4)^{-2}}{(x^2y^{-3})^3}$$
+
+        <p class="highlight-text">Write your final answer with positive exponents only.</p>
+      solucion:
+        titulo_respuesta: |
+          $$y$$
+        pasos:
+          - |
+            **Distribute exponents:** Multiply power coefficients in numerator and denominator:
+
+            $$\frac{x^6 y^{-8}}{x^6 y^{-9}}$$
+          - |
+            **Simplify base $x$ and base $y$ separately:**
+
+            $$x^{6-6} \cdot y^{-8 - (-9)} = x^0 y^1$$
+          - |
+            **Final reduction:**
+
+            $$y$$
+
+    - id: 6
+      titulo: "Multi-Variable Negative Exponents"
+      dificultad: "Medium"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify the quotient of exponential expressions completely:
+
+        $$\frac{(a^{-2}b^3)^{-3}}{(a^4b^{-1})^{-2}}$$
+
+        <p class="highlight-text">Express the answer as a fraction with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{a^{14}}{b^{11}}$$
+        pasos:
+          - |
+            **Apply power of a power rule:**
+
+            $$\frac{a^6 b^{-9}}{a^{-8} b^2}$$
+          - |
+            **Apply quotient rule:**
+
+            $$a^{6 - (-8)} \cdot b^{-9 - 2} = a^{14} b^{-11}$$
+          - |
+            **Write with positive exponents:**
+
+            $$\frac{a^{14}}{b^{11}}$$
+
+    - id: 7
+      titulo: "Fractional and Rational Exponents"
+      dificultad: "Medium"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify the expression involving fractional powers fully:
+
+        $$\frac{(m^{-4}n^6)^{\frac{1}{2}}}{(m^2n^{-3})^{-2}}$$
+
+        <p class="highlight-text">Express the final answer with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{m^2}{n^3}$$
+        pasos:
+          - |
+            **Distribute outer exponents:** Multiply fractional and negative exponents:
+
+            Numerator: $m^{-4 \cdot \frac{1}{2}} n^{6 \cdot \frac{1}{2}} = m^{-2} n^3$.
+
+            Denominator: $m^{2(-2)} n^{-3(-2)} = m^{-4} n^6$.
+          - |
+            **Form unified fraction and apply quotient rule:**
+
+            $$\frac{m^{-2} n^3}{m^{-4} n^6} = m^{-2 - (-4)} n^{3 - 6} = m^2 n^{-3}$$
+          - |
+            **Express with positive exponents:**
+
+            $$\frac{m^2}{n^3}$$
+
+    - id: 8
+      titulo: "Numerical Bases with Rational Powers"
+      dificultad: "Medium"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify the expression containing prime numerical bases and fractional exponents:
+
+        $$\frac{(16x^{-8}y^{12})^{-\frac{1}{4}}}{(27x^6y^{-9})^{\frac{1}{3}}}$$
+
+        <p class="highlight-text">Express the final answer with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{1}{6}$$
+        pasos:
+          - |
+            **Convert integer coefficients to prime powers:** Rewrite $16 = 2^4$ and $27 = 3^3$:
+
+            $$\frac{((2^4)x^{-8}y^{12})^{-\frac{1}{4}}}{((3^3)x^6y^{-9})^{\frac{1}{3}}}$$
+          - |
+            **Distribute rational exponents:**
+
+            Numerator: $2^{-1} x^2 y^{-3} = \frac{x^2}{2y^3}$.
+
+            Denominator: $3^1 x^2 y^{-3} = 3x^2 y^{-3}$.
+          - |
+            **Simplify numerator over denominator:**
+
+            $$\frac{2^{-1} x^2 y^{-3}}{3^1 x^2 y^{-3}} = \frac{2^{-1}}{3} \cdot \frac{x^2}{x^2} \cdot \frac{y^{-3}}{y^{-3}} = \frac{1}{2 \cdot 3} \cdot 1 \cdot 1 = \frac{1}{6}$$
+
+    # HARD (9-12)
+    - id: 9
+      titulo: "Nested Fractional Powers & Products"
+      dificultad: "High"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 5
+      enunciado: |
+        Simplify the product of algebraic expressions involving rational exponents completely:
+
+        $$\left( \frac{a^{-2} b^{\frac{3}{2}}}{a^3 b^{-\frac{1}{2}}} \right)^{-2} \cdot \left( \frac{a^4 b^{-3}}{a^{-1} b} \right)^{\frac{1}{2}}$$
+
+        <p class="highlight-text">Express the final answer using positive exponents and simplify fractional powers into radical form where applicable.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{a^{12}\sqrt{a}}{b^6}$$
+        pasos:
+          - |
+            **Simplify inside the first factor:**
+
+            $$\frac{a^{-2}b^{\frac{3}{2}}}{a^3b^{-\frac{1}{2}}} = a^{-2-3}b^{\frac{3}{2}-(-\frac{1}{2})} = a^{-5}b^2$$
+
+            Applying outer power $-2$: $(a^{-5}b^2)^{-2} = a^{10}b^{-4}$.
+          - |
+            **Simplify inside the second factor:**
+
+            $$\frac{a^4b^{-3}}{a^{-1}b} = a^{4-(-1)}b^{-3-1} = a^5b^{-4}$$
+
+            Applying outer power $\frac{1}{2}$: $(a^5b^{-4})^{\frac{1}{2}} = a^{\frac{5}{2}}b^{-2}$.
+          - |
+            **Multiply both simplified factors:**
+
+            $$(a^{10}b^{-4}) \cdot (a^{\frac{5}{2}}b^{-2}) = a^{10 + \frac{5}{2}} b^{-4 - 2} = a^{\frac{25}{2}}b^{-6}$$
+          - |
+            **Convert rational exponent to radical form:** Since $\frac{25}{2} = 12 + \frac{1}{2}$:
+
+            $$\frac{a^{12}\sqrt{a}}{b^6}$$
+
+    - id: 10
+      titulo: "Numerical Powers with Fractional Exponents"
+      dificultad: "High"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 5
+      enunciado: |
+        Simplify the expression fully, reducing numerical coefficients to simplest form:
+
+        $$\frac{(8x^{-9}y^6)^{-\frac{2}{3}}}{(16x^4y^{-8})^{\frac{3}{4}}}$$
+
+        <p class="highlight-text">Write your answer using positive exponents only.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{x^3 y^2}{32}$$
+        pasos:
+          - |
+            **Express bases as prime powers:** $8 = 2^3$ and $16 = 2^4$:
+
+            $$\frac{((2^3)x^{-9}y^6)^{-\frac{2}{3}}}{((2^4)x^4y^{-8})^{\frac{3}{4}}}$$
+          - |
+            **Apply outer fractional exponents:**
+
+            Numerator: $2^{-2} x^6 y^{-4} = \frac{x^6}{4y^4}$.
+
+            Denominator: $2^3 x^3 y^{-6} = 8x^3y^{-6}$.
+          - |
+            **Combine coefficients and exponents:**
+
+            $$\frac{2^{-2}x^6y^{-4}}{2^3x^3y^{-6}} = 2^{-2-3} x^{6-3} y^{-4-(-6)} = 2^{-5} x^3 y^2 = \frac{x^3 y^2}{32}$$
+
+    - id: 11
+      titulo: "Complex Nested Power Structure"
+      dificultad: "High"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 5
+      enunciado: |
+        Simplify the nested power expression completely:
+
+        $$\left[ \frac{(p^{-2} q^3)^{-2} \cdot (p^4 q^{-3})^2}{(p^{-3} q^4)^{-1}} \right]^{-\frac{1}{2}}$$
+
+        <p class="highlight-text">Express the final result with positive exponents and simplified radicals if necessary.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{q^4}{p^4 \sqrt{p}}$$
+        pasos:
+          - |
+            **Simplify the numerator inside brackets:**
+
+            $$(p^4 q^{-6}) \cdot (p^8 q^{-6}) = p^{12} q^{-12}$$
+          - |
+            **Simplify the denominator inside brackets:**
+
+            $$(p^{-3} q^4)^{-1} = p^3 q^{-4}$$
+          - |
+            **Combine terms inside brackets:**
+
+            $$\frac{p^{12} q^{-12}}{p^3 q^{-4}} = p^{12-3} q^{-12-(-4)} = p^9 q^{-8}$$
+          - |
+            **Apply the outer exponent $-\frac{1}{2}$:**
+
+            $$(p^9 q^{-8})^{-\frac{1}{2}} = p^{-\frac{9}{2}} q^4 = \frac{q^4}{p^{\frac{9}{2}}} = \frac{q^4}{p^4 \sqrt{p}}$$
+
+    - id: 12
+      titulo: "Combined Prime Base Rational Exponent Quotient"
+      dificultad: "High"
+      tema: "Laws of Exponents"
+      tiempo_minutos: 5
+      enunciado: |
+        Simplify the multi-term algebraic expression fully:
+
+        $$\frac{(32a^{-10}b^{15})^{-\frac{2}{5}} \cdot (81a^{-8}b^{12})^{\frac{1}{4}}}{(16a^{-4}b^8)^{\frac{1}{2}}}$$
+
+        <p class="highlight-text">Express the answer as a simplified rational expression with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{3a^4}{16b^7}$$
+        pasos:
+          - |
+            **Express constants as prime powers ($32 = 2^5, 81 = 3^4, 16 = 2^4$):**
+
+            $$\frac{((2^5)a^{-10}b^{15})^{-\frac{2}{5}} \cdot ((3^4)a^{-8}b^{12})^{\frac{1}{4}}}{((2^4)a^{-4}b^8)^{\frac{1}{2}}}$$
+          - |
+            **Evaluate individual factors:**
+
+            First factor: $2^{-2} a^4 b^{-6}$.
+
+            Second factor: $3^1 a^{-2} b^3$.
+
+            Denominator factor: $2^2 a^{-2} b^4$.
+          - |
+            **Multiply numerator factors:**
+
+            $$(2^{-2} \cdot 3^1) \cdot a^{4 + (-2)} \cdot b^{-6 + 3} = \frac{3}{4} a^2 b^{-3}$$
+          - |
+            **Divide by denominator:**
+
+            $$\frac{\frac{3}{4} a^2 b^{-3}}{4 a^{-2} b^4} = \frac{3}{16} a^{2 - (-2)} b^{-3 - 4} = \frac{3}{16} a^4 b^{-7} = \frac{3a^4}{16b^7}$$
+# ======================================================================
+# LAWS OF RADICALS ASSESSMENT
+# ======================================================================
+- id: "laws_of_radicals"
+  titulo_evaluacion: "Laws of Radicals Challenges"
+  topic: "Laws of Radicals"
+  description: "Comprehensive problem set on radical simplification, index unification, nested radical reduction, and quotients of radicals."
+  preguntas:
+    # EASY (1-4)
+    - id: 1
+      titulo: "Square Root Monomial Simplification"
+      dificultad: "Low"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the radical expression completely:
+
+        $$\sqrt{\frac{x^{-4} y^8}{16}}$$
+
+        <p class="highlight-text">Express the final answer with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{y^4}{4x^2}$$
+        pasos:
+          - |
+            **Apply quotient property of radicals $\sqrt{\frac{A}{B}} = \frac{\sqrt{A}}{\sqrt{B}}$:**
+
+            $$\frac{\sqrt{x^{-4}y^8}}{\sqrt{16}}$$
+          - |
+            **Convert radicals to fractional exponents:**
+
+            $$\frac{(x^{-4}y^8)^{\frac{1}{2}}}{4} = \frac{x^{-2}y^4}{4}$$
+          - |
+            **Write with positive exponents:**
+
+            $$\frac{y^4}{4x^2}$$
+
+    - id: 2
+      titulo: "Simplifying Radical Quotients"
+      dificultad: "Low"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the radical expression:
+
+        $$\sqrt{\frac{x^{-6}y^4}{x^2y^{-4}}}$$
+
+        <p class="highlight-text">Express the result as a single algebraic fraction without radicals.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{y^4}{x^4}$$
+        pasos:
+          - |
+            **Simplify inside the radical first:**
+
+            $$\frac{x^{-6}y^4}{x^2y^{-4}} = x^{-6-2} y^{4-(-4)} = x^{-8} y^8$$
+          - |
+            **Apply the square root:**
+
+            $$\sqrt{x^{-8} y^8} = (x^{-8} y^8)^{\frac{1}{2}} = x^{-4} y^4$$
+          - |
+            **Express with positive exponents:**
+
+            $$\frac{y^4}{x^4}$$
+
+    - id: 3
+      titulo: "Cube Root Monomial"
+      dificultad: "Low"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the cube root expression completely:
+
+        $$\sqrt[3]{27x^{-6}y^9}$$
+
+        <p class="highlight-text">Express the final answer using positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{3y^3}{x^2}$$
+        pasos:
+          - |
+            **Separate into individual factors:**
+
+            $$\sqrt[3]{27} \cdot \sqrt[3]{x^{-6}} \cdot \sqrt[3]{y^9}$$
+          - |
+            **Evaluate each radical:** $\sqrt[3]{27} = 3$, $\sqrt[3]{x^{-6}} = x^{-2}$, and $\sqrt[3]{y^9} = y^3$.
+          - |
+            **Combine terms:**
+
+            $$3x^{-2}y^3 = \frac{3y^3}{x^2}$$
+
+    - id: 4
+      titulo: "Radical Expression with Multiple Variables"
+      dificultad: "Low"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the radical fraction fully:
+
+        $$\sqrt{\frac{25a^{-4}b^6}{c^{-2}}}$$
+
+        <p class="highlight-text">Express the final answer with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{5b^3c}{a^2}$$
+        pasos:
+          - |
+            **Rewrite negative exponent in denominator to numerator:**
+
+            $$\sqrt{25a^{-4}b^6c^2}$$
+          - |
+            **Take the square root of each term:**
+
+            $$\sqrt{25} \cdot \sqrt{a^{-4}} \cdot \sqrt{b^6} \cdot \sqrt{c^2} = 5 a^{-2} b^3 c$$
+          - |
+            **Express with positive exponents:**
+
+            $$\frac{5b^3c}{a^2}$$
+
+    # MEDIUM (5-8)
+    - id: 5
+      titulo: "Nested Square and Fourth Roots"
+      dificultad: "Medium"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify the nested radical expression:
+
+        $$\sqrt[4]{\frac{x^{-8}y^{12}}{\sqrt{x^8y^{-4}}}}$$
+
+        <p class="highlight-text">Express the result with positive exponents and simplified radicals.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{y^3\sqrt{y}}{x^3}$$
+        pasos:
+          - |
+            **Simplify the inner radical:**
+
+            $$\sqrt{x^8y^{-4}} = (x^8y^{-4})^{\frac{1}{2}} = x^4y^{-2}$$
+          - |
+            **Substitute back into the main fraction:**
+
+            $$\frac{x^{-8}y^{12}}{x^4y^{-2}} = x^{-8-4} y^{12-(-2)} = x^{-12}y^{14}$$
+          - |
+            **Apply the outer fourth root:**
+
+            $$\sqrt[4]{x^{-12}y^{14}} = (x^{-12}y^{14})^{\frac{1}{4}} = x^{-3} y^{\frac{14}{4}} = x^{-3} y^{\frac{7}{2}}$$
+          - |
+            **Convert to radical form:** Since $y^{\frac{7}{2}} = y^3 \cdot y^{\frac{1}{2}} = y^3\sqrt{y}$:
+
+            $$\frac{y^3\sqrt{y}}{x^3}$$
+
+    - id: 6
+      titulo: "Mixed Index Nested Radical"
+      dificultad: "Medium"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify the nested radical structure:
+
+        $$\sqrt[3]{\frac{\sqrt{x^{-12}y^{18}}}{\sqrt[3]{x^9y^{-6}}}}$$
+
+        <p class="highlight-text">Express the final answer in terms of simplified radical notation.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{y^3\sqrt[3]{y^2}}{x^3}$$
+        pasos:
+          - |
+            **Simplify numerator and denominator radicals separately:**
+
+            Numerator: $\sqrt{x^{-12}y^{18}} = x^{-6}y^9$.
+
+            Denominator: $\sqrt[3]{x^9y^{-6}} = x^3y^{-2}$.
+          - |
+            **Simplify the internal fraction:**
+
+            $$\frac{x^{-6}y^9}{x^3y^{-2}} = x^{-6-3} y^{9-(-2)} = x^{-9}y^{11}$$
+          - |
+            **Apply outer cube root:**
+
+            $$\sqrt[3]{x^{-9}y^{11}} = (x^{-9}y^{11})^{\frac{1}{3}} = x^{-3} y^{\frac{11}{3}}$$
+          - |
+            **Separate whole power and radical remainder:** Since $\frac{11}{3} = 3 + \frac{2}{3}$:
+
+            $$\frac{y^3\sqrt[3]{y^2}}{x^3}$$
+
+    - id: 7
+      titulo: "Combination of Roots of Monomials"
+      dificultad: "Medium"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify the radical expression completely:
+
+        $$\sqrt{\frac{\sqrt[3]{x^{-6}y^{12}}}{\sqrt[4]{x^8y^{-4}}}}$$
+
+        <p class="highlight-text">Express the final answer using positive exponents and simplified radicals.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{y^2\sqrt{y}}{x^2}$$
+        pasos:
+          - |
+            **Evaluate individual radicals in numerator and denominator:**
+
+            Numerator: $\sqrt[3]{x^{-6}y^{12}} = x^{-2}y^4$.
+
+            Denominator: $\sqrt[4]{x^8y^{-4}} = x^2y^{-1}$.
+          - |
+            **Simplify fraction inside outer square root:**
+
+            $$\frac{x^{-2}y^4}{x^2y^{-1}} = x^{-2-2} y^{4-(-1)} = x^{-4}y^5$$
+          - |
+            **Apply outer square root:**
+
+            $$\sqrt{x^{-4}y^5} = (x^{-4}y^5)^{\frac{1}{2}} = x^{-2} y^{\frac{5}{2}}$$
+          - |
+            **Convert fractional exponent to radical form:**
+
+            $$\frac{y^2\sqrt{y}}{x^2}$$
+
+    - id: 8
+      titulo: "Product of Same-Index Radicals"
+      dificultad: "Medium"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify the product of radicals:
+
+        $$\sqrt[3]{x^{-4}y^5} \times \sqrt[3]{x^{-2}y^4}$$
+
+        <p class="highlight-text">Express the final answer with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{y^3}{x^2}$$
+        pasos:
+          - |
+            **Combine under a single radical using $\sqrt[n]{A} \cdot \sqrt[n]{B} = \sqrt[n]{A \cdot B}$:**
+
+            $$\sqrt[3]{(x^{-4}y^5)(x^{-2}y^4)} = \sqrt[3]{x^{-4+(-2)} y^{5+4}} = \sqrt[3]{x^{-6}y^9}$$
+          - |
+            **Evaluate the cube root:**
+
+            $$x^{-\frac{6}{3}} y^{\frac{9}{3}} = x^{-2} y^3$$
+          - |
+            **Write with positive exponents:**
+
+            $$\frac{y^3}{x^2}$$
+
+    # HARD (9-12)
+    - id: 9
+      titulo: "Product of Different-Index Radicals"
+      dificultad: "High"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 5
+      enunciado: |
+        Multiply and simplify the radicals with different indices:
+
+        $$\sqrt[3]{x^{-2}y^4} \times \sqrt[4]{x^{-3}y^5}$$
+
+        <p class="highlight-text">Express the final result in simplified radical form using a single root index.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{y^2 \sqrt[12]{y^7}}{x \sqrt[12]{x^5}}$$
+        pasos:
+          - |
+            **Convert radicals to rational exponents:**
+
+            $$(x^{-2}y^4)^{\frac{1}{3}} \cdot (x^{-3}y^5)^{\frac{1}{4}} = x^{-\frac{2}{3}} y^{\frac{4}{3}} \cdot x^{-\frac{3}{4}} y^{\frac{5}{4}}$$
+          - |
+            **Find a common denominator for exponents ($\text{LCM}(3,4) = 12$):**
+
+            Base $x$: $-\frac{2}{3} - \frac{3}{4} = -\frac{8}{12} - \frac{9}{12} = -\frac{17}{12}$.
+
+            Base $y$: $\frac{4}{3} + \frac{5}{4} = \frac{16}{12} + \frac{15}{12} = \frac{31}{12}$.
+          - |
+            **Rewrite term as fractional expression:**
+
+            $$x^{-\frac{17}{12}} y^{\frac{31}{12}} = \frac{y^{\frac{31}{12}}}{x^{\frac{17}{12}}}$$
+          - |
+            **Decompose fractional powers into whole and radical parts:**
+
+            Numerator: $y^{\frac{31}{12}} = y^{2 + \frac{7}{12}} = y^2 \sqrt[12]{y^7}$.
+
+            Denominator: $x^{\frac{17}{12}} = x^{1 + \frac{5}{12}} = x \sqrt[12]{x^5}$.
+
+            Final expression:
+
+            $$\frac{y^2 \sqrt[12]{y^7}}{x \sqrt[12]{x^5}}$$
+
+    - id: 10
+      titulo: "Nested Fractional Radical Quotient"
+      dificultad: "High"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 5
+      enunciado: |
+        Simplify the multi-level radical quotient completely:
+
+        $$\sqrt{\frac{x^{-3} \sqrt[4]{y^6}}{y^{-1} \sqrt[3]{x^3}}}$$
+
+        <p class="highlight-text">Express the final answer in terms of simplified radicals with positive exponents.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{y\sqrt[4]{y}}{x^2}$$
+        pasos:
+          - |
+            **Simplify inner terms:**
+
+            $\sqrt[4]{y^6} = y^{\frac{6}{4}} = y^{\frac{3}{2}}$.
+
+            $\sqrt[3]{x^3} = x^1 = x$.
+          - |
+            **Substitute back into quotient:**
+
+            $$\frac{x^{-3} y^{\frac{3}{2}}}{y^{-1} x} = x^{-3-1} y^{\frac{3}{2}-(-1)} = x^{-4} y^{\frac{5}{2}}$$
+          - |
+            **Apply outer square root:**
+
+            $$\sqrt{x^{-4} y^{\frac{5}{2}}} = (x^{-4} y^{\frac{5}{2}})^{\frac{1}{2}} = x^{-2} y^{\frac{5}{4}}$$
+          - |
+            **Convert to radical notation:** Since $y^{\frac{5}{4}} = y^{1 + \frac{1}{4}} = y\sqrt[4]{y}$:
+
+            $$\frac{y\sqrt[4]{y}}{x^2}$$
+
+    - id: 11
+      titulo: "Division of Radical Expressions"
+      dificultad: "High"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 5
+      enunciado: |
+        Perform the operation and simplify completely:
+
+        $$\sqrt[4]{\frac{16a^{-8}b^{12}}{c^{-4}}} \div \left( \frac{a^2 c^{-1}}{b^3} \right)^{-\frac{1}{2}}$$
+
+        <p class="highlight-text">Express the final answer in simplified radical form.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{2b\sqrt{bc}}{a}$$
+        pasos:
+          - |
+            **Simplify the first radical term:**
+
+            $$\sqrt[4]{\frac{16b^{12}c^4}{a^8}} = \frac{\sqrt[4]{16} \cdot \sqrt[4]{b^{12}} \cdot \sqrt[4]{c^4}}{\sqrt[4]{a^8}} = \frac{2 b^3 c}{a^2}$$
+          - |
+            **Simplify the second term:**
+
+            $$\left( \frac{a^2 c^{-1}}{b^3} \right)^{-\frac{1}{2}} = \left( \frac{b^3}{a^2 c^{-1}} \right)^{\frac{1}{2}} = \frac{b^{\frac{3}{2}}}{a c^{-\frac{1}{2}}} = \frac{b^{\frac{3}{2}} c^{\frac{1}{2}}}{a}$$
+          - |
+            **Perform division:**
+
+            $$\frac{2b^3c}{a^2} \div \frac{b^{\frac{3}{2}}c^{\frac{1}{2}}}{a} = \frac{2b^3c}{a^2} \cdot \frac{a}{b^{\frac{3}{2}}c^{\frac{1}{2}}} = \frac{2 b^{3 - \frac{3}{2}} c^{1 - \frac{1}{2}}}{a^{2-1}}$$
+          - |
+            **Simplify exponents and convert to radical form:**
+
+            $$\frac{2 b^{\frac{3}{2}} c^{\frac{1}{2}}}{a} = \frac{2 b \cdot b^{\frac{1}{2}} c^{\frac{1}{2}}}{a} = \frac{2b\sqrt{bc}}{a}$$
+
+    - id: 12
+      titulo: "Deeply Nested Triple Radical"
+      dificultad: "High"
+      tema: "Laws of Radicals"
+      tiempo_minutos: 5
+      enunciado: |
+        Simplify the nested radical expression completely:
+
+        $$\sqrt{x^{-2} \sqrt[3]{x^4 y^{-6} \sqrt{x^4 y^8}}}$$
+
+        <p class="highlight-text">Express the final answer with simplified radicals.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\frac{1}{\sqrt[3]{y}}$$
+        pasos:
+          - |
+            **Simplify the innermost square root:**
+
+            $$\sqrt{x^4y^8} = x^2y^4$$
+          - |
+            **Substitute into the middle radical and simplify:**
+
+            $$\sqrt[3]{x^4y^{-6} \cdot (x^2y^4)} = \sqrt[3]{x^{4+2} y^{-6+4}} = \sqrt[3]{x^6y^{-2}} = x^2 y^{-\frac{2}{3}}$$
+          - |
+            **Substitute into the outer square root:**
+
+            $$\sqrt{x^{-2} \cdot (x^2 y^{-\frac{2}{3}})} = \sqrt{x^{-2+2} y^{-\frac{2}{3}}} = \sqrt{x^0 y^{-\frac{2}{3}}} = \sqrt{y^{-\frac{2}{3}}}$$
+          - |
+            **Evaluate final power:**
+
+            $$(y^{-\frac{2}{3}})^{\frac{1}{2}} = y^{-\frac{1}{3}} = \frac{1}{\sqrt[3]{y}}$$

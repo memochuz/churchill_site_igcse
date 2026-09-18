@@ -9,8 +9,8 @@
   preguntas:
     # CASE 1: Denominator of the form a√b
     - id: 1
-      titulo: "Simple Monomial Rationalization"
-      dificultad: "Low"
+      titulo: "Monomio simple 1"
+      dificultad: "Easy"
       tema: "Rationalization"
       tiempo_minutos: 3
       enunciado: |
@@ -35,8 +35,8 @@
             $$\frac{6\sqrt{3}}{5 \cdot 3} = \frac{6\sqrt{3}}{15} = \frac{2\sqrt{3}}{5}$$
   
     - id: 2
-      titulo: "Simple Monomial Rationalization"
-      dificultad: "Low"
+      titulo: "Monomio simple 2"
+      dificultad: "Easy"
       tema: "Rationalization"
       tiempo_minutos: 3
       enunciado: |
@@ -61,7 +61,7 @@
             $$\frac{10\sqrt{5}}{3 \cdot 5} = \frac{10\sqrt{5}}{15} = \frac{2\sqrt{5}}{3}$$
   
     - id: 3
-      titulo: "Simple Monomial Rationalization"
+      titulo: "Monomio simple 3"
       dificultad: "Medium"
       tema: "Rationalization"
       tiempo_minutos: 3
@@ -87,7 +87,7 @@
             $$\frac{14\sqrt{7}}{2 \cdot 7} = \frac{14\sqrt{7}}{14} = \sqrt{7}$$
   
     - id: 4
-      titulo: "Simple Monomial Rationalization"
+      titulo: "Monomio simple 4"
       dificultad: "Medium"
       tema: "Rationalization"
       tiempo_minutos: 3
@@ -114,7 +114,7 @@
   
     # CASE 2: Denominator of the form a\sqrt[n]{b}
     - id: 5
-      titulo: "nth-Root Rationalization"
+      titulo: "Raíz n-ésima 1"
       dificultad: "Medium"
       tema: "Rationalization"
       tiempo_minutos: 3
@@ -140,7 +140,7 @@
             $$\frac{4\sqrt[3]{4}}{2} = 2\sqrt[3]{4}$$
   
     - id: 6
-      titulo: "nth-Root Rationalization"
+      titulo: "Raíz n-ésima 2"
       dificultad: "Medium"
       tema: "Rationalization"
       tiempo_minutos: 3
@@ -166,8 +166,8 @@
             $$\frac{5\sqrt[4]{27}}{2 \cdot 3} = \frac{5\sqrt[4]{27}}{6}$$
   
     - id: 7
-      titulo: "nth-Root Rationalization"
-      dificultad: "High"
+      titulo: "Raíz n-ésima 3"
+      dificultad: "Hard"
       tema: "Rationalization"
       tiempo_minutos: 3
       enunciado: |
@@ -192,8 +192,8 @@
             $$\frac{6\sqrt[5]{8}}{2} = 3\sqrt[5]{8}$$
   
     - id: 8
-      titulo: "nth-Root Rationalization"
-      dificultad: "High"
+      titulo: "Raíz n-ésima 4"
+      dificultad: "Hard"
       tema: "Rationalization"
       tiempo_minutos: 3
       enunciado: |
@@ -219,7 +219,7 @@
   
     # CASE 3: Denominator with addition or subtraction of roots (using conjugates)
     - id: 9
-      titulo: "Rationalization by Conjugate"
+      titulo: "Conjugado 1"
       dificultad: "Medium"
       tema: "Rationalization"
       tiempo_minutos: 5
@@ -245,7 +245,7 @@
             $$\frac{4(\sqrt{5} + 1)}{(\sqrt{5})^2 - (1)^2} = \frac{4(\sqrt{5} + 1)}{5 - 1} = \frac{4(\sqrt{5} + 1)}{4} = \sqrt{5} + 1$$
   
     - id: 10
-      titulo: "Rationalization by Conjugate"
+      titulo: "Conjugado 2"
       dificultad: "Medium"
       tema: "Rationalization"
       tiempo_minutos: 5
@@ -271,8 +271,8 @@
             $$\frac{6(\sqrt{7} - \sqrt{3})}{(\sqrt{7})^2 - (\sqrt{3})^2} = \frac{6(\sqrt{7} - \sqrt{3})}{7 - 3} = \frac{6(\sqrt{7} - \sqrt{3})}{4} = \frac{3(\sqrt{7} - \sqrt{3})}{2}$$
   
     - id: 11
-      titulo: "Rationalization by Conjugate"
-      dificultad: "High"
+      titulo: "Conjugado 3"
+      dificultad: "Hard"
       tema: "Rationalization"
       tiempo_minutos: 5
       enunciado: |
@@ -302,8 +302,8 @@
             $$\frac{2\sqrt{6} + \sqrt{15}}{3}$$
   
     - id: 12
-      titulo: "Rationalization by Conjugate"
-      dificultad: "High"
+      titulo: "Conjugado 4"
+      dificultad: "Hard"
       tema: "Rationalization"
       tiempo_minutos: 5
       enunciado: |
@@ -342,8 +342,8 @@
   preguntas:
     # EASY (1-4)
     - id: 1
-      titulo: "Power of a Power & Quotient Rule"
-      dificultad: "Low"
+      titulo: "Potencias y cociente"
+      dificultad: "Easy"
       tema: "Laws of Exponents"
       tiempo_minutos: 3
       enunciado: |
@@ -370,8 +370,8 @@
             $$1 \cdot b^8 = b^8$$
 
     - id: 2
-      titulo: "Product of Negative Powers"
-      dificultad: "Low"
+      titulo: "Producto negativo"
+      dificultad: "Easy"
       tema: "Laws of Exponents"
       tiempo_minutos: 3
       enunciado: |
@@ -398,8 +398,8 @@
             $$y^7$$
 
     - id: 3
-      titulo: "Simplifying Nested Monomial Fractions"
-      dificultad: "Low"
+      titulo: "Monomios anidados"
+      dificultad: "Easy"
       tema: "Laws of Exponents"
       tiempo_minutos: 3
       enunciado: |
@@ -426,8 +426,8 @@
             $$\frac{n^{12}}{m^{17}}$$
 
     - id: 4
-      titulo: "Quotient with Negative Power Distribution"
-      dificultad: "Low"
+      titulo: "Cociente negativo"
+      dificultad: "Easy"
       tema: "Laws of Exponents"
       tiempo_minutos: 3
       enunciado: |
@@ -455,7 +455,7 @@
 
     # MEDIUM (5-8)
     - id: 5
-      titulo: "Combining Power and Quotient Rules"
+      titulo: "Combinación de reglas"
       dificultad: "Medium"
       tema: "Laws of Exponents"
       tiempo_minutos: 4
@@ -483,7 +483,7 @@
             $$y$$
 
     - id: 6
-      titulo: "Multi-Variable Negative Exponents"
+      titulo: "Exponentes multivariable"
       dificultad: "Medium"
       tema: "Laws of Exponents"
       tiempo_minutos: 4
@@ -511,7 +511,7 @@
             $$\frac{a^{14}}{b^{11}}$$
 
     - id: 7
-      titulo: "Fractional and Rational Exponents"
+      titulo: "Exponentes fraccionarios"
       dificultad: "Medium"
       tema: "Laws of Exponents"
       tiempo_minutos: 4
@@ -541,7 +541,7 @@
             $$\frac{m^2}{n^3}$$
 
     - id: 8
-      titulo: "Numerical Bases with Rational Powers"
+      titulo: "Bases numéricas"
       dificultad: "Medium"
       tema: "Laws of Exponents"
       tiempo_minutos: 4
@@ -572,8 +572,8 @@
 
     # HARD (9-12)
     - id: 9
-      titulo: "Nested Fractional Powers & Products"
-      dificultad: "High"
+      titulo: "Productos fraccionarios"
+      dificultad: "Hard"
       tema: "Laws of Exponents"
       tiempo_minutos: 5
       enunciado: |
@@ -608,8 +608,8 @@
             $$\frac{a^{12}\sqrt{a}}{b^6}$$
 
     - id: 10
-      titulo: "Numerical Powers with Fractional Exponents"
-      dificultad: "High"
+      titulo: "Potencias numéricas"
+      dificultad: "Hard"
       tema: "Laws of Exponents"
       tiempo_minutos: 5
       enunciado: |
@@ -638,8 +638,8 @@
             $$\frac{2^{-2}x^6y^{-4}}{2^3x^3y^{-6}} = 2^{-2-3} x^{6-3} y^{-4-(-6)} = 2^{-5} x^3 y^2 = \frac{x^3 y^2}{32}$$
 
     - id: 11
-      titulo: "Complex Nested Power Structure"
-      dificultad: "High"
+      titulo: "Potencia anidada"
+      dificultad: "Hard"
       tema: "Laws of Exponents"
       tiempo_minutos: 5
       enunciado: |
@@ -670,8 +670,8 @@
             $$(p^9 q^{-8})^{-\frac{1}{2}} = p^{-\frac{9}{2}} q^4 = \frac{q^4}{p^{\frac{9}{2}}} = \frac{q^4}{p^4 \sqrt{p}}$$
 
     - id: 12
-      titulo: "Combined Prime Base Rational Exponent Quotient"
-      dificultad: "High"
+      titulo: "Cociente con bases primas"
+      dificultad: "Hard"
       tema: "Laws of Exponents"
       tiempo_minutos: 5
       enunciado: |
@@ -714,8 +714,8 @@
   preguntas:
     # EASY (1-4)
     - id: 1
-      titulo: "Square Root Monomial Simplification"
-      dificultad: "Low"
+      titulo: "Raíz de monomio"
+      dificultad: "Easy"
       tema: "Laws of Radicals"
       tiempo_minutos: 3
       enunciado: |
@@ -742,8 +742,8 @@
             $$\frac{y^4}{4x^2}$$
 
     - id: 2
-      titulo: "Simplifying Radical Quotients"
-      dificultad: "Low"
+      titulo: "Cociente de radicales"
+      dificultad: "Easy"
       tema: "Laws of Radicals"
       tiempo_minutos: 3
       enunciado: |
@@ -770,8 +770,8 @@
             $$\frac{y^4}{x^4}$$
 
     - id: 3
-      titulo: "Cube Root Monomial"
-      dificultad: "Low"
+      titulo: "Raíz cúbica"
+      dificultad: "Easy"
       tema: "Laws of Radicals"
       tiempo_minutos: 3
       enunciado: |
@@ -796,8 +796,8 @@
             $$3x^{-2}y^3 = \frac{3y^3}{x^2}$$
 
     - id: 4
-      titulo: "Radical Expression with Multiple Variables"
-      dificultad: "Low"
+      titulo: "Fracción radical"
+      dificultad: "Easy"
       tema: "Laws of Radicals"
       tiempo_minutos: 3
       enunciado: |
@@ -825,7 +825,7 @@
 
     # MEDIUM (5-8)
     - id: 5
-      titulo: "Nested Square and Fourth Roots"
+      titulo: "Raíces anidadas"
       dificultad: "Medium"
       tema: "Laws of Radicals"
       tiempo_minutos: 4
@@ -857,7 +857,7 @@
             $$\frac{y^3\sqrt{y}}{x^3}$$
 
     - id: 6
-      titulo: "Mixed Index Nested Radical"
+      titulo: "Índice mixto anidado"
       dificultad: "Medium"
       tema: "Laws of Radicals"
       tiempo_minutos: 4
@@ -891,7 +891,7 @@
             $$\frac{y^3\sqrt[3]{y^2}}{x^3}$$
 
     - id: 7
-      titulo: "Combination of Roots of Monomials"
+      titulo: "Raíces combinadas"
       dificultad: "Medium"
       tema: "Laws of Radicals"
       tiempo_minutos: 4
@@ -925,7 +925,7 @@
             $$\frac{y^2\sqrt{y}}{x^2}$$
 
     - id: 8
-      titulo: "Product of Same-Index Radicals"
+      titulo: "Mismo índice"
       dificultad: "Medium"
       tema: "Laws of Radicals"
       tiempo_minutos: 4
@@ -954,8 +954,8 @@
 
     # HARD (9-12)
     - id: 9
-      titulo: "Product of Different-Index Radicals"
-      dificultad: "High"
+      titulo: "Diferente índice"
+      dificultad: "Hard"
       tema: "Laws of Radicals"
       tiempo_minutos: 5
       enunciado: |
@@ -994,8 +994,8 @@
             $$\frac{y^2 \sqrt[12]{y^7}}{x \sqrt[12]{x^5}}$$
 
     - id: 10
-      titulo: "Nested Fractional Radical Quotient"
-      dificultad: "High"
+      titulo: "Cociente anidado"
+      dificultad: "Hard"
       tema: "Laws of Radicals"
       tiempo_minutos: 5
       enunciado: |
@@ -1028,8 +1028,8 @@
             $$\frac{y\sqrt[4]{y}}{x^2}$$
 
     - id: 11
-      titulo: "Division of Radical Expressions"
-      dificultad: "High"
+      titulo: "División radical"
+      dificultad: "Hard"
       tema: "Laws of Radicals"
       tiempo_minutos: 5
       enunciado: |
@@ -1060,8 +1060,8 @@
             $$\frac{2 b^{\frac{3}{2}} c^{\frac{1}{2}}}{a} = \frac{2 b \cdot b^{\frac{1}{2}} c^{\frac{1}{2}}}{a} = \frac{2b\sqrt{bc}}{a}$$
 
     - id: 12
-      titulo: "Deeply Nested Triple Radical"
-      dificultad: "High"
+      titulo: "Triple raíz"
+      dificultad: "Hard"
       tema: "Laws of Radicals"
       tiempo_minutos: 5
       enunciado: |

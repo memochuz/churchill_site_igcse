@@ -25,3 +25,8 @@
       title: "Rationalization"
       subtitle: "Rationalizing Denominators"
       file: "rationalization_without_toolbar.html"
+    - id: "t1-significant-figures"
+      title: "Significant Figures"
+      subtitle: "Understanding Precision"
+      file: "significanat_figures_without_toolbar.html"
+

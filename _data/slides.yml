@@ -36,6 +36,11 @@
       subtitle: "Getting rid of surds"
       file: "rationalization.pdf"
       exercises: "class-exercise-rationalization.pdf"
+    - id: "t1-significant-figures"
+      title: "Significant Figures"
+      subtitle: "Understanding Precision"
+      file: "significant-figures.pdf"
+      exercises: "class-exercise-significant-figures.pdf"
 # - topic: "Topic 2: Geometry & Trigonometry"
 #   id: "topic-2"
 #   slides:

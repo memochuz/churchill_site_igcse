@@ -1089,4 +1089,735 @@
           - |
             **Evaluate final power:**
 
-            $$(y^{-\frac{2}{3}})^{\frac{1}{2}} = y^{-\frac{1}{3}} = \frac{1}{\sqrt[3]{y}}$$
+# ======================================================================
+# SIMPLIFICATION OF SURDS ASSESSMENT
+# ======================================================================
+- id: "simplification_of_surds"
+  titulo_evaluacion: "Simplification of Surds Challenges"
+  topic: "Simplification of Surds"
+  description: "Comprehensive problem set on simplifying radicals, extracting prime factors, radical operations, and geometric applications."
+  preguntas:
+    # EASY (1-4)
+    - id: 1
+      titulo: "Raíz cuadrada de monomio"
+      dificultad: "Easy"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the square root expression completely by extracting all possible numerical and variable factors:
+
+        $$\sqrt{72 x^5 y^8}$$
+
+        <p class="highlight-text">Express the final answer in its most simplified radical form.</p>
+      solucion:
+        titulo_respuesta: |
+          $$6x^2 y^4 \sqrt{2x}$$
+        pasos:
+          - |
+            **Factorize into prime factors and variables:** Break down $72$, $x^5$, and $y^8$ into base primes and individual variable terms:
+
+            $$\sqrt{(2 \cdot 2 \cdot 2 \cdot 3 \cdot 3) \cdot (x \cdot x \cdot x \cdot x \cdot x) \cdot (y \cdot y \cdot y \cdot y \cdot y \cdot y \cdot y \cdot y)}$$
+          - |
+            **Group depending on the index ($n = 2$):** Group terms into explicit pairs (groups of 2):
+
+            $$\sqrt{(2^2 \cdot 3^2 \cdot 2) \cdot (x^2 \cdot x^2 \cdot x) \cdot (y^2 \cdot y^2 \cdot y^2 \cdot y^2)}$$
+          - |
+            **Extract and multiply:** Pull out one term for each complete group of $2$ ($2, 3, x, x, y, y, y, y$) and multiply them outside:
+
+            $$(2 \cdot 3 \cdot x \cdot x \cdot y \cdot y \cdot y \cdot y)\sqrt{2 \cdot x} = 6x^2 y^4 \sqrt{2x}$$
+
+    - id: 2
+      titulo: "Raíz cúbica de monomio"
+      dificultad: "Easy"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the cube root expression completely:
+
+        $$\sqrt[3]{54 a^7 b^{11}}$$
+
+        <p class="highlight-text">Express your final answer in simplest radical form.</p>
+      solucion:
+        titulo_respuesta: |
+          $$3a^2 b^3 \sqrt[3]{2a b^2}$$
+        pasos:
+          - |
+            **Factorize into prime factors and variables:** Express $54$, $a^7$, and $b^{11}$ in full prime and variable factors:
+
+            $$\sqrt[3]{(2 \cdot 3 \cdot 3 \cdot 3) \cdot (a \cdot a \cdot a \cdot a \cdot a \cdot a \cdot a) \cdot (b \cdot b \cdot b \cdot b \cdot b \cdot b \cdot b \cdot b \cdot b \cdot b \cdot b)}$$
+          - |
+            **Group depending on the index ($n = 3$):** Form explicit groups of 3 for each base:
+
+            $$\sqrt[3]{(3^3 \cdot 2) \cdot (a^3 \cdot a^3 \cdot a) \cdot (b^3 \cdot b^3 \cdot b^3 \cdot b^2)}$$
+          - |
+            **Extract and multiply:** Move one base out for each group of 3 ($3, a, a, b, b, b$) and multiply:
+
+            $$(3 \cdot a \cdot a \cdot b \cdot b \cdot b)\sqrt[3]{2 \cdot a \cdot b^2} = 3a^2 b^3 \sqrt[3]{2a b^2}$$
+
+    - id: 3
+      titulo: "Raíz cuarta de monomio"
+      dificultad: "Easy"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the fourth root expression fully, factoring out all perfect fourth powers:
+
+        $$\sqrt[4]{48 m^9 n^{14}}$$
+
+        <p class="highlight-text">Express the final answer in simplest radical form.</p>
+      solucion:
+        titulo_respuesta: |
+          $$2m^2 n^3 \sqrt[4]{3m n^2}$$
+        pasos:
+          - |
+            **Factorize into prime factors and variables:** Prime factorize $48$ and write out variables:
+
+            $$\sqrt[4]{(2 \cdot 2 \cdot 2 \cdot 2 \cdot 3) \cdot m^9 \cdot n^{14}}$$
+          - |
+            **Group depending on the index ($n = 4$):** Form explicit groups of 4:
+
+            $$\sqrt[4]{(2^4 \cdot 3) \cdot (m^4 \cdot m^4 \cdot m) \cdot (n^4 \cdot n^4 \cdot n^4 \cdot n^2)}$$
+          - |
+            **Extract and multiply:** Extract one factor for each group of 4 ($2, m, m, n, n, n$) and multiply:
+
+            $$(2 \cdot m \cdot m \cdot n \cdot n \cdot n)\sqrt[4]{3 \cdot m \cdot n^2} = 2m^2 n^3 \sqrt[4]{3m n^2}$$
+
+    - id: 4
+      titulo: "Raíz quinta de monomio"
+      dificultad: "Easy"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 3
+      enunciado: |
+        Simplify the fifth root expression completely:
+
+        $$\sqrt[5]{64 x^{13} y^{18}}$$
+
+        <p class="highlight-text">Write the answer in simplest radical form.</p>
+      solucion:
+        titulo_respuesta: |
+          $$2x^2 y^3 \sqrt[5]{2x^3 y^3}$$
+        pasos:
+          - |
+            **Factorize into prime factors and variables:** Prime factorize $64 = 2^6$ and expand variable terms:
+
+            $$\sqrt[5]{(2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2) \cdot x^{13} \cdot y^{18}}$$
+          - |
+            **Group depending on the index ($n = 5$):** Form explicit groups of 5:
+
+            $$\sqrt[5]{(2^5 \cdot 2) \cdot (x^5 \cdot x^5 \cdot x^3) \cdot (y^5 \cdot y^5 \cdot y^5 \cdot y^3)}$$
+          - |
+            **Extract and multiply:** Move one factor out for each group of 5 ($2, x, x, y, y, y$):
+
+            $$(2 \cdot x \cdot x \cdot y \cdot y \cdot y)\sqrt[5]{2 \cdot x^3 \cdot y^3} = 2x^2 y^3 \sqrt[5]{2x^3 y^3}$$
+
+    # MEDIUM (5-8)
+    - id: 5
+      titulo: "Suma y resta de radicales simples"
+      dificultad: "Medium"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify each radical term completely, and then combine like terms to simplify the expression fully:
+
+        $$3\sqrt{50x^3} - x\sqrt{18x} + \sqrt{98x^3}$$
+
+        <p class="highlight-text">Express the final answer in simplest surd form.</p>
+      solucion:
+        titulo_respuesta: |
+          $$19x\sqrt{2x}$$
+        pasos:
+          - |
+            **Factorize and group by index ($n = 2$):**
+            * Term 1: $3\sqrt{(2 \cdot 5^2) \cdot (x^2 \cdot x)}$
+            * Term 2: $-x\sqrt{(2 \cdot 3^2) \cdot x}$
+            * Term 3: $\sqrt{(2 \cdot 7^2) \cdot (x^2 \cdot x)}$
+          - |
+            **Extract and multiply:**
+            * Term 1: $3 \cdot (5 \cdot x)\sqrt{2x} = 15x\sqrt{2x}$
+            * Term 2: $-x \cdot (3)\sqrt{2x} = -3x\sqrt{2x}$
+            * Term 3: $(7 \cdot x)\sqrt{2x} = 7x\sqrt{2x}$
+          - |
+            **Remember:** To add or subtract surds, terms **must have the exact same index and radicand** ($\sqrt{2x}$):
+
+            $$(15x - 3x + 7x)\sqrt{2x} = 19x\sqrt{2x}$$
+
+    - id: 6
+      titulo: "Suma de raíces cúbicas"
+      dificultad: "Medium"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify each radical term to determine which terms can be combined. Express the final answer in fully simplified form:
+
+        $$2\sqrt[3]{81a^4 b} + a\sqrt[3]{24a b} - \sqrt[3]{375a^4 b}$$
+
+        <p class="highlight-text">Express the final answer in its most simplified form.</p>
+      solucion:
+        titulo_respuesta: |
+          $$3a\sqrt[3]{3ab}$$
+        pasos:
+          - |
+            **Factorize and group by index ($n = 3$):**
+            * Term 1: $2\sqrt[3]{(3^3 \cdot 3) \cdot (a^3 \cdot a) \cdot b}$
+            * Term 2: $a\sqrt[3]{(2^3 \cdot 3) \cdot a \cdot b}$
+            * Term 3: $-\sqrt[3]{(5^3 \cdot 3) \cdot (a^3 \cdot a) \cdot b}$
+          - |
+            **Extract and multiply:**
+            * Term 1: $2 \cdot (3 \cdot a)\sqrt[3]{3ab} = 6a\sqrt[3]{3ab}$
+            * Term 2: $a \cdot (2)\sqrt[3]{3ab} = 2a\sqrt[3]{3ab}$
+            * Term 3: $-(5 \cdot a)\sqrt[3]{3ab} = -5a\sqrt[3]{3ab}$
+          - |
+            **Remember:** Combine only terms sharing the **same index ($3$) and radicand ($3ab$)**:
+
+            $$(6a + 2a - 5a)\sqrt[3]{3ab} = 3a\sqrt[3]{3ab}$$
+
+    - id: 7
+      titulo: "Radicales multivariable"
+      dificultad: "Medium"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify all radical expressions. Note that some terms may not be like terms and cannot be combined. Write your final answer in simplest radical form:
+
+        $$\sqrt{12x^5 y^2} + 5x^2 \sqrt{3x y^2} - \sqrt{75x^3 y^2}$$
+
+        <p class="highlight-text">Express the final result with positive variable bases.</p>
+      solucion:
+        titulo_respuesta: |
+          $$7x^2 y\sqrt{3x} - 5xy\sqrt{3x}$$
+        pasos:
+          - |
+            **Factorize and group by index ($n = 2$):**
+            * Term 1: $\sqrt{(2^2 \cdot 3) \cdot (x^2 \cdot x^2 \cdot x) \cdot y^2}$
+            * Term 2: $5x^2 \sqrt{3 \cdot x \cdot y^2}$
+            * Term 3: $-\sqrt{(5^2 \cdot 3) \cdot (x^2 \cdot x) \cdot y^2}$
+          - |
+            **Extract and multiply:**
+            * Term 1: $(2 \cdot x \cdot x \cdot y)\sqrt{3x} = 2x^2 y\sqrt{3x}$
+            * Term 2: $5x^2 \cdot (y)\sqrt{3x} = 5x^2 y\sqrt{3x}$
+            * Term 3: $-(5 \cdot x \cdot y)\sqrt{3x} = -5xy\sqrt{3x}$
+          - |
+            **Remember:** Check for the **same index and radicand** ($\sqrt{3x}$) AND matching variable coefficients ($x^2 y$ vs $xy$):
+
+            $$(2x^2 y + 5x^2 y)\sqrt{3x} - 5xy\sqrt{3x} = 7x^2 y\sqrt{3x} - 5xy\sqrt{3x}$$
+
+    - id: 8
+      titulo: "Índices radicales mixtos"
+      dificultad: "Medium"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 4
+      enunciado: |
+        Simplify each term fully and combine like terms where possible. Leave un-combinable terms in their simplest radical form:
+
+        $$\sqrt[4]{32x^7} + x\sqrt[4]{162x^3} - \sqrt[3]{16x^4}$$
+
+        <p class="highlight-text">Group matching indices together.</p>
+      solucion:
+        titulo_respuesta: |
+          $$5x\sqrt[4]{2x^3} - 2x\sqrt[3]{2x}$$
+        pasos:
+          - |
+            **Factorize and group by respective indices:**
+            * Term 1 ($n=4$): $\sqrt[4]{(2^4 \cdot 2) \cdot (x^4 \cdot x^3)}$
+            * Term 2 ($n=4$): $x\sqrt[4]{(3^4 \cdot 2) \cdot x^3}$
+            * Term 3 ($n=3$): $-\sqrt[3]{(2^3 \cdot 2) \cdot (x^3 \cdot x)}$
+          - |
+            **Extract and multiply:**
+            * Term 1: $(2 \cdot x)\sqrt[4]{2x^3} = 2x\sqrt[4]{2x^3}$
+            * Term 2: $x \cdot (3)\sqrt[4]{2x^3} = 3x\sqrt[4]{2x^3}$
+            * Term 3: $-(2 \cdot x)\sqrt[3]{2x} = -2x\sqrt[3]{2x}$
+          - |
+            **Remember:** We can only combine terms that have the **exact same index and radicand**. Combine the 4th-root terms and leave the 3rd-root term separate:
+
+            $$(2x + 3x)\sqrt[4]{2x^3} - 2x\sqrt[3]{2x} = 5x\sqrt[4]{2x^3} - 2x\sqrt[3]{2x}$$
+
+    # HARD (9-12)
+    - id: 9
+      titulo: "Geometría: Volumen y área de un cubo"
+      dificultad: "Hard"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 5
+      enunciado: |
+        A cube has a total volume of $V = 128 \text{ cm}^3$.
+
+        1. Find the exact side length $s = \sqrt[3]{V}$ in simplified surd form $a\sqrt[3]{b}$.
+        2. Calculate the total surface area $A = 6s^2$ of the cube in exact simplified surd form.
+
+        <p class="highlight-text">Show all intermediate simplification steps.</p>
+      solucion:
+        titulo_respuesta: |
+          $$s = 4\sqrt[3]{2}\text{ cm}, \quad A = 96\sqrt[3]{4}\text{ cm}^2$$
+        pasos:
+          - |
+            **Factorize into primes and group ($n = 3$):** Express $128 = 2^7$ as groups of 3:
+
+            $$s = \sqrt[3]{2^3 \cdot 2^3 \cdot 2}$$
+          - |
+            **Extract and multiply:** Pull out one $2$ for each complete group of 3:
+
+            $$s = (2 \cdot 2)\sqrt[3]{2} = 4\sqrt[3]{2}\text{ cm}$$
+          - |
+            **Calculate surface area $A = 6s^2$:**
+
+            $$s^2 = (4\sqrt[3]{2})^2 = 16\sqrt[3]{2^2} = 16\sqrt[3]{4}$$
+
+            $$A = 6 \cdot (16\sqrt[3]{4}) = 96\sqrt[3]{4}\text{ cm}^2$$
+
+    - id: 10
+      titulo: "Geometría: Perímetro de base triangular"
+      dificultad: "Hard"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 5
+      enunciado: |
+        A right-angled triangular base has three side lengths given by $a = \sqrt{72x^3}$, $b = \sqrt{18x^3}$, and $c = \sqrt{50x^3}$.
+
+        1. Simplify each of the three side lengths $a$, $b$, and $c$.
+        2. Calculate the total perimeter $P = a + b + c$ of the triangular base in simplest surd form.
+
+        <p class="highlight-text">Express the final perimeter as a single term.</p>
+      solucion:
+        titulo_respuesta: |
+          $$P = 14x\sqrt{2x}$$
+        pasos:
+          - |
+            **Factorize and group by index ($n = 2$):**
+            * $a = \sqrt{(2^2 \cdot 3^2 \cdot 2) \cdot (x^2 \cdot x)}$
+            * $b = \sqrt{(3^2 \cdot 2) \cdot (x^2 \cdot x)}$
+            * $c = \sqrt{(5^2 \cdot 2) \cdot (x^2 \cdot x)}$
+          - |
+            **Extract and multiply each side:**
+            * $a = (2 \cdot 3 \cdot x)\sqrt{2x} = 6x\sqrt{2x}$
+            * $b = (3 \cdot x)\sqrt{2x} = 3x\sqrt{2x}$
+            * $c = (5 \cdot x)\sqrt{2x} = 5x\sqrt{2x}$
+          - |
+            **Remember:** Since all three simplified sides share the **same index ($2$) and radicand ($2x$)**, add their coefficients to find the perimeter $P$:
+
+            $$P = (6x + 3x + 5x)\sqrt{2x} = 14x\sqrt{2x}$$
+
+    - id: 11
+      titulo: "Geometría: Área de placa en L"
+      dificultad: "Hard"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 5
+      enunciado: |
+        An L-shaped geometric plate is composed of two rectangular regions $R_1$ and $R_2$. The area of region $R_1$ is $A_1 = \sqrt{48x^5} \cdot \sqrt{12x}$, and the area of region $R_2$ is $A_2 = \sqrt{27x^3} \cdot \sqrt{3x}$.
+
+        1. Simplify the expressions for areas $A_1$ and $A_2$ completely.
+        2. Find the total area $A_{\text{total}} = A_1 + A_2$ of the L-shaped plate.
+
+        <p class="highlight-text">Express the final answer as a simplified polynomial.</p>
+      solucion:
+        titulo_respuesta: |
+          $$A_{\text{total}} = 24x^3 + 9x^2$$
+        pasos:
+          - |
+            **Combine and factorize into explicit groups ($n = 2$):**
+            * $A_1 = \sqrt{48x^5 \cdot 12x} = \sqrt{576x^6} = \sqrt{(2^2 \cdot 2^2 \cdot 2^2 \cdot 3^2) \cdot (x^2 \cdot x^2 \cdot x^2)}$
+            * $A_2 = \sqrt{27x^3 \cdot 3x} = \sqrt{81x^4} = \sqrt{(3^2 \cdot 3^2) \cdot (x^2 \cdot x^2)}$
+          - |
+            **Extract and multiply:**
+            * $A_1 = 2 \cdot 2 \cdot 2 \cdot 3 \cdot x \cdot x \cdot x = 24x^3$
+            * $A_2 = 3 \cdot 3 \cdot x \cdot x = 9x^2$
+          - |
+            **Calculate total area:** Add regions $A_1$ and $A_2$:
+
+            $$A_{\text{total}} = 24x^3 + 9x^2$$
+
+    - id: 12
+      titulo: "Geometría: Dimensiones y volumen de contenedor"
+      dificultad: "Hard"
+      tema: "Simplification of Surds"
+      tiempo_minutos: 5
+      enunciado: |
+        A closed rectangular container has dimensions $l = \sqrt[3]{16a^4}$, $w = \sqrt[3]{54a^4}$, and $h = \sqrt[3]{128a^4}$.
+
+        1. Express the sum of the three dimensions $S = l + w + h$ in simplest surd form $k a \sqrt[3]{2a}$.
+        2. Find the exact volume $V = l \cdot w \cdot h$ of the box.
+
+        <p class="highlight-text">Show all radical simplifications explicitly.</p>
+      solucion:
+        titulo_respuesta: |
+          $$S = 9a\sqrt[3]{2a}, \quad V = 48a^4$$
+        pasos:
+          - |
+            **Factorize into primes and variables (index $n = 3$):**
+            * $l = \sqrt[3]{(2^3 \cdot 2) \cdot (a^3 \cdot a)}$
+            * $w = \sqrt[3]{(3^3 \cdot 2) \cdot (a^3 \cdot a)}$
+            * $h = \sqrt[3]{(2^3 \cdot 2^3 \cdot 2) \cdot (a^3 \cdot a)}$
+          - |
+            **Extract and multiply each dimension:**
+            * $l = 2a\sqrt[3]{2a}$
+            * $w = 3a\sqrt[3]{2a}$
+            * $h = (2 \cdot 2)a\sqrt[3]{2a} = 4a\sqrt[3]{2a}$
+          - |
+            **Remember:** Since $l, w, h$ have the **same index ($3$) and radicand ($2a$)**, sum them directly:
+
+            $$S = (2a + 3a + 4a)\sqrt[3]{2a} = 9a\sqrt[3]{2a}$$
+          - |
+            **Calculate volume $V = l \cdot w \cdot h$:** Combine products under a single cube root and group in sets of 3:
+
+            $$V = \sqrt[3]{(2^4 \cdot a^4)(2 \cdot 3^3 \cdot a^4)(2^7 \cdot a^4)} = \sqrt[3]{(2^3 \cdot 2^3 \cdot 2^3 \cdot 2^3 \cdot 3^3) \cdot (a^3 \cdot a^3 \cdot a^3 \cdot a^3)}$$
+
+            $$V = (2 \cdot 2 \cdot 2 \cdot 2 \cdot 3) \cdot (a \cdot a \cdot a \cdot a) = 48a^4$$
+# ======================================================================
+# SIGNIFICANT FIGURES ASSESSMENT
+# ======================================================================
+- id: "significant_figures"
+  titulo_evaluacion: "Significant Figures Challenges"
+  topic: "Significant Figures"
+  description: "Exercises on counting significant figures, eliminating ambiguity with scientific notation, rounding rules, and performing calculations respecting operational precision."
+  preguntas:
+    # EASY (1-4)
+    - id: 1
+      titulo: "Conteo de cifras significativas"
+      dificultad: "Easy"
+      tema: "Significant Figures"
+      tiempo_minutos: 3
+      enunciado: |
+        Determine the number of significant figures in the following measurement:
+
+        $$0.003050\text{ g}$$
+
+        <p class="highlight-text">Identify the status of leading, captive, and trailing zeros.</p>
+      solucion:
+        titulo_respuesta: |
+          $$4\text{ significant figures}$$
+        pasos:
+          - |
+            **Identify leading zeros:** Zeros to the left of the first non-zero digit ($0.00$) are **never significant**; they act purely as placevalue markers.
+          - |
+            **Identify non-zero digits and captive zeros:** The digits $3$ and $5$ are non-zero (always significant). The zero sandwiched between them ($3\mathbf{0}5$) is a **captive zero**, which is **always significant**.
+          - |
+            **Identify trailing zeros:** The zero at the end ($0.00305\mathbf{0}$) is a **trailing zero with a decimal point present**, which makes it **significant** as it reflects instrument precision.
+          - |
+            **Count total significant digits:** The significant digits are $3, 0, 5, 0$, giving a total of **$4$ significant figures**.
+
+    - id: 2
+      titulo: "Eliminación de ambigüedad con notación científica"
+      dificultad: "Easy"
+      tema: "Significant Figures"
+      tiempo_minutos: 3
+      enunciado: |
+        Express the measurement $450000\text{ m}$ with **exactly $3$ significant figures** using scientific notation.
+
+        <p class="highlight-text">Use scientific notation to isolate precision from magnitude.</p>
+      solucion:
+        titulo_respuesta: |
+          $$4.50 \times 10^5\text{ m}$$
+        pasos:
+          - |
+            **Analyze the original number:** In $450000$, trailing zeros without a explicit decimal point are ambiguous/placeholders, representing only $2$ guaranteed significant figures ($4$ and $5$).
+          - |
+            **Apply scientific notation format $N \times 10^k$:** Place the decimal point after the first non-zero digit to get a coefficient $N$ between $1$ and $10$:
+
+            $$450000 = 4.5 \times 10^5$$
+          - |
+            **Adjust precision to 3 significant figures:** Add trailing zeros after the decimal point in the coefficient $N$ until there are 3 digits ($4.50$):
+
+            $$4.50 \times 10^5\text{ m}$$
+
+    - id: 3
+      titulo: "Cifras significativas en notación científica"
+      dificultad: "Easy"
+      tema: "Significant Figures"
+      tiempo_minutos: 3
+      enunciado: |
+        State the number of significant figures in the following measurement:
+
+        $$4.080 \times 10^{-3}\text{ L}$$
+
+        <p class="highlight-text">Apply the golden rule for counting digits in scientific notation.</p>
+      solucion:
+        titulo_respuesta: |
+          $$4\text{ significant figures}$$
+        pasos:
+          - |
+            **Apply the Golden Rule for Scientific Notation:** Ignore the exponential power of ten ($10^{-3}$) completely, as it only specifies magnitude.
+          - |
+            **Count digits in the coefficient ($4.080$):**
+            * Non-zero digits: $4$ and $8$ (2 digits).
+            * Captive zero between $4$ and $8$: significant (1 digit).
+            * Trailing zero after $8$ with decimal present: significant (1 digit).
+          - |
+            **Total count:** All digits $4, 0, 8, 0$ count, yielding **$4$ significant figures**.
+
+    - id: 4
+      titulo: "Multiplicación básica y redondeo"
+      dificultad: "Easy"
+      tema: "Significant Figures"
+      tiempo_minutos: 3
+      enunciado: |
+        Calculate the product of the following two measurements and round the final answer to the correct number of significant figures:
+
+        $$14.25\text{ m} \times 3.2\text{ m}$$
+
+        <p class="highlight-text">Express the final area with proper significant figures.</p>
+      solucion:
+        titulo_respuesta: |
+          $$46\text{ m}^2$$
+        pasos:
+          - |
+            **Count sig figs in each factor:**
+            * $14.25\text{ m} \implies 4\text{ sig figs}$
+            * $3.2\text{ m} \implies 2\text{ sig figs}$
+          - |
+            **Identify the limiting factor rule:** For multiplication and division, the final result must be rounded to match the **fewest total significant figures** of any input ($2\text{ sig figs}$).
+          - |
+            **Perform the calculation and round:**
+
+            $$14.25 \times 3.2 = 45.6$$
+
+            Rounding $45.6$ to $2\text{ sig figs}$ gives **$46\text{ m}^2$**.
+
+    # MEDIUM (5-8)
+    - id: 5
+      titulo: "Suma y precisión decimal"
+      dificultad: "Medium"
+      tema: "Significant Figures"
+      tiempo_minutos: 4
+      enunciado: |
+        Perform the following addition and express the answer with the correct number of decimal places:
+
+        $$12.115\text{ g} + 0.32\text{ g}$$
+
+        <p class="highlight-text">Apply the addition/subtraction precision rule.</p>
+      solucion:
+        titulo_respuesta: |
+          $$12.44\text{ g}$$
+        pasos:
+          - |
+            **Identify the decimal places in each term:**
+            * $12.115\text{ g} \implies 3\text{ decimal places}$
+            * $0.32\text{ g} \implies 2\text{ decimal places}$
+          - |
+            **Identify the limiting precision rule:** For addition and subtraction, the final result is limited by the term with the **fewest decimal places** ($2\text{ decimal places}$).
+          - |
+            **Perform the calculation and round:**
+
+            $$12.115 + 0.32 = 12.435$$
+
+            Rounding $12.435$ to $2\text{ decimal places}$ (rounding up at $5$) gives **$12.44\text{ g}$**.
+
+    - id: 6
+      titulo: "Operaciones combinadas de multiplicación y división"
+      dificultad: "Medium"
+      tema: "Significant Figures"
+      tiempo_minutos: 4
+      enunciado: |
+        Calculate the result of the following multi-factor expression:
+
+        $$\frac{4.56 \times 1.2}{0.0350}$$
+
+        <p class="highlight-text">Round the final result according to significant figure rules.</p>
+      solucion:
+        titulo_respuesta: |
+          $$160 \quad \text{or} \quad 1.6 \times 10^2$$
+        pasos:
+          - |
+            **Analyze the sig figs of each input:**
+            * $4.56 \implies 3\text{ sig figs}$
+            * $1.2 \implies 2\text{ sig figs}$ (limiting value)
+            * $0.0350 \implies 3\text{ sig figs}$ ($3, 5, 0$)
+          - |
+            **Evaluate the expression step-by-step:**
+            Numerator product: $4.56 \times 1.2 = 5.472$.
+            Division: $\frac{5.472}{0.0350} = 156.342857...$
+          - |
+            **Round to the fewest total sig figs ($2$ sig figs):**
+            Rounding $156.342...$ to $2\text{ sig figs}$ yields **$160$** (or **$1.6 \times 10^2$** in scientific notation).
+
+    - id: 7
+      titulo: "Análisis de error: Redondeo en multiplicación"
+      dificultad: "Medium"
+      tema: "Significant Figures"
+      tiempo_minutos: 4
+      enunciado: |
+        A student measures a rectangular sheet of metal and records:
+        $$\text{Length} = 18.45\text{ cm}, \quad \text{Width} = 2.4\text{ cm}$$
+        The student calculates the area as $18.45\text{ cm} \times 2.4\text{ cm} = 44.28\text{ cm}^2$ and submits $44.28\text{ cm}^2$ as their final answer.
+
+        1. Identify the conceptual error made by the student.
+        2. Provide the corrected final answer with proper units.
+
+        <p class="highlight-text">Spot the precision rule violation and correct it.</p>
+      solucion:
+        titulo_respuesta: |
+          $$\text{Correct Area} = 44\text{ cm}^2$$
+        pasos:
+          - |
+            **Identify the student's error:** The student reported raw calculator output ($44.28\text{ cm}^2$), ignoring the fact that measurement precision is limited by the least precise instrument ($2.4\text{ cm}$, which has only $2\text{ sig figs}$).
+          - |
+            **Determine the correct precision limit:** Since $2.4\text{ cm}$ has $2\text{ sig figs}$, the product must be rounded to $2\text{ sig figs}$.
+          - |
+            **Apply correct rounding:**
+
+            $$18.45 \times 2.4 = 44.28 \implies 44\text{ cm}^2$$
+
+    - id: 8
+      titulo: "Cálculos con notación científica"
+      dificultad: "Medium"
+      tema: "Significant Figures"
+      tiempo_minutos: 4
+      enunciado: |
+        Evaluate the expression using powers of ten and express the final result with appropriate significant figures:
+
+        $$\frac{(3.20 \times 10^4) \times (1.5 \times 10^{-2})}{2.00 \times 10^1}$$
+
+        <p class="highlight-text">Combine coefficients and powers of ten separately.</p>
+      solucion:
+        titulo_respuesta: |
+          $$24 \quad \text{or} \quad 2.4 \times 10^1$$
+        pasos:
+          - |
+            **Separate coefficients and exponential terms:**
+
+            $$\text{Coefficients: } \frac{3.20 \times 1.5}{2.00}, \quad \text{Powers of 10: } \frac{10^4 \times 10^{-2}}{10^1}$$
+          - |
+            **Count sig figs in coefficients:**
+            * $3.20 \implies 3\text{ sig figs}$
+            * $1.5 \implies 2\text{ sig figs}$ (limiting term)
+            * $2.00 \implies 3\text{ sig figs}$
+          - |
+            **Compute values:**
+            Numerical part: $\frac{4.8}{2.00} = 2.4$.
+            Exponential part: $10^{4 + (-2) - 1} = 10^1$.
+          - |
+            **Combine and round to $2\text{ sig figs}$:**
+
+            $$2.4 \times 10^1 = 24$$
+
+    # HARD (9-12)
+    - id: 9
+      titulo: "Operaciones con jerarquía de operaciones"
+      dificultad: "Hard"
+      tema: "Significant Figures"
+      tiempo_minutos: 5
+      enunciado: |
+        Calculate the value of the following multi-step expression respecting order of operations and significant figure rules at each stage:
+
+        $$\frac{15.43 - 12.1}{1.25}$$
+
+        <p class="highlight-text">Track decimal places in the numerator before applying multiplication/division rules.</p>
+      solucion:
+        titulo_respuesta: |
+          $$2.6$$
+        pasos:
+          - |
+            **Step 1: Perform subtraction in numerator (apply decimal place rule):**
+
+            $$15.43 - 12.1 = 3.33$$
+
+            Since $12.1$ has $1\text{ decimal place}$, round $3.33$ to $1\text{ decimal place} \implies \mathbf{3.3}$ (which contains **$2$ significant figures**).
+          - |
+            **Step 2: Perform division (apply total significant figures rule):**
+            Divide the rounded numerator by $1.25$:
+
+            $$\frac{3.3}{1.25} = 2.64$$
+          - |
+            **Step 3: Round to fewest sig figs:** The numerator ($3.3$) has $2\text{ sig figs}$ and the denominator ($1.25$) has $3\text{ sig figs}$. The final result is restricted to $2\text{ sig figs}$:
+
+            $$2.64 \longrightarrow \mathbf{2.6}$$
+
+    - id: 10
+      titulo: "Operación multinivel combinada"
+      dificultad: "Hard"
+      tema: "Significant Figures"
+      tiempo_minutos: 5
+      enunciado: |
+        Compute the final value of the following combined expression:
+
+        $$\frac{(28.52 + 1.30) \times 0.0450}{12.8}$$
+
+        <p class="highlight-text">Apply step-by-step intermediate rounding rules.</p>
+      solucion:
+        titulo_respuesta: |
+          $$0.105 \quad \text{or} \quad 1.05 \times 10^{-1}$$
+        pasos:
+          - |
+            **Step 1: Parentheses addition (decimal places rule):**
+
+            $$28.52 + 1.30 = 29.82$$
+
+            Both terms have $2\text{ decimal places}$, so $29.82$ retains $2\text{ decimal places}$ (giving it **$4$ significant figures**).
+          - |
+            **Step 2: Evaluate multiplication and division (sig figs rule):**
+            Identify sig figs for all factors:
+            * $29.82 \implies 4\text{ sig figs}$
+            * $0.0450 \implies 3\text{ sig figs}$ ($4, 5, 0$)
+            * $12.8 \implies 3\text{ sig figs}$
+          - |
+            **Step 3: Calculate intermediate product and division:**
+
+            $$\frac{29.82 \times 0.0450}{12.8} = \frac{1.3419}{12.8} = 0.1048359...$$
+          - |
+            **Step 4: Round to $3$ significant figures:**
+
+            $$0.1048359... \longrightarrow \mathbf{0.105} \quad (\text{or } 1.05 \times 10^{-1})$$
+
+    - id: 11
+      titulo: "Aplicación física: Densidad y propagación de precisión"
+      dificultad: "Hard"
+      tema: "Significant Figures"
+      tiempo_minutos: 5
+      enunciado: |
+        A rectangular block of metal has a measured mass of $m = 145.2\text{ g}$ and dimensions:
+        $$\text{Length } l = 4.2\text{ cm}, \quad \text{Width } w = 2.15\text{ cm}, \quad \text{Height } h = 1.8\text{ cm}$$
+
+        1. Calculate the volume $V = l \cdot w \cdot h$ of the block in $\text{cm}^3$, rounded to the correct sig figs.
+        2. Calculate the density $\rho = \frac{m}{V}$ in $\text{g/cm}^3$, expressing the final answer with proper significant figures.
+
+        <p class="highlight-text">Show all volume and density steps clearly.</p>
+      solucion:
+        titulo_respuesta: |
+          $$V = 16\text{ cm}^3, \quad \rho = 8.9\text{ g/cm}^3$$
+        pasos:
+          - |
+            **Step 1: Calculate Volume $V = l \cdot w \cdot h$:**
+            Sig figs of inputs: $l = 4.2$ ($2\text{ sig figs}$), $w = 2.15$ ($3\text{ sig figs}$), $h = 1.8$ ($2\text{ sig figs}$).
+
+            $$V = 4.2 \times 2.15 \times 1.8 = 16.254\text{ cm}^3$$
+
+            Rounding to $2\text{ sig figs}$ gives **$V = 16\text{ cm}^3$**.
+          - |
+            **Step 2: Calculate Density $\rho = \frac{m}{V}$:**
+            Mass $m = 145.2\text{ g}$ ($4\text{ sig figs}$). Using the unrounded volume $16.254\text{ cm}^3$ (limited to $2\text{ sig figs}$ precision):
+
+            $$\rho = \frac{145.2}{16.254} = 8.93318... \text{ g/cm}^3$$
+          - |
+            **Step 3: Round density to $2\text{ sig figs}$:**
+
+            $$\rho = 8.9\text{ g/cm}^3$$
+
+    - id: 12
+      titulo: "Expresión compleja en notación científica"
+      dificultad: "Hard"
+      tema: "Significant Figures"
+      tiempo_minutos: 5
+      enunciado: |
+        Simplify the following scientific notation expression completely and round to the proper number of significant figures:
+
+        $$\frac{4.32 \times 10^3 + 1.20 \times 10^2}{2.15 \times 10^{-2}}$$
+
+        <p class="highlight-text">Align powers of ten before performing addition in the numerator.</p>
+      solucion:
+        titulo_respuesta: |
+          $$2.07 \times 10^5 \quad \text{or} \quad 207000$$
+        pasos:
+          - |
+            **Step 1: Align exponential terms in numerator to perform addition:**
+            Convert $1.20 \times 10^2$ to match $10^3$: $0.120 \times 10^3$.
+
+            $$4.32 \times 10^3 + 0.120 \times 10^3 = (4.32 + 0.120) \times 10^3 = 4.440 \times 10^3$$
+          - |
+            **Step 2: Apply decimal place precision rule to numerator:**
+            $4.32$ has $2\text{ decimal places}$, while $0.120$ has $3\text{ decimal places}$.
+            Round $4.440$ to $2\text{ decimal places} \implies \mathbf{4.44 \times 10^3}$ (which contains **$3$ significant figures**).
+          - |
+            **Step 3: Perform division:**
+
+            $$\frac{4.44 \times 10^3}{2.15 \times 10^{-2}} = \left( \frac{4.44}{2.15} \right) \times 10^{3 - (-2)} = 2.065116... \times 10^5$$
+          - |
+            **Step 4: Round to $3$ significant figures:**
+            Both $4.44$ and $2.15$ have $3\text{ sig figs}$.
+
+            $$2.065116... \times 10^5 \longrightarrow \mathbf{2.07 \times 10^5} \quad (\text{or } 207000)$$

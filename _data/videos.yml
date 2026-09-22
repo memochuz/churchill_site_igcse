@@ -64,4 +64,11 @@
   image: "images/Videos/rationalization_videos.webp"
   video_embeds:
     - "https://www.youtube.com/embed/t1Pg0Ar52-k"
+- slug: "significant_figures"
+  title: "Significant Figures"
+  description: "Learn step-by-step how to rationalize denominators with radicals. Master simplifying expressions with monomial and binomial radical denominators quickly and easily."
+  date: 2026-09-26
+  image: "images/Videos/significant_figures.webp"
+  video_embeds:
+    - "https://www.youtube.com/embed/7b60RZqut0U?si=093AoK10fIr-0DSN"
 

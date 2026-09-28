@@ -231,3 +231,45 @@
         <br> <br>
         <img src="/churchill_site_igcse/images/Starters/pentagono2.png" width="100">
       solution: '${\Large 54^{\circ}}$'
+
+- topic: "Sequences & Series IB1"
+  id: "topic-sequences-series"
+  questions:
+    - question: 'How to identify an arithmetic sequence?'
+      solution: 'Constant difference: ${\Large d = u_n - u_{n-1}}$'
+
+    - question: 'How to identify a geometric sequence?'
+      solution: 'Constant ratio: ${\Large r = \frac{u_n}{u_{n-1}}}$'
+
+    - question: 'Formula for $u_n$ of an arithmetic sequence?'
+      solution: '${\Large u_n = u_1 + (n - 1)d}$'
+
+    - question: 'Formula for $u_n$ of a geometric sequence?'
+      solution: '${\Large u_n = u_1 \cdot r^{n-1}}$'
+
+    - question: 'Two formulas for sum $S_n$ of arithmetic series?'
+      solution: '$${\Large S_n = \frac{n}{2}(u_1 + u_n)}$$ and $${S_n = \frac{n}{2}\left[2u_1 + (n-1)d\right]}$$'
+
+    - question: 'Formula for sum $S_n$ of geometric series?'
+      solution: '${\Large S_n = \frac{u_1(1 - r^n)}{1 - r}}$ (for $r \neq 1$)'
+
+    - question: 'Condition for $S_\infty$ to exist?'
+      solution: '${\Large |r| < 1}$ (or $-1 < r < 1$)'
+
+    - question: 'Formula for sum to infinity $S_\infty$?'
+      solution: '$${\Large S_\infty = \frac{u_1}{1 - r}}$$ (requires $|r| < 1$)'
+
+    - question: 'Does $4 + 6 + 9 + 13.5 + \dots$ have $S_\infty$?'
+      solution: 'No. $r = 1.5$, so $|r| \ge 1$ (diverges).'
+
+    - question: 'Does $S_\infty$ exist for $r = -0.8$ or $r = -1.2$?'
+      solution: 'For $r = -0.8$: Yes. \\ For $r = -1.2$: No.'
+
+    - question: 'If $r = \frac{x}{3}$, for what $x$ does $S_\infty$ exist?'
+      solution: '${\Large -3 < x < 3}$'
+
+    - question: 'If $r = 2x - 1$, find $x$ range for $S_\infty$.'
+      solution: '${\Large 0 < x < 1}$'
+
+    - question: 'What happens to $r^n$ as $n \to \infty$ if $|r| < 1$?'
+      solution: '${\Large r^n \to 0}$'

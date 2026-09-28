@@ -251,7 +251,7 @@
       solution: '$${\Large S_n = \frac{n}{2}(u_1 + u_n)}$$ and $${S_n = \frac{n}{2}\left[2u_1 + (n-1)d\right]}$$'
 
     - question: 'Formula for sum $S_n$ of geometric series?'
-      solution: '${\Large S_n = \frac{u_1(1 - r^n)}{1 - r}}$ (for $r \neq 1$)'
+      solution: '$${\Large S_n = \frac{u_1(1 - r^n)}{1 - r}}$$  for $r \neq 1$'
 
     - question: 'Condition for $S_\infty$ to exist?'
       solution: '${\Large |r| < 1}$ (or $-1 < r < 1$)'
@@ -263,7 +263,7 @@
       solution: 'No. $r = 1.5$, so $|r| \ge 1$ (diverges).'
 
     - question: 'Does $S_\infty$ exist for $r = -0.8$ or $r = -1.2$?'
-      solution: 'For $r = -0.8$: Yes. \\ For $r = -1.2$: No.'
+      solution: 'For $r = -0.8$: Yes. For $r = -1.2$: No.'
 
     - question: 'If $r = \frac{x}{3}$, for what $x$ does $S_\infty$ exist?'
       solution: '${\Large -3 < x < 3}$'

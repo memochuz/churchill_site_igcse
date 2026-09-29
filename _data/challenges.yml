@@ -1469,7 +1469,7 @@
   preguntas:
     # EASY (1-4)
     - id: 1
-      titulo: "Conteo de cifras significativas"
+      titulo: "Counting Sig Figs"
       dificultad: "Easy"
       tema: "Significant Figures"
       tiempo_minutos: 3
@@ -1493,7 +1493,7 @@
             **Count total significant digits:** The significant digits are $3, 0, 5, 0$, giving a total of **$4$ significant figures**.
 
     - id: 2
-      titulo: "Eliminación de ambigüedad con notación científica"
+      titulo: "Scientific Notation Ambiguity"
       dificultad: "Easy"
       tema: "Significant Figures"
       tiempo_minutos: 3
@@ -1517,7 +1517,7 @@
             $$4.50 \times 10^5\text{ m}$$
 
     - id: 3
-      titulo: "Cifras significativas en notación científica"
+      titulo: "Sig Figs in Scientific Notation"
       dificultad: "Easy"
       tema: "Significant Figures"
       tiempo_minutos: 3
@@ -1542,7 +1542,7 @@
             **Total count:** All digits $4, 0, 8, 0$ count, yielding **$4$ significant figures**.
 
     - id: 4
-      titulo: "Multiplicación básica y redondeo"
+      titulo: "Basic Multiplication & Rounding"
       dificultad: "Easy"
       tema: "Significant Figures"
       tiempo_minutos: 3
@@ -1571,7 +1571,7 @@
 
     # MEDIUM (5-8)
     - id: 5
-      titulo: "Suma y precisión decimal"
+      titulo: "Addition Decimal Precision"
       dificultad: "Medium"
       tema: "Significant Figures"
       tiempo_minutos: 4
@@ -1599,7 +1599,7 @@
             Rounding $12.435$ to $2\text{ decimal places}$ (rounding up at $5$) gives **$12.44\text{ g}$**.
 
     - id: 6
-      titulo: "Operaciones combinadas de multiplicación y división"
+      titulo: "Multiplication & Division Operations"
       dificultad: "Medium"
       tema: "Significant Figures"
       tiempo_minutos: 4
@@ -1627,7 +1627,7 @@
             Rounding $156.342...$ to $2\text{ sig figs}$ yields **$160$** (or **$1.6 \times 10^2$** in scientific notation).
 
     - id: 7
-      titulo: "Análisis de error: Redondeo en multiplicación"
+      titulo: "Error Analysis: Rounding"
       dificultad: "Medium"
       tema: "Significant Figures"
       tiempo_minutos: 4
@@ -1654,7 +1654,7 @@
             $$18.45 \times 2.4 = 44.28 \implies 44\text{ cm}^2$$
 
     - id: 8
-      titulo: "Cálculos con notación científica"
+      titulo: "Scientific Notation Calculations"
       dificultad: "Medium"
       tema: "Significant Figures"
       tiempo_minutos: 4
@@ -1688,7 +1688,7 @@
 
     # HARD (9-12)
     - id: 9
-      titulo: "Operaciones con jerarquía de operaciones"
+      titulo: "Multi-Step Operations"
       dificultad: "Hard"
       tema: "Significant Figures"
       tiempo_minutos: 5
@@ -1719,7 +1719,7 @@
             $$2.64 \longrightarrow \mathbf{2.6}$$
 
     - id: 10
-      titulo: "Operación multinivel combinada"
+      titulo: "Combined Multi-Level Expression"
       dificultad: "Hard"
       tema: "Significant Figures"
       tiempo_minutos: 5
@@ -1755,7 +1755,7 @@
             $$0.1048359... \longrightarrow \mathbf{0.105} \quad (\text{or } 1.05 \times 10^{-1})$$
 
     - id: 11
-      titulo: "Aplicación física: Densidad y propagación de precisión"
+      titulo: "Density & Precision Propagation"
       dificultad: "Hard"
       tema: "Significant Figures"
       tiempo_minutos: 5
@@ -1789,7 +1789,7 @@
             $$\rho = 8.9\text{ g/cm}^3$$
 
     - id: 12
-      titulo: "Expresión compleja en notación científica"
+      titulo: "Complex Scientific Notation"
       dificultad: "Hard"
       tema: "Significant Figures"
       tiempo_minutos: 5

@@ -1,0 +1,64 @@
+---
+layout: default
+title: Classwork
+permalink: /classwork/
+description: In this section, you will find online assignments organized by topic.
+page_cover: '/images/banner_3.webp'
+---
+
+<article class="page container">
+  <div class="page-head">
+    <h1 class="page-title">🔥 {{ page.title }}</h1>
+    {% if page.description %}
+    <div class="page-description">{{ page.description | markdownify }}</div>
+    {% endif %}
+  </div>
+
+  {% if page.image %}
+  <div class="page-image">
+    <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+<!-- SECCIÓN DE CHALLENGES AGRUPADOS POR TEMA -->
+  <section class="homeworks-section">
+    {% for entry in site.data.classwork_menu %}
+    <div  class="year-group">
+      <!-- Botón Acordeón del Tema -->
+      <button class="homework-year-btn" onclick="toggleAccordion('{{ entry.id }}')">
+        <span>🔥 {{ entry.topic }}</span>
+        <span class="arrow">▼</span>
+      </button>
+
+      <div id="{{ entry.id }}" class="homework-papers-container" style="display: none;">
+        <div class="homeworks-grid">
+          
+          {% for challenge in entry.challenges %}
+          <div class="homework-block">
+            <!-- Enlace directo al PDF sin acordeón ni botón secundario -->
+            <a href="{{ '/classwork/' | append: challenge.file | relative_url }}" 
+               class="homework-main-btn" 
+               target="_blank" 
+               rel="noopener noreferrer">
+               {{ challenge.title }} <br> <small>{{ challenge.subtitle }}</small>
+            </a>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+</article>
+
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>

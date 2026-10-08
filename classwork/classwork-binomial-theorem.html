@@ -25,24 +25,42 @@
 <body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col font-sans">
 
   <!-- Student Info Modal -->
-  <div id="student-modal" class="fixed inset-0 bg-slate-950/90 z-50 flex items-center justify-center p-4">
-    <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 max-w-md w-full shadow-2xl space-y-4">
+  <div id="student-modal" class="fixed inset-0 bg-slate-950/95 z-50 flex items-center justify-center p-4">
+    <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 max-w-md w-full shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto">
       <h2 class="text-xl font-bold text-indigo-400 flex items-center gap-2">
         <i class="fa-solid fa-user-graduate"></i> Datos del Alumno
       </h2>
       <p class="text-sm text-slate-300">Ingresa tus datos antes de iniciar la evaluación. El tiempo comenzará a correr al presionar el botón.</p>
 
-      <form id="start-form" onsubmit="startExam(event)" class="space-y-4">
+      <!-- Warning Box Anti-Cheat -->
+      <div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-3 text-amber-200 text-xs space-y-1">
+        <div class="font-bold flex items-center gap-1.5 text-amber-400">
+          <i class="fa-solid fa-triangle-exclamation"></i> AVISO IMPORTANTE SOBRE INTEGRIDAD ACADÉMICA
+        </div>
+        <p>
+          Este examen registra automáticamente cada evento individual de <b>cambio de pestaña, minimización de ventana o pérdida de foco</b>. Dichos conteos se enviarán directamente a tu profesor.
+        </p>
+      </div>
+
+      <form id="start-form" onsubmit="startExam(event)" class="space-y-3">
         <div>
-          <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Nombre Completo</label>
-          <input type="text" id="student-name" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
+          <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Apellido Paterno</label>
+          <input type="text" id="student-lastname1" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Apellido Materno</label>
+          <input type="text" id="student-lastname2" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Nombre(s)</label>
+          <input type="text" id="student-firstname" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
         </div>
         <div>
           <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Correo Electrónico</label>
           <input type="email" id="student-email" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
         </div>
-        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2 rounded-lg transition-colors">
-          Comenzar Examen
+        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2 mt-2">
+          <i class="fa-solid fa-play"></i> Comenzar Examen
         </button>
       </form>
     </div>
@@ -58,14 +76,24 @@
         <p class="text-xs text-slate-400">Expansión Binomial (Máximo grado 5) • 12 Preguntas</p>
       </div>
       <div class="flex items-center gap-4 bg-slate-900 px-4 py-2 rounded-lg border border-slate-700">
+        <!-- Timer -->
         <div class="text-right">
-          <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Puntaje</div>
-          <div id="score-display" class="text-lg font-bold text-indigo-400">0 / 12</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Tiempo Restante</div>
+          <div id="timer-display" class="text-lg font-bold text-amber-400 font-mono">30:00</div>
         </div>
         <div class="h-8 w-px bg-slate-700"></div>
+        <!-- Progreso -->
         <div class="text-right">
           <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Progreso</div>
           <div id="progress-display" class="text-lg font-bold text-emerald-400">0%</div>
+        </div>
+        <!-- Puntaje (Oculto inicialmente) -->
+        <div id="score-container" class="hidden flex items-center gap-4">
+          <div class="h-8 w-px bg-slate-700"></div>
+          <div class="text-right">
+            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Puntaje</div>
+            <div id="score-display" class="text-lg font-bold text-indigo-400">0 / 12</div>
+          </div>
         </div>
       </div>
     </div>
@@ -90,7 +118,7 @@
 
     <!-- Action Bar -->
     <div class="bg-slate-800 border border-slate-700 rounded-xl p-4 flex justify-between items-center shadow-md">
-      <button id="submit-btn" onclick="submitExam()" class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium rounded-lg transition-colors flex items-center gap-2">
+      <button id="submit-btn" onclick="submitExam(false)" class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium rounded-lg transition-colors flex items-center gap-2">
         <i class="fa-solid fa-paper-plane"></i> Finalizar y Enviar Examen
       </button>
       <div id="final-message" class="text-sm font-semibold text-emerald-400 hidden">
@@ -101,31 +129,73 @@
 
   <script>
     // URL de tu Google Apps Script
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwFnVh2TSZ3rsnZPg_eJUH1E7X9bih-HAyv9kqO66yE6KNGV929BNdLrQNPMb6ZTYxKBg/exec';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbySVWn9rMLP8-4p140HRUy-y8ChoXl7jdpB6j01rYAg8MNG_3UPVy3hMgfljiA5oWYVuA/exec';
+
+    // Duración del examen en minutos
+    const EXAM_DURATION_MINUTES = 30;
 
     let startTime = null;
     let endTime = null;
-    let tabSwitches = 0;
-    let studentName = '';
+    let tabSwitches = 0;   // Contador de cambios de pestaña
+    let windowBlurs = 0;   // Contador de minimizado o pérdida de foco
+    let lastName1 = '';
+    let lastName2 = '';
+    let firstName = '';
     let studentEmail = '';
+    let timerInterval = null;
+    let totalSeconds = EXAM_DURATION_MINUTES * 60;
+    let isSubmitted = false;
 
-    // Rastrear cambios de pestaña
+    // Rastrear eventos de manera independiente
     document.addEventListener('visibilitychange', () => {
-      if (document.hidden && startTime !== null) {
+      if (document.hidden && startTime !== null && !isSubmitted) {
         tabSwitches++;
+      }
+    });
+
+    window.addEventListener('blur', () => {
+      if (startTime !== null && !isSubmitted && !document.hidden) {
+        windowBlurs++;
       }
     });
 
     function startExam(e) {
       e.preventDefault();
-      studentName = document.getElementById('student-name').value;
-      studentEmail = document.getElementById('student-email').value;
+      lastName1 = document.getElementById('student-lastname1').value.trim();
+      lastName2 = document.getElementById('student-lastname2').value.trim();
+      firstName = document.getElementById('student-firstname').value.trim();
+      studentEmail = document.getElementById('student-email').value.trim();
 
-      if (!studentName || !studentEmail) return;
+      if (!lastName1 || !lastName2 || !firstName || !studentEmail) return;
 
       startTime = new Date();
       document.getElementById('student-modal').classList.add('hidden');
       renderQuiz();
+      startTimer();
+    }
+
+    function startTimer() {
+      const timerDisplay = document.getElementById('timer-display');
+      
+      timerInterval = setInterval(() => {
+        totalSeconds--;
+        
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        
+        timerDisplay.innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        
+        if (totalSeconds <= 300) { // Últimos 5 minutos en rojo
+          timerDisplay.classList.remove('text-amber-400');
+          timerDisplay.classList.add('text-rose-400', 'animate-pulse');
+        }
+
+        if (totalSeconds <= 0) {
+          clearInterval(timerInterval);
+          alert('¡El tiempo ha finalizado! Tu examen será enviado automáticamente.');
+          submitExam(true);
+        }
+      }, 1000);
     }
 
     const questionsData = [
@@ -361,32 +431,28 @@
     }
 
     function selectAnswer(questionIdx, optionIdx) {
+      if (isSubmitted) return;
       userAnswers[questionIdx] = optionIdx;
-      updateScore();
+      updateProgress();
     }
 
-    function updateScore() {
-      let score = 0;
+    function updateProgress() {
       const answeredCount = Object.keys(userAnswers).length;
-
-      Object.keys(userAnswers).forEach(qIdx => {
-        if (userAnswers[qIdx] === questionsData[qIdx].correct) {
-          score++;
-        }
-      });
-
-      document.getElementById('score-display').innerText = `${score} / ${questionsData.length}`;
       const percentage = Math.round((answeredCount / questionsData.length) * 100);
       document.getElementById('progress-display').innerText = `${percentage}%`;
     }
 
-    function submitExam() {
-      if (Object.keys(userAnswers).length < questionsData.length) {
+    function submitExam(isAutoSubmit = false) {
+      if (isSubmitted) return;
+
+      if (!isAutoSubmit && Object.keys(userAnswers).length < questionsData.length) {
         if (!confirm("Aún no has respondido todas las preguntas. ¿Deseas enviar el examen de todos modos?")) {
           return;
         }
       }
 
+      isSubmitted = true;
+      clearInterval(timerInterval);
       endTime = new Date();
 
       // Calcular puntaje final
@@ -414,13 +480,20 @@
 
       const percentage = Math.round((score / questionsData.length) * 100);
 
+      // Mostrar el puntaje al alumno únicamente tras enviar
+      document.getElementById('score-display').innerText = `${score} / ${questionsData.length}`;
+      document.getElementById('score-container').classList.remove('hidden');
+
       // Preparar objeto de envío
       const payload = {
-        studentName: studentName,
+        lastName1: lastName1,
+        lastName2: lastName2,
+        firstName: firstName,
         studentEmail: studentEmail,
         startTime: startTime.toLocaleTimeString(),
         endTime: endTime.toLocaleTimeString(),
         tabSwitches: tabSwitches,
+        windowBlurs: windowBlurs,
         score: score,
         total: questionsData.length,
         percentage: percentage
@@ -431,7 +504,7 @@
       submitBtn.disabled = true;
       submitBtn.innerText = "Enviando...";
 
-      // Enviar datos mediante fetch (text/plain evita problemas de CORS con Apps Script)
+      // Enviar datos mediante fetch
       fetch(SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',

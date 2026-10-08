@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algebra: Rearranging Equations and Formulas</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- MathJax -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col font-sans">
+
+  <!-- Student Info Modal -->
+  <div id="student-modal" class="fixed inset-0 bg-slate-950/95 z-50 flex items-center justify-center p-4">
+    <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 max-w-md w-full shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto">
+      <h2 class="text-xl font-bold text-indigo-400 flex items-center gap-2">
+        <i class="fa-solid fa-user-graduate"></i> Student Details
+      </h2>
+      <p class="text-sm text-slate-300">Enter your details before starting the assessment. The <b>30-minute</b> timer will begin once you click start.</p>
+
+      <!-- Warning Box Anti-Cheat -->
+      <div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-3 text-amber-200 text-xs space-y-1">
+        <div class="font-bold flex items-center gap-1.5 text-amber-400">
+          <i class="fa-solid fa-triangle-exclamation"></i> ACADEMIC INTEGRITY NOTICE
+        </div>
+        <p>
+          This exam automatically tracks and records every instance of <b>tab switching, window minimizing, or loss of focus</b>. These logs will be submitted directly to your teacher along with your responses.
+        </p>
+      </div>
+
+      <form id="start-form" onsubmit="startExam(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">First Surname</label>
+          <input type="text" id="student-lastname1" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Second Surname</label>
+          <input type="text" id="student-lastname2" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">First Name(s)</label>
+          <input type="text" id="student-firstname" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Email Address</label>
+          <input type="email" id="student-email" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
+        </div>
+        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2 mt-2">
+          <i class="fa-solid fa-play"></i> Start Exam
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-slate-800 border-b border-slate-700 shadow-lg py-4 px-6 sticky top-0 z-40">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <h1 class="text-xl font-bold text-indigo-400 flex items-center gap-2">
+          <i class="fa-solid fa-square-root-variable"></i> Algebra: Rearranging Equations and Formulas
+        </h1>
+        <p class="text-xs text-slate-400">SADMEP Algorithm, Rational, Exponential, and Logarithmic Equations • 10 Questions</p>
+      </div>
+      <div class="flex items-center gap-4 bg-slate-900 px-4 py-2 rounded-lg border border-slate-700">
+        <!-- Timer -->
+        <div class="text-right">
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Time Remaining</div>
+          <div id="timer-display" class="text-lg font-bold text-amber-400 font-mono">30:00</div>
+        </div>
+        <div class="h-8 w-px bg-slate-700"></div>
+        <!-- Progress -->
+        <div class="text-right">
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Progress</div>
+          <div id="progress-display" class="text-lg font-bold text-emerald-400">0%</div>
+        </div>
+        <!-- Score -->
+        <div id="score-container" class="hidden flex items-center gap-4">
+          <div class="h-8 w-px bg-slate-700"></div>
+          <div class="text-right">
+            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Score</div>
+            <div id="score-display" class="text-lg font-bold text-indigo-400">0 / 10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 max-w-4xl w-full mx-auto p-4 sm:p-6 space-y-6">
+
+    <!-- Instructions & Strategies Banner -->
+    <div class="bg-slate-800/90 border border-slate-700 rounded-xl overflow-hidden shadow-md">
+      <button onclick="toggleStrategies()" class="w-full p-4 text-left font-semibold text-indigo-300 bg-slate-800 hover:bg-slate-700/60 transition-colors flex items-center justify-between">
+        <span class="flex items-center gap-2 text-sm sm:text-base">
+          <i class="fa-solid fa-book-bookmark text-indigo-400"></i> Rearranging Strategies and Algorithms
+        </span>
+        <i id="strategy-chevron" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+      </button>
+
+      <div id="strategies-content" class="p-4 sm:p-5 text-sm text-slate-300 border-t border-slate-700 space-y-4">
+        <!-- Strategy 1 -->
+        <div class="space-y-1 bg-slate-900/60 p-3 rounded-lg border border-slate-700/60">
+          <h3 class="font-bold text-indigo-400 text-xs uppercase tracking-wider">1. Basic & Radical Equations — SADMEP Method</h3>
+          <ol class="list-decimal list-inside text-xs space-y-1 text-slate-300">
+            <li><b>Identify:</b> Locate $x$ and list all operations affecting it.</li>
+            <li><b>Rank:</b> Order operations from outermost (furthest from $x$) to innermost.</li>
+            <li><b>Undo (SADMEP):</b> Reverse each operation in order: Subtraction/Addition, Division/Multiplication, Exponents/Radicals, Parentheses.</li>
+            <li><b>Simplify:</b> Perform the arithmetic steps to fully isolate $x$.</li>
+          </ol>
+        </div>
+
+        <!-- Strategy 2 -->
+        <div class="space-y-1 bg-slate-900/60 p-3 rounded-lg border border-slate-700/60">
+          <h3 class="font-bold text-indigo-400 text-xs uppercase tracking-wider">2. Rational Equations with Variables in the Denominator</h3>
+          <ol class="list-decimal list-inside text-xs space-y-1 text-slate-300">
+            <li><b>Clear Fractions:</b> Multiply both sides by the denominator to clear rational terms.</li>
+            <li><b>Expand:</b> Apply the distributive property to remove parentheses.</li>
+            <li><b>Collect Terms:</b> Move all terms containing $x$ to one side and non-$x$ terms to the opposite side.</li>
+            <li><b>Factor & Isolate:</b> Factor out $x$ as a common factor, then divide by its coefficient.</li>
+          </ol>
+        </div>
+
+        <!-- Strategy 3 -->
+        <div class="space-y-1 bg-slate-900/60 p-3 rounded-lg border border-slate-700/60">
+          <h3 class="font-bold text-indigo-400 text-xs uppercase tracking-wider">3. Exponential and Logarithmic Equations</h3>
+          <ol class="list-decimal list-inside text-xs space-y-1 text-slate-300">
+            <li><b>Apply Logarithms:</b> Take $\ln$ or $\log_b$ of both sides and apply logarithm laws:
+              <ul class="list-disc list-inside ml-4 text-[11px] text-slate-400">
+                <li>$\log_{b}(A \cdot B) = \log_{b} A + \log_{b} B$</li>
+                <li>$\log_{b}\left(\frac{A}{B}\right) = \log_{b} A - \log_{b} B$</li>
+                <li>$\log_{b}(A^k) = k \cdot \log_{b} A$</li>
+              </ul>
+            </li>
+            <li><b>Expand & Group:</b> Expand any products and group all terms containing $x$ on one side.</li>
+            <li><b>Factor & Isolate:</b> Factor out $x$ and isolate the variable.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiz Container -->
+    <div id="quiz-container" class="space-y-6">
+      <!-- Dynamic Questions will be inserted here -->
+    </div>
+
+    <!-- Action Bar -->
+    <div class="bg-slate-800 border border-slate-700 rounded-xl p-4 flex justify-between items-center shadow-md">
+      <button id="submit-btn" onclick="submitExam(false)" class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium rounded-lg transition-colors flex items-center gap-2">
+        <i class="fa-solid fa-paper-plane"></i> Submit Exam
+      </button>
+      <div id="final-message" class="text-sm font-semibold text-emerald-400 hidden">
+        Exam submitted successfully to your teacher!
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyluK6OsXcGZjmS5CdNYpu7V34Qzfl1MAOrs5D7x-HrQ8u3YaHXmZHMl2J3ZsrytoMX/exec';
+    const EXAM_DURATION_MINUTES = 30;
+
+    let startTime = null;
+    let endTime = null;
+    let tabSwitches = 0;
+    let windowBlurs = 0;
+    let lastName1 = '';
+    let lastName2 = '';
+    let firstName = '';
+    let studentEmail = '';
+    let timerInterval = null;
+    let totalSeconds = EXAM_DURATION_MINUTES * 60;
+    let isSubmitted = false;
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden && startTime !== null && !isSubmitted) {
+        tabSwitches++;
+      }
+    });
+
+    window.addEventListener('blur', () => {
+      if (startTime !== null && !isSubmitted && !document.hidden) {
+        windowBlurs++;
+      }
+    });
+
+    function toggleStrategies() {
+      const content = document.getElementById('strategies-content');
+      const chevron = document.getElementById('strategy-chevron');
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        chevron.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        chevron.classList.remove('rotate-180');
+      }
+    }
+
+    function startExam(e) {
+      e.preventDefault();
+      lastName1 = document.getElementById('student-lastname1').value.trim();
+      lastName2 = document.getElementById('student-lastname2').value.trim();
+      firstName = document.getElementById('student-firstname').value.trim();
+      studentEmail = document.getElementById('student-email').value.trim();
+
+      if (!lastName1 || !lastName2 || !firstName || !studentEmail) return;
+
+      startTime = new Date();
+      document.getElementById('student-modal').classList.add('hidden');
+      renderQuiz();
+      startTimer();
+    }
+
+    function startTimer() {
+      const timerDisplay = document.getElementById('timer-display');
+      
+      timerInterval = setInterval(() => {
+        totalSeconds--;
+        
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        
+        timerDisplay.innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        
+        if (totalSeconds <= 300) {
+          timerDisplay.classList.remove('text-amber-400');
+          timerDisplay.classList.add('text-rose-400', 'animate-pulse');
+        }
+
+        if (totalSeconds <= 0) {
+          clearInterval(timerInterval);
+          alert('Time is up! Your exam will be submitted automatically.');
+          submitExam(true);
+        }
+      }, 1000);
+    }
+
+    // Updated Questions (English + Modified Equations)
+    const questionsData = [
+      // QUESTION 1 (Medium - 5 marks)
+      {
+        id: 1,
+        difficulty: "Medium",
+        diffColor: "amber",
+        question: "Rearrange the equation to make $x$ the subject, where $x \\neq -3$: $$\\frac{4x + 3}{x + 3} = 5$$",
+        options: [
+          "$x = -12$",
+          "$x = 12$",
+          "$x = -15$",
+          "$x = -6$"
+        ],
+        correct: 0,
+        explanation: "<b>Step 1:</b> Multiply both sides by $(x + 3)$:<br>$$4x + 3 = 5(x + 3)$$<br><b>Step 2:</b> Expand the right side:<br>$$4x + 3 = 5x + 15$$<br><b>Step 3:</b> Group terms containing $x$ on one side:<br>$$3 - 15 = 5x - 4x \\implies -12 = x$$<br>Thus, $x = -12$."
+      },
+      // QUESTION 2 (Medium - 5 marks)
+      {
+        id: 2,
+        difficulty: "Medium",
+        diffColor: "amber",
+        question: "Solve for $x$ in terms of $a$ and $b$ (where $x \\neq c$): $$\\frac{x - a}{x - c} = 3$$",
+        options: [
+          "$x = \\frac{3c - a}{2}$",
+          "$x = \\frac{3c + a}{2}$",
+          "$x = 3c - a$",
+          "$x = \\frac{a - 3c}{2}$"
+        ],
+        correct: 0,
+        explanation: "<b>Step 1:</b> Multiply both sides by $(x - c)$:<br>$$x - a = 3(x - c)$$<br><b>Step 2:</b> Expand the right side:<br>$$x - a = 3x - 3c$$<br><b>Step 3:</b> Rearrange terms to isolate $x$:<br>$$3c - a = 3x - x \\implies 2x = 3c - a \\implies x = \\frac{3c - a}{2}$$."
+      },
+      // QUESTION 3 (Medium - 5 marks)
+      {
+        id: 3,
+        difficulty: "Medium",
+        diffColor: "amber",
+        question: "Rearrange the following radical equation to make $x$ the subject: $$\\sqrt{3x + 4} - 2 = 6$$",
+        options: [
+          "$x = 20$",
+          "$x = 60$",
+          "$x = 18$",
+          "$x = 22$"
+        ],
+        correct: 0,
+        explanation: "<b>Step 1:</b> Isolate the square root by adding $2$ to both sides:<br>$$\\sqrt{3x + 4} = 8$$<br><b>Step 2:</b> Square both sides:<br>$$3x + 4 = 8^2 = 64$$<br><b>Step 3:</b> Subtract $4$ and divide by $3$:<br>$$3x = 60 \\implies x = 20$$."
+      },
+      // QUESTION 4 (Medium - 5 marks)
+      {
+        id: 4,
+        difficulty: "Medium",
+        diffColor: "amber",
+        question: "Solve for $x$ by isolating the exponential term: $$4 \\cdot 3^{x + 1} - 7 = 101$$",
+        options: [
+          "$x = 2$",
+          "$x = 3$",
+          "$x = 4$",
+          "$x = 1$"
+        ],
+        correct: 0,
+        explanation: "<b>Step 1:</b> Add $7$ to both sides:<br>$$4 \\cdot 3^{x + 1} = 108$$<br><b>Step 2:</b> Divide by $4$ to isolate the exponential base:<br>$$3^{x + 1} = 27$$<br><b>Step 3:</b> Write $27$ as a power of $3$ ($27 = 3^3$):<br>$$3^{x + 1} = 3^3 \\implies x + 1 = 3 \\implies x = 2$$."
+      },
+      // QUESTION 5 (Medium - 5 marks)
+      {
+        id: 5,
+        difficulty: "Medium",
+        diffColor: "amber",
+        question: "Make $x$ the subject of the given logarithmic equation: $$\\ln(4x - 5) = 3$$",
+        options: [
+          "$x = \\frac{\\mathrm{e}^3 + 5}{4}$",
+          "$x = \\frac{\\mathrm{e}^3 - 5}{4}$",
+          "$x = \\frac{3 + 5}{4} = 2$",
+          "$x = 4\\mathrm{e}^3 + 5$"
+        ],
+        correct: 0,
+        explanation: "<b>Step 1:</b> Apply the exponential function base $\\mathrm{e}$ to both sides:<br>$$4x - 5 = \\mathrm{e}^3$$<br><b>Step 2:</b> Add $5$ to both sides:<br>$$4x = \\mathrm{e}^3 + 5$$<br><b>Step 3:</b> Divide by $4$:<br>$$x = \\frac{\\mathrm{e}^3 + 5}{4}$$."
+      },
+      // QUESTION 6 (Hard - 5 marks)
+      {
+        id: 6,
+        difficulty: "Hard",
+        diffColor: "orange",
+        question: "Rearrange the formula to make $x$ the subject in terms of $y$: $$y = \\frac{3x + 4}{4x - 2}$$",
+        options: [
+          "$x = \\frac{2y + 4}{4y - 3}$",
+          "$x = \\frac{2y - 4}{4y + 3}$",
+          "$x = \\frac{4y + 2}{3y - 4}$",
+          "$x = \\frac{4y - 3}{2y + 4}$"
+        ],
+        correct: 0,
+        explanation: "<b>Step 1:</b> Multiply both sides by $(4x - 2)$:<br>$$y(4x - 2) = 3x + 4$$<br><b>Step 2:</b> Expand:<br>$$4xy - 2y = 3x + 4$$<br><b>Step 3:</b> Group all terms containing $x$ on one side:<br>$$4xy - 3x = 2y + 4$$<br><b>Step 4:</b> Factor out $x$ and isolate:<br>$$x(4y - 3) = 2y + 4 \\implies x = \\frac{2y + 4}{4y - 3}$$."
+      },
+      // QUESTION 7 (Hard - 5 marks)
+      {
+        id: 7,
+        difficulty: "Hard",
+        diffColor: "orange",
+        question: "Solve for $x$ by applying logarithms to bring down the exponents on both sides: $$2^{3x - 1} = 7^{x + 1}$$",
+        options: [
+          "$x = \\frac{\\log_2(7) + 1}{3 - \\log_2(7)}$",
+          "$x = \\frac{\\log_2(7) - 1}{3 + \\log_2(7)}$",
+          "$x = \\frac{-\\log_2(7) + 1}{3 - \\log_2(7)}$",
+          "$x = \\frac{3 + \\log_2(7)}{\\log_2(7) - 1}$"
+        ],
+        correct: 0,
+        explanation: "<b>Step 1:</b> Apply $\\log_2$ to both sides:<br>$$\\log_2(2^{3x - 1}) = \\log_2(7^{x + 1})$$<br>$$3x - 1 = (x + 1)\\log_2(7)$$<br><b>Step 2:</b> Expand the right side:<br>$$3x - 1 = x\\log_2(7) + \\log_2(7)$$<br><b>Step 3:</b> Group $x$ terms on the left side:<br>$$3x - x\\log_2(7) = \\log_2(7) + 1$$<br><b>Step 4:</b> Factor out $x$ and solve:<br>$$x(3 - \\log_2(7)) = \\log_2(7) + 1 \\implies x = \\frac{\\log_2(7) + 1}{3 - \\log_2(7)}$$."
+      },
+      // QUESTION 8 (Hard - 5 marks)
+      {
+        id: 8,
+        difficulty: "Hard",
+        diffColor: "orange",
+        question: "Make $x$ the subject of the formula: $$\\sqrt{\\frac{x - m}{x + m}} = b$$",
+        options: [
+          "$x = m \\cdot \\frac{1 + b^2}{1 - b^2}$",
+          "$x = m \\cdot \\frac{1 - b^2}{1 + b^2}$",
+          "$x = m \\cdot \\frac{b^2 - 1}{b^2 + 1}$",
+          "$x = \\frac{m(b + 1)}{b - 1}$"
+        ],
+        correct: 0,
+        explanation: "<b>Step 1:</b> Square both sides:<br>$$\\frac{x - m}{x + m} = b^2$$<br><b>Step 2:</b> Multiply by $(x + m)$:<br>$$x - m = b^2(x + m) \\implies x - m = b^2 x + b^2 m$$<br><b>Step 3:</b> Group $x$ terms on one side and $m$ terms on the other:<br>$$x - b^2 x = b^2 m + m \\implies x(1 - b^2) = m(1 + b^2)$$<br><b>Step 4:</b> Divide by $(1 - b^2)$:<br>$$x = m \\cdot \\frac{1 + b^2}{1 - b^2}$$."
+      },
+      // QUESTION 9 (Hard - 5 marks)
+      {
+        id: 9,
+        difficulty: "Hard",
+        diffColor: "orange",
+        question: "Rearrange the equation to make $x$ the subject: $$5^{x + 1} = 3 \\cdot 2^{2x - 3}$$",
+        options: [
+          "$x = \\frac{-1 + \\log_5(3) - 3\\log_5(2)}{1 - 2\\log_5(2)}$",
+          "$x = \\frac{1 - \\log_5(3) + 3\\log_5(2)}{1 + 2\\log_5(2)}$",
+          "$x = \\frac{\\log_5(3) - 3\\log_5(2)}{1 - 2\\log_5(2)}$",
+          "$x = \\frac{-1 - \\log_5(3)}{2\\log_5(2) - 1}$"
+        ],
+        correct: 0,
+        explanation: "<b>Step 1:</b> Apply $\\log_5$ to both sides:<br>$$\\log_5(5^{x + 1}) = \\log_5(3 \\cdot 2^{2x - 3})$$<br><b>Step 2:</b> Apply product and exponent rules:<br>$$x + 1 = \\log_5(3) + (2x - 3)\\log_5(2)$$<br><b>Step 3:</b> Expand:<br>$$x + 1 = \\log_5(3) + 2x\\log_5(2) - 3\\log_5(2)$$<br><b>Step 4:</b> Group $x$ terms:<br>$$x - 2x\\log_5(2) = -1 + \\log_5(3) - 3\\log_5(2)$$<br>$$x(1 - 2\\log_5(2)) = -1 + \\log_5(3) - 3\\log_5(2) \\implies x = \\frac{-1 + \\log_5(3) - 3\\log_5(2)}{1 - 2\\log_5(2)}$$."
+      },
+      // QUESTION 10 (Hard - 5 marks)
+      {
+        id: 10,
+        difficulty: "Hard",
+        diffColor: "orange",
+        question: "Solve for $x$ in terms of $p$ and $q$: $$\\log_3\\left(\\frac{x + p}{3x - q}\\right) = 2$$",
+        options: [
+          "$x = \\frac{p + 9q}{26}$",
+          "$x = \\frac{p - 9q}{26}$",
+          "$x = \\frac{p + 6q}{26}$",
+          "$x = \\frac{9q - p}{26}$"
+        ],
+        correct: 0,
+        explanation: "<b>Step 1:</b> Convert from logarithmic to exponential form ($3^2 = 9$):<br>$$\\frac{x + p}{3x - q} = 9$$<br><b>Step 2:</b> Multiply by $(3x - q)$:<br>$$x + p = 9(3x - q) \\implies x + p = 27x - 9q$$<br><b>Step 3:</b> Rearrange terms to solve for $x$:<br>$$p + 9q = 27x - x \\implies 26x = p + 9q \\implies x = \\frac{p + 9q}{26}$$."
+      }
+    ];
+
+    let userAnswers = {};
+
+    function renderQuiz() {
+      const container = document.getElementById('quiz-container');
+      container.innerHTML = '';
+
+      questionsData.forEach((q, index) => {
+        const badgeColors = {
+          emerald: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+          amber: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+          orange: "bg-orange-500/10 text-orange-400 border-orange-500/20",
+          rose: "bg-rose-500/10 text-rose-400 border-rose-500/20"
+        };
+
+        const card = document.createElement('div');
+        card.className = "bg-slate-800 border border-slate-700 rounded-xl p-6 shadow-md transition-all";
+        card.id = `question-card-${index}`;
+
+        let optionsHTML = '';
+        q.options.forEach((opt, optIdx) => {
+          optionsHTML += `
+            <label id="label-${index}-${optIdx}" class="flex items-start p-3 rounded-lg border border-slate-700 bg-slate-900/50 hover:bg-slate-700/50 cursor-pointer transition-colors text-slate-200">
+              <input type="radio" name="q-${index}" value="${optIdx}" onchange="selectAnswer(${index}, ${optIdx})" class="mt-1 mr-3 text-indigo-600 focus:ring-indigo-500">
+              <span class="text-sm sm:text-base">${opt}</span>
+            </label>
+          `;
+        });
+
+        card.innerHTML = `
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border ${badgeColors[q.diffColor]}">
+              ${q.difficulty} • 5 Marks
+            </span>
+            <span class="text-xs text-slate-400">Question ${index + 1} of ${questionsData.length}</span>
+          </div>
+          <div class="text-base sm:text-lg text-slate-100 font-medium mb-4">
+            ${q.question}
+          </div>
+          <div class="space-y-2 mb-4">
+            ${optionsHTML}
+          </div>
+          <div id="explanation-${index}" class="hidden mt-4 p-4 rounded-lg bg-slate-900/80 border border-slate-700 text-sm text-slate-300">
+            <div class="font-bold text-indigo-400 mb-1 flex items-center gap-2">
+              <i class="fa-solid fa-circle-info"></i> Step-by-Step Explanation and Working:
+            </div>
+            <div>${q.explanation}</div>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+
+      if (window.MathJax) {
+        MathJax.typesetPromise();
+      }
+    }
+
+    function selectAnswer(questionIdx, optionIdx) {
+      if (isSubmitted) return;
+      userAnswers[questionIdx] = optionIdx;
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const answeredCount = Object.keys(userAnswers).length;
+      const percentage = Math.round((answeredCount / questionsData.length) * 100);
+      document.getElementById('progress-display').innerText = `${percentage}%`;
+    }
+
+    function submitExam(isAutoSubmit = false) {
+      if (isSubmitted) return;
+
+      if (!isAutoSubmit && Object.keys(userAnswers).length < questionsData.length) {
+        if (!confirm("You haven't answered all questions yet. Do you want to submit anyway?")) {
+          return;
+        }
+      }
+
+      isSubmitted = true;
+      clearInterval(timerInterval);
+      endTime = new Date();
+
+      let score = 0;
+      questionsData.forEach((q, idx) => {
+        const label = document.getElementById(`label-${idx}-${q.correct}`);
+        if (label) {
+          label.classList.add('border-emerald-500', 'bg-emerald-950/40', 'text-emerald-200');
+        }
+        if (userAnswers[idx] === q.correct) {
+          score++;
+        } else if (userAnswers.hasOwnProperty(idx)) {
+          const wrongLabel = document.getElementById(`label-${idx}-${userAnswers[idx]}`);
+          if (wrongLabel) wrongLabel.classList.add('border-rose-500', 'bg-rose-950/40', 'text-rose-200');
+        }
+
+        const exp = document.getElementById(`explanation-${idx}`);
+        if (exp) exp.classList.remove('hidden');
+
+        const inputs = document.getElementsByName(`q-${idx}`);
+        inputs.forEach(i => i.disabled = true);
+      });
+
+      const percentage = Math.round((score / questionsData.length) * 100);
+
+      document.getElementById('score-display').innerText = `${score} / ${questionsData.length}`;
+      document.getElementById('score-container').classList.remove('hidden');
+
+      const payload = {
+        lastName1: lastName1,
+        lastName2: lastName2,
+        firstName: firstName,
+        studentEmail: studentEmail,
+        startTime: startTime.toLocaleTimeString(),
+        endTime: endTime.toLocaleTimeString(),
+        tabSwitches: tabSwitches,
+        windowBlurs: windowBlurs,
+        score: score,
+        total: questionsData.length,
+        percentage: percentage
+      };
+
+      const submitBtn = document.getElementById('submit-btn');
+      submitBtn.disabled = true;
+      submitBtn.innerText = "Submitting...";
+
+      fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'text/plain'
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(() => {
+        submitBtn.classList.add('hidden');
+        document.getElementById('final-message').classList.remove('hidden');
+      })
+      .catch(error => {
+        console.error('Error submitting data:', error);
+        alert('There was an error submitting your answers. Please check your internet connection.');
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Retry Submission";
+      });
+    }
+  </script>
+</body>
+</html>

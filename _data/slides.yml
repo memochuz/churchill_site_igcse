@@ -46,6 +46,11 @@
       subtitle: "Isolating Variables"
       file: "despejes.pdf"
       exercises: "class-exercise-despejes.pdf"
+    - id: "t1-sequences"
+      title: "Sequences"
+      subtitle: "Arithmetic &  Geometric"
+      file: "sequences.pdf"
+      exercises: "class-exercise-sequences.pdf"
 # - topic: "Topic 2: Geometry & Trigonometry"
 #   id: "topic-2"
 #   slides:

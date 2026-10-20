@@ -41,6 +41,11 @@
       subtitle: "Understanding Precision"
       file: "significant-figures.pdf"
       exercises: "class-exercise-significant-figures.pdf"
+    - id: "t1-isolating-variables"
+      title: "Rearranging Variables"
+      subtitle: "Isolating Variables"
+      file: "despejes.pdf"
+      exercises: "class-exercise-despejes.pdf"
 # - topic: "Topic 2: Geometry & Trigonometry"
 #   id: "topic-2"
 #   slides:
